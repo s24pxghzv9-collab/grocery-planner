@@ -373,6 +373,198 @@
   "author": "Sweet Eats by J"
  },
  {
+  "id": "beef-wellington-chestnut",
+  "name": "Beef Wellington with Chestnut Stuffing & Roasted Cranberries",
+  "category": "Beef",
+  "tags": [
+   "Special",
+   "Oven",
+   "Christmas"
+  ],
+  "serves": 8,
+  "minutes": 390,
+  "ingredients": [
+   {
+    "name": "roasted chestnuts",
+    "qty": 115,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "shallots",
+    "qty": 4,
+    "aisle": "Produce"
+   },
+   {
+    "name": "celery",
+    "qty": 1,
+    "unit": "stalk",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 6,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "mixed mushrooms",
+    "qty": 700,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "bay leaves",
+    "qty": 4,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "thyme",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "butter",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "olive oil",
+    "qty": 7,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "black peppercorns",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "bourbon",
+    "qty": 80,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "beef stock",
+    "qty": 1.5,
+    "unit": "L",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "beef eye fillet",
+    "qty": 1.4,
+    "unit": "kg",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "dijon mustard",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "crepes",
+    "qty": 6,
+    "aisle": "Bakery"
+   },
+   {
+    "name": "bresaola",
+    "qty": 170,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "dried apricots",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "eggs",
+    "qty": 1,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "plain flour",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "puff pastry",
+    "qty": 700,
+    "unit": "g",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "cranberries",
+    "qty": 450,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "sugar",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "dry white wine",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "rosemary",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "For the mushroom stuffing: Add chestnuts, shallots, celery, and garlic to a food processor and pulse until finely chopped. Transfer to a large bowl. Add mushrooms to the food processor and pulse until mushrooms are pea-sized. Transfer to the bowl along with salt and pepper; stir to combine.",
+   "Melt beef tallow in a large heavy skillet, preferably cast iron, over medium-high heat. Add mushroom mixture, thyme, and bay leaves and stir to combine. Cook, stirring occasionally, until most of the liquid has evaporated and mushrooms are beginning to brown, 10 to 12 minutes. Season, remove bay leaves, and set aside to cool. Chill for at least 1 hour and up to 24 hours.",
+   "For bone broth reduction: Heat beef tallow in a large skillet over medium high and add shallots, garlic, thyme, bay leaves, and peppercorns and cook, tossing occasionally until just beginning to brown, about 4 minutes.",
+   "Remove from heat and carefully add bourbon, return to heat and tilt skillet toward flame to ignite. Cook until flames have died and almost all of the liquid has evaporated. Add bone broth and cook, stirring occasionally, until reduced by half, about 45 minutes. Strain, discard solids, and keep warm until ready to serve.",
+   "For the beef: Season the tenderloin with salt and pepper. Wrap tightly in plastic wrap and chill for at least 1 hour and up to 24.",
+   "Once beef is chilled, heat beef tallow in a large skillet over high until very hot. Cook tenderloin, turning every 30 to 60 seconds, until all sides and the ends are browned, about 4 minutes. Transfer to a platter and brush all sides with Dijon mustard. Let rest for 30 minutes.",
+   "On a clean work surface, overlap long sheets of plastic wrap. Place crepes on top to make about a 14- by 7-inch rectangle, overlapping slightly so they are large enough to cover the tenderloin. Shingle bresaola over the crepes. Spread the chilled mushroom mixture over the bresaola in an even layer. Sprinkle apricots over top.",
+   "Place the beef along one long end and roll tightly around the tenderloin using the plastic to help you, peeling it back as you roll. Wrap the whole thing tightly in the plastic, twisting both ends like a candy wrapper. Chill for at least 30 minutes and up to overnight.",
+   "Heat oven to 220°C (425°F) and line a rimmed baking sheet with baking paper. Whisk the egg with 1 teaspoon water. Roll out about 450g of the puff pastry on a lightly floured surface to a 15- by 14-inch rectangle and lay it on baking paper. Brush egg over a rectangle about as wide as your piece of meat, leaving a 1-inch border.",
+   "Unwrap the beef log and place it along one long side of the pastry. Roll up tightly, then place seam-side down on the baking sheet. Tuck the pastry over the ends, pinching to seal and folding underneath. If adding a lattice, freeze for 10 to 15 minutes.",
+   "Lattice (optional): brush the pastry with egg, roll a lattice cutter across the remaining puff pastry and lay it over the top and sides. Press to adhere, brush with egg, and top with flaky salt and pepper. Freeze for another 10 to 15 minutes.",
+   "Bake until the pastry is golden brown all over and the meat is cooked to your liking (it will climb about 5°C while resting), about 40 to 50 minutes. If the pastry is already golden after 30 minutes, tent with foil. Rest on a wire rack for 20 minutes, leaving the oven on.",
+   "For the roasted cranberries: toss the cranberries with the sugar, wine, olive oil, rosemary, and 1/2 teaspoon salt. Spread on a lined tray and bake at 220°C until bubbling, 20 to 30 minutes. Cool for 10 minutes.",
+   "Slice the Wellington into thick pieces. Serve with the broth reduction and roasted cranberries."
+  ],
+  "notes": "A make-ahead project: the stuffing, broth reduction and wrapped beef can all be done the day before.",
+  "image": "https://images.food52.com/TGfY69FIykfoG9Sk-IDBYRfUf7A=/1200x1200/ae3fa660-2482-4d21-8993-c9248ed697cd--2022-1014_sponsored_texas-beef_chestnut-wellington_final_3x2_mj-kroeger-239.jpg",
+  "source": {
+   "name": "Food52",
+   "url": "https://food52.com/recipes/88557-holiday-beef-wellington"
+  },
+  "author": "Rick Martinez"
+ },
+ {
   "id": "bocconcini-stuffed-meatballs",
   "name": "Bocconcini Stuffed Meatballs",
   "category": "Beef",
@@ -2295,6 +2487,116 @@
   "author": "Nicole Maguire"
  },
  {
+  "id": "easy-taco-bowls",
+  "name": "Easy Beef Taco Bowls",
+  "category": "Beef",
+  "tags": [
+   "Mexican",
+   "Bowl",
+   "Quick"
+  ],
+  "serves": 4,
+  "minutes": 25,
+  "ingredients": [
+   {
+    "name": "tomatoes",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "red onion",
+    "qty": 0.25,
+    "aisle": "Produce"
+   },
+   {
+    "name": "jalapeño",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "coriander",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lime",
+    "qty": 3,
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 6,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "olive oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "taco seasoning",
+    "qty": 1,
+    "unit": "pack",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "avocado",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "corn chips",
+    "qty": 1,
+    "unit": "bag",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "iceberg lettuce",
+    "qty": 0.5,
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "Make a quick salsa: mix the tomato, red onion, finely chopped jalapeño, coriander, 2 tbsp lime juice and a pinch of salt.",
+   "Blitz the brown onion, garlic and coarsely chopped jalapeño to a paste (or chop very finely).",
+   "Heat the oil in a large pan over medium-high, add the beef and cook, breaking it up, until browned and crisp in places.",
+   "Add the onion paste and cook until the liquid evaporates, then stir in the taco seasoning with a splash of water and the remaining lime juice.",
+   "Serve over rice with the salsa, avocado, lettuce, corn chips and lime wedges."
+  ],
+  "notes": "The original method wasn't saved; these steps are a guide.",
+  "image": "https://assets.bonappetit.com/photos/65bbf89e2c3c1e1bdd2c7f0d/16:9/w_5984,h_3366,c_limit/2023-12-14-BA-Sizzle_GBeef-059.jpg",
+  "source": {
+   "name": "Bon Appetit",
+   "url": "https://www.bonappetit.com/recipe/spiced-beef-taco-bowls"
+  },
+  "author": "Rachel Gurjar"
+ },
+ {
   "id": "fish-en-papillote",
   "name": "Fish en Papillote (Fish in a Bag)",
   "category": "Seafood",
@@ -2611,6 +2913,133 @@
    "url": "https://www.instagram.com/reel/DcGZCxyPnus/"
   },
   "author": "Julz Yap"
+ },
+ {
+  "id": "hainanese-chicken-rice-broth",
+  "name": "Hainanese-Inspired Chicken Rice and Broth",
+  "category": "Chicken",
+  "tags": [
+   "Rice",
+   "Bowl",
+   "Soup"
+  ],
+  "serves": 2,
+  "minutes": 40,
+  "ingredients": [
+   {
+    "name": "chicken breast fillets",
+    "qty": 1,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "red chilli",
+    "qty": 3,
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "knob",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "sriracha",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken stock",
+    "qty": 900,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 0.33,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rice",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "soy sauce",
+    "qty": 3.5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "lime",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "bok choy",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "Start with the broth, add all the ingredients to a pot, simmer with the lid on.",
+   "For the rice, sauté the ginger and spring onion in the neutral oil for 1-2 min before adding in the washed rice & sesame oil. Give a mix then add in the chicken stock. Cook using the absorption method until it's nice and fluffy.",
+   "For the chicken, mix together all the ingredients except the chicken breast. Coat the chicken in the marinade.",
+   "Fry both sides of the chicken in neutral oil until charred on medium heat. Add in the leftover sauce once chicken is cooked. Cook for a further 1 min. Remove from the pan & cook the bok choy plus the remaining chicken stock in it.",
+   "For the chilli lime sauce, heat the neutral oil and carefully pour over the garlic and chilli. Add in the sesame oil, soy sauce & lime juice. Mix.",
+   "Assemble. Place rice on the bottom, pour in the broth, chicken & bok choy on top, garnish with spring onions & cucumber. Spoon over the chilli lime sauce."
+  ],
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DPVantXDuSS/"
+  },
+  "author": "Lucy Rosenberg"
  },
  {
   "id": "mcchicken-smash-tacos",
@@ -2948,6 +3377,136 @@
   "author": "Naz Deravian"
  },
  {
+  "id": "massaman-curry-nyt",
+  "name": "Massaman Curry (Chicken)",
+  "category": "Chicken",
+  "tags": [
+   "Curry",
+   "Thai"
+  ],
+  "serves": 6,
+  "minutes": 60,
+  "ingredients": [
+   {
+    "name": "cardamom pods",
+    "qty": 2,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "coriander seeds",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cumin seeds",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cinnamon stick",
+    "qty": 1,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "whole cloves",
+    "qty": 4,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "ground nutmeg",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "red curry paste",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "coconut milk",
+    "qty": 2,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "potatoes",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken thigh fillets",
+    "qty": 800,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "roasted peanuts",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "fish sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown sugar",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "tamarind concentrate",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "coriander",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Toast the cardamom, coriander seeds, cumin seeds, cinnamon and cloves in a dry pan until fragrant, then grind with the nutmeg and mix into the red curry paste.",
+   "Spoon the thick cream from the top of the coconut milk into a pot and fry over medium heat until it starts to split. Add the curry paste and fry for 2-3 minutes until fragrant.",
+   "Add the shallots and chicken and stir to coat, then add the rest of the coconut milk, the potatoes and peanuts. Simmer gently for 20-25 minutes until the chicken and potatoes are tender.",
+   "Season with fish sauce, sugar and tamarind, tasting and adjusting until salty, sweet and sour are balanced.",
+   "Serve with jasmine rice, topped with coriander and extra peanuts."
+  ],
+  "notes": "The original method is behind the NYT paywall; these steps are a guide. Don't shake the coconut milk: the thick cream on top is used to fry the paste. Swap the chicken for beef, prawns or tofu if you like.",
+  "image": "https://static01.nyt.com/images/2024/01/10/multimedia/ND-Massaman-Curry-cwht/ND-Massaman-Curry-cwht-square640.jpg",
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1024644-massaman-curry"
+  },
+  "author": "Naz Deravian"
+ },
+ {
   "id": "sausage-tuscan-pasta",
   "name": "One-Pan Italian Sausage Tuscan Pasta",
   "category": "Pork",
@@ -3072,6 +3631,376 @@
    "url": "https://www.instagram.com/reel/DTWTF-Aj-um/"
   },
   "author": "Cup of Liv"
+ },
+ {
+  "id": "orecchiette-sausage-broccoli-rabe",
+  "name": "Orecchiette with Sausage and Broccoli Rabe",
+  "category": "Pork",
+  "tags": [
+   "Pasta",
+   "Italian"
+  ],
+  "serves": 4,
+  "minutes": 30,
+  "ingredients": [
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 45,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "italian sausages",
+    "qty": 3,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "anchovy fillets",
+    "qty": 2,
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chilli flakes",
+    "qty": 0.5,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "dry white wine",
+    "qty": 120,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "broccoli rabe",
+    "qty": 2,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "orecchiette",
+    "qty": 340,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "pecorino",
+    "qty": 45,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   }
+  ],
+  "method": [
+   "Bring a large pot of salted water to a boil. Meanwhile, heat olive oil in a large skillet over medium heat until shimmering. Pinch the sausage into small pieces into the pan in a single layer. Cook, undisturbed, until the bottom is light golden brown, about 2 minutes, then turn the pieces. Add garlic, anchovy (if using), and pepper flakes, and cook until fragrant, 30 seconds to 1 minute.",
+   "Increase heat to medium-high and add wine. Bring to a simmer and cook, swirling and scraping up any stuck-on bits, until the wine has emulsified with the oil and reduced slightly, about 30 seconds. Turn off heat.",
+   "Add the broccoli rabe stalks (with florets) to the boiling water and cook until barely tender, 1 1/2 to 2 minutes. Scoop out onto a plate. Add the leaves and cook about 1 minute, then scoop out, keeping the water boiling. Cut stalks and florets into 1 1/2-inch pieces and combine with the leaves.",
+   "Add orecchiette to the boiling water, stirring for the first 30 seconds. After 5 minutes, transfer 1 cup of pasta water to the skillet along with the broccoli rabe. Bring the skillet to a boil over high heat, swirling until the water emulsifies with the oil, 1 to 2 minutes.",
+   "Cook the pasta until about 3 minutes short of the packet time, then transfer it to the skillet (reserve at least 2 cups pasta water).",
+   "Cook on high, stirring and tossing, until the pasta is al dente and the sauce coats it, 2 to 3 minutes, adding more pasta water a little at a time. Keep it slightly looser than you want to serve it.",
+   "Remove from heat, stir in 3/4 of the cheese, and season with salt. Serve immediately with the remaining cheese."
+  ],
+  "notes": "Broccoli rabe is sold as rapini or cime di rapa; broccolini works as a swap.",
+  "image": "https://www.seriouseats.com/thmb/PFfHbhjfBu_XwO5sZBAq-s7cbYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2021__03__20210301-Orecchiette-Sausag-Broccoli-Rabe-sasha-marx-14-3f4223be2cc14853bfacf729e306b985.jpg",
+  "source": {
+   "name": "Serious Eats",
+   "url": "https://www.seriouseats.com/orecchiette-broccoli-rabe-sausage"
+  },
+  "author": "Sasha Marx"
+ },
+ {
+  "id": "oven-baked-doner-kebab",
+  "name": "Oven-Baked Doner Kebab",
+  "category": "Beef",
+  "tags": [
+   "Oven",
+   "Wraps"
+  ],
+  "serves": 4,
+  "minutes": 50,
+  "ingredients": [
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "greek yoghurt",
+    "qty": 200,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ground cumin",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "paprika",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "dried oregano",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "red onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "tomatoes",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "pita bread",
+    "qty": 4,
+    "aisle": "Bakery"
+   },
+   {
+    "name": "pickled peppers",
+    "qty": 1,
+    "unit": "jar",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "garlic sauce",
+    "aisle": "Spices & Sauces"
+   }
+  ],
+  "method": [
+   "Place the beef in a bowl. Grate in the onion, press in the garlic, and add a few spoons of Greek yoghurt and the spices.",
+   "Mix well by hand, then spread the mixture onto baking paper and roll into a tight log.",
+   "Put the log on a baking tray with sliced red onions and tomato wedges and bake at 200°C for about 35-40 minutes until cooked through.",
+   "Slice the meat thinly and serve in pita bread with the onions, tomatoes, pickled peppers and white garlic sauce (or yoghurt mixed with garlic)."
+  ],
+  "notes": "The original has no quantities; amounts are a guide for 4.",
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DRgKPg7DPBd/"
+  },
+  "author": "Yumna | Feel Good Foodie"
+ },
+ {
+  "id": "panko-chicken-schnitzel",
+  "name": "Panko Chicken Schnitzel with Brown Butter & Capers",
+  "category": "Chicken",
+  "tags": [
+   "Crumbed",
+   "Quick"
+  ],
+  "serves": 4,
+  "minutes": 20,
+  "ingredients": [
+   {
+    "name": "plain flour",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 3,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "panko breadcrumbs",
+    "qty": 2,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chicken breast fillets",
+    "qty": 4,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 85,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "capers",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "Set the flour, eggs, and panko in three separate shallow bowls. Season the chicken cutlets with salt and pepper. Dredge the chicken in the flour, shaking off any excess, then dip in the eggs and coat thoroughly with the panko, pressing lightly to adhere.",
+   "In each of 2 large skillets, heat 1/4 cup of canola oil. Add the chicken and cook over moderately high heat, turning once, until golden and crispy, about 3 minutes per side. Transfer the chicken to a paper towel-lined baking sheet and sprinkle with salt, then transfer to plate.",
+   "Meanwhile, in a small saucepan, melt the butter and cook over moderately high heat until browned and nutty, about 4 minutes. Stir in the capers, lemon juice, and parsley; spoon over the chicken and serve."
+  ],
+  "image": "https://www.foodandwine.com/thmb/UR_P_Qm1XX5PWgzn6mmlqivsUfM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Panko-Chicken-Schnitzel-FT-RECIPE032469_preview-7515b65b1c0640a18742f7c1ba12d2e2.jpg",
+  "source": {
+   "name": "Food & Wine",
+   "url": "https://www.foodandwine.com/recipes/panko-coated-chicken-schnitzel"
+  },
+  "author": "Thomas Keller"
+ },
+ {
+  "id": "pasta-alla-zozzona",
+  "name": "Pasta alla Zozzona",
+  "category": "Pork",
+  "tags": [
+   "Pasta",
+   "Italian"
+  ],
+  "serves": 4,
+  "minutes": 45,
+  "ingredients": [
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 3,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "pecorino",
+    "qty": 80,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "guanciale or pancetta",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "italian sausages",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "passata",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rigatoni",
+    "qty": 350,
+    "unit": "g",
+    "aisle": "Pantry"
+   }
+  ],
+  "method": [
+   "Cook rigatoni per the packet directions.",
+   "In a small bowl, beat the egg yolks and Pecorino cheese together with a fork until a thick paste forms. Season with a few grindings of black pepper and stir in 1/4 cup of pasta water. Set aside.",
+   "Drizzle the oil into a large pan. Add the sausage and use a wooden spoon to break it into pieces as it cooks.",
+   "Add the guanciale to the pan. Once it turns golden and crispy, add the onion and garlic.",
+   "When the onion becomes translucent, add the passata. Stir gently and cook on medium-low heat for 15 minutes.",
+   "Sprinkle fresh basil into the sauce and stir gently. Then, add the cooked pasta together with the egg yolk and Pecorino cheese mixture.",
+   "Stir and toss until the pasta is well coated. Finish by adding more Pecorino cheese and black pepper."
+  ],
+  "image": "https://ontrac5.com/wp-content/uploads/2024/07/IMG_7935-scaled.jpg",
+  "source": {
+   "name": "On Trac 5",
+   "url": "https://ontrac5.com/pasta-alla-zozzonna/"
+  },
+  "author": "On Trac 5"
  },
  {
   "id": "pasta-pumpkin-brown-butter",
@@ -3257,6 +4186,311 @@
   "author": "Emma Petersen"
  },
  {
+  "id": "peking-style-beef",
+  "name": "Peking-Style Beef",
+  "category": "Beef",
+  "tags": [
+   "Rice",
+   "Quick",
+   "Bowl"
+  ],
+  "serves": 4,
+  "minutes": 25,
+  "ingredients": [
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "hoisin sauce",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown sugar",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chinese five-spice",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "cornflour",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "qty": 1.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "sesame oil",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "sesame seeds",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Pour cooking oil into a hot skillet. Add the beef and break it up with a spatula. Cook until it starts caramelising on the edges.",
+   "Mix hoisin sauce, soy sauce, brown sugar and a pinch of Chinese five-spice in a bowl.",
+   "Add the garlic to the beef and stir, then pour over the sauce and mix until the meat is coated.",
+   "Stir in a cornflour slurry and keep stirring until glossy.",
+   "Serve over white rice with cucumber ribbons, garnished with spring onions, a drizzle of sesame oil and sesame seeds."
+  ],
+  "notes": "The original has no quantities; amounts are a guide for 4.",
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DQ_WI9cDdpm/"
+  },
+  "author": "Nicole Maguire"
+ },
+ {
+  "id": "pork-scallion-dumplings",
+  "name": "Pork and Spring Onion Dumplings with Crispy Skirt",
+  "category": "Pork",
+  "tags": [
+   "Dumplings"
+  ],
+  "serves": 3,
+  "minutes": 50,
+  "ingredients": [
+   {
+    "name": "pork mince",
+    "qty": 225,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 1,
+    "unit": "knob",
+    "aisle": "Produce"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "white pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "gow gee wrappers",
+    "qty": 1,
+    "unit": "pack",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "plain flour",
+    "qty": 4,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "cornflour",
+    "qty": 4,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chilli oil",
+    "aisle": "Spices & Sauces"
+   }
+  ],
+  "method": [
+   "Finely chop the spring onions and grate the ginger. Mix with the pork, 2 tsp soy sauce, 1/2 tsp salt and the pepper.",
+   "Place a heaped teaspoon of filling on each wrapper, wet the edge and fold into a half-moon, pleating to seal.",
+   "Whisk 1 cup water with 2 tbsp rice vinegar, the flour, cornflour and a pinch of salt to make the slurry.",
+   "Heat a little oil in a non-stick pan over medium-high. Arrange the dumplings flat-side down, pour in enough slurry to come a few millimetres up the sides, cover and cook until the water evaporates and a lacy golden crust forms, about 8 minutes.",
+   "Invert onto a plate, crust side up. Mix the remaining soy sauce and vinegar (and chilli oil) for dipping."
+  ],
+  "notes": "Makes 24. The original method wasn't saved; these steps are a guide.",
+  "image": "https://assets.bonappetit.com/photos/5eb433a35c440b5a0d6a4a81/16:9/w_3488,h_1962,c_limit/Basically-Dumplings.jpg",
+  "source": {
+   "name": "Bon Appetit",
+   "url": "https://www.bonappetit.com/recipe/pork-and-scallion-dumplings-with-crispy-skirt"
+  },
+  "author": "Sohla El-Waylly"
+ },
+ {
+  "id": "pork-mince-stir-fry",
+  "name": "Pork Mince Stir Fry with Cabbage Slaw",
+  "category": "Pork",
+  "tags": [
+   "Stir fry",
+   "Quick"
+  ],
+  "serves": 4,
+  "minutes": 27,
+  "ingredients": [
+   {
+    "name": "white cabbage",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "sesame oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "ginger",
+    "qty": 1,
+    "unit": "knob",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "pork mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "sesame seeds",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "miso paste",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Finely shred the cabbage and toss with half the sesame oil, the rice vinegar and a pinch of sugar. Set aside to lightly pickle.",
+   "Grate the ginger and garlic and slice the spring onions, keeping the whites and greens separate.",
+   "Heat the remaining sesame oil in a wok over high heat. Add the pork mince and fry, breaking it up, until browned and a little crispy.",
+   "Add the ginger, garlic and spring onion whites and cook for a minute. Stir the miso and soy into the water and add to the pan, cooking until saucy.",
+   "Serve the pork over rice with the cabbage slaw, sesame seeds and spring onion greens."
+  ],
+  "notes": "The original method wasn't saved; these steps are a guide.",
+  "image": "https://files.mob-cdn.co.uk/recipes/2024/07/Pork-Mince-Stir-Fry-Recipe.jpg",
+  "source": {
+   "name": "Mob",
+   "url": "https://www.mob.co.uk/recipes/pork-mince-stir-fry"
+  },
+  "author": "Adam Bush"
+ },
+ {
   "id": "prawn-stir-fry",
   "name": "Prawn Stir Fry",
   "category": "Seafood",
@@ -3373,6 +4607,259 @@
   "author": "Nagi"
  },
  {
+  "id": "massaman-curry-beef",
+  "name": "Restaurant-Quality Beef Massaman Curry",
+  "category": "Beef",
+  "tags": [
+   "Curry",
+   "Thai",
+   "Slow cook"
+  ],
+  "serves": 4,
+  "minutes": 270,
+  "ingredients": [
+   {
+    "name": "massaman curry paste",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "olive oil",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "beef chuck",
+    "qty": 600,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "coconut cream",
+    "qty": 2,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "brown onion",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "potatoes",
+    "qty": 3,
+    "aisle": "Produce"
+   },
+   {
+    "name": "carrot",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "brown sugar",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "fish sauce",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "tamarind concentrate",
+    "qty": 1.5,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "roasted peanuts",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Cut the beef into large chunks and sear in the olive oil until browned all over. Set aside.",
+   "Cook the curry paste with half a can of coconut cream for 5-10 minutes, until the oil separates and rises to the top.",
+   "Add the beef, onions, potatoes, carrots, the rest of the coconut cream and the water. Season with palm sugar, fish sauce and tamarind.",
+   "Slow cook for about 4 hours, or until everything is fork tender and the meat falls apart. Taste and adjust the salty, sour and sweet to your liking.",
+   "Serve with rice, topped with herbs and chopped salted peanuts."
+  ],
+  "notes": "Uses Maesri massaman curry paste (yellow can). Slow cook for about 4 hours until the beef falls apart.",
+  "source": {
+   "name": "TikTok",
+   "url": "https://www.tiktok.com/@jasminseats/video/7439272955680460050"
+  },
+  "author": "Jasmin's Eats"
+ },
+ {
+  "id": "ribeye-steak",
+  "name": "Ribeye Steak",
+  "category": "Beef",
+  "tags": [
+   "Steak",
+   "Quick"
+  ],
+  "serves": 3,
+  "minutes": 30,
+  "ingredients": [
+   {
+    "name": "ribeye steaks",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "shallots",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "thyme",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "Pat the steaks dry and season generously with salt and pepper. Leave at room temperature for 30 minutes if you can.",
+   "Heat the oil in a cast-iron skillet over medium-high heat until shimmering. Add the steaks and cook, flipping every minute or so, until well browned, 8-10 minutes for medium-rare (52°C inside).",
+   "Turn the heat to low, add the butter, shallot and herbs, and baste the steaks with the foaming butter for a minute or two.",
+   "Rest the steaks for 5-10 minutes, then slice and spoon over the pan butter."
+  ],
+  "notes": "The original method is behind the NYT paywall; these steps are a guide. Good with a rocket salad, green beans or potatoes.",
+  "image": "https://static01.nyt.com/images/2023/08/18/multimedia/as-ribeye-steak-tlmh/as-ribeye-steak-tlmh-square640.jpg",
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1024339-ribeye-steak"
+  },
+  "author": "Ali Slagle"
+ },
+ {
+  "id": "sausage-pea-orzo-risotto",
+  "name": "Sausage and Pea Orzo Risotto",
+  "category": "Pork",
+  "tags": [
+   "Pasta",
+   "One pot",
+   "Quick"
+  ],
+  "serves": 2,
+  "minutes": 20,
+  "ingredients": [
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "italian sausages",
+    "qty": 3,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "shallots",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "orzo",
+    "qty": 225,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 750,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "frozen peas",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "parmesan",
+    "qty": 25,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
+  ],
+  "method": [
+   "Heat the oil in a medium saucepan over medium-high heat until shimmering. Add the sausage and cook, breaking it up into small pieces until no longer pink.",
+   "Add the shallot and sauté until translucent, about 1 minute. Add the orzo and water or stock, scraping up any browned bits from the bottom of the pan.",
+   "Bring to a boil, then cover, and reduce the heat to medium-low. Cook, stirring occasionally, until the orzo has absorbed all the liquid and is cooked through (add more liquid if the orzo starts to dry out or stick). Season to taste with salt and pepper.",
+   "Stir in the peas, and allow to cook for a minute or two just to thaw. Remove from the heat, and stir in the Parmesan and parsley. Serve immediately."
+  ],
+  "image": "https://www.seriouseats.com/thmb/GZdzAxczgl-X_9D0SjBj0zHtdOM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2012__11__20121113OrzoRisotto-765ad5c15284489893fdfc85329b0492.jpg",
+  "source": {
+   "name": "Serious Eats",
+   "url": "https://www.seriouseats.com/easy-sausage-and-pea-orzo-risotto-recipe"
+  },
+  "author": "Kerry Saretsky"
+ },
+ {
   "id": "slow-cooker-creamy-pesto-chicken",
   "name": "Slow Cooker Creamy Pesto Chicken",
   "category": "Chicken",
@@ -3451,6 +4938,159 @@
    "url": "https://www.instagram.com/reel/DN551rNirTL/"
   },
   "author": "Bored of Lunch"
+ },
+ {
+  "id": "slow-roasted-crispy-pork-belly",
+  "name": "Slow-Roasted Crispy Pork Belly",
+  "category": "Pork",
+  "tags": [
+   "Oven",
+   "Special"
+  ],
+  "serves": 4,
+  "minutes": 185,
+  "ingredients": [
+   {
+    "name": "pork belly, skin on",
+    "qty": 1,
+    "unit": "kg",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "olive oil",
+    "qty": 1.5,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "ground fennel",
+    "qty": 0.5,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "apple sauce",
+    "qty": 1,
+    "unit": "jar",
+    "aisle": "Pantry"
+   }
+  ],
+  "method": [
+   "Dry skin overnight: Place pork belly on a plate. Pat skin dry with paper towels. Leave uncovered in fridge overnight to dry out the skin. (If you don't have time, pat the skin dry as best you can).",
+   "Preheat oven to 140°C/285°F (120°C fan).",
+   "Season flesh: Drizzle flesh (only) with 1 tsp oil. Sprinkle over 1/2 tsp salt, the pepper and fennel powder. Rub all over the flesh, including on the sides.",
+   "Wrap in foil: Place 2 pieces of foil on a work surface. Put the belly in middle of foil, skin side up. Fold the sides in to enclose the belly, forming an open box, pinching corners to seal tightly and make it as snug as possible. Place meat on a tray.",
+   "Season skin: Pat skin dry with paper towels. Rub with 1/2 tsp oil then sprinkle remaining 1/2 tsp salt evenly all over the skin surface.",
+   "Slow roast 2 1/2 hours: Roast for 2 1/2 hours. After 1 1/2 hours, remove and tighten the foil (pork will have shrunk), and continue cooking.",
+   "Increase heat: Remove pork from oven, then increase heat to 240°C/465°F (all oven types).",
+   "Level pork: Remove pork from foil and place on a rack set over a tray. Use scrunched up balls of foil under the pork so the skin is as level as possible.",
+   "30 minutes on high heat: Roast for 30 minutes, rotating after 15 minutes as needed, until the crackling is deep golden, puffy and crispy all over. Protect any patches browning too fast with foil.",
+   "Rest 10 minutes, then slice into 2cm thick slices with a serrated knife. Serve with apple sauce."
+  ],
+  "notes": "Dry the skin in the fridge overnight if you can. Don't score the skin.",
+  "image": "https://www.recipetineats.com/wp-content/uploads/2021/04/Slow-Roasted-Pork-Belly-with-Jus-and-Apple-Sauce-SQ.jpg",
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/crispy-slow-roasted-pork-belly/"
+  },
+  "author": "Nagi"
+ },
+ {
+  "id": "smash-burger-tacos",
+  "name": "Smash Burger Tacos",
+  "category": "Beef",
+  "tags": [
+   "Tacos",
+   "Quick"
+  ],
+  "serves": 1,
+  "minutes": 20,
+  "ingredients": [
+   {
+    "name": "beef mince",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "corn tortillas",
+    "qty": 2,
+    "aisle": "Bakery"
+   },
+   {
+    "name": "grated cheddar",
+    "qty": 1,
+    "unit": "bag",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "taco seasoning",
+    "qty": 1,
+    "unit": "pack",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "tomato sauce",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "greek yoghurt",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "sriracha",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "iceberg lettuce",
+    "qty": 0.25,
+    "aisle": "Produce"
+   },
+   {
+    "name": "tomatoes",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "brown onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "pickles",
+    "aisle": "Pantry"
+   }
+  ],
+  "method": [
+   "Press 50 grams of beef mince into each corn tortilla.",
+   "Season with taco seasoning.",
+   "Place tortillas face down on a pan and cook until crispy.",
+   "Flip and add cheese, allowing it to melt.",
+   "For the sauce, mix Greek yogurt with sriracha, taco seasoning, and tomato sauce.",
+   "Top cooked tortillas with sauce, lettuce, tomato, onion, and pickles."
+  ],
+  "notes": "Amounts are per person: scale up for the household.",
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DQMMo_JklEn/"
+  },
+  "author": "Madeleine Storace"
  },
  {
   "id": "soy-crumbed-chicken-garlic-rice",
@@ -3664,6 +5304,78 @@
   "author": "Kelsey"
  },
  {
+  "id": "steak-au-poivre-frites",
+  "name": "Steak au Poivre & Frites",
+  "category": "Beef",
+  "tags": [
+   "Special",
+   "French"
+  ],
+  "serves": 2,
+  "minutes": 45,
+  "ingredients": [
+   {
+    "name": "eye fillet steaks",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "black peppercorns",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "cognac or brandy",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "thickened cream",
+    "qty": 180,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "potatoes",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Frites: cut the potatoes into thin chips, dry them extremely well and toss with plenty of olive oil and sea salt flakes. Spread on a lined tray, not touching, and bake at 200°C for about 30 minutes until super golden and crispy.",
+   "Season the steak with lots of sea salt flakes and freshly ground pepper.",
+   "Place half the butter in a pan over high heat, and when it begins to foam, sear the fillets on each side to gain a crust and cook 3/4 of the way through. Remove from the pan and rest. Don't clean the pan out.",
+   "Add the rest of the butter and the cracked peppercorns and fry off.",
+   "Deglaze with the Cognac, and flambé the contents of the pan if you're confident, or reduce by half.",
+   "Pour the cream into the pan and allow to bubble lightly, add the steak back in and finish cooking gently.",
+   "Pour the sauce over the steak and serve with hot frites."
+  ],
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DRrBmQdEeon/"
+  },
+  "author": "Laura Sharrad"
+ },
+ {
   "id": "thai-chicken-cashew",
   "name": "Thai Chicken Cashew",
   "category": "Chicken",
@@ -3769,6 +5481,141 @@
    "url": "https://www.instagram.com/reel/DXqu4EFjoSO/"
   },
   "author": "@keetasdishdiaries"
+ },
+ {
+  "id": "thai-green-curry",
+  "name": "Thai Green Curry",
+  "category": "Chicken",
+  "tags": [
+   "Curry",
+   "Thai"
+  ],
+  "serves": 4,
+  "minutes": 35,
+  "ingredients": [
+   {
+    "name": "green curry paste",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lemongrass",
+    "qty": 1,
+    "unit": "stalk",
+    "aisle": "Produce"
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken stock",
+    "qty": 250,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "fish sauce",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "kaffir lime leaves",
+    "qty": 6,
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken thigh fillets",
+    "qty": 350,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "japanese eggplant",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "snow peas",
+    "qty": 150,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "thai basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lime",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "fried shallots",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Heat oil in a heavy based skillet or pot over medium high heat.",
+   "Add curry paste (and garlic, ginger and lemongrass extras, if using a jar paste) and cook for 2 to 3 minutes until it mostly \"dries out\".",
+   "Add chicken broth and coconut milk, mix to dissolve paste. Season with 1 tsp fish sauce and 1 tsp sugar for jar paste (3 tsp of each plus 1/8 tsp salt for homemade paste).",
+   "Add kaffir lime leaves. Mix then bring to simmer.",
+   "Add chicken, stir then lower heat to medium so it's bubbling gently. Cook 7 minutes.",
+   "Add eggplants, cook 5 minutes until soft.",
+   "Taste sauce. Add fish sauce or salt for more saltiness, sugar for sweetness.",
+   "Add snow peas, cook 2 minutes until a bit softened, then stir through basil and lime juice. The sauce should still be on the thin side; don't keep simmering or it will darken.",
+   "Serve curry over jasmine rice with garnishes of choice."
+  ],
+  "image": "https://www.recipetineats.com/wp-content/uploads/2019/02/Thai-Green-Curry_5.jpg",
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/thai-green-curry/"
+  },
+  "author": "Nagi"
  },
  {
   "id": "thai-red-curry-chicken",
@@ -3902,6 +5749,163 @@
    "url": "https://www.recipetineats.com/thai-red-curry-with-chicken/"
   },
   "author": "Nagi"
+ },
+ {
+  "id": "tomahawk-steak",
+  "name": "Tomahawk Steak (Reverse Sear)",
+  "category": "Beef",
+  "tags": [
+   "BBQ",
+   "Special"
+  ],
+  "serves": 3,
+  "minutes": 80,
+  "ingredients": [
+   {
+    "name": "tomahawk steak",
+    "qty": 1,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "dijon mustard",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
+  ],
+  "method": [
+   "De-chill - Take the steak out of the fridge 1 hour prior to cooking. Remove from packaging and pat the surface dry. (Do not salt).",
+   "Preheat the oven to 140°C/285°F (120°C fan-forced).",
+   "Season - Sprinkle the steak meat with salt and pepper, then use your hands to rub it in.",
+   "Slow(ish) roast - Put the steak on a rack and set it on a baking tray. Bake for 40 to 45 minutes, or until the internal temperature is 50°C/122°F (for medium rare).",
+   "Rest - Take the tray out of the oven and leave the steak on the counter for 10 minutes.",
+   "Preheat the BBQ on high until it's screaming hot.",
+   "Oil - Drizzle the oil on the steak and lightly pat to spread (don't rub off the salt).",
+   "Turn the BBQ down to low or medium-low just before putting the tomahawk on.",
+   "Edges first - Using tongs, hold the steak upright and sear the edges and bone first, rotating every minute or so. Watch for flare-ups.",
+   "Steak crust - Then place the steak down and cook for 3 to 4 minutes on each side, or until the internal temperature is 55°C / 131°F.",
+   "Rest the steak on a rack for 3 minutes - the internal temperature will rise to 57°C/135°F, which is perfect medium rare.",
+   "Serve - Cut into 1 cm / 0.4\" thick slices and serve with steak sauce of choice."
+  ],
+  "notes": "Use a meat thermometer. Serve with cowboy butter, béarnaise, mushroom sauce or chimichurri.",
+  "image": "https://www.recipetineats.com/tachyon/2025/05/Tomahawk-steak-shoot-3_6-1.jpg",
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/tomahawk-steak/"
+  },
+  "author": "Nagi Maehashi"
+ },
+ {
+  "id": "turkey-burgers",
+  "name": "Turkey Burgers",
+  "category": "Other",
+  "tags": [
+   "Burgers",
+   "Quick"
+  ],
+  "serves": 4,
+  "minutes": 30,
+  "ingredients": [
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "turkey mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "worcestershire sauce",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "tomato sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "burger buns",
+    "qty": 4,
+    "aisle": "Bakery"
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "tomatoes",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "iceberg lettuce",
+    "qty": 0.25,
+    "aisle": "Produce"
+   },
+   {
+    "name": "pickles",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "red capsicum",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "yellow mustard",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
+  ],
+  "method": [
+   "Grate half the onion and mix gently with the turkey, Worcestershire sauce, ketchup, salt and pepper. Shape into 4 patties.",
+   "Heat the oil in a heavy pan or on a grill over medium-high and cook the patties for about 5 minutes a side until cooked through.",
+   "Toast the buns and build the burgers with sliced tomato, onion, lettuce, pickles, red capsicum, ketchup and mustard."
+  ],
+  "notes": "The original method is behind the NYT paywall; these steps are a guide.",
+  "image": "https://static01.nyt.com/images/2014/04/02/dining/Turkey-Burgers/Turkey-Burgers-square640.jpg",
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1016139-turkey-burgers"
+  },
+  "author": "Martha Rose Shulman"
  },
  {
   "id": "tuscan-chicken",

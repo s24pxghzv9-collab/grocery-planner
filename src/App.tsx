@@ -1,8 +1,11 @@
 import { BookOpen, CalendarDays, House, ShoppingBasket, type LucideIcon } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { AddRecipe } from './components/AddRecipe';
 import { RecipeDetail } from './components/RecipeDetail';
+import { RecipeEditor } from './components/RecipeEditor';
+import { draftFromRecipe, type EditorDraft } from './lib/recipeDraft';
 import { RecipePicker } from './components/RecipePicker';
-import { RECIPES_BY_ID, setHouseholdRecipes } from './data/recipes';
+import { RECIPES_BY_ID, isBuiltIn, setHouseholdRecipes } from './data/recipes';
 import { addDays, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
 import { buildShoppingList, type ShoppingItem } from './lib/shopping';
 import { useHouseholdState, weekShopping, type Dispatch, type SyncStatus } from './lib/store';
@@ -10,7 +13,7 @@ import { Home } from './screens/Home';
 import { Plan } from './screens/Plan';
 import { Recipes } from './screens/Recipes';
 import { ShoppingList } from './screens/ShoppingList';
-import type { AppState, DayPlan } from './types';
+import type { AppState, DayPlan, Recipe } from './types';
 
 type Tab = 'home' | 'plan' | 'list' | 'recipes';
 const TABS: { id: Tab; label: string; icon: LucideIcon }[] = [
@@ -35,14 +38,23 @@ export interface Ctx {
   listSummary: { label: string; remaining: number };
   openPicker: (day: string) => void;
   openRecipe: (id: string) => void;
+  openAdd: () => void;
   goPlan: (week: string) => void;
   goList: () => void;
   toast: (msg: string) => void;
 }
 
 function readTab(): Tab {
-  const t = location.hash.replace('#/', '') as Tab;
-  return TABS.some((x) => x.id === t) ? t : 'home';
+  const t = location.hash.replace('#/', '').split('?')[0];
+  if (t === 'add') return 'recipes';
+  return TABS.some((x) => x.id === t) ? (t as Tab) : 'home';
+}
+
+/** "#/add?url=…" (used by the iPhone share shortcut): the link to import, if any. */
+function readAddLink(): string | null {
+  const m = location.hash.match(/^#\/add(?:\?(.*))?$/);
+  if (!m) return null;
+  return new URLSearchParams(m[1] ?? '').get('url') ?? '';
 }
 
 /** Re-render when the date changes (e.g. the app is left open overnight). */
@@ -76,6 +88,9 @@ export default function App() {
   );
   const [pickerDay, setPickerDay] = useState<string | null>(null);
   const [recipeId, setRecipeId] = useState<string | null>(null);
+  // Add recipe: null = closed, '' = open with no link, otherwise a link to import.
+  const [adding, setAdding] = useState<string | null>(readAddLink);
+  const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string } | null>(null);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
@@ -86,7 +101,11 @@ export default function App() {
   }, [state.settings.weekStartsOn]);
 
   useEffect(() => {
-    const onHash = () => setTabState(readTab());
+    const onHash = () => {
+      setTabState(readTab());
+      const link = readAddLink();
+      if (link !== null) setAdding(link);
+    };
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
@@ -126,6 +145,27 @@ export default function App() {
     if (!next) toast('That’s the week sorted');
   };
 
+  const closeAdd = () => {
+    setAdding(null);
+    if (location.hash.startsWith('#/add')) history.replaceState(null, '', '#/recipes');
+  };
+
+  const saveRecipe = (recipe: Recipe) => {
+    dispatch({ t: 'recipe', recipe });
+    setEditor(null);
+    setTab('recipes');
+    setRecipeId(recipe.id);
+    toast('Saved to your recipes');
+  };
+
+  const deleteRecipe = (id: string) => {
+    const r = RECIPES_BY_ID[id];
+    if (!confirm(`Delete "${r?.name ?? 'this recipe'}"? Planned dinners using it will show as removed.`)) return;
+    dispatch({ t: 'recipe', recipe: { id, deleted: true } as Recipe });
+    setEditor(null);
+    toast(isBuiltIn(id) ? 'Recipe removed' : 'Recipe deleted');
+  };
+
   const ctx: Ctx = {
     state,
     dispatch,
@@ -140,6 +180,7 @@ export default function App() {
     listSummary,
     openPicker: setPickerDay,
     openRecipe: setRecipeId,
+    openAdd: () => setAdding(''),
     goPlan: (w) => {
       setPlanWeek(w);
       setListWeek(w);
@@ -172,7 +213,34 @@ export default function App() {
         onPick={onPick}
         onClose={() => setPickerDay(null)}
       />
-      <RecipeDetail recipeId={recipeId} onClose={() => setRecipeId(null)} />
+      <RecipeDetail
+        recipeId={recipeId}
+        onClose={() => setRecipeId(null)}
+        onEdit={(r) => {
+          setRecipeId(null);
+          setEditor({ draft: draftFromRecipe(r), heading: 'Edit recipe' });
+        }}
+      />
+      {adding !== null && (
+        <AddRecipe
+          initialUrl={adding || undefined}
+          onClose={closeAdd}
+          onDraft={(draft) => {
+            closeAdd();
+            setEditor({ draft, heading: 'Check the recipe' });
+          }}
+        />
+      )}
+      {editor && (
+        <RecipeEditor
+          key={editor.draft.id ?? 'new'}
+          draft={editor.draft}
+          heading={editor.heading}
+          onClose={() => setEditor(null)}
+          onSave={saveRecipe}
+          onDelete={editor.draft.id ? () => deleteRecipe(editor.draft.id!) : undefined}
+        />
+      )}
       {toastMsg && <div className="toast">{toastMsg}</div>}
     </div>
   );

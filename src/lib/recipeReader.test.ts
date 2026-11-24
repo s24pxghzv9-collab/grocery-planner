@@ -54,6 +54,34 @@ describe('guessCategory', () => {
 });
 
 describe('parseRecipeText', () => {
+  it('reads text recognised from a wrapped Instagram screenshot', () => {
+    const d = parseRecipeText(`cupofliv One-Pan Creamy Gnocchi with
+Chorizo § Ready in 25 minutes! Serves 4
+INGREDIENTS
+
+* 500g potato gnocchi
+
+* 200g chorizo, sliced
+
+* 3 cloves garlic, minced
+
+METHOD
+
+1. Fry the chorizo until crispy, then add the
+onion and garlic.
+
+2. Stir in the tomato paste, then the cream,
+and simmer.
+
+#pasta #easydinner Comment GNOCCHI for
+the link!`);
+    expect(d.name).toBe('One-Pan Creamy Gnocchi with Chorizo');
+    expect(d.serves).toBe(4);
+    expect(d.ingredients.map((i) => i.name)).toEqual(['potato gnocchi', 'chorizo', 'garlic']);
+    expect(d.ingredients[0].aisle).toBe('Pantry');
+    expect(d.method).toEqual(['Fry the chorizo until crispy, then add the onion and garlic.', 'Stir in the tomato paste, then the cream, and simmer.']);
+  });
+
   it('splits a caption into title, ingredients and method', () => {
     const d = parseRecipeText(`Creamy Tuscan Gnocchi 🍝
 Serves 4 | 25 mins

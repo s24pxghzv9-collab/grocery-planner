@@ -1470,3 +1470,210 @@ ol {
     transition: none !important;
   }
 }
+
+/* ---------- Add recipe & editor ---------- */
+
+.add-btn {
+  margin-top: 6px;
+}
+.add-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  color: var(--ink);
+}
+.add-option > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.add-option:active {
+  background: var(--sunk);
+}
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.busy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 40px 10px;
+}
+.busy .bar {
+  width: 70%;
+  flex: none;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.form-error {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field > span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.input-title {
+  font-family: var(--serif);
+  font-size: 21px;
+}
+.textarea {
+  padding: 12px 14px;
+  min-height: 0;
+  line-height: 1.5;
+  resize: vertical;
+}
+.filters.wrap {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+.hint-new {
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.editor-photo {
+  position: relative;
+}
+.editor-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+.photo-add {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  border: 1.5px dashed var(--line-strong);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--ink-2);
+  background: color-mix(in srgb, var(--cat, var(--muted)) 8%, var(--surface));
+}
+.photo-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ing-edit {
+  border-top: 1px solid var(--line);
+}
+.ing-edit li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ing-edit li.is-new {
+  box-shadow: inset 3px 0 0 var(--accent);
+  padding-left: 10px;
+}
+.ing-edit-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ing-edit .input {
+  min-height: 42px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.ing-amount {
+  width: 92px;
+  flex-shrink: 0;
+}
+.ing-name {
+  flex: 1;
+  min-width: 0;
+}
+.ing-edit-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.ing-edit-meta select {
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink-2);
+  background: var(--sunk);
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+.check-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ing-raw {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+.danger-text {
+  color: var(--accent);
+}
+.edit-link {
+  margin-left: auto;
+  padding: 0;
+  font-size: 15px;
+}

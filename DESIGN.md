@@ -100,7 +100,6 @@ The look is a printed kitchen menu or cookbook rather than an app template.
 
 ## Later (parked, not in v1)
 
-- Add, edit and import recipes inside the app (paste a URL or a photo)
 - Scale servings per meal (e.g. double for guests)
 - Lunches and breakfasts, not just dinner
 - Favourites, "haven't had in a while" suggestions, and random fill for empty days

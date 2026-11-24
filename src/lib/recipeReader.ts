@@ -194,7 +194,7 @@ const AISLE_HINTS: [RegExp, Aisle][] = [
   [/\b(bread|roll|bun|tortilla|wrap|pita|naan|baguette|sourdough)/, 'Bakery'],
   [/\b(frozen|peas|edamame|pastry)/, 'Frozen'],
   [/\b(sauce|paste|seasoning|spice|powder|dried|ground|flakes|vinegar|mustard|stock cube)/, 'Spices & Sauces'],
-  [/\b(pasta|noodle|rice|flour|sugar|tin|can|beans|lentils|chickpeas|oil|stock|broth|nuts?|oats|crumbs|spaghetti|penne|rigatoni|orzo|couscous|quinoa)/, 'Pantry'],
+  [/\b(gnocchi|ravioli|tortellini|agnolotti|lasagne|pasta|noodle|rice|flour|sugar|tin|can|beans|lentils|chickpeas|oil|stock|broth|nuts?|oats|crumbs|spaghetti|penne|rigatoni|orzo|couscous|quinoa)/, 'Pantry'],
   [/\b(lettuce|tomato|onion|garlic|ginger|carrot|potato|pumpkin|zucchini|cucumber|capsicum|pepper|chilli|herb|basil|mint|parsley|coriander|dill|thyme|rosemary|lemon|lime|apple|banana|avocado|mushroom|spinach|kale|cabbage|broccoli|cauliflower|celery|leek|corn|beans|bok choy|eggplant|sweet potato)/, 'Produce'],
 ];
 
@@ -351,12 +351,44 @@ function junk(line: string): boolean {
   );
 }
 
+const BULLET_START = /^\s*([-–•*·▢◦✓✔︎☐□○●>]|\d+[.)]|step\s*\d+)/i;
+const ENDS_SENTENCE = /[.!?:)]\s*$/;
+
+/** Screenshots and narrow captions wrap sentences over several lines: join them back up. */
+function joinWrapped(lines: string[]): string[] {
+  const out: string[] = [];
+  for (const line of lines) {
+    const prev = out[out.length - 1];
+    const plain = stripDecoration(line);
+    const isBlock = ING_HEADER.test(plain) || METHOD_HEADER.test(plain) || BULLET_START.test(line) || QTY_RE.test(plain);
+    const prevPlain = prev !== undefined ? stripDecoration(prev) : '';
+    const prevIsHeader = ING_HEADER.test(prevPlain) || METHOD_HEADER.test(prevPlain);
+    // A bulleted ingredient line never continues onto the next line (numbered steps can).
+    const prevIsIngredient = prev !== undefined && BULLET_START.test(prev) && !STEP_PREFIX.test(prev) && looksLikeIngredient(prev);
+    if (prev !== undefined && !isBlock && !prevIsHeader && !prevIsIngredient && !ENDS_SENTENCE.test(prev) && !looksLikeIngredient(line)) {
+      out[out.length - 1] = `${prev} ${line}`;
+    } else out.push(line);
+  }
+  return out;
+}
+
+/** "cupofliv One-Pan Creamy Gnocchi with Chorizo § Ready in 25 minutes!" -> "One-Pan Creamy Gnocchi with Chorizo" */
+function titleFrom(line: string): string {
+  let t = stripDecoration(line).replace(/[#*_]/g, '');
+  // Leading Instagram username (lowercase handle before a capitalised title)
+  t = t.replace(/^@?[a-z0-9._]{3,30}\s+(?=[A-Z0-9])/, '');
+  t = t.split(/[.!?§|•]|\s[-–—]\s|\b(?:ready in|serves|recipe below|full recipe)\b/i)[0];
+  return t.replace(/\s+/g, ' ').trim().slice(0, 80);
+}
+
 export function parseRecipeText(text: string): RecipeDraft {
-  const lines = text
-    .replace(/\r/g, '')
-    .split('\n')
-    .map((l) => l.replace(/\s+/g, ' ').trim())
-    .filter((l) => l && !junk(l));
+  const lines = joinWrapped(
+    text
+      .replace(/\r/g, '')
+      .split('\n')
+      .map((l) => l.replace(/\s+/g, ' ').trim())
+      .filter(Boolean),
+  ).filter((l) => !junk(l));
 
   let name = '';
   const ingredientLines: string[] = [];
@@ -375,9 +407,9 @@ export function parseRecipeText(text: string): RecipeDraft {
     }
     if (SUB_HEADER.test(plain) && plain.length < 40) continue;
 
-    if (!name && mode === 'unknown' && !looksLikeIngredient(line) && plain.length <= 80 && !STEP_PREFIX.test(line)) {
-      name = plain.replace(/[#*_]/g, '').trim();
-      continue;
+    if (!name && mode === 'unknown' && !looksLikeIngredient(line) && !STEP_PREFIX.test(line)) {
+      name = titleFrom(line);
+      if (name) continue;
     }
 
     const isStep = STEP_PREFIX.test(line) || plain.length > 90 || (mode === 'method' && !looksLikeIngredient(line));
@@ -415,4 +447,22 @@ export function slugify(name: string, taken: (id: string) => boolean): string {
   let id = base;
   for (let n = 2; taken(id); n++) id = `${base}-${n}`;
   return id;
+}
+
+// ---------- Helpers for the review screen ----------
+
+/** "1½ tbsp" / "250 g" / "2" typed in the amount box -> qty and unit. */
+export function parseAmount(text: string): { qty?: number; unit?: string } {
+  const t = text.trim();
+  if (!t) return {};
+  const [first] = parseIngredientLine(`${t} item`);
+  return first ? { qty: first.qty, unit: first.unit } : {};
+}
+
+/** The household's name, aisle and staple flag for a name typed on the review screen. */
+export function describeIngredient(typed: string): { name: string; aisle: Aisle; staple: boolean; known: boolean } {
+  const cleaned = typed.trim().toLowerCase();
+  const known = lookup(cleaned);
+  if (known) return { ...fromDict(known), known: true };
+  return { name: cleaned, aisle: guessAisle(cleaned), staple: false, known: false };
 }

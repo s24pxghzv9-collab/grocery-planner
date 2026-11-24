@@ -82,7 +82,7 @@ describe('household sync API', () => {
       ingredients: [{ name: 'red lentils', qty: 1, unit: 'cup', aisle: 'Pantry' as const }],
       method: ['Simmer.'],
       source: { name: 'Nan' },
-      addedAt: 1,
+      addedAt: Date.now(),
     };
     expect((await post(store, [{ t: 'recipe', recipe }])).status).toBe(200);
     expect((await get(store)).state.recipes['nan-dal']).toEqual(recipe);

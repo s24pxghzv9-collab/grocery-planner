@@ -1,12 +1,21 @@
-import { Clock, ExternalLink, Users } from 'lucide-react';
+import { Clock, ExternalLink, Pencil, Users } from 'lucide-react';
 import { RECIPES_BY_ID } from '../data/recipes';
+import type { Recipe } from '../types';
 import { formatQty } from '../lib/shopping';
 import { formatMinutes } from '../lib/plan';
 import { catClass } from './Marker';
 import { RecipeThumb } from './RecipeThumb';
 import { Sheet } from './Sheet';
 
-export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; onClose: () => void }) {
+export function RecipeDetail({
+  recipeId,
+  onClose,
+  onEdit,
+}: {
+  recipeId: string | null;
+  onClose: () => void;
+  onEdit: (recipe: Recipe) => void;
+}) {
   const recipe = recipeId ? RECIPES_BY_ID[recipeId] : null;
   if (!recipe) return null;
 
@@ -36,6 +45,9 @@ export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; o
           </span>
         )}
         <span className="muted">{recipe.ingredients.length} ingredients</span>
+        <button className="link edit-link" onClick={() => onEdit(recipe)}>
+          <Pencil size={14} /> Edit
+        </button>
       </div>
 
       <section>

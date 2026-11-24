@@ -22,7 +22,30 @@ node scripts/build-recipes.mjs
 
 That regenerates `src/data/imported-recipes.json` and warns about ingredients filed under
 different aisles in different recipes. The conventions are in `data/deglaze/README.md`.
-An in-app "Add recipe" (paste a link or add screenshots) is the next planned feature.
+### Adding recipes in the app
+
+Recipes → **Add**:
+
+- **Paste a link**: recipe websites are read from their built-in recipe data (`api/import.ts`).
+  For Instagram it tries the post's public embed page for the caption; if Instagram won't share it,
+  the app suggests screenshots instead.
+- **From screenshots**: text is read on the phone with Tesseract (free, nothing leaves the phone;
+  engine files are served from `public/ocr`, copied at build time). Dark-mode screenshots are inverted first.
+- **Type or paste it**: family recipes, or text copied from anywhere.
+
+Every path ends on a review screen. Ingredients are matched to names the household already uses
+(`src/lib/recipeReader.ts`, using the ingredient dictionary built from the imports), with the aisle
+and "in the cupboard" flag filled in. New ingredients are marked so their aisle can be checked.
+Saved recipes sync between phones; any recipe, including the imported ones, can be edited or deleted.
+
+**Optional iPhone share shortcut** ("Add to Dinners" in the Share menu):
+1. Shortcuts app → **+** → name it "Add to Dinners".
+2. Tap the **i** → turn on **Show in Share Sheet**, accept **URLs** (and Safari web pages).
+3. Add the action **URL Encode** (input: Shortcut Input).
+4. Add **Open URLs** with `https://<your app address>/#/add?url=` followed by the URL Encode result.
+
+The shortcut opens the app's Add screen in Safari with the link already importing. iPhone won't let a
+shortcut open the home-screen app directly, but recipes saved in Safari sync to it straight away.
 
 ## Development
 

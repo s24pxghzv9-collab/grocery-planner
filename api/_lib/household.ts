@@ -63,7 +63,8 @@ function validRecipe(r: unknown): r is Recipe {
     isStr(o.name, 150) &&
     CATEGORIES.includes(o.category as string) &&
     Array.isArray(o.tags) && o.tags.length <= 12 && o.tags.every((t) => isStr(t, 40)) &&
-    optNum(o.serves) && optNum(o.minutes) && optNum(o.addedAt) &&
+    optNum(o.serves) && optNum(o.minutes) &&
+    (o.addedAt === undefined || (typeof o.addedAt === 'number' && Number.isFinite(o.addedAt) && o.addedAt > 0)) &&
     Array.isArray(o.ingredients) && o.ingredients.length <= 80 &&
     o.ingredients.every((i) => {
       if (!i || typeof i !== 'object') return false;
@@ -73,7 +74,10 @@ function validRecipe(r: unknown): r is Recipe {
     }) &&
     (o.method === undefined || (Array.isArray(o.method) && o.method.length <= 60 && o.method.every((m) => isStr(m, 3000)))) &&
     optStr(o.notes, 3000) && optStr(o.author, 150) &&
-    (o.image === undefined || (typeof o.image === 'string' && o.image.length <= 2500 && /^(https:\/\/|\/recipe-photos\/)/.test(o.image))) &&
+    (o.image === undefined ||
+      (typeof o.image === 'string' &&
+        ((o.image.length <= 2500 && /^(https:\/\/|\/recipe-photos\/)/.test(o.image)) ||
+          (o.image.length <= 250_000 && /^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(o.image))))) &&
     (src === undefined || (!!src && isStr(src.name, 100) && optStr(src.url, 2500)))
   );
 }

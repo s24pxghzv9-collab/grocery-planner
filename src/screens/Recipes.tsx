@@ -1,4 +1,4 @@
-import { LayoutGrid, List, Search } from 'lucide-react';
+import { LayoutGrid, List, Plus, Search } from 'lucide-react';
 import { useState } from 'react';
 import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { catClass } from '../components/Marker';
@@ -35,6 +35,9 @@ export function Recipes({ ctx }: { ctx: Ctx }) {
         <div>
           <h1 className="title-lg">Recipes</h1>
         </div>
+        <button className="btn btn-primary btn-sm add-btn" onClick={ctx.openAdd}>
+          <Plus size={18} /> Add
+        </button>
       </header>
 
       <div className="search">

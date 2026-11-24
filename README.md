@@ -34,12 +34,14 @@ Everyone with the link shares one household plan and shopping list. There are no
 Edits show instantly on your own phone, are saved there if you have no signal, and
 sync to the other phone within a few seconds.
 
-Sync needs a small free database, set up once in Vercel:
+Sync needs a Redis database from Upstash, connected once in Vercel:
 
-1. Open the project in Vercel, go to the **Storage** tab, and click **Create Database**.
-2. Choose **Upstash for Redis** (from the Marketplace). The free plan is plenty.
-3. Connect it to this project with all environments ticked, and accept the defaults.
-4. Go to **Deployments**, then **Redeploy** the latest one so it picks up the new settings.
+1. Open the project in Vercel, go to the **Storage** tab, and either **Create Database → Upstash for Redis**
+   (Free plan) or **Connect** an existing Upstash database. One free database can be shared with other
+   apps: this app keeps its data under keys starting with `dinner-planner:`.
+2. Tick Production and Preview. The custom variable prefix doesn't matter, because the app finds
+   `KV_REST_API_URL` / `KV_REST_API_TOKEN` with or without a prefix, or `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`.
+3. Redeploy (or push a commit), because new settings only apply to new deployments.
 
 Until that's done, the app still works but saves on each phone separately. The app shows
 "This phone only" at the top of Home when it isn't syncing. Anything planned before sync

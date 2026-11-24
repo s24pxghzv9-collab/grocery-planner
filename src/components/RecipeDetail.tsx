@@ -1,6 +1,7 @@
 import { Clock, ExternalLink, Users } from 'lucide-react';
 import { RECIPES_BY_ID } from '../data/recipes';
 import { formatQty } from '../lib/shopping';
+import { formatMinutes } from '../lib/plan';
 import { catClass } from './Marker';
 import { RecipeThumb } from './RecipeThumb';
 import { Sheet } from './Sheet';
@@ -26,7 +27,7 @@ export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; o
       <div className="recipe-facts">
         {recipe.minutes && (
           <span>
-            <Clock size={16} /> {recipe.minutes} min
+            <Clock size={16} /> {formatMinutes(recipe.minutes)}
           </span>
         )}
         {recipe.serves && (

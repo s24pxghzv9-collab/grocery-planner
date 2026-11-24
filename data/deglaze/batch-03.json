@@ -4,25 +4,82 @@
   "id": "pasta-pumpkin-brown-butter",
   "name": "Pasta with Pumpkin Brown Butter Sauce",
   "category": "Vegetarian",
-  "tags": ["Pasta", "Quick"],
+  "tags": [
+   "Pasta",
+   "Quick"
+  ],
   "minutes": 15,
   "serves": 4,
-  "source": { "name": "Food & Wine", "url": "https://www.foodandwine.com/recipes/pasta-pumpkin-brown-butter-sauce" },
+  "source": {
+   "name": "Food & Wine",
+   "url": "https://www.foodandwine.com/recipes/pasta-pumpkin-brown-butter-sauce"
+  },
   "author": "Kelsey Jane Youngman",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cuZm9vZGFuZHdpbmUuY29tL3RobWIvQzZFclI5b0VidVRKeFlTRUp4bXh0U2ptbWZBPS8xNTAweDAvZmlsdGVyczpub191cHNjYWxlKCk6bWF4X2J5dGVzKDE1MDAwMCk6c3RyaXBfaWNjKCkvcGFzdGEtd2l0aC1wdW1wa2luLWJyb3duLWJ1dHRlci1zYXVjZS1GVC1NQUcxMDE4XzAtNDI4OTc4MzJmNjEzNDM2N2JiZWQ5YzdmMGZmM2IwN2EuanBn/w288?h=XuOuQRHc6e2Ydo-I3p8IW6mRZpP--Ej0ikRsK5kAnGE",
+  "photo": "/recipe-photos/pasta-pumpkin-brown-butter.jpg",
   "raw": [
-   { "items": ["1 pound fresh pasta, or any preferred fresh or dried pasta", "8 tablespoons unsalted butter", "Pinch crushed red pepper flakes", "1/4 cup plus 2 tablespoons minced shallots", "12 sage leaves, roughly chopped", "Kosher salt", "Freshly ground black pepper", "3/4 cup pumpkin butter", "Freshly grated Parmigiano-Reggiano, for garnish"] }
+   {
+    "items": [
+     "1 pound fresh pasta, or any preferred fresh or dried pasta",
+     "8 tablespoons unsalted butter",
+     "Pinch crushed red pepper flakes",
+     "1/4 cup plus 2 tablespoons minced shallots",
+     "12 sage leaves, roughly chopped",
+     "Kosher salt",
+     "Freshly ground black pepper",
+     "3/4 cup pumpkin butter",
+     "Freshly grated Parmigiano-Reggiano, for garnish"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "fresh pasta", "qty": 500, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "butter", "qty": 115, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "chilli flakes", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "shallots", "qty": 2, "aisle": "Produce" },
-   { "name": "sage", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "pumpkin butter", "qty": 0.75, "unit": "cup", "aisle": "Pantry" },
-   { "name": "parmesan", "aisle": "Dairy & Eggs" }
+   {
+    "name": "fresh pasta",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "butter",
+    "qty": 115,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "chilli flakes",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "sage",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "pumpkin butter",
+    "qty": 0.75,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "parmesan",
+    "aisle": "Dairy & Eggs"
+   }
   ],
   "method": [
    "In a large, deep skillet of simmering salted water, cook the pasta until al dente. Drain, reserving 1 cup of pasta cooking water.",
@@ -34,32 +91,133 @@
   "id": "vodka-orzo",
   "name": "Vodka Orzo",
   "category": "Vegetarian",
-  "tags": ["Pasta", "One pot"],
+  "tags": [
+   "Pasta",
+   "One pot"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DT9sjIkEt1P/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DT9sjIkEt1P/"
+  },
   "author": "What would Kayla cook?",
   "notes": "The original has no quantities; amounts are a guide for 4. Uses chicken stock (swap for vegetable stock to keep it vegetarian).",
   "raw": [
-   { "items": ["Olive oil", "Butter", "Shallot", "Garlic", "Dried chili flakes", "Oregano", "Tomato paste", "Vodka", "Orzo", "Chicken stock", "Cream", "Parmesan cheese", "Salt", "Pepper", "Buffalo mozzarella", "Fresh basil", "Extra virgin olive oil"] }
+   {
+    "items": [
+     "Olive oil",
+     "Butter",
+     "Shallot",
+     "Garlic",
+     "Dried chili flakes",
+     "Oregano",
+     "Tomato paste",
+     "Vodka",
+     "Orzo",
+     "Chicken stock",
+     "Cream",
+     "Parmesan cheese",
+     "Salt",
+     "Pepper",
+     "Buffalo mozzarella",
+     "Fresh basil",
+     "Extra virgin olive oil"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "olive oil", "aisle": "Pantry", "staple": true },
-   { "name": "butter", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "shallots", "qty": 2, "aisle": "Produce" },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "chilli flakes", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "dried oregano", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "tomato paste", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "vodka", "qty": 60, "unit": "ml", "aisle": "Other" },
-   { "name": "orzo", "qty": 2, "unit": "cup", "aisle": "Pantry" },
-   { "name": "chicken stock", "qty": 1, "unit": "L", "aisle": "Pantry", "staple": true },
-   { "name": "thickened cream", "qty": 150, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 50, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "buffalo mozzarella", "qty": 1, "aisle": "Dairy & Eggs" },
-   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli flakes",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "dried oregano",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "tomato paste",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vodka",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "orzo",
+    "qty": 2,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 1,
+    "unit": "L",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "thickened cream",
+    "qty": 150,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 50,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "buffalo mozzarella",
+    "qty": 1,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Sauté shallot and garlic in olive oil and butter.",
@@ -71,44 +229,187 @@
    "Add cream and Parmesan cheese.",
    "Season with salt and pepper and mix.",
    "Top with buffalo mozzarella, fresh basil, and a drizzle of extra virgin olive oil."
-  ]
+  ],
+  "photo": "/recipe-photos/vodka-orzo.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:jHPWt7KeVPhVqV86",
   "id": "teriyaki-beef-meatball-bowls",
   "name": "Air Fryer Teriyaki Beef Meatball Bowls",
   "category": "Beef",
-  "tags": ["Bowl", "Rice", "Air fryer", "Meatballs"],
+  "tags": [
+   "Bowl",
+   "Rice",
+   "Air fryer",
+   "Meatballs"
+  ],
   "minutes": 35,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DTQ_wxlj2_S/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DTQ_wxlj2_S/"
+  },
   "author": "Natalie Fardone",
   "raw": [
-   { "section": "Teriyaki Meatballs", "items": ["1 lb lean ground beef (I use 96/4)", "1/3 cup panko", "1/4 cup green onions", "5 minced garlic cloves", "1 egg", "2 tsp ginger paste", "2 tbsp @kikkomanusa teriyaki marinade", "1 tsp rice vinegar (I ended up adding 1/2 tbsp)", "onion powder", "garlic powder", "chili powder", "black pepper"] },
-   { "section": "Chili Crisp Cucumber Salad", "items": ["4-5 mini cucumbers, sliced", "1 tbsp chili crisp", "1/2 tbsp rice vinegar", "1 tbsp low sodium soy sauce", "2 tbsp green onions", "sesame seeds"] },
-   { "section": "Assemble", "items": ["1 cup cooked jasmine rice", "1 serving teriyaki meatballs", "cucumber salad", "1/2 cup shredded iceberg lettuce", "1 cup steamed broccoli", "1/4 cup steamed edamame", "1 tbsp teriyaki sauce", "green onions", "sesame seeds"] }
+   {
+    "section": "Teriyaki Meatballs",
+    "items": [
+     "1 lb lean ground beef (I use 96/4)",
+     "1/3 cup panko",
+     "1/4 cup green onions",
+     "5 minced garlic cloves",
+     "1 egg",
+     "2 tsp ginger paste",
+     "2 tbsp @kikkomanusa teriyaki marinade",
+     "1 tsp rice vinegar (I ended up adding 1/2 tbsp)",
+     "onion powder",
+     "garlic powder",
+     "chili powder",
+     "black pepper"
+    ]
+   },
+   {
+    "section": "Chili Crisp Cucumber Salad",
+    "items": [
+     "4-5 mini cucumbers, sliced",
+     "1 tbsp chili crisp",
+     "1/2 tbsp rice vinegar",
+     "1 tbsp low sodium soy sauce",
+     "2 tbsp green onions",
+     "sesame seeds"
+    ]
+   },
+   {
+    "section": "Assemble",
+    "items": [
+     "1 cup cooked jasmine rice",
+     "1 serving teriyaki meatballs",
+     "cucumber salad",
+     "1/2 cup shredded iceberg lettuce",
+     "1 cup steamed broccoli",
+     "1/4 cup steamed edamame",
+     "1 tbsp teriyaki sauce",
+     "green onions",
+     "sesame seeds"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "beef mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "panko breadcrumbs", "qty": 0.33, "unit": "cup", "aisle": "Pantry" },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "garlic", "qty": 5, "unit": "clove", "aisle": "Produce" },
-   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
-   { "name": "ginger", "qty": 2, "unit": "tsp", "aisle": "Produce" },
-   { "name": "teriyaki sauce", "qty": 6, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "rice vinegar", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "onion powder", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "garlic powder", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "chilli powder", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "cucumber", "qty": 2, "aisle": "Produce" },
-   { "name": "chilli crisp", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "soy sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sesame seeds", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rice", "qty": 2, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "iceberg lettuce", "qty": 0.5, "aisle": "Produce" },
-   { "name": "broccoli", "qty": 1, "unit": "head", "aisle": "Produce" },
-   { "name": "edamame", "qty": 1, "unit": "cup", "aisle": "Frozen" }
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "panko breadcrumbs",
+    "qty": 0.33,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 5,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "eggs",
+    "qty": 1,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "teriyaki sauce",
+    "qty": 6,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "onion powder",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "garlic powder",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "chilli powder",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cucumber",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli crisp",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame seeds",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "qty": 2,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "iceberg lettuce",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "broccoli",
+    "qty": 1,
+    "unit": "head",
+    "aisle": "Produce"
+   },
+   {
+    "name": "edamame",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Frozen"
+   }
   ],
   "method": [
    "Mix the meatball ingredients and roll into 16 meatballs (4 servings).",
@@ -116,38 +417,143 @@
    "Make the cucumber salad: toss the sliced cucumbers with chilli crisp, rice vinegar, soy sauce, green onions and sesame seeds.",
    "Assemble each bowl with 1 cup cooked jasmine rice, a serving of meatballs, cucumber salad, 1/2 cup shredded iceberg lettuce, 1 cup steamed broccoli and 1/4 cup steamed edamame.",
    "Top with 1 tbsp teriyaki sauce, green onions and sesame seeds."
-  ]
+  ],
+  "photo": "/recipe-photos/teriyaki-beef-meatball-bowls.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:0u5jElJnUNgBNlF7",
   "id": "sausage-tuscan-pasta",
   "name": "One-Pan Italian Sausage Tuscan Pasta",
   "category": "Pork",
-  "tags": ["Pasta", "One pan"],
+  "tags": [
+   "Pasta",
+   "One pan"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DTWTF-Aj-um/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DTWTF-Aj-um/"
+  },
   "author": "Cup of Liv",
   "raw": [
-   { "items": ["10 oz Farfalle pasta (or pasta of your choice)", "5 Italian sausage links (16-19 oz), casings removed", "2 handfuls baby spinach", "2 shallots, finely diced", "3 cloves garlic, minced", "2 tbsp Tomato paste", "1/3 cup Julienned sun-dried tomatoes + 2 tsp oil from the jar", "1 tbsp Calabrian chili (adjust to taste)", "1 tsp smoked paprika", "1 tsp garlic powder", "1 tsp Italian seasoning", "1 cup freshly grated Parmesan", "1/2 cup heavy cream", "Chopped parsley, for garnish", "2 burrata balls, torn into small pieces, optional"] }
+   {
+    "items": [
+     "10 oz Farfalle pasta (or pasta of your choice)",
+     "5 Italian sausage links (16-19 oz), casings removed",
+     "2 handfuls baby spinach",
+     "2 shallots, finely diced",
+     "3 cloves garlic, minced",
+     "2 tbsp Tomato paste",
+     "1/3 cup Julienned sun-dried tomatoes + 2 tsp oil from the jar",
+     "1 tbsp Calabrian chili (adjust to taste)",
+     "1 tsp smoked paprika",
+     "1 tsp garlic powder",
+     "1 tsp Italian seasoning",
+     "1 cup freshly grated Parmesan",
+     "1/2 cup heavy cream",
+     "Chopped parsley, for garnish",
+     "2 burrata balls, torn into small pieces, optional"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "farfalle", "qty": 300, "unit": "g", "aisle": "Pantry" },
-   { "name": "italian sausages", "qty": 5, "aisle": "Meat & Seafood" },
-   { "name": "baby spinach", "qty": 60, "unit": "g", "aisle": "Produce" },
-   { "name": "shallots", "qty": 2, "aisle": "Produce" },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "tomato paste", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "sun-dried tomatoes", "qty": 1, "unit": "jar", "aisle": "Pantry" },
-   { "name": "calabrian chilli paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "smoked paprika", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "garlic powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "mixed herbs", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "parmesan", "qty": 100, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "thickened cream", "qty": 125, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "burrata", "qty": 2, "aisle": "Dairy & Eggs" },
-   { "name": "olive oil", "aisle": "Pantry", "staple": true }
+   {
+    "name": "farfalle",
+    "qty": 300,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "italian sausages",
+    "qty": 5,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "baby spinach",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "tomato paste",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "sun-dried tomatoes",
+    "qty": 1,
+    "unit": "jar",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "calabrian chilli paste",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "smoked paprika",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "garlic powder",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "mixed herbs",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "parmesan",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "thickened cream",
+    "qty": 125,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "burrata",
+    "qty": 2,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Cook the pasta in salted water, reserving some pasta water.",
@@ -160,32 +566,96 @@
    "Add baby spinach and cooked pasta to the sauce, tossing to coat.",
    "Garnish with chopped parsley.",
    "Add torn pieces of burrata, if using, before serving."
-  ]
+  ],
+  "photo": "/recipe-photos/sausage-tuscan-pasta.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:JpaLA1Va_N3p8rhF",
   "id": "mcchicken-smash-tacos",
   "name": "High Protein McChicken Smash Tacos",
   "category": "Chicken",
-  "tags": ["Tacos", "Quick"],
+  "tags": [
+   "Tacos",
+   "Quick"
+  ],
   "minutes": 20,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DPBWF-jDEQV/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DPBWF-jDEQV/"
+  },
   "author": "Torin Redpath",
   "raw": [
-   { "section": "For Smash Tacos", "items": ["500g ground chicken", "2 tsp garlic powder", "Salt and black pepper, to taste", "8 small flour tortillas (I used 4 medium)", "1/2 cup breadcrumbs", "1 cup shredded iceberg lettuce"] },
-   { "section": "For McChicken Sauce", "items": ["1/4 cup light mayonnaise", "1/4 cup miracle whip (I didn't use this, still tastes insane)"] }
+   {
+    "section": "For Smash Tacos",
+    "items": [
+     "500g ground chicken",
+     "2 tsp garlic powder",
+     "Salt and black pepper, to taste",
+     "8 small flour tortillas (I used 4 medium)",
+     "1/2 cup breadcrumbs",
+     "1 cup shredded iceberg lettuce"
+    ]
+   },
+   {
+    "section": "For McChicken Sauce",
+    "items": [
+     "1/4 cup light mayonnaise",
+     "1/4 cup miracle whip (I didn't use this, still tastes insane)"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "chicken mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "garlic powder", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "small flour tortillas", "qty": 8, "aisle": "Bakery" },
-   { "name": "breadcrumbs", "qty": 0.5, "unit": "cup", "aisle": "Pantry" },
-   { "name": "iceberg lettuce", "qty": 0.5, "aisle": "Produce" },
-   { "name": "whole-egg mayonnaise", "qty": 120, "unit": "g", "aisle": "Spices & Sauces" },
-   { "name": "vegetable oil", "aisle": "Pantry", "staple": true }
+   {
+    "name": "chicken mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "garlic powder",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "small flour tortillas",
+    "qty": 8,
+    "aisle": "Bakery"
+   },
+   {
+    "name": "breadcrumbs",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "iceberg lettuce",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "whole-egg mayonnaise",
+    "qty": 120,
+    "unit": "g",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "vegetable oil",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "In a small bowl, mix together the light mayo and Miracle Whip until smooth. Set aside.",
@@ -193,107 +663,374 @@
    "Press a thin layer of seasoned chicken onto the back of each flour tortilla, making sure it covers the surface evenly. Then sprinkle on the breadcrumbs for that added crunch factor.",
    "Heat a large skillet over medium-high heat with a little avocado oil. Place the tortilla chicken-side down and cook for 3-4 minutes until the chicken is golden and fully cooked. Flip and crisp up the tortilla side for another 2-3 minutes.",
    "Spread a generous amount of McChicken sauce over the crispy chicken, top with shredded lettuce, and fold it up like a taco."
-  ]
+  ],
+  "photo": "/recipe-photos/mcchicken-smash-tacos.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:IfRkCVgeiomclClh",
   "id": "slow-cooker-creamy-pesto-chicken",
   "name": "Slow Cooker Creamy Pesto Chicken",
   "category": "Chicken",
-  "tags": ["Slow cooker", "Pasta"],
+  "tags": [
+   "Slow cooker",
+   "Pasta"
+  ],
   "minutes": 240,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DN551rNirTL/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DN551rNirTL/"
+  },
   "author": "Bored of Lunch",
   "raw": [
-   { "items": ["3-4 chicken breasts", "1 white onion, diced", "1 tbsp garlic puree", "100ml chicken stock", "4 tbsp green pesto", "150g sun-dried tomatoes", "80g frozen peas", "2 tbsp creme fraiche, reduced fat", "300g orzo, cooked", "Parmesan, to serve"] }
+   {
+    "items": [
+     "3-4 chicken breasts",
+     "1 white onion, diced",
+     "1 tbsp garlic puree",
+     "100ml chicken stock",
+     "4 tbsp green pesto",
+     "150g sun-dried tomatoes",
+     "80g frozen peas",
+     "2 tbsp creme fraiche, reduced fat",
+     "300g orzo, cooked",
+     "Parmesan, to serve"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "chicken breast fillets", "qty": 4, "aisle": "Meat & Seafood" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "chicken stock", "qty": 100, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "basil pesto", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "sun-dried tomatoes", "qty": 150, "unit": "g", "aisle": "Pantry" },
-   { "name": "frozen peas", "qty": 80, "unit": "g", "aisle": "Frozen" },
-   { "name": "crème fraîche", "qty": 2, "unit": "tbsp", "aisle": "Dairy & Eggs" },
-   { "name": "orzo", "qty": 300, "unit": "g", "aisle": "Pantry" },
-   { "name": "parmesan", "aisle": "Dairy & Eggs" }
+   {
+    "name": "chicken breast fillets",
+    "qty": 4,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 100,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "basil pesto",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "sun-dried tomatoes",
+    "qty": 150,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "frozen peas",
+    "qty": 80,
+    "unit": "g",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "crème fraîche",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "orzo",
+    "qty": 300,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "parmesan",
+    "aisle": "Dairy & Eggs"
+   }
   ],
   "method": [
    "Add your chicken, diced onion, garlic puree, chicken stock, pesto and sundried tomatoes to the slowcooker and cook on high for 3-4 hours or low for 7-8.",
    "Once ready, add your frozen peas and some creme fraiche. Give that a good stir then prepare your orzo. If the sauce is runny add cornflour.",
    "Cook your orzo as per packet instructions then serve immediately, topped with parmesan."
-  ]
+  ],
+  "photo": "/recipe-photos/slow-cooker-creamy-pesto-chicken.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:ofLl055cl1I-G45l",
   "id": "chilli-cheese-loaded-mash",
   "name": "Chilli Cheese Loaded Mash",
   "category": "Beef",
-  "tags": ["Comfort"],
+  "tags": [
+   "Comfort"
+  ],
   "minutes": 40,
   "serves": 2,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DQ9NhcIjBcT/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DQ9NhcIjBcT/"
+  },
   "author": "Kirsty Fletcher",
   "notes": "The original has no method; these steps are a guide.",
   "raw": [
-   { "items": ["250g lean 5% beef mince", "400g potato", "30g light butter", "Splash of milk", "1 brown onion", "1/2 tin kidney beans", "1 tin chopped tomatoes", "1 tbsp mild chilli powder", "1 tsp paprika", "1/2 tsp garlic powder", "Pinch of salt & pepper", "30g tomato purée", "100ml beef stock", "1 tsp olive oil", "10g grated mozzarella", "10g light cheddar cheese"] }
+   {
+    "items": [
+     "250g lean 5% beef mince",
+     "400g potato",
+     "30g light butter",
+     "Splash of milk",
+     "1 brown onion",
+     "1/2 tin kidney beans",
+     "1 tin chopped tomatoes",
+     "1 tbsp mild chilli powder",
+     "1 tsp paprika",
+     "1/2 tsp garlic powder",
+     "Pinch of salt & pepper",
+     "30g tomato purée",
+     "100ml beef stock",
+     "1 tsp olive oil",
+     "10g grated mozzarella",
+     "10g light cheddar cheese"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "beef mince", "qty": 250, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "potatoes", "qty": 400, "unit": "g", "aisle": "Produce" },
-   { "name": "butter", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "milk", "aisle": "Dairy & Eggs" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "kidney beans", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "crushed tomatoes", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "chilli powder", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "paprika", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "garlic powder", "qty": 0.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "tomato paste", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "beef stock", "qty": 100, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "olive oil", "qty": 1, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "grated mozzarella", "qty": 1, "unit": "bag", "aisle": "Dairy & Eggs" },
-   { "name": "grated cheddar", "qty": 1, "unit": "bag", "aisle": "Dairy & Eggs" }
+   {
+    "name": "beef mince",
+    "qty": 250,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "potatoes",
+    "qty": 400,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "butter",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "milk",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "kidney beans",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "crushed tomatoes",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chilli powder",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "paprika",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "garlic powder",
+    "qty": 0.5,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "tomato paste",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "beef stock",
+    "qty": 100,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "grated mozzarella",
+    "qty": 1,
+    "unit": "bag",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "grated cheddar",
+    "qty": 1,
+    "unit": "bag",
+    "aisle": "Dairy & Eggs"
+   }
   ],
   "method": [
    "Boil the potatoes until tender, then mash with the butter, a splash of milk, salt and pepper.",
    "Meanwhile, soften the diced onion in the olive oil, then brown the beef mince.",
    "Stir in the chilli powder, paprika, garlic powder and tomato purée for a minute, then add the chopped tomatoes, drained kidney beans and beef stock. Simmer for 15 minutes until thick.",
    "Spoon the mash into bowls, top with the chilli and the mozzarella and cheddar, and grill or air fry briefly to melt the cheese."
-  ]
+  ],
+  "photo": "/recipe-photos/chilli-cheese-loaded-mash.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:AhAI0hyDtt6n3ajL",
   "id": "chicken-meatballs-orzo",
   "name": "Chicken Meatballs with Orzo",
   "category": "Chicken",
-  "tags": ["Meatballs", "One pan", "Oven"],
+  "tags": [
+   "Meatballs",
+   "One pan",
+   "Oven"
+  ],
   "minutes": 45,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DSav_kGAYu-/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DSav_kGAYu-/"
+  },
   "author": "Vanya Hajnas",
   "raw": [
-   { "items": ["1 package of ground chicken", "1/2 cup Panko breadcrumbs (I actually used crushed almond flour crackers)", "1/2 cup feta crumbles", "1/2 cup chopped parsley", "2 cups orzo", "2 garlic cloves", "1 shallot", "1/2 cup heavy cream", "2 1/2 cups chicken broth", "2 cups spinach", "1 lemon", "Salt and pepper"] }
+   {
+    "items": [
+     "1 package of ground chicken",
+     "1/2 cup Panko breadcrumbs (I actually used crushed almond flour crackers)",
+     "1/2 cup feta crumbles",
+     "1/2 cup chopped parsley",
+     "2 cups orzo",
+     "2 garlic cloves",
+     "1 shallot",
+     "1/2 cup heavy cream",
+     "2 1/2 cups chicken broth",
+     "2 cups spinach",
+     "1 lemon",
+     "Salt and pepper"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "chicken mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "panko breadcrumbs", "qty": 0.5, "unit": "cup", "aisle": "Pantry" },
-   { "name": "feta", "qty": 75, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "orzo", "qty": 2, "unit": "cup", "aisle": "Pantry" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "shallots", "qty": 1, "aisle": "Produce" },
-   { "name": "thickened cream", "qty": 125, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "chicken stock", "qty": 625, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "baby spinach", "qty": 60, "unit": "g", "aisle": "Produce" },
-   { "name": "lemon", "qty": 1, "aisle": "Produce" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "olive oil", "aisle": "Pantry", "staple": true }
+   {
+    "name": "chicken mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "panko breadcrumbs",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "feta",
+    "qty": 75,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "orzo",
+    "qty": 2,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "shallots",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "thickened cream",
+    "qty": 125,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 625,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "baby spinach",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Preheat the oven to 220°C (425°F).",
@@ -302,34 +1039,117 @@
    "Heat up a splash of olive oil in a cast iron skillet and cook the meatballs until browned on all sides (keep the heat on medium and watch them as they cook fast and can burn easily).",
    "Remove the meatballs to a plate and cook the garlic and shallot for 30 sec until fragrant. Add the lemon slices and cook for another 30 sec. Add the orzo, season with salt and pepper and toast for a minute or two. Add the heavy cream, chicken broth and spinach and mix until the spinach is wilted.",
    "Nestle the meatballs in the skillet and bake for 20–25 minutes until the liquids are absorbed and the orzo is fully cooked."
-  ]
+  ],
+  "photo": "/recipe-photos/chicken-meatballs-orzo.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:XmGo0D-ScuJl1jjL",
   "id": "vodka-sauce-potato-bake",
   "name": "Vodka Sauce Potato Bake",
   "category": "Vegetarian",
-  "tags": ["Oven", "Side"],
+  "tags": [
+   "Oven",
+   "Side"
+  ],
   "minutes": 90,
   "serves": 6,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DSlhG4LktnN/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DSlhG4LktnN/"
+  },
   "author": "@keetasdishdiaries",
   "raw": [
-   { "section": "Potato Bake", "items": ["1.6 kg potatoes, peeled and thinly sliced on a mandolin", "400 g mozzarella, sliced"] },
-   { "section": "Vodka Tomato Cream Sauce", "items": ["3–4 eschalots, finely sliced", "2 tbsp butter", "1 tbsp olive oil", "1 tbsp minced garlic", "½ cup tomato paste", "1–2 tsp chilli flakes (adjust to taste)", "1 ½ tbsp vodka", "1½ cups thickened cream", "1 cup finely grated parmesan"] }
+   {
+    "section": "Potato Bake",
+    "items": [
+     "1.6 kg potatoes, peeled and thinly sliced on a mandolin",
+     "400 g mozzarella, sliced"
+    ]
+   },
+   {
+    "section": "Vodka Tomato Cream Sauce",
+    "items": [
+     "3–4 eschalots, finely sliced",
+     "2 tbsp butter",
+     "1 tbsp olive oil",
+     "1 tbsp minced garlic",
+     "½ cup tomato paste",
+     "1–2 tsp chilli flakes (adjust to taste)",
+     "1 ½ tbsp vodka",
+     "1½ cups thickened cream",
+     "1 cup finely grated parmesan"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "potatoes", "qty": 1600, "unit": "g", "aisle": "Produce" },
-   { "name": "mozzarella", "qty": 400, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "shallots", "qty": 4, "aisle": "Produce" },
-   { "name": "butter", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "tomato paste", "qty": 0.5, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "chilli flakes", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "vodka", "qty": 25, "unit": "ml", "aisle": "Other" },
-   { "name": "thickened cream", "qty": 375, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 100, "unit": "g", "aisle": "Dairy & Eggs" }
+   {
+    "name": "potatoes",
+    "qty": 1600,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "mozzarella",
+    "qty": 400,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "shallots",
+    "qty": 4,
+    "aisle": "Produce"
+   },
+   {
+    "name": "butter",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "tomato paste",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chilli flakes",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vodka",
+    "qty": 25,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "thickened cream",
+    "qty": 375,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   }
   ],
   "method": [
    "Preheat oven to 190°C fan-forced.",
@@ -340,35 +1160,111 @@
    "Stand the potato slices upright and tightly packed in a square baking dish. Pour the vodka sauce over the potatoes and top with sliced mozzarella.",
    "Loosely cover with baking paper, then foil, and bake for 45 minutes. Uncover and bake for a further 20 minutes, until golden, bubbling, and the potatoes are tender.",
    "Rest for 10 minutes before serving."
-  ]
+  ],
+  "photo": "/recipe-photos/vodka-sauce-potato-bake.jpg"
  },
  {
   "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:3huvOak3XLjiaDPq",
   "id": "chicken-teriyaki",
   "name": "Chicken Teriyaki",
   "category": "Chicken",
-  "tags": ["Japanese", "Rice"],
+  "tags": [
+   "Japanese",
+   "Rice"
+  ],
   "minutes": 30,
   "serves": 6,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1012984-chicken-teriyaki" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1012984-chicken-teriyaki"
+  },
   "author": "John T. Edge",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDI0LzAyLzEzL211bHRpbWVkaWEvU1MtQ2hpY2tlbi1UZXJpeWFraS1naGZtL1NTLUNoaWNrZW4tVGVyaXlha2ktZ2hmbS1zdXBlckp1bWJvLmpwZw/w288?h=nOaugv7oUchkveFyer3o9Gr-UC6unzIGWuGqhu6N0dI",
+  "photo": "/recipe-photos/chicken-teriyaki.jpg",
   "notes": "Marinate the chicken for at least an hour, ideally overnight. The original method is behind the NYT paywall; these steps are a guide.",
   "raw": [
-   { "items": ["1 cup soy sauce", "1 cup granulated sugar", "1½ teaspoons brown sugar", "6 garlic cloves, crushed in a press", "2 tablespoons grated fresh ginger", "¼ teaspoon black pepper", "1 3-inch cinnamon stick", "1 tablespoon pineapple juice", "8 skinless, boneless chicken thighs", "2 tablespoons cornstarch"] }
+   {
+    "items": [
+     "1 cup soy sauce",
+     "1 cup granulated sugar",
+     "1½ teaspoons brown sugar",
+     "6 garlic cloves, crushed in a press",
+     "2 tablespoons grated fresh ginger",
+     "¼ teaspoon black pepper",
+     "1 3-inch cinnamon stick",
+     "1 tablespoon pineapple juice",
+     "8 skinless, boneless chicken thighs",
+     "2 tablespoons cornstarch"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "soy sauce", "qty": 1, "unit": "cup", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sugar", "qty": 1, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "brown sugar", "qty": 1.5, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "garlic", "qty": 6, "unit": "clove", "aisle": "Produce" },
-   { "name": "ginger", "qty": 2, "unit": "tbsp", "aisle": "Produce" },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "cinnamon stick", "qty": 1, "aisle": "Spices & Sauces", "staple": true },
-   { "name": "pineapple juice", "qty": 1, "unit": "tbsp", "aisle": "Other" },
-   { "name": "chicken thigh fillets", "qty": 8, "aisle": "Meat & Seafood" },
-   { "name": "cornflour", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "rice", "aisle": "Pantry", "staple": true }
+   {
+    "name": "soy sauce",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "brown sugar",
+    "qty": 1.5,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 6,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cinnamon stick",
+    "qty": 1,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "pineapple juice",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Other"
+   },
+   {
+    "name": "chicken thigh fillets",
+    "qty": 8,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "cornflour",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Simmer the soy sauce, sugars, garlic, ginger, pepper, cinnamon stick and pineapple juice with 1/2 cup water until the sugar dissolves. Cool.",

@@ -4,31 +4,132 @@
   "id": "prawn-stir-fry",
   "name": "Prawn Stir Fry",
   "category": "Seafood",
-  "tags": ["Stir fry", "Quick"],
+  "tags": [
+   "Stir fry",
+   "Quick"
+  ],
   "minutes": 17,
   "serves": 4,
-  "source": { "name": "RecipeTin Eats", "url": "https://www.recipetineats.com/prawn-stir-fry/" },
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/prawn-stir-fry/"
+  },
   "author": "Nagi",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cucmVjaXBldGluZWF0cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjEvMDYvUHJhd24tU3Rpci1GcnktU2hyaW1wXzgtU1EuanBn/w288?h=UOz2738P6JbPkP5IuyUp3Q-5x5R7aaRzs3u7nUe19_4",
+  "photo": "/recipe-photos/prawn-stir-fry.jpg",
   "raw": [
-   { "section": "Prawn Stir Fry Sauce:", "items": ["1 1/2 tbsp light soy sauce (sub all purpose soy, Note 1)", "1 tbsp Chinese cooking wine (sub Mirin or dry sherry, Note 2)", "2 tsp oyster sauce (Note 3)", "1/2 tsp sesame oil, toasted (Note 4)", "1 tbsp cornflour/cornstarch", "1/8 tsp white pepper (sub black pepper)", "3/4 cup water"] },
-   { "section": "Stir Fry:", "items": ["2 tbsp oil, peanut, canola or vegetable", "250g / 8 oz medium prawns, raw, peeled and deveined (equiv. 500g/1lb whole prawns, Note 5)", "1/2 onion, sliced, brown or white", "2 tsp ginger, finely julienned (~2cm / 0.7\" piece)", "2 tsp garlic, finely chopped (~ 2 cloves)", "1 1/2 bunches broccolini, trimmed, cut into 5cm / 2\" lengths, (~1 1/2 cups. Sub normal broccoli)", "120g / 4 oz snow peas, thin string removed from both sides"] }
+   {
+    "section": "Prawn Stir Fry Sauce:",
+    "items": [
+     "1 1/2 tbsp light soy sauce (sub all purpose soy, Note 1)",
+     "1 tbsp Chinese cooking wine (sub Mirin or dry sherry, Note 2)",
+     "2 tsp oyster sauce (Note 3)",
+     "1/2 tsp sesame oil, toasted (Note 4)",
+     "1 tbsp cornflour/cornstarch",
+     "1/8 tsp white pepper (sub black pepper)",
+     "3/4 cup water"
+    ]
+   },
+   {
+    "section": "Stir Fry:",
+    "items": [
+     "2 tbsp oil, peanut, canola or vegetable",
+     "250g / 8 oz medium prawns, raw, peeled and deveined (equiv. 500g/1lb whole prawns, Note 5)",
+     "1/2 onion, sliced, brown or white",
+     "2 tsp ginger, finely julienned (~2cm / 0.7\" piece)",
+     "2 tsp garlic, finely chopped (~ 2 cloves)",
+     "1 1/2 bunches broccolini, trimmed, cut into 5cm / 2\" lengths, (~1 1/2 cups. Sub normal broccoli)",
+     "120g / 4 oz snow peas, thin string removed from both sides"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "soy sauce", "qty": 1.5, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "chinese cooking wine", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "oyster sauce", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sesame oil", "qty": 0.5, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "cornflour", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "white pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "vegetable oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "raw prawns, peeled", "qty": 250, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "brown onion", "qty": 0.5, "aisle": "Produce" },
-   { "name": "ginger", "qty": 2, "unit": "tsp", "aisle": "Produce" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "broccolini", "qty": 1.5, "unit": "bunch", "aisle": "Produce" },
-   { "name": "snow peas", "qty": 120, "unit": "g", "aisle": "Produce" },
-   { "name": "rice", "aisle": "Pantry", "staple": true }
+   {
+    "name": "soy sauce",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "chinese cooking wine",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "oyster sauce",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame oil",
+    "qty": 0.5,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "cornflour",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "white pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "raw prawns, peeled",
+    "qty": 250,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "broccolini",
+    "qty": 1.5,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "snow peas",
+    "qty": 120,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Steam broccolini: Steam broccolini until crisp-tender, about 2 - 3 minutes (remember it will cook more in the stir fry). Set aside to drain and dry.",
@@ -46,30 +147,128 @@
   "id": "hailey-bieber-chicken-meatballs",
   "name": "Hailey Bieber Chicken Meatballs",
   "category": "Chicken",
-  "tags": ["Meatballs"],
+  "tags": [
+   "Meatballs"
+  ],
   "minutes": 35,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DcGZCxyPnus/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DcGZCxyPnus/"
+  },
   "author": "Julz Yap",
   "raw": [
-   { "section": "Meatballs", "items": ["1 tbsp extra virgin olive oil", "500g chicken breast mince", "60g breadcrumbs", "60g cottage cheese", "2 tsp mixed herbs", "1 tsp garlic powder", "1 egg"] },
-   { "section": "Sauce", "items": ["1 tbsp extra virgin olive oil", "1 onion, diced", "700g passata", "2 tsp sugar"] },
-   { "section": "To Serve", "items": ["160g cottage cheese", "40g parmesan cheese", "Fresh basil"] }
+   {
+    "section": "Meatballs",
+    "items": [
+     "1 tbsp extra virgin olive oil",
+     "500g chicken breast mince",
+     "60g breadcrumbs",
+     "60g cottage cheese",
+     "2 tsp mixed herbs",
+     "1 tsp garlic powder",
+     "1 egg"
+    ]
+   },
+   {
+    "section": "Sauce",
+    "items": [
+     "1 tbsp extra virgin olive oil",
+     "1 onion, diced",
+     "700g passata",
+     "2 tsp sugar"
+    ]
+   },
+   {
+    "section": "To Serve",
+    "items": [
+     "160g cottage cheese",
+     "40g parmesan cheese",
+     "Fresh basil"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "chicken mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "breadcrumbs", "qty": 60, "unit": "g", "aisle": "Pantry" },
-   { "name": "cottage cheese", "qty": 220, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "mixed herbs", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "garlic powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
-   { "name": "passata", "qty": 700, "unit": "g", "aisle": "Pantry" },
-   { "name": "sugar", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "parmesan", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "olive oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "breadcrumbs",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "cottage cheese",
+    "qty": 220,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "mixed herbs",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "garlic powder",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 1,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 1,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "passata",
+    "qty": 700,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "sugar",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "parmesan",
+    "qty": 40,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Combine all MEATBALL ingredients into a bowl. Roll into 16 small balls.",
@@ -78,36 +277,115 @@
    "Pour in the passata, add 2 tsp sugar and salt, and let it simmer for about 5 minutes.",
    "Return the meatballs to the pan and heat through before serving.",
    "Top with cottage cheese (~40g), parmesan (~10g), and fresh basil."
-  ]
+  ],
+  "photo": "/recipe-photos/hailey-bieber-chicken-meatballs.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:1HHM6vT0iS-FZCXD",
   "id": "fish-en-papillote",
   "name": "Fish en Papillote (Fish in a Bag)",
   "category": "Seafood",
-  "tags": ["Oven"],
+  "tags": [
+   "Oven"
+  ],
   "minutes": 40,
   "serves": 2,
-  "source": { "name": "RecipeTin Eats", "url": "https://www.recipetineats.com/fish-en-papillote-recipe/" },
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/fish-en-papillote-recipe/"
+  },
   "author": "Chef JB (RecipeTin)",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cucmVjaXBldGluZWF0cy5jb20vdGFjaHlvbi8yMDI2LzA5L0Zpc2gtRW4tUGFwaWxvdHRlLTQuanBn/w288?h=HrsnfxYH3bsQDlHJCPAvTvueNY-wzgJ7j5Ku4OOuVSk",
+  "photo": "/recipe-photos/fish-en-papillote.jpg",
   "raw": [
-   { "items": ["160g / 5.6oz x 2 snapper fillets, skin off, pin boned (or other fish fillets, see Note 1)", "3 tbsp extra virgin olive oil, separated", "200g / 7oz kipfler potatoes (fingerling potatoes), peeled and sliced 0.5cm / 0.2\" thick – 2 medium (or baby potatoes)", "1 zucchini, sliced 0.5cm / 0.2″ thick", "1 red capsicum (bell pepper), cut in half, cored then sliced 0.5cm / 0.2\" thick", "1/2 red onion, cut into wedges 0.3cm / 0.1″ thick", "1 garlic clove, finely minced", "3/4 tsp cooking salt / kosher salt, separated (half for table salt, 50% extra for flakes)", "1/4 tsp black pepper, separated", "6 dill sprigs (Note 2)", "2 tbsp chardonnay or other dry white wine, (sub low-sodium vegetable stock/broth) (Note 3)"] },
-   { "section": "Serving:", "items": ["Lemon wedges"] }
+   {
+    "items": [
+     "160g / 5.6oz x 2 snapper fillets, skin off, pin boned (or other fish fillets, see Note 1)",
+     "3 tbsp extra virgin olive oil, separated",
+     "200g / 7oz kipfler potatoes (fingerling potatoes), peeled and sliced 0.5cm / 0.2\" thick – 2 medium (or baby potatoes)",
+     "1 zucchini, sliced 0.5cm / 0.2″ thick",
+     "1 red capsicum (bell pepper), cut in half, cored then sliced 0.5cm / 0.2\" thick",
+     "1/2 red onion, cut into wedges 0.3cm / 0.1″ thick",
+     "1 garlic clove, finely minced",
+     "3/4 tsp cooking salt / kosher salt, separated (half for table salt, 50% extra for flakes)",
+     "1/4 tsp black pepper, separated",
+     "6 dill sprigs (Note 2)",
+     "2 tbsp chardonnay or other dry white wine, (sub low-sodium vegetable stock/broth) (Note 3)"
+    ]
+   },
+   {
+    "section": "Serving:",
+    "items": [
+     "Lemon wedges"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "snapper fillets", "qty": 2, "aisle": "Meat & Seafood" },
-   { "name": "olive oil", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "kipfler potatoes", "qty": 200, "unit": "g", "aisle": "Produce" },
-   { "name": "zucchini", "qty": 1, "aisle": "Produce" },
-   { "name": "red capsicum", "qty": 1, "aisle": "Produce" },
-   { "name": "red onion", "qty": 0.5, "aisle": "Produce" },
-   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "dill", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "dry white wine", "qty": 2, "unit": "tbsp", "aisle": "Other" },
-   { "name": "lemon", "qty": 1, "aisle": "Produce" }
+   {
+    "name": "snapper fillets",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "olive oil",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "kipfler potatoes",
+    "qty": 200,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "zucchini",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "red capsicum",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "red onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 1,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "dill",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "dry white wine",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Other"
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Preheat oven to 190°C / 375°F (170°C fan-forced).",
@@ -126,27 +404,99 @@
   "id": "zucchini-carbonara",
   "name": "Zucchini Carbonara",
   "category": "Vegetarian",
-  "tags": ["Pasta", "Quick"],
+  "tags": [
+   "Pasta",
+   "Quick"
+  ],
   "minutes": 25,
   "serves": 4,
-  "source": { "name": "Delicious", "url": "https://www.delicious.com.au/recipes/zucchini-carbonara-pasta-recipe/6k2lw61q" },
+  "source": {
+   "name": "Delicious",
+   "url": "https://www.delicious.com.au/recipes/zucchini-carbonara-pasta-recipe/6k2lw61q"
+  },
   "author": "Tracey Pattison",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9pbWcuZGVsaWNpb3VzLmNvbS5hdS8yVDZqQ2RVQi93MTIwMC1oMTIwMC1jZmlsbC1xODAvZGVsLzIwMjMvMDkvcXVpY2stc3ByaW5nLWNhcmJvbmFyYS0xOTk3MjYtMS5qcGc/w288?h=gD-VvZQ0T1XFVkE11tdpffiGKWrj-NWqeI8x3r-E0kQ",
+  "photo": "/recipe-photos/zucchini-carbonara.jpg",
   "raw": [
-   { "items": ["60ml olive oil", "50g salted butter, chopped", "2 small zucchini, sliced lengthways", "2 bunches asparagus, woody ends trimmed", "1 large leek, white part only, thickly sliced", "6 garlic cloves, thinly sliced", "50g baby spinach leaves", "500g spaghetti", "4 large egg yolks, at room temperature (reserve egg whites for another use)", "80g parmesan", "Finely grated zest and juice of 1 small lemon"] }
+   {
+    "items": [
+     "60ml olive oil",
+     "50g salted butter, chopped",
+     "2 small zucchini, sliced lengthways",
+     "2 bunches asparagus, woody ends trimmed",
+     "1 large leek, white part only, thickly sliced",
+     "6 garlic cloves, thinly sliced",
+     "50g baby spinach leaves",
+     "500g spaghetti",
+     "4 large egg yolks, at room temperature (reserve egg whites for another use)",
+     "80g parmesan",
+     "Finely grated zest and juice of 1 small lemon"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "olive oil", "qty": 60, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "butter", "qty": 50, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "zucchini", "qty": 2, "aisle": "Produce" },
-   { "name": "asparagus", "qty": 2, "unit": "bunch", "aisle": "Produce" },
-   { "name": "leek", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 6, "unit": "clove", "aisle": "Produce" },
-   { "name": "baby spinach", "qty": 50, "unit": "g", "aisle": "Produce" },
-   { "name": "spaghetti", "qty": 500, "unit": "g", "aisle": "Pantry" },
-   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 80, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "lemon", "qty": 1, "aisle": "Produce" }
+   {
+    "name": "olive oil",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 50,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "zucchini",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "asparagus",
+    "qty": 2,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "leek",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 6,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "baby spinach",
+    "qty": 50,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "spaghetti",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "eggs",
+    "qty": 4,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 80,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Heat oil and butter in a large, deep frypan over medium-high heat. Once butter melts and is foaming, add the zucchini and cook for 2-3 minutes, turning occasionally, until cooked and golden. Use tongs to transfer to a plate and cover to keep warm. Add asparagus to same pan and cook, tossing occasionally, for 1 minute or until just tender, bright green and golden. Use tongs to transfer to plate with zucchini, cover to keep warm and set aside.",
@@ -161,63 +511,240 @@
   "id": "butter-bean-roasted-veg-agnolotti",
   "name": "Creamy Butter Bean & Roasted Veg Agnolotti",
   "category": "Vegetarian",
-  "tags": ["Pasta", "Budget"],
+  "tags": [
+   "Pasta",
+   "Budget"
+  ],
   "minutes": 40,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DcSlZq8SrHm/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DcSlZq8SrHm/"
+  },
   "author": "Eisha-Marie Eisel",
   "raw": [
-   { "items": ["2 x Spinach & Ricotta Agnolotti - $9.58", "2 x Butter Beans - $1.78", "1/2 jar Passata - $0.95", "2 red capsicums - approx. $3.00", "2 zucchinis - approx. $2.00", "2 carrots - approx. $0.40", "1 onion - approx. $0.50", "3–4 garlic cloves - approx. $0.30", "Parmesan - approx. $1.00", "Olive oil", "Italian herbs"] }
+   {
+    "items": [
+     "2 x Spinach & Ricotta Agnolotti - $9.58",
+     "2 x Butter Beans - $1.78",
+     "1/2 jar Passata - $0.95",
+     "2 red capsicums - approx. $3.00",
+     "2 zucchinis - approx. $2.00",
+     "2 carrots - approx. $0.40",
+     "1 onion - approx. $0.50",
+     "3–4 garlic cloves - approx. $0.30",
+     "Parmesan - approx. $1.00",
+     "Olive oil",
+     "Italian herbs"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "spinach & ricotta agnolotti", "qty": 2, "unit": "pack", "aisle": "Dairy & Eggs" },
-   { "name": "butter beans", "qty": 2, "unit": "tin", "aisle": "Pantry" },
-   { "name": "passata", "qty": 350, "unit": "g", "aisle": "Pantry" },
-   { "name": "red capsicum", "qty": 2, "aisle": "Produce" },
-   { "name": "zucchini", "qty": 2, "aisle": "Produce" },
-   { "name": "carrot", "qty": 2, "aisle": "Produce" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
-   { "name": "parmesan", "aisle": "Dairy & Eggs" },
-   { "name": "olive oil", "aisle": "Pantry", "staple": true },
-   { "name": "mixed herbs", "aisle": "Spices & Sauces", "staple": true }
+   {
+    "name": "spinach & ricotta agnolotti",
+    "qty": 2,
+    "unit": "pack",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "butter beans",
+    "qty": 2,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "passata",
+    "qty": 350,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "red capsicum",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "zucchini",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "carrot",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "parmesan",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "mixed herbs",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
   ],
   "method": [
    "Roast the chopped veg with olive oil and seasoning at 200°C until soft.",
    "Blend with the drained butter beans, then add the passata and blend until creamy.",
    "Cook the agnolotti, toss through the sauce and finish with Parmesan."
-  ]
+  ],
+  "photo": "/recipe-photos/butter-bean-roasted-veg-agnolotti.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:EBpTRMP5m5t6DlXP",
   "id": "chili-crisp-beef-bowls",
   "name": "Chili Crisp Beef Bowls with Coconut Broth",
   "category": "Beef",
-  "tags": ["Bowl", "Rice"],
+  "tags": [
+   "Bowl",
+   "Rice"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/Db3UXrcsj0P/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/Db3UXrcsj0P/"
+  },
   "author": "Ellen Speaker | Forget the Takeout",
   "raw": [
-   { "items": ["1 cup uncooked rice (or quinoa)", "2 cups water or broth", "1 tablespoon oil", "1 lb ground beef", "1 red pepper, diced", "1 yellow onion, diced", "2 garlic cloves, minced", "2 tablespoons soy sauce", "1 tablespoon rice vinegar", "2 tablespoons honey", "1 tablespoon chili crisp (less if sensitive to spice)", "1/2 teaspoon ginger powder", "1/4 cup beef broth"] },
-   { "section": "Broth", "items": ["1 (15oz) can coconut milk", "1 tablespoon soy sauce", "1 tablespoon chili crisp", "1/2 teaspoon ginger powder"] },
-   { "items": ["Diced cucumber, for garnish", "Chili crisp, for garnish (optional)"] }
+   {
+    "items": [
+     "1 cup uncooked rice (or quinoa)",
+     "2 cups water or broth",
+     "1 tablespoon oil",
+     "1 lb ground beef",
+     "1 red pepper, diced",
+     "1 yellow onion, diced",
+     "2 garlic cloves, minced",
+     "2 tablespoons soy sauce",
+     "1 tablespoon rice vinegar",
+     "2 tablespoons honey",
+     "1 tablespoon chili crisp (less if sensitive to spice)",
+     "1/2 teaspoon ginger powder",
+     "1/4 cup beef broth"
+    ]
+   },
+   {
+    "section": "Broth",
+    "items": [
+     "1 (15oz) can coconut milk",
+     "1 tablespoon soy sauce",
+     "1 tablespoon chili crisp",
+     "1/2 teaspoon ginger powder"
+    ]
+   },
+   {
+    "items": [
+     "Diced cucumber, for garnish",
+     "Chili crisp, for garnish (optional)"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "rice", "qty": 1, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "vegetable oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "beef mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "red capsicum", "qty": 1, "aisle": "Produce" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "soy sauce", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rice vinegar", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "honey", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "chilli crisp", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "ground ginger", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "beef stock", "qty": 60, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" }
+   {
+    "name": "rice",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "red capsicum",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "honey",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chilli crisp",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "ground ginger",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "beef stock",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Cook rice according to package directions, adjusting portion sizes as needed.",
@@ -225,121 +752,467 @@
    "Mix together the soy sauce, honey, rice vinegar, chili crisp, ginger powder and broth then add to the beef mixture, stirring to combine. Reduce the heat and allow the sauce to slightly cook down. If needed, season with salt.",
    "For the broth, add coconut milk, soy sauce, chili crisp and ginger to a sauce pan. Bring to a boil and stir to combine all ingredients.",
    "Assemble bowls by adding rice, then topping with beef, broth, cucumbers."
-  ]
+  ],
+  "photo": "/recipe-photos/chili-crisp-beef-bowls.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:bJ5gwtqThNE8kNhG",
   "id": "beef-vegetable-rice-bowl",
   "name": "Beef and Vegetable Rice Bowl",
   "category": "Beef",
-  "tags": ["Bowl", "Rice", "Korean"],
+  "tags": [
+   "Bowl",
+   "Rice",
+   "Korean"
+  ],
   "minutes": 50,
   "serves": 6,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DarL583xxQn/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DarL583xxQn/"
+  },
   "author": "Sweet Eats by J",
   "notes": "Marinate the beef for at least 30 minutes, or overnight.",
   "raw": [
-   { "items": ["2.5 lb thinly sliced beef", "1/4 cup soy sauce", "1/4 cup vinegar", "1 tsp salt", "1 tsp black pepper", "1 tsp garlic powder", "1 tsp onion powder", "2 tbsp gochujang", "1 tbsp brown sugar", "1 tbsp minced garlic", "1 tsp chili flakes", "1 tbsp fish sauce", "2 onions, thinly sliced", "1 tbsp olive oil"] },
-   { "section": "For the Bowl", "items": ["Jasmine rice", "Kimchi", "Cucumber, sliced", "Shredded carrots", "Edamame"] }
+   {
+    "items": [
+     "2.5 lb thinly sliced beef",
+     "1/4 cup soy sauce",
+     "1/4 cup vinegar",
+     "1 tsp salt",
+     "1 tsp black pepper",
+     "1 tsp garlic powder",
+     "1 tsp onion powder",
+     "2 tbsp gochujang",
+     "1 tbsp brown sugar",
+     "1 tbsp minced garlic",
+     "1 tsp chili flakes",
+     "1 tbsp fish sauce",
+     "2 onions, thinly sliced",
+     "1 tbsp olive oil"
+    ]
+   },
+   {
+    "section": "For the Bowl",
+    "items": [
+     "Jasmine rice",
+     "Kimchi",
+     "Cucumber, sliced",
+     "Shredded carrots",
+     "Edamame"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "beef, thinly sliced", "qty": 1100, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "soy sauce", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "white vinegar", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "garlic powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "onion powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "gochujang", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "brown sugar", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "chilli flakes", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "fish sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "brown onion", "qty": 2, "aisle": "Produce" },
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "rice", "aisle": "Pantry", "staple": true },
-   { "name": "kimchi", "aisle": "Other" },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" },
-   { "name": "carrot", "qty": 2, "aisle": "Produce" },
-   { "name": "edamame", "qty": 1, "unit": "bag", "aisle": "Frozen" }
+   {
+    "name": "beef, thinly sliced",
+    "qty": 1100,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "white vinegar",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "garlic powder",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "onion powder",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "gochujang",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "brown sugar",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli flakes",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "fish sauce",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown onion",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "kimchi",
+    "aisle": "Other"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "carrot",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "edamame",
+    "qty": 1,
+    "unit": "bag",
+    "aisle": "Frozen"
+   }
   ],
   "method": [
    "In a bowl, marinate beef, sliced onions with soy sauce, vinegar, salt, pepper, garlic powder, onion powder, gochujang, minced garlic, and chili flakes.",
    "Marinate for at least 30 minutes (or overnight).",
    "Heat the olive oil in a large skillet over medium-high heat and sautée beef until browned and fully cooked.",
    "Assemble your bowls with jasmine rice, beef, kimchi, cucumber, shredded carrots, and edamame."
-  ]
+  ],
+  "photo": "/recipe-photos/beef-vegetable-rice-bowl.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:VeHqnA-Iufp_i2Ea",
   "id": "spicy-coconut-beef-broth-bowls",
   "name": "Spicy Coconut Beef Broth Bowls",
   "category": "Beef",
-  "tags": ["Bowl", "Soup"],
+  "tags": [
+   "Bowl",
+   "Soup"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DZ5sy90p4Hl/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DZ5sy90p4Hl/"
+  },
   "author": "Kelsey",
   "raw": [
-   { "section": "Broth", "items": ["1 can unsweetened coconut milk", "2 cups beef bone broth", "3 cloves garlic, minced", "1 tbsp ginger, minced", "1 tbsp gochujang", "2 tbsp soy sauce", "juice of 1 lime"] },
-   { "section": "Beef", "items": ["1 lb ground beef", "1/2 white onion, finely chopped", "1 tbsp garlic, minced", "1 tbsp ginger, minced", "2 tbsp soy sauce", "1/2 tbsp sriracha"] },
-   { "section": "Serving", "items": ["Jasmine rice", "Sliced cucumbers", "Chili oil"] }
+   {
+    "section": "Broth",
+    "items": [
+     "1 can unsweetened coconut milk",
+     "2 cups beef bone broth",
+     "3 cloves garlic, minced",
+     "1 tbsp ginger, minced",
+     "1 tbsp gochujang",
+     "2 tbsp soy sauce",
+     "juice of 1 lime"
+    ]
+   },
+   {
+    "section": "Beef",
+    "items": [
+     "1 lb ground beef",
+     "1/2 white onion, finely chopped",
+     "1 tbsp garlic, minced",
+     "1 tbsp ginger, minced",
+     "2 tbsp soy sauce",
+     "1/2 tbsp sriracha"
+    ]
+   },
+   {
+    "section": "Serving",
+    "items": [
+     "Jasmine rice",
+     "Sliced cucumbers",
+     "Chili oil"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "beef stock", "qty": 500, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "garlic", "qty": 6, "unit": "clove", "aisle": "Produce" },
-   { "name": "ginger", "qty": 2, "unit": "tbsp", "aisle": "Produce" },
-   { "name": "gochujang", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "soy sauce", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "lime", "qty": 1, "aisle": "Produce" },
-   { "name": "beef mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "brown onion", "qty": 0.5, "aisle": "Produce" },
-   { "name": "sriracha", "qty": 0.5, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rice", "aisle": "Pantry", "staple": true },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" },
-   { "name": "chilli oil", "aisle": "Spices & Sauces" }
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "beef stock",
+    "qty": 500,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 6,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "gochujang",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "lime",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "beef mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "sriracha",
+    "qty": 0.5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli oil",
+    "aisle": "Spices & Sauces"
+   }
   ],
   "method": [
    "Add all of the broth ingredients to a pot and bring to a gentle simmer. Cook for 20 minutes, stirring occasionally.",
    "While the broth simmers, heat a skillet over medium heat. Cook the onion and garlic until softened and fragrant, about 2-3 minutes. Add the ground beef and cook until mostly browned. Stir in the ginger, soy sauce, and sriracha, then cook for another 2-3 minutes until fully cooked through.",
    "To serve, add jasmine rice and the beef mixture to a bowl. Ladle over the warm broth and top with sliced cucumbers and a drizzle of chili oil."
-  ]
+  ],
+  "photo": "/recipe-photos/spicy-coconut-beef-broth-bowls.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:ffbbjN_NrHKGZwMC",
   "id": "coconut-chilli-ramen-crispy-pork",
   "name": "Coconut Chilli Ramen with Crispy Pork",
   "category": "Pork",
-  "tags": ["Noodles", "Soup"],
+  "tags": [
+   "Noodles",
+   "Soup"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DXPcC-yR0x7/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DXPcC-yR0x7/"
+  },
   "author": "The Good Bite",
   "notes": "The original has no quantities; amounts are a guide for 4.",
   "raw": [
-   { "items": ["Ground pork", "Garlic, minced", "Ginger, minced", "Lemongrass, minced", "Chicken broth", "Coconut milk", "Peanut butter", "Red curry paste", "Miso paste", "Soy sauce", "Hoisin sauce", "Black bean sauce", "Lime juice", "Crispy chilli oil", "White noodles, cooked", "Cucumbers, diced", "Soft-boiled eggs", "Green onions, sliced", "Sesame seeds", "Lime wedge"] }
+   {
+    "items": [
+     "Ground pork",
+     "Garlic, minced",
+     "Ginger, minced",
+     "Lemongrass, minced",
+     "Chicken broth",
+     "Coconut milk",
+     "Peanut butter",
+     "Red curry paste",
+     "Miso paste",
+     "Soy sauce",
+     "Hoisin sauce",
+     "Black bean sauce",
+     "Lime juice",
+     "Crispy chilli oil",
+     "White noodles, cooked",
+     "Cucumbers, diced",
+     "Soft-boiled eggs",
+     "Green onions, sliced",
+     "Sesame seeds",
+     "Lime wedge"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "pork mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
-   { "name": "ginger", "qty": 1, "unit": "tbsp", "aisle": "Produce" },
-   { "name": "lemongrass", "qty": 1, "unit": "stalk", "aisle": "Produce" },
-   { "name": "chicken stock", "qty": 1, "unit": "L", "aisle": "Pantry", "staple": true },
-   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "peanut butter", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "red curry paste", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "miso paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "soy sauce", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "hoisin sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "black bean sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "lime", "qty": 2, "aisle": "Produce" },
-   { "name": "chilli crisp", "aisle": "Spices & Sauces" },
-   { "name": "ramen noodles", "qty": 4, "unit": "pack", "aisle": "Pantry" },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" },
-   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "sesame seeds", "aisle": "Spices & Sauces", "staple": true }
+   {
+    "name": "pork mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "garlic",
+    "qty": 3,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lemongrass",
+    "qty": 1,
+    "unit": "stalk",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 1,
+    "unit": "L",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "peanut butter",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "red curry paste",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "miso paste",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "hoisin sauce",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "black bean sauce",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "lime",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli crisp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "ramen noodles",
+    "qty": 4,
+    "unit": "pack",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "eggs",
+    "qty": 4,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "sesame seeds",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
   ],
   "method": [
    "Add minced garlic, ginger, and lemongrass to a pan with oil and heat.",
@@ -349,45 +1222,200 @@
    "Season pork with hoisin, black bean, and soy sauce.",
    "Prepare a bowl with cooked noodles, ladle in soup, top with crispy pork, diced cucumbers, and a soft-boiled egg.",
    "Garnish with green onions, sesame seeds, and a lime wedge before serving."
-  ]
+  ],
+  "photo": "/recipe-photos/coconut-chilli-ramen-crispy-pork.jpg"
  },
  {
   "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:_pwH8U0hr9IW809p",
   "id": "hot-honey-crispy-chicken-bowls",
   "name": "Hot Honey Crispy Chicken Bowls",
   "category": "Chicken",
-  "tags": ["Bowl", "Rice", "Air fryer"],
+  "tags": [
+   "Bowl",
+   "Rice",
+   "Air fryer"
+  ],
   "minutes": 35,
   "serves": 2,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DZUhkRYPk42/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DZUhkRYPk42/"
+  },
   "author": "Eliya Hachem",
   "raw": [
-   { "section": "Rice", "items": ["120g white rice (about 1 cup)", "1.5 cups water", "1/2 tbsp bone broth paste (optional) can sub for chicken stock paste or powder for extra flavour"] },
-   { "section": "Cucumber Salad", "items": ["1-2 lebanese cucumbers, thinly sliced", "Salt", "1/2 tsp sesame oil", "1 tsp soy sauce", "Dash of chilli powder", "1 tsp rice wine vinegar", "1/2 tsp sweetener", "Sesame seeds"] },
-   { "section": "Crispy Hot Honey Chicken", "items": ["300g chicken tenderloins, chopped", "1 tsp soy sauce", "1 tsp rice wine vinegar", "Chilli powder (optional)", "White pepper (optional)", "Dash of baking soda (optional)", "10g cornstarch"] },
-   { "section": "Hot Honey Sauce", "items": ["1/2 tsp sesame oil", "Garlic + minced chilli (or chilli flakes)", "1 tbsp honey (about 15g)", "1 tbsp liquid allulose sweetener (about 10g), replace with honey", "1 tbsp sriracha", "1 tsp soy sauce", "1 tsp rice wine vinegar", "1/4 cup chicken stock + 1 tsp cornstarch"] },
-   { "section": "Extra", "items": ["Cooked rice", "Cucumber salad", "80g edamame (40g per plate)", "Shredded purple cabbage", "Green onion + sesame seeds for topping"] }
+   {
+    "section": "Rice",
+    "items": [
+     "120g white rice (about 1 cup)",
+     "1.5 cups water",
+     "1/2 tbsp bone broth paste (optional) can sub for chicken stock paste or powder for extra flavour"
+    ]
+   },
+   {
+    "section": "Cucumber Salad",
+    "items": [
+     "1-2 lebanese cucumbers, thinly sliced",
+     "Salt",
+     "1/2 tsp sesame oil",
+     "1 tsp soy sauce",
+     "Dash of chilli powder",
+     "1 tsp rice wine vinegar",
+     "1/2 tsp sweetener",
+     "Sesame seeds"
+    ]
+   },
+   {
+    "section": "Crispy Hot Honey Chicken",
+    "items": [
+     "300g chicken tenderloins, chopped",
+     "1 tsp soy sauce",
+     "1 tsp rice wine vinegar",
+     "Chilli powder (optional)",
+     "White pepper (optional)",
+     "Dash of baking soda (optional)",
+     "10g cornstarch"
+    ]
+   },
+   {
+    "section": "Hot Honey Sauce",
+    "items": [
+     "1/2 tsp sesame oil",
+     "Garlic + minced chilli (or chilli flakes)",
+     "1 tbsp honey (about 15g)",
+     "1 tbsp liquid allulose sweetener (about 10g), replace with honey",
+     "1 tbsp sriracha",
+     "1 tsp soy sauce",
+     "1 tsp rice wine vinegar",
+     "1/4 cup chicken stock + 1 tsp cornstarch"
+    ]
+   },
+   {
+    "section": "Extra",
+    "items": [
+     "Cooked rice",
+     "Cucumber salad",
+     "80g edamame (40g per plate)",
+     "Shredded purple cabbage",
+     "Green onion + sesame seeds for topping"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "rice", "qty": 120, "unit": "g", "aisle": "Pantry", "staple": true },
-   { "name": "chicken stock", "qty": 60, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "cucumber", "qty": 2, "aisle": "Produce" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sesame oil", "qty": 1, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "soy sauce", "qty": 3, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "chilli powder", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rice vinegar", "qty": 3, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sesame seeds", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "chicken tenderloins", "qty": 300, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "white pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "cornflour", "qty": 15, "unit": "g", "aisle": "Pantry", "staple": true },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "red chilli", "qty": 1, "aisle": "Produce" },
-   { "name": "honey", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "sriracha", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "edamame", "qty": 80, "unit": "g", "aisle": "Frozen" },
-   { "name": "red cabbage", "qty": 0.25, "aisle": "Produce" },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "rice",
+    "qty": 120,
+    "unit": "g",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken stock",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "cucumber",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame oil",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "soy sauce",
+    "qty": 3,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "chilli powder",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 3,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame seeds",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "chicken tenderloins",
+    "qty": 300,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "white pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cornflour",
+    "qty": 15,
+    "unit": "g",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "red chilli",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "honey",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "sriracha",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "edamame",
+    "qty": 80,
+    "unit": "g",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "red cabbage",
+    "qty": 0.25,
+    "aisle": "Produce"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Rice: Cook rice in a rice cooker or any preferred way.",
@@ -396,6 +1424,7 @@
    "Add the cornstarch and mix until all the chicken is evenly coated, spray with some oil spray and airfry at 200c for 12-14 mins, shaking halfway.",
    "To a hot pan on medium/hot heat, add sesame oil, garlic and chilli and sautee. Add the honey, allulose, soy, sriracha and rice wine vinegar and let it slightly bubble and cook for a minute, add the chicken stock cornstarch slurry, lower the heat and mix until thickened. Add the cooked chicken and some sesame seeds and mix until well coated.",
    "Plate up with cooked rice, crispy chicken, cucumber salad, edamame and purple cabbage. Top with green onion & sesame seeds."
-  ]
+  ],
+  "photo": "/recipe-photos/hot-honey-crispy-chicken-bowls.jpg"
  }
 ]

@@ -30,9 +30,19 @@ export function describePlan(plan: DayPlan | undefined): PlanDisplay | null {
   return { title: plan.text, icon: quick?.icon ?? NOTE_ICON };
 }
 
+/** 25 -> "25 min", 90 -> "1½ hr", 75 -> "1 hr 15 min", 390 -> "6½ hr". */
+export function formatMinutes(m: number): string {
+  if (m < 60) return `${m} min`;
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  if (rest === 0) return `${h} hr`;
+  if (rest === 30) return `${h}½ hr`;
+  return `${h} hr ${rest} min`;
+}
+
 /** "Beef · 30 min" */
 export function recipeMeta(r: Recipe, opts: { serves?: boolean } = {}): string {
-  return [r.category, r.minutes && `${r.minutes} min`, opts.serves && r.serves && `Serves ${r.serves}`]
+  return [r.category, r.minutes && formatMinutes(r.minutes), opts.serves && r.serves && `Serves ${r.serves}`]
     .filter(Boolean)
     .join(' · ');
 }

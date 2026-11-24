@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight, Copy, Plus, Trash2 } from 'lucide-react';
 import { addDays, dayName, dayNum, dayShort, rangeLabel, shortDate, weekDays, weekLabel, DAY_NAMES } from '../lib/dates';
-import { describePlan } from '../lib/plan';
+import { describePlan, formatMinutes } from '../lib/plan';
 import { Marker, catClass } from '../components/Marker';
 import type { Ctx } from '../App';
 
@@ -72,7 +72,7 @@ export function Plan({ ctx }: { ctx: Ctx }) {
                 </span>
                 <span className="menu-dish-wrap">
                   <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
-                  {p?.recipe && <span className="menu-sub">{p.recipe.category}{p.recipe.minutes ? ` · ${p.recipe.minutes} min` : ''}</span>}
+                  {p?.recipe && <span className="menu-sub">{p.recipe.category}{p.recipe.minutes ? ` · ${formatMinutes(p.recipe.minutes)}` : ''}</span>}
                 </span>
                 {p ? <Marker plan={p} /> : <Plus size={20} className="add-icon" />}
               </button>

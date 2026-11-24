@@ -4,27 +4,99 @@
   "id": "panko-chicken-schnitzel",
   "name": "Panko Chicken Schnitzel with Brown Butter & Capers",
   "category": "Chicken",
-  "tags": ["Crumbed", "Quick"],
+  "tags": [
+   "Crumbed",
+   "Quick"
+  ],
   "minutes": 20,
   "serves": 4,
-  "source": { "name": "Food & Wine", "url": "https://www.foodandwine.com/recipes/panko-coated-chicken-schnitzel" },
+  "source": {
+   "name": "Food & Wine",
+   "url": "https://www.foodandwine.com/recipes/panko-coated-chicken-schnitzel"
+  },
   "author": "Thomas Keller",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cuZm9vZGFuZHdpbmUuY29tL3RobWIvVVJfUF9RbTFYWDVQV2d6bjZtbWxxaXZzVWZNPS8xNTAweDAvZmlsdGVyczpub191cHNjYWxlKCk6bWF4X2J5dGVzKDE1MDAwMCk6c3RyaXBfaWNjKCkvUGFua28tQ2hpY2tlbi1TY2huaXR6ZWwtRlQtUkVDSVBFMDMyNDY5X3ByZXZpZXctNzUxNWI2NWIxYzA2NDBhMTg3NDJmN2MxYmExMmQyZTIuanBn/w288?h=MVdFv1_YiiqbiO9sjVsfw3casJ41yavGAq0tdUjvM58",
+  "photo": "/recipe-photos/panko-chicken-schnitzel.jpg",
   "raw": [
-   { "items": ["1/2 cup all-purpose flour", "3 large eggs, beaten", "2 cups panko", "4 skinless, boneless chicken breast halves (about 6 ounces each), butterflied and pounded 1/4-inch-thick", "Kosher salt", "Freshly ground black pepper", "1/2 cup canola oil", "6 tablespoons butter", "2 teaspoons capers", "2 tablespoons fresh lemon juice", "1 tablespoon chopped parsley"] }
+   {
+    "items": [
+     "1/2 cup all-purpose flour",
+     "3 large eggs, beaten",
+     "2 cups panko",
+     "4 skinless, boneless chicken breast halves (about 6 ounces each), butterflied and pounded 1/4-inch-thick",
+     "Kosher salt",
+     "Freshly ground black pepper",
+     "1/2 cup canola oil",
+     "6 tablespoons butter",
+     "2 teaspoons capers",
+     "2 tablespoons fresh lemon juice",
+     "1 tablespoon chopped parsley"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "plain flour", "qty": 0.5, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "eggs", "qty": 3, "aisle": "Dairy & Eggs" },
-   { "name": "panko breadcrumbs", "qty": 2, "unit": "cup", "aisle": "Pantry" },
-   { "name": "chicken breast fillets", "qty": 4, "aisle": "Meat & Seafood" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "vegetable oil", "qty": 0.5, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "butter", "qty": 85, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "capers", "qty": 2, "unit": "tsp", "aisle": "Pantry" },
-   { "name": "lemon", "qty": 1, "aisle": "Produce" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "plain flour",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 3,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "panko breadcrumbs",
+    "qty": 2,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chicken breast fillets",
+    "qty": 4,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 85,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "capers",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Set the flour, eggs, and panko in three separate shallow bowls. Season the chicken cutlets with salt and pepper. Dredge the chicken in the flour, shaking off any excess, then dip in the eggs and coat thoroughly with the panko, pressing lightly to adhere.",
@@ -37,35 +109,174 @@
   "id": "hainanese-chicken-rice-broth",
   "name": "Hainanese-Inspired Chicken Rice and Broth",
   "category": "Chicken",
-  "tags": ["Rice", "Bowl", "Soup"],
+  "tags": [
+   "Rice",
+   "Bowl",
+   "Soup"
+  ],
   "minutes": 40,
   "serves": 2,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DPVantXDuSS/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DPVantXDuSS/"
+  },
   "author": "Lucy Rosenberg",
   "raw": [
-   { "section": "Chicken", "items": ["1 chicken breast, cut into two", "2 Birds Eye chillies, finely chopped (deseeded if you want)", "5cm piece of ginger, grated", "2 garlic cloves, minced", "1 tbsp sriracha", "1 tsp white sugar", "1 tsp rice wine vinegar", "1 tsp sesame oil", "1 tbsp chicken stock", "Splash of neutral oil for frying"] },
-   { "section": "Rice", "items": ["5cm piece of ginger, grated", "2 spring onions, white part, finely chopped", "1 cup washed jasmine rice", "1.5 cup chicken stock", "Neutral oil"] },
-   { "section": "Broth", "items": ["2 cups chicken broth", "2 tbsp soy sauce", "2 spring onions, green parts only", "1 tbsp sesame oil"] },
-   { "section": "Lime Chilli Sauce", "items": ["2 garlic cloves, finely chopped", "1 Birds Eye chilli, finely chopped", "1/4 cup neutral oil", "1.5 tbsp soy sauce", "1 tsp sesame oil", "Juice of 1 lime"] },
-   { "section": "To Serve", "items": ["1 bok choy, cooked in the leftover chicken stock", "1 spring onion", "1 cucumber"] }
+   {
+    "section": "Chicken",
+    "items": [
+     "1 chicken breast, cut into two",
+     "2 Birds Eye chillies, finely chopped (deseeded if you want)",
+     "5cm piece of ginger, grated",
+     "2 garlic cloves, minced",
+     "1 tbsp sriracha",
+     "1 tsp white sugar",
+     "1 tsp rice wine vinegar",
+     "1 tsp sesame oil",
+     "1 tbsp chicken stock",
+     "Splash of neutral oil for frying"
+    ]
+   },
+   {
+    "section": "Rice",
+    "items": [
+     "5cm piece of ginger, grated",
+     "2 spring onions, white part, finely chopped",
+     "1 cup washed jasmine rice",
+     "1.5 cup chicken stock",
+     "Neutral oil"
+    ]
+   },
+   {
+    "section": "Broth",
+    "items": [
+     "2 cups chicken broth",
+     "2 tbsp soy sauce",
+     "2 spring onions, green parts only",
+     "1 tbsp sesame oil"
+    ]
+   },
+   {
+    "section": "Lime Chilli Sauce",
+    "items": [
+     "2 garlic cloves, finely chopped",
+     "1 Birds Eye chilli, finely chopped",
+     "1/4 cup neutral oil",
+     "1.5 tbsp soy sauce",
+     "1 tsp sesame oil",
+     "Juice of 1 lime"
+    ]
+   },
+   {
+    "section": "To Serve",
+    "items": [
+     "1 bok choy, cooked in the leftover chicken stock",
+     "1 spring onion",
+     "1 cucumber"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "chicken breast fillets", "qty": 1, "aisle": "Meat & Seafood" },
-   { "name": "red chilli", "qty": 3, "aisle": "Produce" },
-   { "name": "ginger", "qty": 2, "unit": "knob", "aisle": "Produce" },
-   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
-   { "name": "sriracha", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sugar", "qty": 1, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "rice vinegar", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sesame oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "chicken stock", "qty": 900, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "vegetable oil", "qty": 0.33, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "rice", "qty": 1, "unit": "cup", "aisle": "Pantry", "staple": true },
-   { "name": "soy sauce", "qty": 3.5, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "lime", "qty": 1, "aisle": "Produce" },
-   { "name": "bok choy", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" }
+   {
+    "name": "chicken breast fillets",
+    "qty": 1,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "red chilli",
+    "qty": 3,
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "knob",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "sriracha",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sesame oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken stock",
+    "qty": 900,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 0.33,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rice",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "soy sauce",
+    "qty": 3.5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "lime",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "bok choy",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Start with the broth, add all the ingredients to a pot, simmer with the lid on.",
@@ -74,42 +285,160 @@
    "Fry both sides of the chicken in neutral oil until charred on medium heat. Add in the leftover sauce once chicken is cooked. Cook for a further 1 min. Remove from the pan & cook the bok choy plus the remaining chicken stock in it.",
    "For the chilli lime sauce, heat the neutral oil and carefully pour over the garlic and chilli. Add in the sesame oil, soy sauce & lime juice. Mix.",
    "Assemble. Place rice on the bottom, pour in the broth, chicken & bok choy on top, garnish with spring onions & cucumber. Spoon over the chilli lime sauce."
-  ]
+  ],
+  "photo": "/recipe-photos/hainanese-chicken-rice-broth.jpg"
  },
  {
   "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:IGICCJHZXF1GVJSk",
   "id": "massaman-curry-nyt",
   "name": "Massaman Curry (Chicken)",
   "category": "Chicken",
-  "tags": ["Curry", "Thai"],
+  "tags": [
+   "Curry",
+   "Thai"
+  ],
   "minutes": 60,
   "serves": 6,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1024644-massaman-curry" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1024644-massaman-curry"
+  },
   "author": "Naz Deravian",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDI0LzAxLzEwL211bHRpbWVkaWEvTkQtTWFzc2FtYW4tQ3VycnktY3dodC9ORC1NYXNzYW1hbi1DdXJyeS1jd2h0LXNxdWFyZTY0MC5qcGc/w288?h=6uEtvPTmbrcDAUfNLUmythiboJlLSdf8y_24D-3kLmk",
+  "photo": "/recipe-photos/massaman-curry-nyt.jpg",
   "notes": "The original method is behind the NYT paywall; these steps are a guide. Don't shake the coconut milk: the thick cream on top is used to fry the paste. Swap the chicken for beef, prawns or tofu if you like.",
   "raw": [
-   { "section": "For the Massaman Curry Paste", "items": ["2 whole green cardamom pods", "1 teaspoon coriander seeds", "1 teaspoon cumin seeds", "1 (1-inch) cinnamon piece", "4 whole cloves", "⅛ teaspoon ground nutmeg", "4 to 6 tablespoons Thai red curry paste, to heat preference"] },
-   { "section": "For the Curry", "items": ["2 (14-ounce) cans full-fat coconut milk (do not shake)", "2 large shallots, thinly sliced in rounds", "1 pound Yukon gold potatoes (about 2 potatoes), peeled or unpeeled, cut into 1-inch cubes", "1½ to 2 pounds boneless skinless chicken thighs, cut into 1-inch pieces", "¼ cup dry-roasted, unsalted peanuts, plus more for serving", "2 tablespoons fish sauce, plus more as needed", "2 teaspoons granulated, light brown or palm sugar, plus more as needed", "2 teaspoons Thai tamarind concentrate, or lime juice, plus more as needed", "Cilantro leaves, for serving", "Steamed jasmine rice, for serving"] }
+   {
+    "section": "For the Massaman Curry Paste",
+    "items": [
+     "2 whole green cardamom pods",
+     "1 teaspoon coriander seeds",
+     "1 teaspoon cumin seeds",
+     "1 (1-inch) cinnamon piece",
+     "4 whole cloves",
+     "⅛ teaspoon ground nutmeg",
+     "4 to 6 tablespoons Thai red curry paste, to heat preference"
+    ]
+   },
+   {
+    "section": "For the Curry",
+    "items": [
+     "2 (14-ounce) cans full-fat coconut milk (do not shake)",
+     "2 large shallots, thinly sliced in rounds",
+     "1 pound Yukon gold potatoes (about 2 potatoes), peeled or unpeeled, cut into 1-inch cubes",
+     "1½ to 2 pounds boneless skinless chicken thighs, cut into 1-inch pieces",
+     "¼ cup dry-roasted, unsalted peanuts, plus more for serving",
+     "2 tablespoons fish sauce, plus more as needed",
+     "2 teaspoons granulated, light brown or palm sugar, plus more as needed",
+     "2 teaspoons Thai tamarind concentrate, or lime juice, plus more as needed",
+     "Cilantro leaves, for serving",
+     "Steamed jasmine rice, for serving"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "cardamom pods", "qty": 2, "aisle": "Spices & Sauces", "staple": true },
-   { "name": "coriander seeds", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "cumin seeds", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "cinnamon stick", "qty": 1, "aisle": "Spices & Sauces", "staple": true },
-   { "name": "whole cloves", "qty": 4, "aisle": "Spices & Sauces", "staple": true },
-   { "name": "ground nutmeg", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "red curry paste", "qty": 5, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "coconut milk", "qty": 2, "unit": "tin", "aisle": "Pantry" },
-   { "name": "shallots", "qty": 2, "aisle": "Produce" },
-   { "name": "potatoes", "qty": 500, "unit": "g", "aisle": "Produce" },
-   { "name": "chicken thigh fillets", "qty": 800, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "roasted peanuts", "qty": 0.5, "unit": "cup", "aisle": "Pantry" },
-   { "name": "fish sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "brown sugar", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "tamarind concentrate", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces" },
-   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "rice", "aisle": "Pantry", "staple": true }
+   {
+    "name": "cardamom pods",
+    "qty": 2,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "coriander seeds",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cumin seeds",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "cinnamon stick",
+    "qty": 1,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "whole cloves",
+    "qty": 4,
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "ground nutmeg",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "red curry paste",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "coconut milk",
+    "qty": 2,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "potatoes",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken thigh fillets",
+    "qty": 800,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "roasted peanuts",
+    "qty": 0.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "fish sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown sugar",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "tamarind concentrate",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "coriander",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Toast the cardamom, coriander seeds, cumin seeds, cinnamon and cloves in a dry pan until fragrant, then grind with the nutmeg and mix into the red curry paste.",
@@ -124,37 +453,167 @@
   "id": "thai-green-curry",
   "name": "Thai Green Curry",
   "category": "Chicken",
-  "tags": ["Curry", "Thai"],
+  "tags": [
+   "Curry",
+   "Thai"
+  ],
   "minutes": 35,
   "serves": 4,
-  "source": { "name": "RecipeTin Eats", "url": "https://www.recipetineats.com/thai-green-curry/" },
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/thai-green-curry/"
+  },
   "author": "Nagi",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cucmVjaXBldGluZWF0cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTkvMDIvVGhhaS1HcmVlbi1DdXJyeV81LmpwZw/w288?h=AEr9qUrY8QUPcaniZlkNBn4t3zMXly4QSnojVI93ThQ",
+  "photo": "/recipe-photos/thai-green-curry.jpg",
   "raw": [
-   { "section": "Curry – use ONE:", "items": ["4 – 6 tbsp Thai Green Curry Paste (Maesri best) OR (Note 1)", "1 quantity homemade green curry paste (Note 1)"] },
-   { "section": "Extras – for jar curry paste (Note 2):", "items": ["2 large garlic cloves, minced", "2 tsp fresh ginger, finely grated", "1 tbsp lemongrass paste (Note 2)"] },
-   { "section": "Green Curry:", "items": ["2 tbsp vegetable oil", "1 cup (250ml) chicken or vegetable broth, low sodium", "400 g/14oz coconut milk, full fat (Note 4)", "1 – 3 tsp fish sauce *", "1 – 3 tsp white sugar *", "1/8 tsp salt *", "6 kaffir lime leaves, torn in half (Note 5)", "350 g/12 oz chicken thigh, skinless boneless, sliced (Note 6)", "2 Japanese eggplants,, small, 1cm / 2/5″ slices (Note 7)", "1 1/2 cups snow peas, small, trimmed", "16 Thai basil leaves (Note 8)", "Juice of 1/2 lime, to taste"] },
-   { "section": "Garnishes:", "items": ["Crispy fried Asian shallots, high recommended (Note 9)", "Thai basil or cilantro/coriander, recommended", "Green or red chillies slices, optional", "Steamed jasmine rice"] }
+   {
+    "section": "Curry – use ONE:",
+    "items": [
+     "4 – 6 tbsp Thai Green Curry Paste (Maesri best) OR (Note 1)",
+     "1 quantity homemade green curry paste (Note 1)"
+    ]
+   },
+   {
+    "section": "Extras – for jar curry paste (Note 2):",
+    "items": [
+     "2 large garlic cloves, minced",
+     "2 tsp fresh ginger, finely grated",
+     "1 tbsp lemongrass paste (Note 2)"
+    ]
+   },
+   {
+    "section": "Green Curry:",
+    "items": [
+     "2 tbsp vegetable oil",
+     "1 cup (250ml) chicken or vegetable broth, low sodium",
+     "400 g/14oz coconut milk, full fat (Note 4)",
+     "1 – 3 tsp fish sauce *",
+     "1 – 3 tsp white sugar *",
+     "1/8 tsp salt *",
+     "6 kaffir lime leaves, torn in half (Note 5)",
+     "350 g/12 oz chicken thigh, skinless boneless, sliced (Note 6)",
+     "2 Japanese eggplants,, small, 1cm / 2/5″ slices (Note 7)",
+     "1 1/2 cups snow peas, small, trimmed",
+     "16 Thai basil leaves (Note 8)",
+     "Juice of 1/2 lime, to taste"
+    ]
+   },
+   {
+    "section": "Garnishes:",
+    "items": [
+     "Crispy fried Asian shallots, high recommended (Note 9)",
+     "Thai basil or cilantro/coriander, recommended",
+     "Green or red chillies slices, optional",
+     "Steamed jasmine rice"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "green curry paste", "qty": 5, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "ginger", "qty": 2, "unit": "tsp", "aisle": "Produce" },
-   { "name": "lemongrass", "qty": 1, "unit": "stalk", "aisle": "Produce" },
-   { "name": "vegetable oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "chicken stock", "qty": 250, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "fish sauce", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sugar", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "kaffir lime leaves", "qty": 6, "aisle": "Produce" },
-   { "name": "chicken thigh fillets", "qty": 350, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "japanese eggplant", "qty": 2, "aisle": "Produce" },
-   { "name": "snow peas", "qty": 150, "unit": "g", "aisle": "Produce" },
-   { "name": "thai basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "lime", "qty": 1, "aisle": "Produce" },
-   { "name": "fried shallots", "aisle": "Pantry" },
-   { "name": "rice", "aisle": "Pantry", "staple": true }
+   {
+    "name": "green curry paste",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "ginger",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lemongrass",
+    "qty": 1,
+    "unit": "stalk",
+    "aisle": "Produce"
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "chicken stock",
+    "qty": 250,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "fish sauce",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "kaffir lime leaves",
+    "qty": 6,
+    "aisle": "Produce"
+   },
+   {
+    "name": "chicken thigh fillets",
+    "qty": 350,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "japanese eggplant",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "snow peas",
+    "qty": 150,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "thai basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "lime",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "fried shallots",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Heat oil in a heavy based skillet or pot over medium high heat.",
@@ -173,29 +632,112 @@
   "id": "pork-mince-stir-fry",
   "name": "Pork Mince Stir Fry with Cabbage Slaw",
   "category": "Pork",
-  "tags": ["Stir fry", "Quick"],
+  "tags": [
+   "Stir fry",
+   "Quick"
+  ],
   "minutes": 27,
   "serves": 4,
-  "source": { "name": "Mob", "url": "https://www.mob.co.uk/recipes/pork-mince-stir-fry" },
+  "source": {
+   "name": "Mob",
+   "url": "https://www.mob.co.uk/recipes/pork-mince-stir-fry"
+  },
   "author": "Adam Bush",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9maWxlcy5tb2ItY2RuLmNvLnVrL3JlY2lwZXMvMjAyNC8wNy9Qb3JrLU1pbmNlLVN0aXItRnJ5LVJlY2lwZS5qcGc/w288?h=MJ8CBBLXOLDLx5joWJ27wfZ2ROTqwHbUbgo3cLsE3Iw",
+  "photo": "/recipe-photos/pork-mince-stir-fry.jpg",
   "notes": "The original method wasn't saved; these steps are a guide.",
   "raw": [
-   { "items": ["½ White Cabbage", "2 Tbsp Toasted Sesame Oil", "3 Tbsp Rice Vinegar", "1 Pinch Caster Sugar", "30g Fresh Ginger", "4 Garlic Cloves", "6 Spring Onions", "500g Pork Mince", "3 Tbsp Sesame Seeds", "2 Tbsp Miso", "2 Tbsp Soy Sauce", "100ml Water", "Rice, to serve"] }
+   {
+    "items": [
+     "½ White Cabbage",
+     "2 Tbsp Toasted Sesame Oil",
+     "3 Tbsp Rice Vinegar",
+     "1 Pinch Caster Sugar",
+     "30g Fresh Ginger",
+     "4 Garlic Cloves",
+     "6 Spring Onions",
+     "500g Pork Mince",
+     "3 Tbsp Sesame Seeds",
+     "2 Tbsp Miso",
+     "2 Tbsp Soy Sauce",
+     "100ml Water",
+     "Rice, to serve"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "white cabbage", "qty": 0.5, "aisle": "Produce" },
-   { "name": "sesame oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "rice vinegar", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "sugar", "aisle": "Pantry", "staple": true },
-   { "name": "ginger", "qty": 1, "unit": "knob", "aisle": "Produce" },
-   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "pork mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "sesame seeds", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "miso paste", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "soy sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rice", "aisle": "Pantry", "staple": true }
+   {
+    "name": "white cabbage",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "sesame oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "rice vinegar",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "sugar",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "ginger",
+    "qty": 1,
+    "unit": "knob",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "pork mince",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "sesame seeds",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "miso paste",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "soy sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rice",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Finely shred the cabbage and toss with half the sesame oil, the rice vinegar and a pinch of sugar. Set aside to lightly pickle.",
@@ -210,23 +752,71 @@
   "id": "tomahawk-steak",
   "name": "Tomahawk Steak (Reverse Sear)",
   "category": "Beef",
-  "tags": ["BBQ", "Special"],
+  "tags": [
+   "BBQ",
+   "Special"
+  ],
   "minutes": 80,
   "serves": 3,
-  "source": { "name": "RecipeTin Eats", "url": "https://www.recipetineats.com/tomahawk-steak/" },
+  "source": {
+   "name": "RecipeTin Eats",
+   "url": "https://www.recipetineats.com/tomahawk-steak/"
+  },
   "author": "Nagi Maehashi",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cucmVjaXBldGluZWF0cy5jb20vdGFjaHlvbi8yMDI1LzA1L1RvbWFoYXdrLXN0ZWFrLXNob290LTNfNi0xLmpwZw/w288?h=adBeBS8ErFtbchoNUSWQvu_pZHit7lyypPLjGGvS-yU",
+  "photo": "/recipe-photos/tomahawk-steak.jpg",
   "notes": "Use a meat thermometer. Serve with cowboy butter, béarnaise, mushroom sauce or chimichurri.",
   "raw": [
-   { "section": "Tomahawk Steak", "items": ["1 tomahawk steak (1.2 – 1.5kg / 2.4 – 3lb) (Note 1)", "2 tsp cooking salt/kosher salt", "3/4 tsp black pepper", "1 tbsp olive oil"] },
-   { "section": "Steak sauce options", "items": ["Cowboy butter (pictured in post – Tomahawk worthy!)", "Bearnaise sauce", "Cafe de Paris", "Creamy mushroom sauce", "Chimichurri sauce", "Blue cheese sauce (page 330 of Dinner)", "Red wine sauce (page 327 of Dinner, requires homemade beef stock)", "Dijon or seeded mustard"] }
+   {
+    "section": "Tomahawk Steak",
+    "items": [
+     "1 tomahawk steak (1.2 – 1.5kg / 2.4 – 3lb) (Note 1)",
+     "2 tsp cooking salt/kosher salt",
+     "3/4 tsp black pepper",
+     "1 tbsp olive oil"
+    ]
+   },
+   {
+    "section": "Steak sauce options",
+    "items": [
+     "Cowboy butter (pictured in post – Tomahawk worthy!)",
+     "Bearnaise sauce",
+     "Cafe de Paris",
+     "Creamy mushroom sauce",
+     "Chimichurri sauce",
+     "Blue cheese sauce (page 330 of Dinner)",
+     "Red wine sauce (page 327 of Dinner, requires homemade beef stock)",
+     "Dijon or seeded mustard"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "tomahawk steak", "qty": 1, "aisle": "Meat & Seafood" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "dijon mustard", "aisle": "Spices & Sauces", "staple": true }
+   {
+    "name": "tomahawk steak",
+    "qty": 1,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "dijon mustard",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   }
   ],
   "method": [
    "De-chill - Take the steak out of the fridge 1 hour prior to cooking. Remove from packaging and pat the surface dry. (Do not salt).",
@@ -248,26 +838,93 @@
   "id": "sausage-pea-orzo-risotto",
   "name": "Sausage and Pea Orzo Risotto",
   "category": "Pork",
-  "tags": ["Pasta", "One pot", "Quick"],
+  "tags": [
+   "Pasta",
+   "One pot",
+   "Quick"
+  ],
   "minutes": 20,
   "serves": 2,
-  "source": { "name": "Serious Eats", "url": "https://www.seriouseats.com/easy-sausage-and-pea-orzo-risotto-recipe" },
+  "source": {
+   "name": "Serious Eats",
+   "url": "https://www.seriouseats.com/easy-sausage-and-pea-orzo-risotto-recipe"
+  },
   "author": "Kerry Saretsky",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cuc2VyaW91c2VhdHMuY29tL3RobWIvR1pkekF4Y3pnbC1YXzlEMFNqQmowekh0ZE9NPS8xNTAweDAvZmlsdGVyczpub191cHNjYWxlKCk6bWF4X2J5dGVzKDE1MDAwMCk6c3RyaXBfaWNjKCkvX19vcHRfX2Fib3V0Y29tX19jb2V1c19fcmVzb3VyY2VzX19jb250ZW50X21pZ3JhdGlvbl9fc2VyaW91c19lYXRzX19zZXJpb3VzZWF0cy5jb21fX3JlY2lwZXNfX2ltYWdlc19fMjAxMl9fMTFfXzIwMTIxMTEzT3J6b1Jpc290dG8tNzY1YWQ1YzE1Mjg0NDg5ODkzZmRmYzg1MzI5YjA0OTIuanBn/w288?h=IpHARgBwmFvbaoLO0cj6IIV7Q-qMwH0EjD3nw-m6TMA",
+  "photo": "/recipe-photos/sausage-pea-orzo-risotto.jpg",
   "raw": [
-   { "items": ["1 teaspoon olive oil", "10 ounces Italian sausage, removed from its casing", "1 medium shallot, minced (about 1/4 cup)", "1/2 pound orzo", "3 cups hot water or low-sodium homemade or store-bought vegetable or chicken stock", "Kosher salt and freshly ground black pepper", "1 cup frozen peas", "1/4 cup finely grated Parmigiano-Reggiano", "A handful chopped flat-leaf parsley (optional)"] }
+   {
+    "items": [
+     "1 teaspoon olive oil",
+     "10 ounces Italian sausage, removed from its casing",
+     "1 medium shallot, minced (about 1/4 cup)",
+     "1/2 pound orzo",
+     "3 cups hot water or low-sodium homemade or store-bought vegetable or chicken stock",
+     "Kosher salt and freshly ground black pepper",
+     "1 cup frozen peas",
+     "1/4 cup finely grated Parmigiano-Reggiano",
+     "A handful chopped flat-leaf parsley (optional)"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "olive oil", "qty": 1, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "italian sausages", "qty": 3, "aisle": "Meat & Seafood" },
-   { "name": "shallots", "qty": 1, "aisle": "Produce" },
-   { "name": "orzo", "qty": 225, "unit": "g", "aisle": "Pantry" },
-   { "name": "chicken stock", "qty": 750, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "frozen peas", "qty": 1, "unit": "cup", "aisle": "Frozen" },
-   { "name": "parmesan", "qty": 25, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "italian sausages",
+    "qty": 3,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "shallots",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "orzo",
+    "qty": 225,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "chicken stock",
+    "qty": 750,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "frozen peas",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "parmesan",
+    "qty": 25,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Heat the oil in a medium saucepan over medium-high heat until shimmering. Add the sausage and cook, breaking it up into small pieces until no longer pink.",
@@ -281,24 +938,85 @@
   "id": "steak-au-poivre-frites",
   "name": "Steak au Poivre & Frites",
   "category": "Beef",
-  "tags": ["Special", "French"],
+  "tags": [
+   "Special",
+   "French"
+  ],
   "minutes": 45,
   "serves": 2,
-  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DRrBmQdEeon/" },
+  "source": {
+   "name": "Instagram",
+   "url": "https://www.instagram.com/reel/DRrBmQdEeon/"
+  },
   "author": "Laura Sharrad",
   "raw": [
-   { "section": "Steak", "items": ["2 x thick beef filets", "1 tbs freshly cracked Sarawak or black peppercorns", "4 tablespoons unsalted butter", "1/4 cup high-quality Cognac", "3/4 cup heavy or double cream", "Sea salt flakes", "Extra pepper, freshly ground"] },
-   { "section": "Frites", "items": ["2 large kestrel potatoes", "Olive oil", "Sea salt flakes"] }
+   {
+    "section": "Steak",
+    "items": [
+     "2 x thick beef filets",
+     "1 tbs freshly cracked Sarawak or black peppercorns",
+     "4 tablespoons unsalted butter",
+     "1/4 cup high-quality Cognac",
+     "3/4 cup heavy or double cream",
+     "Sea salt flakes",
+     "Extra pepper, freshly ground"
+    ]
+   },
+   {
+    "section": "Frites",
+    "items": [
+     "2 large kestrel potatoes",
+     "Olive oil",
+     "Sea salt flakes"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "eye fillet steaks", "qty": 2, "aisle": "Meat & Seafood" },
-   { "name": "black peppercorns", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "butter", "qty": 60, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "cognac or brandy", "qty": 60, "unit": "ml", "aisle": "Other" },
-   { "name": "thickened cream", "qty": 180, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "potatoes", "qty": 2, "aisle": "Produce" },
-   { "name": "olive oil", "aisle": "Pantry", "staple": true }
+   {
+    "name": "eye fillet steaks",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "black peppercorns",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 60,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "cognac or brandy",
+    "qty": 60,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "thickened cream",
+    "qty": 180,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "potatoes",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   }
   ],
   "method": [
    "Frites: cut the potatoes into thin chips, dry them extremely well and toss with plenty of olive oil and sea salt flakes. Spread on a lined tray, not touching, and bake at 200°C for about 30 minutes until super golden and crispy.",
@@ -308,31 +1026,79 @@
    "Deglaze with the Cognac, and flambé the contents of the pan if you're confident, or reduce by half.",
    "Pour the cream into the pan and allow to bubble lightly, add the steak back in and finish cooking gently.",
    "Pour the sauce over the steak and serve with hot frites."
-  ]
+  ],
+  "photo": "/recipe-photos/steak-au-poivre-frites.jpg"
  },
  {
   "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:2uJF5V03RSuPwTPu",
   "id": "ribeye-steak",
   "name": "Ribeye Steak",
   "category": "Beef",
-  "tags": ["Steak", "Quick"],
+  "tags": [
+   "Steak",
+   "Quick"
+  ],
   "minutes": 30,
   "serves": 3,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1024339-ribeye-steak" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1024339-ribeye-steak"
+  },
   "author": "Ali Slagle",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIzLzA4LzE4L211bHRpbWVkaWEvYXMtcmliZXllLXN0ZWFrLXRsbWgvYXMtcmliZXllLXN0ZWFrLXRsbWgtc3F1YXJlNjQwLmpwZw/w288?h=MXOxtjUMvf48Oa-6TgAxsjSIDunzPM4lrF7MQQefBfA",
+  "photo": "/recipe-photos/ribeye-steak.jpg",
   "notes": "The original method is behind the NYT paywall; these steps are a guide. Good with a rocket salad, green beans or potatoes.",
   "raw": [
-   { "items": ["2 (12- to 16-ounce) boneless ribeye steaks, at least 1-inch thick, patted dry", "Salt and black pepper", "2 teaspoons neutral oil (such as grapeseed)", "2 tablespoons unsalted butter", "1 shallot, thinly sliced (optional)", "3 thyme sprigs or 2 rosemary sprigs (optional)"] }
+   {
+    "items": [
+     "2 (12- to 16-ounce) boneless ribeye steaks, at least 1-inch thick, patted dry",
+     "Salt and black pepper",
+     "2 teaspoons neutral oil (such as grapeseed)",
+     "2 tablespoons unsalted butter",
+     "1 shallot, thinly sliced (optional)",
+     "3 thyme sprigs or 2 rosemary sprigs (optional)"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "ribeye steaks", "qty": 2, "aisle": "Meat & Seafood" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "vegetable oil", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
-   { "name": "butter", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "shallots", "qty": 1, "aisle": "Produce" },
-   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "ribeye steaks",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vegetable oil",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "butter",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "shallots",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "thyme",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Pat the steaks dry and season generously with salt and pepper. Leave at room temperature for 30 minutes if you can.",
@@ -346,28 +1112,104 @@
   "id": "pasta-alla-zozzona",
   "name": "Pasta alla Zozzona",
   "category": "Pork",
-  "tags": ["Pasta", "Italian"],
+  "tags": [
+   "Pasta",
+   "Italian"
+  ],
   "minutes": 45,
   "serves": 4,
-  "source": { "name": "On Trac 5", "url": "https://ontrac5.com/pasta-alla-zozzonna/" },
+  "source": {
+   "name": "On Trac 5",
+   "url": "https://ontrac5.com/pasta-alla-zozzonna/"
+  },
   "author": "On Trac 5",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9vbnRyYWM1LmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNy9JTUdfNzkzNS1zY2FsZWQuanBn/w288?h=a5OyCCSebvsYSh72dxtPQG86EXqDqIPlKhi88nSQAak",
+  "photo": "/recipe-photos/pasta-alla-zozzona.jpg",
   "raw": [
-   { "items": ["1 tbsp Italian Style Chilli oil or olive oil", "3 large egg yolks", "60g finely grated Pecorino Romano cheese, plus more for serving", "Salt and freshly ground black pepper", "100g Guanciale, cut 1/4-inch-thick", "150g hot Italian sausage, removed from casing", "1/2 brown onion, finely chopped", "4 garlic cloves, finely diced", "2 cups tomato passata", "Basil leaves", "350g rigatoni"] }
+   {
+    "items": [
+     "1 tbsp Italian Style Chilli oil or olive oil",
+     "3 large egg yolks",
+     "60g finely grated Pecorino Romano cheese, plus more for serving",
+     "Salt and freshly ground black pepper",
+     "100g Guanciale, cut 1/4-inch-thick",
+     "150g hot Italian sausage, removed from casing",
+     "1/2 brown onion, finely chopped",
+     "4 garlic cloves, finely diced",
+     "2 cups tomato passata",
+     "Basil leaves",
+     "350g rigatoni"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "eggs", "qty": 3, "aisle": "Dairy & Eggs" },
-   { "name": "pecorino", "qty": 80, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "guanciale or pancetta", "qty": 100, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "italian sausages", "qty": 2, "aisle": "Meat & Seafood" },
-   { "name": "brown onion", "qty": 0.5, "aisle": "Produce" },
-   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
-   { "name": "passata", "qty": 500, "unit": "g", "aisle": "Pantry" },
-   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "rigatoni", "qty": 350, "unit": "g", "aisle": "Pantry" }
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 3,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "pecorino",
+    "qty": 80,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "guanciale or pancetta",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "italian sausages",
+    "qty": 2,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 0.5,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 4,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "passata",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "rigatoni",
+    "qty": 350,
+    "unit": "g",
+    "aisle": "Pantry"
+   }
   ],
   "method": [
    "Cook rigatoni per the packet directions.",

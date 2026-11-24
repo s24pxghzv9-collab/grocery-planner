@@ -4,31 +4,123 @@
   "id": "pasta-alla-vodka",
   "name": "Pasta alla Vodka",
   "category": "Pork",
-  "tags": ["Pasta", "Italian"],
+  "tags": [
+   "Pasta",
+   "Italian"
+  ],
   "minutes": 30,
   "serves": 5,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1019924-pasta-alla-vodka" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1019924-pasta-alla-vodka"
+  },
   "author": "Colu Henry",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIxLzAyLzI4L2RpbmluZy9jaC1wYXN0YS1hbGxhLXZvZGthL21lcmxpbl8xNDU3OTI3NTJfZmFiZWMyNmMtOTA4Yy00ZjcxLThjODQtMmIxNDU4NDlkYTQzLXNxdWFyZTY0MC5qcGc/w288?h=jnwwoqZ6foEhSwAXXD181Z4dA23siiu0j9F93CAbnXE",
+  "photo": "/recipe-photos/pasta-alla-vodka.jpg",
   "notes": "The pancetta is optional; leave it out for a vegetarian version. The original method is behind the NYT paywall; these steps are a guide.",
   "raw": [
-   { "items": ["Kosher salt", "1 pound rigatoni or penne pasta", "2 tablespoons olive oil", "4 ounces diced pancetta, optional", "1 medium yellow onion, finely chopped", "2 garlic cloves, finely chopped", "½ teaspoon red-pepper flakes", "¾ cup vodka", "1 (28-ounce) can crushed tomatoes", "Freshly ground black pepper", "¾ cup heavy cream", "¼ cup grated Grana Padano or Parmesan cheese, plus more for serving", "1 tablespoon roughly chopped fresh oregano", "2 tablespoons roughly chopped Italian parsley"] }
+   {
+    "items": [
+     "Kosher salt",
+     "1 pound rigatoni or penne pasta",
+     "2 tablespoons olive oil",
+     "4 ounces diced pancetta, optional",
+     "1 medium yellow onion, finely chopped",
+     "2 garlic cloves, finely chopped",
+     "½ teaspoon red-pepper flakes",
+     "¾ cup vodka",
+     "1 (28-ounce) can crushed tomatoes",
+     "Freshly ground black pepper",
+     "¾ cup heavy cream",
+     "¼ cup grated Grana Padano or Parmesan cheese, plus more for serving",
+     "1 tablespoon roughly chopped fresh oregano",
+     "2 tablespoons roughly chopped Italian parsley"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "rigatoni", "qty": 500, "unit": "g", "aisle": "Pantry" },
-   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "guanciale or pancetta", "qty": 115, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "chilli flakes", "qty": 0.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "vodka", "qty": 180, "unit": "ml", "aisle": "Other" },
-   { "name": "crushed tomatoes", "qty": 2, "unit": "tin", "aisle": "Pantry" },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "thickened cream", "qty": 180, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "oregano", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "rigatoni",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "olive oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "guanciale or pancetta",
+    "qty": 115,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "brown onion",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli flakes",
+    "qty": 0.5,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "vodka",
+    "qty": 180,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "crushed tomatoes",
+    "qty": 2,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "thickened cream",
+    "qty": 180,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 40,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "oregano",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Cook the pasta in well-salted boiling water until just shy of al dente. Reserve a cup of pasta water and drain.",
@@ -49,35 +141,155 @@
   "id": "miso-peanut-ramen-bowls",
   "name": "Miso Peanut Ramen Bowls",
   "category": "Vegetarian",
-  "tags": ["Noodles", "Bowl"],
+  "tags": [
+   "Noodles",
+   "Bowl"
+  ],
   "minutes": 35,
   "serves": 4,
-  "source": { "name": "Pinch of Yum", "url": "https://pinchofyum.com/miso-peanut-ramen-bowls" },
+  "source": {
+   "name": "Pinch of Yum",
+   "url": "https://pinchofyum.com/miso-peanut-ramen-bowls"
+  },
   "author": "Lindsay Ostrom",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9waW5jaG9meXVtLmNvbS93cC1jb250ZW50L3VwbG9hZHMvTWlzby1QZWFudXQtUmFtZW4tQm93bHMtU3F1YXJlLmpwZw/w288?h=nFjLgM9ie-j3UzOzgb9qW3GuC72Skomu07b1sVXgcqs",
+  "photo": "/recipe-photos/miso-peanut-ramen-bowls.jpg",
   "raw": [
-   { "section": "Crispy Tofu Bits", "items": ["1 block extra firm tofu", "1 tablespoon olive oil", "1/2 teaspoon kosher salt", "1/4 cup teriyaki sauce", "1 clove garlic, grated"] },
-   { "section": "Miso Peanut Ramen", "items": ["1 tablespoon red curry paste or roasted red chili paste", "1 tablespoon white miso", "1–2 tablespoons peanut butter", "2 tablespoons reduced sodium soy sauce", "1 tablespoon brown sugar", "2 cups water + 2 teaspoons Better Than Bouillon roasted chicken or vegetable base", "1 14–ounce can full fat coconut milk", "two 3–ounce ramen packages"] },
-   { "section": "Toppings", "items": ["Finely sliced cucumbers", "Cilantro and/or green onion", "Chili crisp"] }
+   {
+    "section": "Crispy Tofu Bits",
+    "items": [
+     "1 block extra firm tofu",
+     "1 tablespoon olive oil",
+     "1/2 teaspoon kosher salt",
+     "1/4 cup teriyaki sauce",
+     "1 clove garlic, grated"
+    ]
+   },
+   {
+    "section": "Miso Peanut Ramen",
+    "items": [
+     "1 tablespoon red curry paste or roasted red chili paste",
+     "1 tablespoon white miso",
+     "1–2 tablespoons peanut butter",
+     "2 tablespoons reduced sodium soy sauce",
+     "1 tablespoon brown sugar",
+     "2 cups water + 2 teaspoons Better Than Bouillon roasted chicken or vegetable base",
+     "1 14–ounce can full fat coconut milk",
+     "two 3–ounce ramen packages"
+    ]
+   },
+   {
+    "section": "Toppings",
+    "items": [
+     "Finely sliced cucumbers",
+     "Cilantro and/or green onion",
+     "Chili crisp"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "extra firm tofu", "qty": 1, "unit": "pack", "aisle": "Other" },
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "teriyaki sauce", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
-   { "name": "red curry paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "miso paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
-   { "name": "peanut butter", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "soy sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "brown sugar", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "vegetable stock", "qty": 500, "unit": "ml", "aisle": "Pantry", "staple": true },
-   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
-   { "name": "ramen noodles", "qty": 2, "unit": "pack", "aisle": "Pantry" },
-   { "name": "cucumber", "qty": 1, "aisle": "Produce" },
-   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "chilli crisp", "aisle": "Spices & Sauces" }
+   {
+    "name": "extra firm tofu",
+    "qty": 1,
+    "unit": "pack",
+    "aisle": "Other"
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "teriyaki sauce",
+    "qty": 4,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "garlic",
+    "qty": 1,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "red curry paste",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "miso paste",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces"
+   },
+   {
+    "name": "peanut butter",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "soy sauce",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "brown sugar",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "vegetable stock",
+    "qty": 500,
+    "unit": "ml",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "coconut milk",
+    "qty": 1,
+    "unit": "tin",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "ramen noodles",
+    "qty": 2,
+    "unit": "pack",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "cucumber",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "coriander",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "spring onion",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "chilli crisp",
+    "aisle": "Spices & Sauces"
+   }
   ],
   "method": [
    "Press tofu with paper towels to remove some of the water. Grate tofu on a box grater, on medium / large holes.",
@@ -99,24 +311,79 @@
   "id": "courgette-carbonara",
   "name": "Jamie's Courgette Carbonara",
   "category": "Pork",
-  "tags": ["Pasta", "Quick"],
+  "tags": [
+   "Pasta",
+   "Quick"
+  ],
   "minutes": 20,
   "serves": 6,
-  "source": { "name": "Jamie Oliver", "url": "https://www.jamieoliver.com/recipes/pasta/beautiful-courgette-penne-carbonara/" },
+  "source": {
+   "name": "Jamie Oliver",
+   "url": "https://www.jamieoliver.com/recipes/pasta/beautiful-courgette-penne-carbonara/"
+  },
   "author": "Jamie Oliver",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9hc3NldC5qYW1pZW9saXZlci5jb20vaW1hZ2VzL2NxN3cyZTcxL3Byb2R1Y3Rpb24vMjdlYTkyZTJhNzU0MzY0ZTAwMzE4MjVmNTE1Njk1YTNiNTIxYjM1YS05NTh4MTI4MC5qcGcvOTQzNTY3NTc_cmVjdD0wLDE2MSw5NTgsOTU4Jnc9NjAwJmg9NjAwJmZtPXdlYnAmcT03NSZmaXQ9Y3JvcCZhdXRvPWZvcm1hdA/w288?h=BWzYrt_uuQKzJ2eR4a46F65GzLWPaLnO7r4qdXNQwss",
+  "photo": "/recipe-photos/courgette-carbonara.jpg",
   "raw": [
-   { "items": ["6 medium green and yellow courgettes", "500g penne", "4 large eggs", "100ml single cream", "1 small handful of Parmesan cheese", "olive oil", "6 slices of back bacon", "½ a bunch of fresh thyme (15g)", "optional: a few courgette flowers"] }
+   {
+    "items": [
+     "6 medium green and yellow courgettes",
+     "500g penne",
+     "4 large eggs",
+     "100ml single cream",
+     "1 small handful of Parmesan cheese",
+     "olive oil",
+     "6 slices of back bacon",
+     "½ a bunch of fresh thyme (15g)",
+     "optional: a few courgette flowers"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "zucchini", "qty": 6, "aisle": "Produce" },
-   { "name": "penne", "qty": 500, "unit": "g", "aisle": "Pantry" },
-   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
-   { "name": "pouring cream", "qty": 100, "unit": "ml", "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "olive oil", "aisle": "Pantry", "staple": true },
-   { "name": "bacon", "qty": 6, "unit": "slice", "aisle": "Meat & Seafood" },
-   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "zucchini",
+    "qty": 6,
+    "aisle": "Produce"
+   },
+   {
+    "name": "penne",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "eggs",
+    "qty": 4,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "pouring cream",
+    "qty": 100,
+    "unit": "ml",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 40,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "olive oil",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "bacon",
+    "qty": 6,
+    "unit": "slice",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "thyme",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "Put a large pan of salted water on to boil.",
@@ -134,30 +401,115 @@
   "id": "mushroom-risotto-peas",
   "name": "Mushroom Risotto with Peas",
   "category": "Vegetarian",
-  "tags": ["Risotto", "Rice"],
+  "tags": [
+   "Risotto",
+   "Rice"
+  ],
   "minutes": 50,
   "serves": 6,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1017022-mushroom-risotto-with-peas" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/1017022-mushroom-risotto-with-peas"
+  },
   "author": "Martha Rose Shulman",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDE0LzEyLzAyL3NjaWVuY2UvMDRyZWNpcGVoZWFsdGgvMDRyZWNpcGVoZWFsdGgtc3F1YXJlNjQwLmpwZw/w288?h=yg-p2DzkVv5jneG5koTDod1yA65H38u_3qXpbhlkhSM",
+  "photo": "/recipe-photos/mushroom-risotto-peas.jpg",
   "notes": "Use vegetable stock to keep it vegetarian. The original method is behind the NYT paywall; these steps are a guide.",
   "raw": [
-   { "items": ["6 to 7 cups chicken, vegetable or garlic broth or stock, as needed", "Salt and freshly ground pepper", "2 tablespoons extra-virgin olive oil", "½ cup finely chopped onion, or 2 shallots, minced", "¾ to 1 pound wild mushrooms, cleaned if necessary and torn or sliced into smaller pieces if thick (small wild mushrooms should be left whole, mushrooms like maitake can just be separated into small pieces)", "2 garlic cloves, minced", "2 teaspoons fresh thyme leaves or chopped sage", "1½ cups arborio or carnaroli rice", "½ cup dry white wine, such as pinot grigio or sauvignon blanc", "1 cup frozen peas, thawed (optional)", "2 tablespoons chopped fresh parsley", "½ cup grated Parmesan cheese, or a mixture of Parmesan and Pecorino Romano"] }
+   {
+    "items": [
+     "6 to 7 cups chicken, vegetable or garlic broth or stock, as needed",
+     "Salt and freshly ground pepper",
+     "2 tablespoons extra-virgin olive oil",
+     "½ cup finely chopped onion, or 2 shallots, minced",
+     "¾ to 1 pound wild mushrooms, cleaned if necessary and torn or sliced into smaller pieces if thick (small wild mushrooms should be left whole, mushrooms like maitake can just be separated into small pieces)",
+     "2 garlic cloves, minced",
+     "2 teaspoons fresh thyme leaves or chopped sage",
+     "1½ cups arborio or carnaroli rice",
+     "½ cup dry white wine, such as pinot grigio or sauvignon blanc",
+     "1 cup frozen peas, thawed (optional)",
+     "2 tablespoons chopped fresh parsley",
+     "½ cup grated Parmesan cheese, or a mixture of Parmesan and Pecorino Romano"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "vegetable stock", "qty": 1.6, "unit": "L", "aisle": "Pantry", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "shallots", "qty": 2, "aisle": "Produce" },
-   { "name": "mixed mushrooms", "qty": 400, "unit": "g", "aisle": "Produce" },
-   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
-   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "arborio rice", "qty": 1.5, "unit": "cup", "aisle": "Pantry" },
-   { "name": "dry white wine", "qty": 125, "unit": "ml", "aisle": "Other" },
-   { "name": "frozen peas", "qty": 1, "unit": "cup", "aisle": "Frozen" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "parmesan", "qty": 50, "unit": "g", "aisle": "Dairy & Eggs" }
+   {
+    "name": "vegetable stock",
+    "qty": 1.6,
+    "unit": "L",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 2,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "shallots",
+    "qty": 2,
+    "aisle": "Produce"
+   },
+   {
+    "name": "mixed mushrooms",
+    "qty": 400,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "garlic",
+    "qty": 2,
+    "unit": "clove",
+    "aisle": "Produce"
+   },
+   {
+    "name": "thyme",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "arborio rice",
+    "qty": 1.5,
+    "unit": "cup",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "dry white wine",
+    "qty": 125,
+    "unit": "ml",
+    "aisle": "Other"
+   },
+   {
+    "name": "frozen peas",
+    "qty": 1,
+    "unit": "cup",
+    "aisle": "Frozen"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "parmesan",
+    "qty": 50,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   }
   ],
   "method": [
    "Bring the stock to a simmer in a saucepan and keep it warm. Season with salt.",
@@ -172,32 +524,127 @@
   "id": "breaded-plaice-sauce-vierge",
   "name": "Breaded Fish with Sauce Vierge",
   "category": "Seafood",
-  "tags": ["Crumbed", "Quick"],
+  "tags": [
+   "Crumbed",
+   "Quick"
+  ],
   "minutes": 30,
   "serves": 2,
-  "source": { "name": "olive magazine", "url": "https://www.olivemagazine.com/recipes/fish-and-seafood/breaded-plaice-with-sauce-vierge/" },
+  "source": {
+   "name": "olive magazine",
+   "url": "https://www.olivemagazine.com/recipes/fish-and-seafood/breaded-plaice-with-sauce-vierge/"
+  },
   "author": "Adam Bush",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9pbWFnZXMuaW1tZWRpYXRlLmNvLnVrL3Byb2R1Y3Rpb24vdm9sYXRpbGUvc2l0ZXMvMi8yMDE5LzA1L3BsYWljZTI4MTU3LTcwMjc1ZTYuanBnP3Jlc2l6ZT03NjgsNTc0/w288?h=gRKG1cBs-VwG4NyhC3F08JGeQvTzfbzrFj195Li-vJo",
+  "photo": "/recipe-photos/breaded-plaice-sauce-vierge.jpg",
   "notes": "Plaice is hard to find in Australia: flathead or whiting fillets work well.",
   "raw": [
-   { "items": ["3 tbsp plain flour, well seasoned", "1 egg, beaten", "100g panko breadcrumbs", "4 small plaice fillets", "vegetable oil, for frying", "sea salt flakes", "new potatoes, boiled and tossed in butter, to serve"] },
-   { "section": "SAUCE VIERGE", "items": ["1 tsp coriander seeds, lightly crushed", "5 tbsp extra-virgin olive oil", "1 lemon, zested, 1⁄2 juiced", "100g cherry tomatoes, diced", "2 tsp baby capers", "1⁄2 a small bunch basil, roughly chopped", "1⁄2 a small bunch flat-leaf parsley, roughly chopped"] }
+   {
+    "items": [
+     "3 tbsp plain flour, well seasoned",
+     "1 egg, beaten",
+     "100g panko breadcrumbs",
+     "4 small plaice fillets",
+     "vegetable oil, for frying",
+     "sea salt flakes",
+     "new potatoes, boiled and tossed in butter, to serve"
+    ]
+   },
+   {
+    "section": "SAUCE VIERGE",
+    "items": [
+     "1 tsp coriander seeds, lightly crushed",
+     "5 tbsp extra-virgin olive oil",
+     "1 lemon, zested, 1⁄2 juiced",
+     "100g cherry tomatoes, diced",
+     "2 tsp baby capers",
+     "1⁄2 a small bunch basil, roughly chopped",
+     "1⁄2 a small bunch flat-leaf parsley, roughly chopped"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "plain flour", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
-   { "name": "panko breadcrumbs", "qty": 100, "unit": "g", "aisle": "Pantry" },
-   { "name": "white fish fillets", "qty": 4, "aisle": "Meat & Seafood" },
-   { "name": "vegetable oil", "aisle": "Pantry", "staple": true },
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "baby potatoes", "qty": 500, "unit": "g", "aisle": "Produce" },
-   { "name": "coriander seeds", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "olive oil", "qty": 5, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "lemon", "qty": 1, "aisle": "Produce" },
-   { "name": "cherry tomatoes", "qty": 100, "unit": "g", "aisle": "Produce" },
-   { "name": "capers", "qty": 2, "unit": "tsp", "aisle": "Pantry" },
-   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
-   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+   {
+    "name": "plain flour",
+    "qty": 3,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 1,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "panko breadcrumbs",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "white fish fillets",
+    "qty": 4,
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "vegetable oil",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "baby potatoes",
+    "qty": 500,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "coriander seeds",
+    "qty": 1,
+    "unit": "tsp",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 5,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "lemon",
+    "qty": 1,
+    "aisle": "Produce"
+   },
+   {
+    "name": "cherry tomatoes",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Produce"
+   },
+   {
+    "name": "capers",
+    "qty": 2,
+    "unit": "tsp",
+    "aisle": "Pantry"
+   },
+   {
+    "name": "basil",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   },
+   {
+    "name": "flat-leaf parsley",
+    "qty": 1,
+    "unit": "bunch",
+    "aisle": "Produce"
+   }
   ],
   "method": [
    "To make the sauce vierge, put the coriander seeds into a small pan and toast for 2 minutes until fragrant. Pour in the olive oil and add the lemon zest and tomatoes and heat gently until the tomatoes are just soft. Add the lemon juice and capers, season lightly and remove from the heat.",
@@ -211,25 +658,81 @@
   "id": "spaghetti-carbonara",
   "name": "Spaghetti Carbonara",
   "category": "Pork",
-  "tags": ["Pasta", "Italian", "Quick"],
+  "tags": [
+   "Pasta",
+   "Italian",
+   "Quick"
+  ],
   "minutes": 30,
   "serves": 4,
-  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara" },
+  "source": {
+   "name": "NYT Cooking",
+   "url": "https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara"
+  },
   "author": "Ian Fisher",
-  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIxLzAyLzE0L2RpbmluZy9jYXJib25hcmEtaG9yaXpvbnRhbC9jYXJib25hcmEtaG9yaXpvbnRhbC1zcXVhcmU2NDAtdjIuanBn/w288?h=6AJWB-MVC1Mgs8QBnfVDD1nrzR4TrKCaFxu7WgKS0YU",
+  "photo": "/recipe-photos/spaghetti-carbonara.jpg",
   "notes": "The original method is behind the NYT paywall; these steps are a guide. The goal is creaminess: keep the heat off when the eggs go in.",
   "raw": [
-   { "items": ["Salt", "2 large eggs and 2 large yolks, room temperature", "1 ounce (about ⅓ packed cup) grated pecorino Romano, plus additional for serving", "1 ounce (about ⅓ packed cup) grated Parmesan", "Coarsely ground black pepper", "1 tablespoon olive oil", "3½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about ¼ inch thick by ⅓ inch square", "12 ounces spaghetti (about ¾ box)"] }
+   {
+    "items": [
+     "Salt",
+     "2 large eggs and 2 large yolks, room temperature",
+     "1 ounce (about ⅓ packed cup) grated pecorino Romano, plus additional for serving",
+     "1 ounce (about ⅓ packed cup) grated Parmesan",
+     "Coarsely ground black pepper",
+     "1 tablespoon olive oil",
+     "3½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about ¼ inch thick by ⅓ inch square",
+     "12 ounces spaghetti (about ¾ box)"
+    ]
+   }
   ],
   "ingredients": [
-   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
-   { "name": "pecorino", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "parmesan", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
-   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
-   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
-   { "name": "guanciale or pancetta", "qty": 100, "unit": "g", "aisle": "Meat & Seafood" },
-   { "name": "spaghetti", "qty": 340, "unit": "g", "aisle": "Pantry" }
+   {
+    "name": "salt",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "eggs",
+    "qty": 4,
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "pecorino",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "parmesan",
+    "qty": 30,
+    "unit": "g",
+    "aisle": "Dairy & Eggs"
+   },
+   {
+    "name": "black pepper",
+    "aisle": "Spices & Sauces",
+    "staple": true
+   },
+   {
+    "name": "olive oil",
+    "qty": 1,
+    "unit": "tbsp",
+    "aisle": "Pantry",
+    "staple": true
+   },
+   {
+    "name": "guanciale or pancetta",
+    "qty": 100,
+    "unit": "g",
+    "aisle": "Meat & Seafood"
+   },
+   {
+    "name": "spaghetti",
+    "qty": 340,
+    "unit": "g",
+    "aisle": "Pantry"
+   }
   ],
   "method": [
    "Bring a large pot of salted water to the boil.",

@@ -4,6 +4,7 @@ import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { catClass } from '../components/Marker';
 import { RecipeThumb } from '../components/RecipeThumb';
 import type { Ctx } from '../App';
+import { formatMinutes } from '../lib/plan';
 import type { Category, Recipe } from '../types';
 
 const VIEW_KEY = 'dinner-planner:recipes-view';
@@ -97,7 +98,7 @@ export function Recipes({ ctx }: { ctx: Ctx }) {
                 <RecipeThumb recipe={r} size="lg" />
                 <span className="recipe-card-body">
                   <span className="recipe-card-name">{r.name}</span>
-                  <span className="muted small">{r.minutes ? `${r.minutes} min` : r.category}</span>
+                  <span className="muted small">{r.minutes ? formatMinutes(r.minutes) : r.category}</span>
                 </span>
               </button>
             </li>
@@ -110,5 +111,5 @@ export function Recipes({ ctx }: { ctx: Ctx }) {
 }
 
 function byline(r: Recipe): string {
-  return [r.author && `by ${r.author}`, r.minutes && `${r.minutes} min`].filter(Boolean).join(' · ') || r.category;
+  return [r.author && `by ${r.author}`, r.minutes && formatMinutes(r.minutes)].filter(Boolean).join(' · ') || r.category;
 }

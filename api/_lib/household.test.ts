@@ -71,6 +71,35 @@ describe('household sync API', () => {
     expect((await get(store)).state).toEqual(local);
   });
 
+  it('stores recipes added in the app, and deletions', async () => {
+    const store = memoryStore();
+    const recipe = {
+      id: 'nan-dal',
+      name: "Nan's Dal",
+      category: 'Vegetarian' as const,
+      tags: ['Curry'],
+      serves: 4,
+      ingredients: [{ name: 'red lentils', qty: 1, unit: 'cup', aisle: 'Pantry' as const }],
+      method: ['Simmer.'],
+      source: { name: 'Nan' },
+      addedAt: 1,
+    };
+    expect((await post(store, [{ t: 'recipe', recipe }])).status).toBe(200);
+    expect((await get(store)).state.recipes['nan-dal']).toEqual(recipe);
+    await post(store, [{ t: 'recipe', recipe: { id: 'nan-dal', deleted: true } as never }]);
+    expect((await get(store)).state.recipes['nan-dal']).toEqual({ id: 'nan-dal', deleted: true });
+  });
+
+  it('rejects malformed recipes', async () => {
+    const store = memoryStore();
+    const bad = { id: 'Bad Id!', name: 'x', category: 'Beef', tags: [], ingredients: [] };
+    expect((await post(store, [{ t: 'recipe', recipe: bad }])).status).toBe(400);
+    const badAisle = { id: 'ok', name: 'x', category: 'Beef', tags: [], ingredients: [{ name: 'y', aisle: 'Garage' }] };
+    expect((await post(store, [{ t: 'recipe', recipe: badAisle }])).status).toBe(400);
+    const badImage = { id: 'ok', name: 'x', category: 'Beef', tags: [], ingredients: [], image: 'javascript:alert(1)' };
+    expect((await post(store, [{ t: 'recipe', recipe: badImage }])).status).toBe(400);
+  });
+
   it('rejects malformed edits', async () => {
     const store = memoryStore();
     expect((await post(store, [{ t: 'plan', date: 'not-a-date', plan: null }])).status).toBe(400);

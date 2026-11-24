@@ -36,6 +36,8 @@ export function applyOp(state: AppState, op: Op): AppState {
       return { ...state, settings: op.settings };
     case 'history':
       return { ...state, extrasHistory: op.list };
+    case 'recipe':
+      return { ...state, recipes: { ...state.recipes, [op.recipe.id]: op.recipe } };
   }
 }
 
@@ -53,12 +55,14 @@ export function stateToOps(state: AppState): Op[] {
   }
   ops.push({ t: 'settings', settings: state.settings });
   if (state.extrasHistory.length) ops.push({ t: 'history', list: state.extrasHistory });
+  for (const recipe of Object.values(state.recipes ?? {})) ops.push({ t: 'recipe', recipe });
   return ops;
 }
 
 export function hasData(state: AppState): boolean {
   return (
     Object.keys(state.plans).length > 0 ||
+    Object.keys(state.recipes ?? {}).length > 0 ||
     Object.values(state.shopping).some((w) => w.extras.length > 0 || Object.keys(w.checked).length > 0)
   );
 }

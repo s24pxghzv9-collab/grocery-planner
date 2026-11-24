@@ -5,7 +5,7 @@
  *
  * Files in api/_lib are not deployed as endpoints (underscore prefix).
  */
-import type { AppState, DayPlan, ExtraItem, Op } from '../../src/types';
+import type { AppState, DayPlan, ExtraItem, Op, Recipe } from '../../src/types';
 
 // Distinct prefix so this can safely share a Redis database with other apps.
 const PREFIX = 'dinner-planner:';
@@ -14,6 +14,7 @@ export const KEYS = {
   checked: `${PREFIX}checked`, // `${week}|${itemKey}` -> '1'
   extras: `${PREFIX}extras`, // id -> { week, ...ExtraItem } json
   meta: `${PREFIX}meta`, // 'settings' | 'history' -> json
+  recipes: `${PREFIX}recipes`, // id -> Recipe json (added or edited in the app)
 } as const;
 
 export interface Write {
@@ -47,6 +48,36 @@ function validItem(i: unknown): i is ExtraItem {
   return isStr(o.id, 40) && isStr(o.text) && typeof o.checked === 'boolean' && (o.at === undefined || typeof o.at === 'number');
 }
 
+const AISLES = ['Produce', 'Meat & Seafood', 'Dairy & Eggs', 'Bakery', 'Pantry', 'Spices & Sauces', 'Frozen', 'Other'];
+const CATEGORIES = ['Beef', 'Lamb', 'Pork', 'Chicken', 'Seafood', 'Vegetarian', 'Other'];
+const optStr = (v: unknown, max: number) => v === undefined || (typeof v === 'string' && v.length <= max);
+const optNum = (v: unknown) => v === undefined || (typeof v === 'number' && Number.isFinite(v) && v >= 0 && v < 100000);
+
+function validRecipe(r: unknown): r is Recipe {
+  if (!r || typeof r !== 'object') return false;
+  const o = r as Record<string, unknown>;
+  if (!isStr(o.id, 80) || !/^[a-z0-9-]+$/.test(o.id as string)) return false;
+  if (o.deleted === true) return true; // tombstone: only the id matters
+  const src = o.source as Record<string, unknown> | undefined;
+  return (
+    isStr(o.name, 150) &&
+    CATEGORIES.includes(o.category as string) &&
+    Array.isArray(o.tags) && o.tags.length <= 12 && o.tags.every((t) => isStr(t, 40)) &&
+    optNum(o.serves) && optNum(o.minutes) && optNum(o.addedAt) &&
+    Array.isArray(o.ingredients) && o.ingredients.length <= 80 &&
+    o.ingredients.every((i) => {
+      if (!i || typeof i !== 'object') return false;
+      const x = i as Record<string, unknown>;
+      return isStr(x.name, 120) && AISLES.includes(x.aisle as string) && optNum(x.qty) && optStr(x.unit, 20) &&
+        (x.staple === undefined || typeof x.staple === 'boolean');
+    }) &&
+    (o.method === undefined || (Array.isArray(o.method) && o.method.length <= 60 && o.method.every((m) => isStr(m, 3000)))) &&
+    optStr(o.notes, 3000) && optStr(o.author, 150) &&
+    (o.image === undefined || (typeof o.image === 'string' && o.image.length <= 2500 && /^(https:\/\/|\/recipe-photos\/)/.test(o.image))) &&
+    (src === undefined || (!!src && isStr(src.name, 100) && optStr(src.url, 2500)))
+  );
+}
+
 export function validateOps(input: unknown): Op[] | null {
   if (!Array.isArray(input) || input.length > MAX_OPS) return null;
   for (const raw of input) {
@@ -60,7 +91,8 @@ export function validateOps(input: unknown): Op[] | null {
       (op.t === 'settings' &&
         !!op.settings &&
         typeof (op.settings as { weekStartsOn?: unknown }).weekStartsOn === 'number') ||
-      (op.t === 'history' && Array.isArray(op.list) && op.list.length <= 50 && op.list.every((s) => isStr(s)));
+      (op.t === 'history' && Array.isArray(op.list) && op.list.length <= 50 && op.list.every((s) => isStr(s))) ||
+      (op.t === 'recipe' && validRecipe(op.recipe));
     if (!ok) return null;
   }
   return input as Op[];
@@ -85,6 +117,8 @@ export function opsToWrites(ops: Op[]): Write[] {
         return { key: KEYS.meta, set: { settings: JSON.stringify({ weekStartsOn: op.settings.weekStartsOn }) } };
       case 'history':
         return { key: KEYS.meta, set: { history: JSON.stringify(op.list) } };
+      case 'recipe':
+        return { key: KEYS.recipes, set: { [op.recipe.id]: JSON.stringify(op.recipe) } };
     }
   });
 }
@@ -100,11 +134,15 @@ function parse<T>(s: string | undefined, fallback: T): T {
   }
 }
 
-export function hashesToState([plans, checked, extras, meta]: Record<string, string>[]): { state: AppState; empty: boolean } {
+export function hashesToState([plans, checked, extras, meta, recipes]: Record<string, string>[]): {
+  state: AppState;
+  empty: boolean;
+} {
   const state: AppState = {
     version: 1,
     plans: {},
     shopping: {},
+    recipes: {},
     extrasHistory: parse(meta?.history, [] as string[]),
     settings: parse(meta?.settings, { weekStartsOn: 0 }),
   };
@@ -124,9 +162,13 @@ export function hashesToState([plans, checked, extras, meta]: Record<string, str
     const { week, ...item } = e;
     weekOf(week).extras.push(item);
   }
+  for (const json of Object.values(recipes ?? {})) {
+    const r = parse<Recipe | null>(json, null);
+    if (r?.id) state.recipes[r.id] = r;
+  }
   for (const w of Object.values(state.shopping)) w.extras.sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
 
-  const empty = [plans, checked, extras, meta].every((h) => !h || Object.keys(h).length === 0);
+  const empty = [plans, checked, extras, meta, recipes].every((h) => !h || Object.keys(h).length === 0);
   return { state, empty };
 }
 
@@ -140,7 +182,7 @@ const json = (body: unknown, status = 200) =>
 
 export async function handle(request: Request, store: Store | null): Promise<Response> {
   if (!store) return json({ error: 'not-configured' }, 503);
-  const order = [KEYS.plans, KEYS.checked, KEYS.extras, KEYS.meta];
+  const order = [KEYS.plans, KEYS.checked, KEYS.extras, KEYS.meta, KEYS.recipes];
 
   if (request.method === 'GET') {
     return json(hashesToState(await store.readAll(order)));

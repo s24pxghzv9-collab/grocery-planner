@@ -25,6 +25,7 @@ export const initialState: AppState = {
   version: 1,
   plans: {},
   shopping: {},
+  recipes: {},
   extrasHistory: [],
   settings: { weekStartsOn: 0 },
 };
@@ -54,7 +55,7 @@ function write(key: string, value: unknown) {
 }
 
 function normalise(s: Partial<AppState>): AppState {
-  return { ...initialState, ...s, settings: { ...initialState.settings, ...s.settings } };
+  return { ...initialState, ...s, recipes: s.recipes ?? {}, settings: { ...initialState.settings, ...s.settings } };
 }
 
 export type Dispatch = (ops: Op | Op[]) => void;

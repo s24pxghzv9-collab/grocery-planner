@@ -48,6 +48,10 @@ export interface Recipe {
   /** Where the recipe came from, e.g. { name: 'RecipeTin Eats', url: 'https://…' }. */
   source?: { name: string; url?: string };
   author?: string;
+  /** Added in the app (as opposed to built in). */
+  addedAt?: number;
+  /** A built-in recipe removed by the household. */
+  deleted?: boolean;
 }
 
 /** What's on for a given night: a recipe, or a free-text note like "Out" or "Liz's party". */
@@ -73,6 +77,8 @@ export interface AppState {
   plans: Record<string, DayPlan>;
   /** Keyed by the ISO date the week starts on. */
   shopping: Record<string, WeekShopping>;
+  /** Recipes added or edited in the app, keyed by id. Merged over the built-in ones. */
+  recipes: Record<string, Recipe>;
   /** Previously used extras, most recent first. Used for quick-add chips. */
   extrasHistory: string[];
   settings: {
@@ -91,4 +97,5 @@ export type Op =
   | { t: 'extra'; week: string; item: ExtraItem }
   | { t: 'extraDel'; week: string; id: string }
   | { t: 'settings'; settings: AppState['settings'] }
-  | { t: 'history'; list: string[] };
+  | { t: 'history'; list: string[] }
+  | { t: 'recipe'; recipe: Recipe };

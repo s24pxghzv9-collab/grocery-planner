@@ -2,7 +2,7 @@ import { BookOpen, CalendarDays, House, ShoppingBasket, type LucideIcon } from '
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { RecipeDetail } from './components/RecipeDetail';
 import { RecipePicker } from './components/RecipePicker';
-import { RECIPES_BY_ID } from './data/recipes';
+import { RECIPES_BY_ID, setHouseholdRecipes } from './data/recipes';
 import { addDays, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
 import { buildShoppingList, type ShoppingItem } from './lib/shopping';
 import { useHouseholdState, weekShopping, type Dispatch, type SyncStatus } from './lib/store';
@@ -62,6 +62,8 @@ function useToday(): string {
 
 export default function App() {
   const { state, dispatch, status: syncStatus } = useHouseholdState();
+  // Merge recipes added or edited on either phone into the recipe bank before anything reads it.
+  setHouseholdRecipes(state.recipes);
   const today = useToday();
   const currentWeek = weekStart(today, state.settings.weekStartsOn);
   const nextWeek = addDays(currentWeek, 7);
@@ -102,7 +104,7 @@ export default function App() {
 
   const listItems = useMemo(
     () => buildShoppingList(weekDays(listWeek), state.plans, RECIPES_BY_ID),
-    [listWeek, state.plans],
+    [listWeek, state.plans, state.recipes],
   );
   const listShop = weekShopping(state, listWeek);
   const listSummary = {

@@ -9,6 +9,11 @@
   "staple": false,
   "uses": 1
  },
+ "arborio rice": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
  "asparagus": {
   "aisle": "Produce",
   "staple": false,
@@ -19,15 +24,25 @@
   "staple": false,
   "uses": 1
  },
+ "baby potatoes": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
  "baby spinach": {
   "aisle": "Produce",
   "staple": false,
   "uses": 6
  },
+ "bacon": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
  "basil": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 5
+  "uses": 6
  },
  "basil pesto": {
   "aisle": "Spices & Sauces",
@@ -82,7 +97,7 @@
  "black pepper": {
   "aisle": "Spices & Sauces",
   "staple": true,
-  "uses": 24
+  "uses": 27
  },
  "black peppercorns": {
   "aisle": "Spices & Sauces",
@@ -132,12 +147,12 @@
  "brown onion": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 19
+  "uses": 20
  },
  "brown sugar": {
   "aisle": "Pantry",
   "staple": true,
-  "uses": 6
+  "uses": 7
  },
  "buffalo mozzarella": {
   "aisle": "Dairy & Eggs",
@@ -177,7 +192,7 @@
  "capers": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 1
+  "uses": 2
  },
  "cardamom pods": {
   "aisle": "Spices & Sauces",
@@ -196,6 +211,11 @@
  },
  "cherry bocconcini": {
   "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "cherry tomatoes": {
+  "aisle": "Produce",
   "staple": false,
   "uses": 1
  },
@@ -232,12 +252,12 @@
  "chilli crisp": {
   "aisle": "Spices & Sauces",
   "staple": false,
-  "uses": 3
+  "uses": 4
  },
  "chilli flakes": {
   "aisle": "Spices & Sauces",
   "staple": true,
-  "uses": 7
+  "uses": 8
  },
  "chilli oil": {
   "aisle": "Spices & Sauces",
@@ -272,7 +292,7 @@
  "coconut milk": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 8
+  "uses": 9
  },
  "cognac or brandy": {
   "aisle": "Other",
@@ -282,12 +302,12 @@
  "coriander": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 6
+  "uses": 7
  },
  "coriander seeds": {
   "aisle": "Spices & Sauces",
   "staple": true,
-  "uses": 1
+  "uses": 2
  },
  "corn chips": {
   "aisle": "Pantry",
@@ -332,12 +352,12 @@
  "crushed tomatoes": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 2
+  "uses": 3
  },
  "cucumber": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 10
+  "uses": 11
  },
  "cumin seeds": {
   "aisle": "Spices & Sauces",
@@ -392,7 +412,7 @@
  "dry white wine": {
   "aisle": "Other",
   "staple": false,
-  "uses": 4
+  "uses": 5
  },
  "edamame": {
   "aisle": "Frozen",
@@ -402,7 +422,12 @@
  "eggs": {
   "aisle": "Dairy & Eggs",
   "staple": false,
-  "uses": 11
+  "uses": 14
+ },
+ "extra firm tofu": {
+  "aisle": "Other",
+  "staple": false,
+  "uses": 1
  },
  "eye fillet steaks": {
   "aisle": "Meat & Seafood",
@@ -432,7 +457,7 @@
  "flat-leaf parsley": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 6
+  "uses": 9
  },
  "fresh pasta": {
   "aisle": "Dairy & Eggs",
@@ -447,7 +472,7 @@
  "frozen peas": {
   "aisle": "Frozen",
   "staple": false,
-  "uses": 3
+  "uses": 4
  },
  "garam masala": {
   "aisle": "Spices & Sauces",
@@ -457,7 +482,7 @@
  "garlic": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 45
+  "uses": 48
  },
  "garlic powder": {
   "aisle": "Spices & Sauces",
@@ -537,7 +562,7 @@
  "guanciale or pancetta": {
   "aisle": "Meat & Seafood",
   "staple": false,
-  "uses": 1
+  "uses": 3
  },
  "hoisin sauce": {
   "aisle": "Spices & Sauces",
@@ -602,7 +627,7 @@
  "lemon": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 7
+  "uses": 8
  },
  "lemongrass": {
   "aisle": "Produce",
@@ -637,7 +662,7 @@
  "miso paste": {
   "aisle": "Spices & Sauces",
   "staple": false,
-  "uses": 3
+  "uses": 4
  },
  "mixed herbs": {
   "aisle": "Spices & Sauces",
@@ -647,7 +672,7 @@
  "mixed mushrooms": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 1
+  "uses": 2
  },
  "mozzarella": {
   "aisle": "Dairy & Eggs",
@@ -662,7 +687,7 @@
  "olive oil": {
   "aisle": "Pantry",
   "staple": true,
-  "uses": 26
+  "uses": 32
  },
  "onion powder": {
   "aisle": "Spices & Sauces",
@@ -671,6 +696,11 @@
  },
  "orecchiette": {
   "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "oregano": {
+  "aisle": "Produce",
   "staple": false,
   "uses": 1
  },
@@ -687,7 +717,7 @@
  "panko breadcrumbs": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 6
+  "uses": 7
  },
  "paprika": {
   "aisle": "Spices & Sauces",
@@ -697,7 +727,7 @@
  "parmesan": {
   "aisle": "Dairy & Eggs",
   "staple": false,
-  "uses": 15
+  "uses": 19
  },
  "passata": {
   "aisle": "Pantry",
@@ -707,12 +737,17 @@
  "peanut butter": {
   "aisle": "Pantry",
   "staple": true,
-  "uses": 2
+  "uses": 3
  },
  "pecorino": {
   "aisle": "Dairy & Eggs",
   "staple": false,
-  "uses": 3
+  "uses": 4
+ },
+ "penne": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
  },
  "pickled peppers": {
   "aisle": "Pantry",
@@ -742,7 +777,7 @@
  "plain flour": {
   "aisle": "Pantry",
   "staple": true,
-  "uses": 7
+  "uses": 8
  },
  "pomegranate": {
   "aisle": "Produce",
@@ -764,6 +799,11 @@
   "staple": false,
   "uses": 7
  },
+ "pouring cream": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
  "puff pastry": {
   "aisle": "Frozen",
   "staple": false,
@@ -777,7 +817,7 @@
  "ramen noodles": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 1
+  "uses": 2
  },
  "raw cashews": {
   "aisle": "Pantry",
@@ -807,7 +847,7 @@
  "red curry paste": {
   "aisle": "Spices & Sauces",
   "staple": false,
-  "uses": 3
+  "uses": 4
  },
  "red onion": {
   "aisle": "Produce",
@@ -842,7 +882,7 @@
  "rigatoni": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 1
+  "uses": 2
  },
  "roast chicken": {
   "aisle": "Meat & Seafood",
@@ -872,7 +912,7 @@
  "salt": {
   "aisle": "Spices & Sauces",
   "staple": true,
-  "uses": 31
+  "uses": 36
  },
  "sambal oelek": {
   "aisle": "Spices & Sauces",
@@ -892,7 +932,7 @@
  "shallots": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 10
+  "uses": 11
  },
  "shrimp paste": {
   "aisle": "Spices & Sauces",
@@ -927,12 +967,12 @@
  "soy sauce": {
   "aisle": "Spices & Sauces",
   "staple": true,
-  "uses": 18
+  "uses": 19
  },
  "spaghetti": {
   "aisle": "Pantry",
   "staple": false,
-  "uses": 1
+  "uses": 2
  },
  "spinach & ricotta agnolotti": {
   "aisle": "Dairy & Eggs",
@@ -942,7 +982,7 @@
  "spring onion": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 11
+  "uses": 12
  },
  "sriracha": {
   "aisle": "Spices & Sauces",
@@ -977,7 +1017,7 @@
  "teriyaki sauce": {
   "aisle": "Spices & Sauces",
   "staple": false,
-  "uses": 2
+  "uses": 3
  },
  "thai basil": {
   "aisle": "Produce",
@@ -987,12 +1027,12 @@
  "thickened cream": {
   "aisle": "Dairy & Eggs",
   "staple": false,
-  "uses": 9
+  "uses": 10
  },
  "thyme": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 3
+  "uses": 5
  },
  "tofu puffs": {
   "aisle": "Other",
@@ -1032,15 +1072,25 @@
  "vegetable oil": {
   "aisle": "Pantry",
   "staple": true,
-  "uses": 15
+  "uses": 16
+ },
+ "vegetable stock": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 2
  },
  "vodka": {
   "aisle": "Other",
   "staple": false,
-  "uses": 3
+  "uses": 4
  },
  "white cabbage": {
   "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "white fish fillets": {
+  "aisle": "Meat & Seafood",
   "staple": false,
   "uses": 1
  },
@@ -1082,6 +1132,6 @@
  "zucchini": {
   "aisle": "Produce",
   "staple": false,
-  "uses": 4
+  "uses": 5
  }
 }

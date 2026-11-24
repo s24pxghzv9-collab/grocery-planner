@@ -39,6 +39,18 @@ describe('buildShoppingList', () => {
   });
 });
 
+describe('formatQty', () => {
+  it('uses fractions and plural word units', () => {
+    expect(formatQty({ qty: 1.5 })).toBe('1½');
+    expect(formatQty({ qty: 0.25 })).toBe('¼');
+    expect(formatQty({ qty: 13, unit: 'clove' })).toBe('13 cloves');
+    expect(formatQty({ qty: 1, unit: 'bunch' })).toBe('1 bunch');
+    expect(formatQty({ qty: 1.5, unit: 'bunch' })).toBe('1½ bunches');
+    expect(formatQty({ qty: 1500, unit: 'g' })).toBe('1½ kg');
+    expect(formatQty({ qty: 2.4, unit: 'tbsp' })).toBe('2.4 tbsp');
+  });
+});
+
 describe('dates', () => {
   it('finds the start of the week', () => {
     // 2026-11-24 is a Tuesday

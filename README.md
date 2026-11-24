@@ -10,9 +10,19 @@ and it builds the shopping list for you.
 
 See [DESIGN.md](DESIGN.md) for the design, the research behind it, and the list of later features.
 
-## Adding recipes
+## Recipes
 
-Edit [`src/data/recipes.ts`](src/data/recipes.ts). The instructions are at the top of the file.
+The 66 household recipes were imported from Deglaze (Nov 2026). Each one is kept in
+`data/deglaze/batch-*.json` with its original text as a backup, plus a tidied version for the
+planner. To change a recipe, edit its batch file, then rebuild:
+
+```bash
+node scripts/build-recipes.mjs
+```
+
+That regenerates `src/data/imported-recipes.json` and warns about ingredients filed under
+different aisles in different recipes. The conventions are in `data/deglaze/README.md`.
+An in-app "Add recipe" (paste a link or add screenshots) is the next planned feature.
 
 ## Development
 

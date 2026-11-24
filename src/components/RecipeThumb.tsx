@@ -9,10 +9,12 @@ export function RecipeThumb({ recipe, size = 'md' }: { recipe: Recipe; size?: 'm
   if (recipe.image && !failed) {
     return (
       <span className={cls}>
-        <img src={recipe.image} alt="" loading="lazy" decoding="async" onError={() => setFailed(true)} />
+        <img src={recipe.image} alt="" loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setFailed(true)} />
       </span>
     );
   }
+  // On the recipe page, no photo means no box at all.
+  if (size === 'hero') return null;
   return (
     <span className={`${cls} thumb-tile`} aria-hidden>
       <span className="thumb-initial">{recipe.name[0]}</span>

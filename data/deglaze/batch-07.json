@@ -1,0 +1,242 @@
+[
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:XkdDSDuQo3lxRH7S",
+  "id": "pasta-alla-vodka",
+  "name": "Pasta alla Vodka",
+  "category": "Pork",
+  "tags": ["Pasta", "Italian"],
+  "minutes": 30,
+  "serves": 5,
+  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1019924-pasta-alla-vodka" },
+  "author": "Colu Henry",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIxLzAyLzI4L2RpbmluZy9jaC1wYXN0YS1hbGxhLXZvZGthL21lcmxpbl8xNDU3OTI3NTJfZmFiZWMyNmMtOTA4Yy00ZjcxLThjODQtMmIxNDU4NDlkYTQzLXNxdWFyZTY0MC5qcGc/w288?h=jnwwoqZ6foEhSwAXXD181Z4dA23siiu0j9F93CAbnXE",
+  "notes": "The pancetta is optional; leave it out for a vegetarian version. The original method is behind the NYT paywall; these steps are a guide.",
+  "raw": [
+   { "items": ["Kosher salt", "1 pound rigatoni or penne pasta", "2 tablespoons olive oil", "4 ounces diced pancetta, optional", "1 medium yellow onion, finely chopped", "2 garlic cloves, finely chopped", "½ teaspoon red-pepper flakes", "¾ cup vodka", "1 (28-ounce) can crushed tomatoes", "Freshly ground black pepper", "¾ cup heavy cream", "¼ cup grated Grana Padano or Parmesan cheese, plus more for serving", "1 tablespoon roughly chopped fresh oregano", "2 tablespoons roughly chopped Italian parsley"] }
+  ],
+  "ingredients": [
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "rigatoni", "qty": 500, "unit": "g", "aisle": "Pantry" },
+   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "guanciale or pancetta", "qty": 115, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "chilli flakes", "qty": 0.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "vodka", "qty": 180, "unit": "ml", "aisle": "Other" },
+   { "name": "crushed tomatoes", "qty": 2, "unit": "tin", "aisle": "Pantry" },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "thickened cream", "qty": 180, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "parmesan", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "oregano", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+  ],
+  "method": [
+   "Cook the pasta in well-salted boiling water until just shy of al dente. Reserve a cup of pasta water and drain.",
+   "Meanwhile, heat the olive oil in a large pan and cook the pancetta (if using) until crisp. Add the onion, garlic and chilli flakes and cook until soft.",
+   "Add the vodka and simmer until reduced by about half, then add the crushed tomatoes, season and simmer for 10 minutes.",
+   "Stir in the cream, then add the pasta and toss with the parmesan and a splash of pasta water until glossy.",
+   "Finish with oregano and parsley and serve with extra cheese."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Rz1tmLja5gWRc4t1",
+  "id": "red-curry-snapper-boat",
+  "name": "Red Curry Snapper Boat",
+  "skip": "The Instagram post only said 'comment RECIPE'; there's no recipe in it. Source: https://www.instagram.com/reel/DTGi8UVk0f4/"
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:publv1KJf-RjRiHm",
+  "id": "miso-peanut-ramen-bowls",
+  "name": "Miso Peanut Ramen Bowls",
+  "category": "Vegetarian",
+  "tags": ["Noodles", "Bowl"],
+  "minutes": 35,
+  "serves": 4,
+  "source": { "name": "Pinch of Yum", "url": "https://pinchofyum.com/miso-peanut-ramen-bowls" },
+  "author": "Lindsay Ostrom",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9waW5jaG9meXVtLmNvbS93cC1jb250ZW50L3VwbG9hZHMvTWlzby1QZWFudXQtUmFtZW4tQm93bHMtU3F1YXJlLmpwZw/w288?h=nFjLgM9ie-j3UzOzgb9qW3GuC72Skomu07b1sVXgcqs",
+  "raw": [
+   { "section": "Crispy Tofu Bits", "items": ["1 block extra firm tofu", "1 tablespoon olive oil", "1/2 teaspoon kosher salt", "1/4 cup teriyaki sauce", "1 clove garlic, grated"] },
+   { "section": "Miso Peanut Ramen", "items": ["1 tablespoon red curry paste or roasted red chili paste", "1 tablespoon white miso", "1–2 tablespoons peanut butter", "2 tablespoons reduced sodium soy sauce", "1 tablespoon brown sugar", "2 cups water + 2 teaspoons Better Than Bouillon roasted chicken or vegetable base", "1 14–ounce can full fat coconut milk", "two 3–ounce ramen packages"] },
+   { "section": "Toppings", "items": ["Finely sliced cucumbers", "Cilantro and/or green onion", "Chili crisp"] }
+  ],
+  "ingredients": [
+   { "name": "extra firm tofu", "qty": 1, "unit": "pack", "aisle": "Other" },
+   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "teriyaki sauce", "qty": 4, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
+   { "name": "red curry paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "miso paste", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "peanut butter", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "soy sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "brown sugar", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "vegetable stock", "qty": 500, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
+   { "name": "ramen noodles", "qty": 2, "unit": "pack", "aisle": "Pantry" },
+   { "name": "cucumber", "qty": 1, "aisle": "Produce" },
+   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "chilli crisp", "aisle": "Spices & Sauces" }
+  ],
+  "method": [
+   "Press tofu with paper towels to remove some of the water. Grate tofu on a box grater, on medium / large holes.",
+   "Heat olive oil in a nonstick skillet over medium-high heat. Add the tofu shreds and salt; saute until golden and lightly crisped, 10-15 minutes.",
+   "Add the teriyaki sauce and grated garlic to the tofu. Sauté for another 5-10 minutes to caramelize further. Transfer to a separate bowl and wipe out the pan.",
+   "In the same pan, heat the curry paste, miso, peanut butter, soy sauce, and brown sugar until it's worked into a thick paste. Add the coconut milk and broth, and whisk until incorporated. Simmer for 5-10 minutes.",
+   "Add ramen (just the noodles, not sauce packets) directly into the simmering broth. They will cook in 4-5 minutes; let it simmer for 1-2 minutes longer to thicken.",
+   "Serve ramen in bowls, with a scoop of broth over the top. Top with the tofu, herbs, and chili crisp."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:hDfSNI9XUUh5ktTv",
+  "id": "gozney-vodka-pasta-bake",
+  "name": "Gozney vodka pasta bake (TikTok)",
+  "skip": "The TikTok caption has no recipe, only a description. Source: https://vt.tiktok.com/ZS5pfVQak/"
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:X5NzMtN2qsyL0y_7",
+  "id": "courgette-carbonara",
+  "name": "Jamie's Courgette Carbonara",
+  "category": "Pork",
+  "tags": ["Pasta", "Quick"],
+  "minutes": 20,
+  "serves": 6,
+  "source": { "name": "Jamie Oliver", "url": "https://www.jamieoliver.com/recipes/pasta/beautiful-courgette-penne-carbonara/" },
+  "author": "Jamie Oliver",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9hc3NldC5qYW1pZW9saXZlci5jb20vaW1hZ2VzL2NxN3cyZTcxL3Byb2R1Y3Rpb24vMjdlYTkyZTJhNzU0MzY0ZTAwMzE4MjVmNTE1Njk1YTNiNTIxYjM1YS05NTh4MTI4MC5qcGcvOTQzNTY3NTc_cmVjdD0wLDE2MSw5NTgsOTU4Jnc9NjAwJmg9NjAwJmZtPXdlYnAmcT03NSZmaXQ9Y3JvcCZhdXRvPWZvcm1hdA/w288?h=BWzYrt_uuQKzJ2eR4a46F65GzLWPaLnO7r4qdXNQwss",
+  "raw": [
+   { "items": ["6 medium green and yellow courgettes", "500g penne", "4 large eggs", "100ml single cream", "1 small handful of Parmesan cheese", "olive oil", "6 slices of back bacon", "½ a bunch of fresh thyme (15g)", "optional: a few courgette flowers"] }
+  ],
+  "ingredients": [
+   { "name": "zucchini", "qty": 6, "aisle": "Produce" },
+   { "name": "penne", "qty": 500, "unit": "g", "aisle": "Pantry" },
+   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
+   { "name": "pouring cream", "qty": 100, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "parmesan", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true },
+   { "name": "bacon", "qty": 6, "unit": "slice", "aisle": "Meat & Seafood" },
+   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+  ],
+  "method": [
+   "Put a large pan of salted water on to boil.",
+   "Halve and then quarter any larger courgettes lengthways. Cut out and discard any fluffy middle bits, and slice the courgettes at an angle into pieces roughly the same size and shape as the penne. Smaller courgettes can simply be sliced finely.",
+   "Add the penne to the boiling water and cook according to the packet instructions.",
+   "Separate the eggs and put the yolks into a bowl. Add the cream and grate in half the Parmesan, and mix together with a fork. Season lightly with salt and pepper, and set aside.",
+   "Heat a very large frying pan and add a good splash of olive oil. Cut the bacon into chunky lardons and fry until dark brown and crisp.",
+   "Add the courgette slices and 2 big pinches of black pepper. Pick, chop and sprinkle in the thyme leaves, stir so the courgettes are coated in the bacon-flavoured oil, and fry until lightly golden and slightly softened.",
+   "Work quickly now: drain the pasta, reserving a little of the cooking water. Immediately toss the pasta in the pan with the courgettes and bacon, then remove from the heat and add a ladleful of the cooking water and the creamy sauce. Stir together quickly (no more cooking, or the eggs will scramble).",
+   "Grate in the rest of the Parmesan and add a little more cooking water if needed for a silky, shiny sauce. Taste for seasoning and serve immediately."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:9n4vbYIUavCMXeS_",
+  "id": "mushroom-risotto-peas",
+  "name": "Mushroom Risotto with Peas",
+  "category": "Vegetarian",
+  "tags": ["Risotto", "Rice"],
+  "minutes": 50,
+  "serves": 6,
+  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1017022-mushroom-risotto-with-peas" },
+  "author": "Martha Rose Shulman",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDE0LzEyLzAyL3NjaWVuY2UvMDRyZWNpcGVoZWFsdGgvMDRyZWNpcGVoZWFsdGgtc3F1YXJlNjQwLmpwZw/w288?h=yg-p2DzkVv5jneG5koTDod1yA65H38u_3qXpbhlkhSM",
+  "notes": "Use vegetable stock to keep it vegetarian. The original method is behind the NYT paywall; these steps are a guide.",
+  "raw": [
+   { "items": ["6 to 7 cups chicken, vegetable or garlic broth or stock, as needed", "Salt and freshly ground pepper", "2 tablespoons extra-virgin olive oil", "½ cup finely chopped onion, or 2 shallots, minced", "¾ to 1 pound wild mushrooms, cleaned if necessary and torn or sliced into smaller pieces if thick (small wild mushrooms should be left whole, mushrooms like maitake can just be separated into small pieces)", "2 garlic cloves, minced", "2 teaspoons fresh thyme leaves or chopped sage", "1½ cups arborio or carnaroli rice", "½ cup dry white wine, such as pinot grigio or sauvignon blanc", "1 cup frozen peas, thawed (optional)", "2 tablespoons chopped fresh parsley", "½ cup grated Parmesan cheese, or a mixture of Parmesan and Pecorino Romano"] }
+  ],
+  "ingredients": [
+   { "name": "vegetable stock", "qty": 1.6, "unit": "L", "aisle": "Pantry", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "shallots", "qty": 2, "aisle": "Produce" },
+   { "name": "mixed mushrooms", "qty": 400, "unit": "g", "aisle": "Produce" },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "arborio rice", "qty": 1.5, "unit": "cup", "aisle": "Pantry" },
+   { "name": "dry white wine", "qty": 125, "unit": "ml", "aisle": "Other" },
+   { "name": "frozen peas", "qty": 1, "unit": "cup", "aisle": "Frozen" },
+   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "parmesan", "qty": 50, "unit": "g", "aisle": "Dairy & Eggs" }
+  ],
+  "method": [
+   "Bring the stock to a simmer in a saucepan and keep it warm. Season with salt.",
+   "Heat the oil in a wide pan over medium heat. Cook the shallots until tender, then add the mushrooms and cook until they release their liquid and it evaporates. Add the garlic and thyme and season.",
+   "Add the rice and stir until the grains are coated and crackling, then add the wine and stir until absorbed.",
+   "Add the stock a ladleful at a time, stirring often and adding more each time it's nearly absorbed, for about 20-25 minutes, until the rice is creamy and just tender.",
+   "Stir in the peas, another ladle of stock, the parsley and parmesan. Season and serve straight away."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:bwEPN49tteyj-H9r",
+  "id": "breaded-plaice-sauce-vierge",
+  "name": "Breaded Fish with Sauce Vierge",
+  "category": "Seafood",
+  "tags": ["Crumbed", "Quick"],
+  "minutes": 30,
+  "serves": 2,
+  "source": { "name": "olive magazine", "url": "https://www.olivemagazine.com/recipes/fish-and-seafood/breaded-plaice-with-sauce-vierge/" },
+  "author": "Adam Bush",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9pbWFnZXMuaW1tZWRpYXRlLmNvLnVrL3Byb2R1Y3Rpb24vdm9sYXRpbGUvc2l0ZXMvMi8yMDE5LzA1L3BsYWljZTI4MTU3LTcwMjc1ZTYuanBnP3Jlc2l6ZT03NjgsNTc0/w288?h=gRKG1cBs-VwG4NyhC3F08JGeQvTzfbzrFj195Li-vJo",
+  "notes": "Plaice is hard to find in Australia: flathead or whiting fillets work well.",
+  "raw": [
+   { "items": ["3 tbsp plain flour, well seasoned", "1 egg, beaten", "100g panko breadcrumbs", "4 small plaice fillets", "vegetable oil, for frying", "sea salt flakes", "new potatoes, boiled and tossed in butter, to serve"] },
+   { "section": "SAUCE VIERGE", "items": ["1 tsp coriander seeds, lightly crushed", "5 tbsp extra-virgin olive oil", "1 lemon, zested, 1⁄2 juiced", "100g cherry tomatoes, diced", "2 tsp baby capers", "1⁄2 a small bunch basil, roughly chopped", "1⁄2 a small bunch flat-leaf parsley, roughly chopped"] }
+  ],
+  "ingredients": [
+   { "name": "plain flour", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
+   { "name": "panko breadcrumbs", "qty": 100, "unit": "g", "aisle": "Pantry" },
+   { "name": "white fish fillets", "qty": 4, "aisle": "Meat & Seafood" },
+   { "name": "vegetable oil", "aisle": "Pantry", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "baby potatoes", "qty": 500, "unit": "g", "aisle": "Produce" },
+   { "name": "coriander seeds", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "olive oil", "qty": 5, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "lemon", "qty": 1, "aisle": "Produce" },
+   { "name": "cherry tomatoes", "qty": 100, "unit": "g", "aisle": "Produce" },
+   { "name": "capers", "qty": 2, "unit": "tsp", "aisle": "Pantry" },
+   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+  ],
+  "method": [
+   "To make the sauce vierge, put the coriander seeds into a small pan and toast for 2 minutes until fragrant. Pour in the olive oil and add the lemon zest and tomatoes and heat gently until the tomatoes are just soft. Add the lemon juice and capers, season lightly and remove from the heat.",
+   "Put the seasoned flour, egg and breadcrumbs into 3 separate, shallow bowls, then toss the fish fillets first in the flour, then the egg and finally the breadcrumbs.",
+   "Heat 1cm of oil in a large non-stick frying pan over a medium-high heat. Carefully lower in the fillets and fry for 2-3 minutes on each side until really golden, then drain on kitchen paper and season with sea salt flakes.",
+   "Stir the herbs through the sauce vierge and serve with the fish and buttered new potatoes, if you like."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:Yh5HMds1oKJzmEKV",
+  "id": "spaghetti-carbonara",
+  "name": "Spaghetti Carbonara",
+  "category": "Pork",
+  "tags": ["Pasta", "Italian", "Quick"],
+  "minutes": 30,
+  "serves": 4,
+  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara" },
+  "author": "Ian Fisher",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIxLzAyLzE0L2RpbmluZy9jYXJib25hcmEtaG9yaXpvbnRhbC9jYXJib25hcmEtaG9yaXpvbnRhbC1zcXVhcmU2NDAtdjIuanBn/w288?h=6AJWB-MVC1Mgs8QBnfVDD1nrzR4TrKCaFxu7WgKS0YU",
+  "notes": "The original method is behind the NYT paywall; these steps are a guide. The goal is creaminess: keep the heat off when the eggs go in.",
+  "raw": [
+   { "items": ["Salt", "2 large eggs and 2 large yolks, room temperature", "1 ounce (about ⅓ packed cup) grated pecorino Romano, plus additional for serving", "1 ounce (about ⅓ packed cup) grated Parmesan", "Coarsely ground black pepper", "1 tablespoon olive oil", "3½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about ¼ inch thick by ⅓ inch square", "12 ounces spaghetti (about ¾ box)"] }
+  ],
+  "ingredients": [
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
+   { "name": "pecorino", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "parmesan", "qty": 30, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "olive oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "guanciale or pancetta", "qty": 100, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "spaghetti", "qty": 340, "unit": "g", "aisle": "Pantry" }
+  ],
+  "method": [
+   "Bring a large pot of salted water to the boil.",
+   "Whisk the eggs, yolks, pecorino, parmesan and plenty of coarse black pepper in a bowl.",
+   "Heat the oil in a large pan over medium heat and cook the guanciale until the fat renders and the edges are crisp. Turn off the heat.",
+   "Cook the spaghetti until al dente, reserving a cup of pasta water. Add the pasta to the guanciale pan and toss to coat.",
+   "Off the heat, pour in the egg mixture and toss quickly, adding splashes of pasta water until the sauce is creamy and glossy, not scrambled. Serve with extra pecorino and pepper."
+  ]
+ }
+]

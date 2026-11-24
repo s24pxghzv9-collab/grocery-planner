@@ -70,11 +70,44 @@ function toBaseUnit<T extends { qty?: number; unit?: string }>(ing: T): T {
   return ing;
 }
 
-function round(n: number): string {
+const FRACTIONS: [number, string][] = [
+  [0.25, '¼'],
+  [0.33, '⅓'],
+  [0.5, '½'],
+  [0.67, '⅔'],
+  [0.75, '¾'],
+];
+
+/** 1.5 -> "1½", 0.25 -> "¼", 2.4 -> "2.4". */
+function nice(n: number): string {
+  const whole = Math.floor(n);
+  const frac = n - whole;
+  if (frac < 0.01) return String(whole);
+  const match = FRACTIONS.find(([v]) => Math.abs(frac - v) < 0.03);
+  if (match) return (whole || '') + match[1];
   return String(Math.round(n * 100) / 100);
 }
 
-/** "500 g beef mince", "3 onions" style label for the quantity part. */
+/** Units that read as words and take a plural ("2 cloves", "3 bunches"). */
+const WORD_UNITS: Record<string, string> = {
+  clove: 'cloves',
+  bunch: 'bunches',
+  tin: 'tins',
+  jar: 'jars',
+  tub: 'tubs',
+  pack: 'packs',
+  bag: 'bags',
+  sheet: 'sheets',
+  slice: 'slices',
+  sprig: 'sprigs',
+  stalk: 'stalks',
+  head: 'heads',
+  knob: 'knobs',
+  pinch: 'pinches',
+  cup: 'cups',
+};
+
+/** "500 g", "1½ kg", "3 cloves", "½" (for countable items). */
 export function formatQty(item: { qty?: number; unit?: string }): string {
   if (item.qty == null) return '';
   let { qty } = item;
@@ -86,7 +119,8 @@ export function formatQty(item: { qty?: number; unit?: string }): string {
     qty /= 1000;
     unit = 'L';
   }
-  return unit ? `${round(qty)} ${unit}` : round(qty);
+  if (WORD_UNITS[unit] && qty > 1) unit = WORD_UNITS[unit];
+  return unit ? `${nice(qty)} ${unit}` : nice(qty);
 }
 
 export function groupByAisle<T extends { aisle: Aisle }>(items: T[]): [Aisle, T[]][] {

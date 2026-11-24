@@ -1,9 +1,11 @@
+import { ChevronLeft, ChevronRight, Copy, Trash2 } from 'lucide-react';
 import { addDays, dayName, rangeLabel, shortDate, weekDays, weekLabel, DAY_NAMES } from '../lib/dates';
 import { describePlan } from '../lib/plan';
+import { Marker } from '../components/Marker';
 import type { Ctx } from '../App';
 
 export function Plan({ ctx }: { ctx: Ctx }) {
-  const { state, update, today, currentWeek, planWeek, setPlanWeek, openPicker, openRecipe, toast } = ctx;
+  const { state, update, today, currentWeek, planWeek, setPlanWeek, openPicker, toast } = ctx;
   const days = weekDays(planWeek);
   const planned = days.filter((d) => state.plans[d]).length;
   const prevDays = weekDays(addDays(planWeek, -7));
@@ -35,74 +37,68 @@ export function Plan({ ctx }: { ctx: Ctx }) {
 
   return (
     <main className="screen">
-      <header className="page-header">
-        <div className="week-nav">
-          <button className="icon-btn" onClick={() => setPlanWeek(addDays(planWeek, -7))} aria-label="Previous week">
-            ‹
-          </button>
-          <div className="week-nav-label">
-            <h1>{weekLabel(planWeek, currentWeek)}</h1>
-            <p className="muted">
-              {rangeLabel(planWeek)} · {planned}/7 planned
-            </p>
-          </div>
-          <button className="icon-btn" onClick={() => setPlanWeek(addDays(planWeek, 7))} aria-label="Next week">
-            ›
-          </button>
+      <header className="week-nav">
+        <button className="icon-btn" onClick={() => setPlanWeek(addDays(planWeek, -7))} aria-label="Previous week">
+          <ChevronLeft size={22} />
+        </button>
+        <div className="week-nav-label">
+          <h1 className="title">{weekLabel(planWeek, currentWeek)}</h1>
+          <p className="muted small">{rangeLabel(planWeek)}</p>
         </div>
+        <button className="icon-btn" onClick={() => setPlanWeek(addDays(planWeek, 7))} aria-label="Next week">
+          <ChevronRight size={22} />
+        </button>
       </header>
 
-      {firstEmpty && (
-        <button className="btn btn-block btn-lg" onClick={() => openPicker(firstEmpty)}>
-          {planned === 0 ? 'Start planning' : 'Fill in the gaps'}
-        </button>
-      )}
+      <div className="plan-progress">
+        <div className="bar">
+          <div style={{ width: `${(planned / 7) * 100}%` }} />
+        </div>
+        <span className="small muted">{planned} of 7 planned</span>
+      </div>
 
-      <ul className="day-list">
+      <ol className="menu menu-lg">
         {days.map((d) => {
           const p = describePlan(state.plans[d]);
           return (
             <li key={d} className={`${d === today ? 'is-today' : ''} ${d < today ? 'is-past' : ''}`}>
-              <button className="day-row big" onClick={() => openPicker(d)}>
-                <span className="day-row-date">
-                  <strong>{dayName(d)}</strong>
-                  <span className="muted small">{d === today ? 'Today' : shortDate(d)}</span>
+              <button className="menu-row" onClick={() => openPicker(d)}>
+                <span className="menu-day wide">
+                  <span className="menu-day-name">{dayName(d)}</span>
+                  <span className="menu-day-sub">{d === today ? 'Today' : shortDate(d)}</span>
                 </span>
-                <span className={`day-row-meal ${p ? '' : 'muted'}`}>
-                  {p ? (
-                    <>
-                      <span className="emoji">{p.emoji}</span> {p.title}
-                    </>
-                  ) : (
-                    '+ Add dinner'
-                  )}
+                <span className="menu-dish-wrap">
+                  <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
+                  {p?.recipe && <span className="menu-sub">{p.recipe.category}{p.recipe.minutes ? ` · ${p.recipe.minutes} min` : ''}</span>}
                 </span>
+                <Marker plan={p} />
               </button>
-              {p?.recipe && (
-                <button className="icon-btn subtle" onClick={() => openRecipe(p.recipe!.id)} aria-label={`View ${p.title}`}>
-                  ⓘ
-                </button>
-              )}
             </li>
           );
         })}
-      </ul>
+      </ol>
 
-      <div className="btn-row center">
+      {firstEmpty && (
+        <button className="btn btn-primary btn-block" onClick={() => openPicker(firstEmpty)}>
+          {planned === 0 ? 'Start planning' : 'Fill the empty days'}
+        </button>
+      )}
+
+      <div className="quiet-actions">
         {lastWeekHasPlans && planned < 7 && (
-          <button className="btn btn-ghost" onClick={fillFromLastWeek}>
-            Copy last week
+          <button className="link" onClick={fillFromLastWeek}>
+            <Copy size={15} /> Copy last week
           </button>
         )}
         {planned > 0 && (
-          <button className="btn btn-ghost danger" onClick={clearWeek}>
-            Clear week
+          <button className="link danger" onClick={clearWeek}>
+            <Trash2 size={15} /> Clear week
           </button>
         )}
       </div>
 
       <label className="setting">
-        <span className="muted small">Weeks start on</span>
+        <span>Weeks start on</span>
         <select
           value={state.settings.weekStartsOn}
           onChange={(e) => {

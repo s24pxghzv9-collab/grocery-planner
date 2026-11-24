@@ -1,8 +1,10 @@
+import { Check, Search, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { ALL_TAGS, RECIPES } from '../data/recipes';
+import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { addDays, dayName, shortDate } from '../lib/dates';
-import { QUICK_NOTES } from '../lib/plan';
-import type { DayPlan } from '../types';
+import { NOTE_ICON, QUICK_NOTES, recipeMeta } from '../lib/plan';
+import type { Category, DayPlan } from '../types';
+import { catClass } from './Marker';
 import { Sheet } from './Sheet';
 
 interface Props {
@@ -15,7 +17,7 @@ interface Props {
 
 export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
   const [query, setQuery] = useState('');
-  const [tag, setTag] = useState<string | null>(null);
+  const [category, setCategory] = useState<Category | null>(null);
   const [customNote, setCustomNote] = useState<string | null>(null);
 
   // Recipes already used this week, or in the 7 days before it, to help avoid repeats.
@@ -38,16 +40,17 @@ export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
     const q = query.trim().toLowerCase();
     return RECIPES.filter(
       (r) =>
-        (!tag || r.tags.includes(tag)) &&
+        (!category || r.category === category) &&
         (!q ||
           r.name.toLowerCase().includes(q) ||
           r.tags.some((t) => t.toLowerCase().includes(q)) ||
           r.ingredients.some((i) => i.name.toLowerCase().includes(q))),
     );
-  }, [query, tag]);
+  }, [query, category]);
 
   if (!day) return null;
   const current = plans[day];
+  const planned = weekDays.filter((d) => plans[d]).length;
 
   const pick = (plan: DayPlan | null) => {
     setQuery('');
@@ -55,36 +58,46 @@ export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
     onPick(day, plan);
   };
 
+  const isNote = (text: string) => current?.kind === 'note' && current.text.toLowerCase() === text.toLowerCase();
+  const isCustomNote = current?.kind === 'note' && !QUICK_NOTES.some((q) => isNote(q.text));
+
   return (
     <Sheet
       open
       onClose={onClose}
-      title={<span key={day} className="fade-in">{dayName(day)}</span>}
-      subtitle={shortDate(day)}
+      title={
+        <span key={day} className="fade-in">
+          {dayName(day)}
+        </span>
+      }
+      subtitle={`${shortDate(day)} · ${planned} of 7 planned`}
       footer={
-        <button className="btn btn-block" onClick={onClose}>
-          Done
-        </button>
+        <div className="sheet-footer-row">
+          {current && (
+            <button className="btn btn-quiet" onClick={() => pick(null)}>
+              <X size={16} /> Clear day
+            </button>
+          )}
+          <button className="btn btn-primary grow" onClick={onClose}>
+            Done
+          </button>
+        </div>
       }
     >
-      <div className="chip-row">
-        {QUICK_NOTES.map((n) => (
-          <button
-            key={n.text}
-            className={`chip ${current?.kind === 'note' && current.text === n.text ? 'chip-on' : ''}`}
-            onClick={() => pick({ kind: 'note', text: n.text })}
-          >
-            {n.emoji} {n.text}
+      <div className="quick-notes">
+        {QUICK_NOTES.map(({ text, icon: Icon }) => (
+          <button key={text} className={`quick-note ${isNote(text) ? 'on' : ''}`} onClick={() => pick({ kind: 'note', text })}>
+            <Icon size={20} strokeWidth={1.75} />
+            <span>{text}</span>
           </button>
         ))}
-        <button className="chip" onClick={() => setCustomNote(current?.kind === 'note' ? current.text : '')}>
-          📝 Note…
+        <button
+          className={`quick-note ${isCustomNote ? 'on' : ''}`}
+          onClick={() => setCustomNote(current?.kind === 'note' && isCustomNote ? current.text : '')}
+        >
+          <NOTE_ICON size={20} strokeWidth={1.75} />
+          <span>{isCustomNote && current?.kind === 'note' ? current.text : 'Note'}</span>
         </button>
-        {current && (
-          <button className="chip chip-danger" onClick={() => pick(null)}>
-            Clear
-          </button>
-        )}
       </div>
 
       {customNote !== null && (
@@ -102,56 +115,61 @@ export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
             value={customNote}
             onChange={(e) => setCustomNote(e.target.value)}
           />
-          <button className="btn" type="submit">
+          <button className="btn btn-primary" type="submit" disabled={!customNote.trim()}>
             Save
           </button>
         </form>
       )}
 
-      <input
-        className="input search"
-        type="search"
-        placeholder="Search recipes or ingredients"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <div className="search">
+        <Search size={18} className="search-icon" />
+        <input
+          className="input"
+          type="search"
+          placeholder="Search recipes or ingredients"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
 
-      <div className="chip-row scroll-x">
-        <button className={`chip chip-sm ${!tag ? 'chip-on' : ''}`} onClick={() => setTag(null)}>
+      <div className="filters">
+        <button className={`filter ${!category ? 'on' : ''}`} onClick={() => setCategory(null)}>
           All
         </button>
-        {ALL_TAGS.map((t) => (
-          <button key={t} className={`chip chip-sm ${tag === t ? 'chip-on' : ''}`} onClick={() => setTag(tag === t ? null : t)}>
-            {t}
+        {USED_CATEGORIES.map((c) => (
+          <button
+            key={c}
+            className={`filter ${catClass(c)} ${category === c ? 'on' : ''}`}
+            onClick={() => setCategory(category === c ? null : c)}
+          >
+            <i className="marker marker-dot marker-sm" />
+            {c}
           </button>
         ))}
       </div>
 
-      <ul className="pick-list">
+      <ul className="recipe-rows">
         {filtered.map((r) => {
           const selected = current?.kind === 'recipe' && current.recipeId === r.id;
-          const hint = recentUse.thisWeek.has(r.id)
-            ? 'Already this week'
-            : recentUse.lastWeek.has(r.id)
-              ? 'Had last week'
-              : null;
+          const thisWeek = recentUse.thisWeek.has(r.id);
+          const hint = thisWeek ? 'Already this week' : recentUse.lastWeek.has(r.id) ? 'Had last week' : null;
           return (
             <li key={r.id}>
-              <button className={`pick-item ${selected ? 'selected' : ''}`} onClick={() => pick({ kind: 'recipe', recipeId: r.id })}>
-                <span className="emoji">{r.emoji ?? '🍽️'}</span>
-                <span className="pick-text">
-                  <strong>{r.name}</strong>
-                  <span className="muted small">
-                    {[r.minutes && `${r.minutes} min`, ...r.tags.slice(0, 2)].filter(Boolean).join(' · ')}
+              <button className={`recipe-row ${catClass(r.category)} ${selected ? 'selected' : ''}`} onClick={() => pick({ kind: 'recipe', recipeId: r.id })}>
+                <span className="recipe-row-bar" />
+                <span className="recipe-row-text">
+                  <span className="recipe-row-name">{r.name}</span>
+                  <span className="recipe-row-meta">
+                    {recipeMeta(r)}
+                    {hint && <span className={`hint ${thisWeek ? 'strong' : ''}`}> · {hint}</span>}
                   </span>
                 </span>
-                {hint && <span className="badge">{hint}</span>}
-                {selected && <span className="tick">✓</span>}
+                {selected && <Check size={20} className="recipe-row-check" />}
               </button>
             </li>
           );
         })}
-        {filtered.length === 0 && <li className="empty">No recipes match “{query}”.</li>}
+        {filtered.length === 0 && <li className="empty">No recipes match.</li>}
       </ul>
     </Sheet>
   );

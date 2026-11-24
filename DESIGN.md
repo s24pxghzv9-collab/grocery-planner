@@ -69,6 +69,23 @@ Bottom tab bar: **Home · Plan · List · Recipes**
 - Searchable bank of recipes, with filter by tag.
 - Recipe detail: ingredients, method and notes.
 
+## Visual design
+
+The look is a printed kitchen menu or cookbook rather than an app template.
+
+- **Type**: Fraunces (a warm serif) for dish names and headings, and Instrument Sans for everything else.
+  The food is the hero, so it's set in the serif.
+- **Colour**: paper and ink, with one tomato accent used only for *today* and warnings.
+  Primary buttons are ink, not a brand colour.
+- **Protein colours**: each recipe has a category (Beef, Lamb, Pork, Chicken, Seafood, Vegetarian),
+  shown as a small muted dot or bar, so a week of three beef dinners is obvious at a glance.
+  These replaced emojis.
+- **Structure**: thin dividers instead of boxed cards. The week reads like a menu: day on the left, dish on the right.
+  The one dark "Tonight" card is the only heavy element on the home screen.
+- **Icons**: Lucide line icons at 1.6–2px stroke.
+- **Dark mode**: the same system with inverted paper and ink, so the Tonight card becomes light on dark.
+- **Motion**: sheets slide up, ticks pop, and screens fade in. All of it is turned off when the phone's reduced-motion setting is on.
+
 ## Technical approach
 
 - **Vite + React + TypeScript**, a static site deployed on **Vercel**. No server and no logins for v1.

@@ -1,6 +1,10 @@
-import { addDays, dayName, dayNum, dayShort, rangeLabel, shortDate, weekDays } from '../lib/dates';
-import { describePlan } from '../lib/plan';
+import { ArrowRight, ChevronRight, ShoppingBasket } from 'lucide-react';
+import { addDays, dayName, dayNum, dayShort, fromISO, rangeLabel, shortDate, weekDays } from '../lib/dates';
+import { describePlan, recipeMeta } from '../lib/plan';
+import { Marker } from '../components/Marker';
 import type { Ctx } from '../App';
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export function Home({ ctx }: { ctx: Ctx }) {
   const { state, today, currentWeek, openPicker, openRecipe, goPlan, goList, listSummary } = ctx;
@@ -9,108 +13,103 @@ export function Home({ ctx }: { ctx: Ctx }) {
   const nextWeek = addDays(currentWeek, 7);
   const nextDays = weekDays(nextWeek);
   const nextPlanned = nextDays.filter((d) => state.plans[d]).length;
-  const rest = days.filter((d) => d > today);
+  const t = fromISO(today);
 
   return (
-    <main className="screen">
-      <header className="page-header">
-        <p className="eyebrow">
-          {dayName(today)} {shortDate(today)}
+    <main className="screen home">
+      <header className="masthead">
+        <p className="kicker">Week of {shortDate(currentWeek)}</p>
+        <h1 className="display">{dayName(today)}</h1>
+        <p className="masthead-date">
+          {t.getDate()} {MONTHS[t.getMonth()]}
         </p>
-        <h1>What's for dinner</h1>
       </header>
 
-      <div className="week-strip" aria-label={`This week, ${rangeLabel(currentWeek)}`}>
-        {days.map((d) => {
-          const p = describePlan(state.plans[d]);
-          return (
-            <button
-              key={d}
-              className={`day-pill ${d === today ? 'today' : ''} ${d < today ? 'past' : ''}`}
-              onClick={() => openPicker(d)}
-              aria-label={`${dayName(d)}: ${p?.title ?? 'nothing planned'}`}
-            >
-              <span className="day-pill-name">{dayShort(d)}</span>
-              <span className="day-pill-num">{dayNum(d)}</span>
-              <span className="day-pill-emoji">{p?.emoji ?? '·'}</span>
-            </button>
-          );
-        })}
-      </div>
-
-      <section className="card tonight">
-        <p className="eyebrow">Tonight</p>
+      <section className="tonight" aria-label="Tonight's dinner">
+        <p className="kicker">Tonight</p>
         {tonight ? (
           <>
-            <h2 className="tonight-title">
-              <span className="emoji-lg">{tonight.emoji}</span> {tonight.title}
-            </h2>
-            {tonight.recipe?.minutes && <p className="muted">{tonight.recipe.minutes} minutes</p>}
-            <div className="btn-row">
+            <h2 className="tonight-dish">{tonight.title}</h2>
+            {tonight.recipe && <p className="tonight-meta">{recipeMeta(tonight.recipe, { serves: true })}</p>}
+            <div className="tonight-actions">
               {tonight.recipe && (
-                <button className="btn" onClick={() => openRecipe(tonight.recipe!.id)}>
+                <button className="btn btn-inverse" onClick={() => openRecipe(tonight.recipe!.id)}>
                   View recipe
                 </button>
               )}
-              <button className="btn btn-ghost" onClick={() => openPicker(today)}>
-                Change
+              <button className="btn btn-text-inverse" onClick={() => openPicker(today)}>
+                Swap
               </button>
             </div>
           </>
         ) : (
           <>
-            <h2 className="tonight-title muted">Nothing planned yet</h2>
-            <button className="btn" onClick={() => openPicker(today)}>
-              Pick tonight's dinner
-            </button>
+            <h2 className="tonight-dish tonight-empty">Nothing planned yet</h2>
+            <div className="tonight-actions">
+              <button className="btn btn-inverse" onClick={() => openPicker(today)}>
+                Choose a dinner
+              </button>
+            </div>
           </>
         )}
       </section>
 
-      {rest.length > 0 && (
-        <section className="card">
-          <p className="eyebrow">Rest of the week</p>
-          <ul className="day-list compact">
-            {rest.map((d) => {
-              const p = describePlan(state.plans[d]);
-              return (
-                <li key={d}>
-                  <button className="day-row" onClick={() => openPicker(d)}>
-                    <span className="day-row-name">{dayName(d)}</span>
-                    <span className={`day-row-meal ${p ? '' : 'muted'}`}>
-                      {p ? `${p.emoji} ${p.title}` : 'Tap to plan'}
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      )}
-
-      <section className="card next-week">
-        <div>
-          <p className="eyebrow">Next week · {rangeLabel(nextWeek)}</p>
-          <p className="big-stat">
-            {nextPlanned} <span className="muted">of 7 dinners planned</span>
-          </p>
-          <div className="progress">
-            <div style={{ width: `${(nextPlanned / 7) * 100}%` }} />
-          </div>
+      <section>
+        <div className="section-head">
+          <h2 className="section-label">This week</h2>
+          <button className="link" onClick={() => goPlan(currentWeek)}>
+            Edit
+          </button>
         </div>
-        <button className="btn btn-block" onClick={() => goPlan(nextWeek)}>
-          {nextPlanned === 0 ? 'Plan next week' : 'Keep planning'}
+        <ol className="menu">
+          {days.map((d) => {
+            const p = describePlan(state.plans[d]);
+            const isToday = d === today;
+            const isPast = d < today;
+            return (
+              <li key={d} className={`${isToday ? 'is-today' : ''} ${isPast ? 'is-past' : ''}`}>
+                <button className="menu-row" onClick={() => openPicker(d)}>
+                  <span className="menu-day">
+                    <span className="menu-day-name">{dayShort(d)}</span>
+                    <span className="menu-day-num">{dayNum(d)}</span>
+                  </span>
+                  <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : isPast ? '—' : 'Add dinner'}</span>
+                  {isToday ? <span className="today-tag">Today</span> : isPast && !p ? <span /> : <Marker plan={p} />}
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+
+      <section className="next-week">
+        <div className="section-head">
+          <h2 className="section-label">Next week</h2>
+          <span className="muted small">{rangeLabel(nextWeek)}</span>
+        </div>
+        <div className="ticks" aria-label={`${nextPlanned} of 7 dinners planned`}>
+          {nextDays.map((d) => (
+            <span key={d} className={state.plans[d] ? 'on' : ''}>
+              <i />
+              {dayShort(d)[0]}
+            </span>
+          ))}
+        </div>
+        <button className="btn btn-primary btn-block" onClick={() => goPlan(nextWeek)}>
+          {nextPlanned === 0 ? 'Plan next week' : nextPlanned === 7 ? 'Review next week' : `Continue planning · ${nextPlanned}/7`}
+          <ArrowRight size={18} />
         </button>
       </section>
 
-      <button className="card card-link" onClick={goList}>
-        <span>
-          <p className="eyebrow">Shopping list · {listSummary.label}</p>
-          <p className="big-stat">
-            {listSummary.remaining} <span className="muted">items to get</span>
-          </p>
+      <button className="row-link" onClick={goList}>
+        <ShoppingBasket size={22} strokeWidth={1.75} />
+        <span className="row-link-text">
+          <strong>Shopping list</strong>
+          <span className="muted small">
+            {listSummary.remaining === 0 ? 'Nothing to buy' : `${listSummary.remaining} to buy`} · {listSummary.label.toLowerCase()}
+          </span>
         </span>
-        <span className="chevron">›</span>
+        <ChevronRight size={20} className="muted" />
       </button>
     </main>
   );

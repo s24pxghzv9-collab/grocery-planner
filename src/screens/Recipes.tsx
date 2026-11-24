@@ -1,52 +1,68 @@
+import { Search } from 'lucide-react';
 import { useState } from 'react';
-import { ALL_TAGS, RECIPES } from '../data/recipes';
+import { RECIPES, USED_CATEGORIES } from '../data/recipes';
+import { catClass } from '../components/Marker';
 import type { Ctx } from '../App';
+import type { Category } from '../types';
 
 export function Recipes({ ctx }: { ctx: Ctx }) {
   const [query, setQuery] = useState('');
-  const [tag, setTag] = useState<string | null>(null);
+  const [category, setCategory] = useState<Category | null>(null);
   const q = query.trim().toLowerCase();
   const list = RECIPES.filter(
     (r) =>
-      (!tag || r.tags.includes(tag)) &&
+      (!category || r.category === category) &&
       (!q || r.name.toLowerCase().includes(q) || r.ingredients.some((i) => i.name.toLowerCase().includes(q))),
-  );
+  ).sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <main className="screen">
-      <header className="page-header">
-        <h1>Recipes</h1>
-        <p className="muted">{RECIPES.length} in the bank</p>
+      <header className="page-head">
+        <div>
+          <h1 className="title-lg">Recipes</h1>
+          <p className="muted small">{RECIPES.length} in the collection · sample recipes for now</p>
+        </div>
       </header>
 
-      <div className="notice">These are sample recipes for now. The real ones are coming soon.</div>
-
-      <input
-        className="input search"
-        type="search"
-        placeholder="Search recipes or ingredients"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <div className="chip-row scroll-x">
-        <button className={`chip chip-sm ${!tag ? 'chip-on' : ''}`} onClick={() => setTag(null)}>
+      <div className="search">
+        <Search size={18} className="search-icon" />
+        <input
+          className="input"
+          type="search"
+          placeholder="Search recipes or ingredients"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+      <div className="filters">
+        <button className={`filter ${!category ? 'on' : ''}`} onClick={() => setCategory(null)}>
           All
         </button>
-        {ALL_TAGS.map((t) => (
-          <button key={t} className={`chip chip-sm ${tag === t ? 'chip-on' : ''}`} onClick={() => setTag(tag === t ? null : t)}>
-            {t}
+        {USED_CATEGORIES.map((c) => (
+          <button
+            key={c}
+            className={`filter ${catClass(c)} ${category === c ? 'on' : ''}`}
+            onClick={() => setCategory(category === c ? null : c)}
+          >
+            <i className="marker marker-dot marker-sm" />
+            {c}
           </button>
         ))}
       </div>
 
-      <ul className="recipe-grid">
+      <ul className="recipe-cards">
         {list.map((r) => (
           <li key={r.id}>
-            <button className="recipe-card" onClick={() => ctx.openRecipe(r.id)}>
-              <span className="emoji-lg">{r.emoji ?? '🍽️'}</span>
-              <strong>{r.name}</strong>
-              <span className="muted small">
-                {[r.minutes && `${r.minutes} min`, `${r.ingredients.length} ingredients`].filter(Boolean).join(' · ')}
+            <button className={`recipe-card ${catClass(r.category)}`} onClick={() => ctx.openRecipe(r.id)}>
+              <span className="recipe-card-top">
+                <span className="recipe-card-cat">{r.category}</span>
+                <span className="recipe-card-initial" aria-hidden>
+                  {r.name[0]}
+                </span>
+              </span>
+              <span className="recipe-card-body">
+                <span className="recipe-card-name">{r.name}</span>
+                <span className="muted small">{r.minutes ? `${r.minutes} min` : `${r.ingredients.length} ingredients`}</span>
               </span>
             </button>
           </li>

@@ -28,10 +28,15 @@ export interface Ingredient {
   staple?: boolean;
 }
 
+/** Main protein. Drives the colour coding so it's easy to see variety across the week. */
+export type Category = 'Beef' | 'Lamb' | 'Pork' | 'Chicken' | 'Seafood' | 'Vegetarian' | 'Other';
+
+export const CATEGORY_ORDER: Category[] = ['Beef', 'Lamb', 'Pork', 'Chicken', 'Seafood', 'Vegetarian', 'Other'];
+
 export interface Recipe {
   id: string;
   name: string;
-  emoji?: string;
+  category: Category;
   tags: string[];
   serves?: number;
   minutes?: number;

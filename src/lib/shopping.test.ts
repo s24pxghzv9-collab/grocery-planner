@@ -3,7 +3,7 @@ import { buildShoppingList, formatQty } from './shopping';
 import { addDays, weekStart } from './dates';
 import type { Recipe } from '../types';
 
-const r = (id: string, ingredients: Recipe['ingredients']): Recipe => ({ id, name: id, tags: [], ingredients });
+const r = (id: string, ingredients: Recipe['ingredients']): Recipe => ({ id, name: id, category: 'Other', tags: [], ingredients });
 
 const recipes = {
   a: r('a', [

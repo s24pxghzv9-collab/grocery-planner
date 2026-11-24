@@ -1,3 +1,4 @@
+import { Check, ChevronDown, Plus, Share, X } from 'lucide-react';
 import { useState } from 'react';
 import { addDays, rangeLabel, weekLabel } from '../lib/dates';
 import { formatQty, groupByAisle, type ShoppingItem } from '../lib/shopping';
@@ -12,7 +13,7 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
 
   const main = listItems.filter((i) => !i.staple);
   const staples = listItems.filter((i) => i.staple);
-  const remaining = main.filter((i) => !shop.checked[i.key]).length + shop.extras.filter((e) => !e.checked).length;
+  const done = main.filter((i) => shop.checked[i.key]).length + shop.extras.filter((e) => e.checked).length;
   const total = main.length + shop.extras.length;
 
   const setShop = (fn: (w: WeekShopping) => WeekShopping) =>
@@ -35,20 +36,19 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
     setShop((w) => ({ ...w, extras: w.extras.map((e) => (e.id === id ? { ...e, checked: !e.checked } : e)) }));
   const removeExtra = (id: string) => setShop((w) => ({ ...w, extras: w.extras.filter((e) => e.id !== id) }));
 
-  const resetTicks = () =>
-    setShop((w) => ({ checked: {}, extras: w.extras.map((e) => ({ ...e, checked: false })) }));
+  const resetTicks = () => setShop((w) => ({ checked: {}, extras: w.extras.map((e) => ({ ...e, checked: false })) }));
 
   const suggestions = state.extrasHistory
     .filter((h) => !shop.extras.some((e) => e.text.toLowerCase() === h.toLowerCase()))
     .slice(0, 10);
 
   const share = async () => {
-    const lines = [`Shopping list (${rangeLabel(listWeek)})`];
+    const lines = [`Shopping list, ${rangeLabel(listWeek)}`];
     for (const [aisle, items] of groupByAisle(main.filter((i) => !shop.checked[i.key]))) {
-      lines.push('', aisle, ...items.map((i) => `- ${[formatQty(i), i.name].filter(Boolean).join(' ')}`));
+      lines.push('', aisle.toUpperCase(), ...items.map((i) => `• ${i.name}${formatQty(i) ? ` (${formatQty(i)})` : ''}`));
     }
     const extras = shop.extras.filter((e) => !e.checked);
-    if (extras.length) lines.push('', 'Extras', ...extras.map((e) => `- ${e.text}`));
+    if (extras.length) lines.push('', 'EXTRAS', ...extras.map((e) => `• ${e.text}`));
     const text = lines.join('\n');
     try {
       if (navigator.share) {
@@ -63,73 +63,78 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
   };
 
   const weeks = [currentWeek, addDays(currentWeek, 7)];
+  const anyTicked = done > 0 || staples.some((i) => shop.checked[i.key]);
 
   return (
     <main className="screen">
-      <header className="page-header row">
+      <header className="page-head">
         <div>
-          <h1>Shopping list</h1>
-          <p className="muted">
-            {total === 0 ? 'Nothing yet' : remaining === 0 ? 'All done 🎉' : `${remaining} of ${total} to get`}
+          <h1 className="title-lg">Shopping</h1>
+          <p className="muted small">
+            {total === 0 ? 'Nothing on the list yet' : done === total ? 'All done' : `${done} of ${total} in the trolley`}
           </p>
         </div>
         {total > 0 && (
-          <button className="btn btn-ghost" onClick={share}>
-            Share
+          <button className="icon-btn" onClick={share} aria-label="Share list">
+            <Share size={20} />
           </button>
         )}
       </header>
 
+      {total > 0 && (
+        <div className="bar thin">
+          <div style={{ width: `${(done / total) * 100}%` }} />
+        </div>
+      )}
+
       <div className="segmented">
         {weeks.map((w) => (
           <button key={w} className={listWeek === w ? 'on' : ''} onClick={() => setListWeek(w)}>
-            {weekLabel(w, currentWeek)}
-            <span className="small muted">{rangeLabel(w)}</span>
+            <span>{weekLabel(w, currentWeek)}</span>
+            <span className="segmented-sub">{rangeLabel(w)}</span>
           </button>
         ))}
       </div>
 
       <form
-        className="inline-form"
+        className="add-item"
         onSubmit={(e) => {
           e.preventDefault();
           addExtra(newItem);
         }}
       >
-        <input
-          className="input"
-          placeholder="Add something else (e.g. coffee beans)"
-          value={newItem}
-          onChange={(e) => setNewItem(e.target.value)}
-        />
-        <button className="btn" type="submit" disabled={!newItem.trim()}>
-          Add
-        </button>
+        <Plus size={20} className="add-item-icon" />
+        <input placeholder="Add an item" value={newItem} onChange={(e) => setNewItem(e.target.value)} aria-label="Add an item" />
+        {newItem.trim() && (
+          <button className="btn btn-primary btn-sm" type="submit">
+            Add
+          </button>
+        )}
       </form>
       {suggestions.length > 0 && (
-        <div className="chip-row scroll-x">
+        <div className="filters">
           {suggestions.map((s) => (
-            <button key={s} className="chip chip-sm" onClick={() => addExtra(s)}>
-              + {s}
+            <button key={s} className="filter" onClick={() => addExtra(s)}>
+              <Plus size={14} /> {s}
             </button>
           ))}
         </div>
       )}
 
       {shop.extras.length > 0 && (
-        <section className="aisle">
-          <h3 className="section-title">Extras</h3>
-          <ul className="check-list">
+        <section>
+          <h3 className="section-label">Extras</h3>
+          <ul className="checklist">
             {[...shop.extras]
               .sort((a, b) => Number(a.checked) - Number(b.checked))
               .map((e) => (
                 <li key={e.id} className={e.checked ? 'done' : ''}>
                   <button className="check-row" onClick={() => toggleExtra(e.id)}>
-                    <span className="checkbox">{e.checked ? '✓' : ''}</span>
-                    <span className="check-text">{e.text}</span>
+                    <CheckCircle on={e.checked} />
+                    <span className="check-name">{e.text}</span>
                   </button>
-                  <button className="icon-btn subtle" onClick={() => removeExtra(e.id)} aria-label={`Remove ${e.text}`}>
-                    ✕
+                  <button className="icon-btn ghost" onClick={() => removeExtra(e.id)} aria-label={`Remove ${e.text}`}>
+                    <X size={16} />
                   </button>
                 </li>
               ))}
@@ -138,38 +143,53 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
       )}
 
       {groupByAisle(main).map(([aisle, items]) => (
-        <section className="aisle" key={aisle}>
-          <h3 className="section-title">{aisle}</h3>
+        <section key={aisle}>
+          <h3 className="section-label">
+            {aisle}
+            <span className="count">{items.filter((i) => !shop.checked[i.key]).length || ''}</span>
+          </h3>
           <ItemList items={items} checked={shop.checked} onToggle={toggle} />
         </section>
       ))}
 
       {staples.length > 0 && (
-        <details className="aisle staples">
-          <summary className="section-title">Check you have ({staples.length})</summary>
+        <details className="staples">
+          <summary>
+            <span>
+              <strong>Check the cupboard</strong>
+              <span className="muted small">
+                {staples.length} staple{staples.length === 1 ? '' : 's'} like {staples[0].name}
+              </span>
+            </span>
+            <ChevronDown size={18} className="staples-chevron" />
+          </summary>
           <ItemList items={staples} checked={shop.checked} onToggle={toggle} />
         </details>
       )}
 
       {listItems.length === 0 && shop.extras.length === 0 && (
         <div className="empty-state">
-          <p className="emoji-lg">🛒</p>
-          <p>No dinners planned for {weekLabel(listWeek, currentWeek).toLowerCase()} yet.</p>
-          <button className="btn" onClick={() => ctx.goPlan(listWeek)}>
+          <p className="title">Your list is empty</p>
+          <p className="muted">Plan some dinners for {weekLabel(listWeek, currentWeek).toLowerCase()} and the ingredients will appear here.</p>
+          <button className="btn btn-primary" onClick={() => ctx.goPlan(listWeek)}>
             Plan dinners
           </button>
         </div>
       )}
 
-      {Object.values(shop.checked).some(Boolean) || shop.extras.some((e) => e.checked) ? (
-        <div className="btn-row center">
-          <button className="btn btn-ghost" onClick={resetTicks}>
+      {anyTicked && (
+        <div className="quiet-actions">
+          <button className="link" onClick={resetTicks}>
             Untick everything
           </button>
         </div>
-      ) : null}
+      )}
     </main>
   );
+}
+
+function CheckCircle({ on }: { on: boolean }) {
+  return <span className={`check-circle ${on ? 'on' : ''}`}>{on && <Check size={14} strokeWidth={3} />}</span>;
 }
 
 function ItemList({
@@ -183,17 +203,16 @@ function ItemList({
 }) {
   const sorted = [...items].sort((a, b) => Number(!!checked[a.key]) - Number(!!checked[b.key]));
   return (
-    <ul className="check-list">
+    <ul className="checklist">
       {sorted.map((i) => (
         <li key={i.key} className={checked[i.key] ? 'done' : ''}>
           <button className="check-row" onClick={() => onToggle(i.key)}>
-            <span className="checkbox">{checked[i.key] ? '✓' : ''}</span>
+            <CheckCircle on={!!checked[i.key]} />
             <span className="check-text">
-              <span>
-                {formatQty(i) && <span className="qty">{formatQty(i)}</span>} {i.name}
-              </span>
-              <span className="muted small">For {i.forMeals.join(', ')}</span>
+              <span className="check-name">{i.name}</span>
+              <span className="check-for">{i.forMeals.join(', ')}</span>
             </span>
+            <span className="check-qty">{formatQty(i)}</span>
           </button>
         </li>
       ))}

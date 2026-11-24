@@ -1,3 +1,4 @@
+import { BookOpen, CalendarDays, House, ShoppingBasket, type LucideIcon } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { RecipeDetail } from './components/RecipeDetail';
 import { RecipePicker } from './components/RecipePicker';
@@ -12,11 +13,11 @@ import { ShoppingList } from './screens/ShoppingList';
 import type { AppState, DayPlan } from './types';
 
 type Tab = 'home' | 'plan' | 'list' | 'recipes';
-const TABS: { id: Tab; label: string; icon: string }[] = [
-  { id: 'home', label: 'Home', icon: '🏠' },
-  { id: 'plan', label: 'Plan', icon: '🗓️' },
-  { id: 'list', label: 'List', icon: '🛒' },
-  { id: 'recipes', label: 'Recipes', icon: '📖' },
+const TABS: { id: Tab; label: string; icon: LucideIcon }[] = [
+  { id: 'home', label: 'Today', icon: House },
+  { id: 'plan', label: 'Plan', icon: CalendarDays },
+  { id: 'list', label: 'Shopping', icon: ShoppingBasket },
+  { id: 'recipes', label: 'Recipes', icon: BookOpen },
 ];
 
 /** Shared state and actions passed to each screen. */
@@ -124,7 +125,7 @@ export default function App() {
     // Move straight on to the next empty day so a whole week takes about 7 taps.
     const next = pickerWeek.find((d) => d > day && !state.plans[d]);
     setPickerDay(next ?? null);
-    if (!next) toast('Week planned 🎉');
+    if (!next) toast('That’s the week sorted');
   };
 
   const ctx: Ctx = {
@@ -157,10 +158,10 @@ export default function App() {
       {tab === 'recipes' && <Recipes ctx={ctx} />}
 
       <nav className="tab-bar">
-        {TABS.map((t) => (
-          <button key={t.id} className={tab === t.id ? 'on' : ''} onClick={() => setTab(t.id)} aria-current={tab === t.id}>
-            <span className="tab-icon">{t.icon}</span>
-            <span>{t.label}</span>
+        {TABS.map(({ id, label, icon: Icon }) => (
+          <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)} aria-current={tab === id}>
+            <Icon size={22} strokeWidth={tab === id ? 2.1 : 1.6} />
+            <span>{label}</span>
           </button>
         ))}
       </nav>

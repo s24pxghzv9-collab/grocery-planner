@@ -86,7 +86,7 @@ export function formatQty(item: { qty?: number; unit?: string }): string {
     qty /= 1000;
     unit = 'L';
   }
-  return unit ? `${round(qty)} ${unit}` : `${round(qty)}×`;
+  return unit ? `${round(qty)} ${unit}` : round(qty);
 }
 
 export function groupByAisle<T extends { aisle: Aisle }>(items: T[]): [Aisle, T[]][] {

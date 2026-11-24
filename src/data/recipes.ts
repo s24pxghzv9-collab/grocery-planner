@@ -1,4 +1,4 @@
-import type { Recipe } from '../types';
+import { CATEGORY_ORDER, type Recipe } from '../types';
 
 /*
  * THE RECIPE BANK
@@ -6,6 +6,8 @@ import type { Recipe } from '../types';
  * These are PLACEHOLDER recipes based on meals from Alice's notes. Replace them with
  * the real ones. To add a recipe, copy one block and change it:
  *
+ *  - category:    main protein: Beef, Lamb, Pork, Chicken, Seafood, Vegetarian or Other.
+ *                 It sets the dish's colour in the app.
  *  - id:          unique, lowercase-with-dashes. Don't change it after it's been planned,
  *                 or the old plan entries won't find the recipe.
  *  - ingredients: use the same name and unit across recipes ("brown onion", "g") so the
@@ -17,8 +19,8 @@ import type { Recipe } from '../types';
 export const RECIPES: Recipe[] = [
   {
     id: 'sage-ravioli',
+    category: 'Vegetarian',
     name: 'Sage ravioli',
-    emoji: '🥟',
     tags: ['Pasta', 'Vegetarian', 'Quick'],
     serves: 2,
     minutes: 20,
@@ -38,8 +40,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'beef-wellington',
+    category: 'Beef',
     name: 'Beef Wellington',
-    emoji: '🥩',
     tags: ['Beef', 'Special'],
     serves: 4,
     minutes: 90,
@@ -62,8 +64,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'prawn-stirfry',
+    category: 'Seafood',
     name: 'Prawn stir-fry',
-    emoji: '🍤',
     tags: ['Seafood', 'Quick', 'Asian'],
     serves: 2,
     minutes: 20,
@@ -79,8 +81,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'mexican-beef',
+    category: 'Beef',
     name: 'Mexican beef',
-    emoji: '🌮',
     tags: ['Beef', 'Mexican'],
     serves: 4,
     minutes: 30,
@@ -98,8 +100,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'lamb-kofta',
+    category: 'Lamb',
     name: 'Lamb kofta & cous cous salad',
-    emoji: '🍢',
     tags: ['Lamb', 'Middle Eastern'],
     serves: 4,
     minutes: 35,
@@ -118,8 +120,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'steak-bbq',
+    category: 'Beef',
     name: 'Steak BBQ',
-    emoji: '🔥',
     tags: ['Beef', 'BBQ'],
     serves: 2,
     minutes: 25,
@@ -134,8 +136,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'chicken-tacos',
+    category: 'Chicken',
     name: 'Chicken tacos',
-    emoji: '🌯',
     tags: ['Chicken', 'Mexican', 'Quick'],
     serves: 4,
     minutes: 25,
@@ -152,8 +154,8 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 'crispy-chicken-bowls',
+    category: 'Chicken',
     name: 'Crispy chicken bowls',
-    emoji: '🍗',
     tags: ['Chicken', 'Asian'],
     serves: 4,
     minutes: 40,
@@ -173,4 +175,5 @@ export const RECIPES: Recipe[] = [
 
 export const RECIPES_BY_ID: Record<string, Recipe> = Object.fromEntries(RECIPES.map((r) => [r.id, r]));
 
-export const ALL_TAGS: string[] = [...new Set(RECIPES.flatMap((r) => r.tags))].sort();
+/** Categories that have at least one recipe, in a fixed order. */
+export const USED_CATEGORIES = CATEGORY_ORDER.filter((c) => RECIPES.some((r) => r.category === c));

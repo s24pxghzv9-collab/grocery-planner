@@ -14,7 +14,12 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
 
   const main = listItems.filter((i) => !i.staple);
   const staples = listItems.filter((i) => i.staple);
-  const done = main.filter((i) => shop.checked[i.key]).length + shop.extras.filter((e) => e.checked).length;
+  // Ticked items move out of the aisles into a folded "Completed" section.
+  const openMain = main.filter((i) => !shop.checked[i.key]);
+  const doneMain = main.filter((i) => shop.checked[i.key]);
+  const openExtras = shop.extras.filter((e) => !e.checked);
+  const doneExtras = shop.extras.filter((e) => e.checked);
+  const done = doneMain.length + doneExtras.length;
   const total = main.length + shop.extras.length;
 
   const toggle = (key: string) => dispatch({ t: 'check', week: listWeek, key, on: !shop.checked[key] });
@@ -126,36 +131,49 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
         </div>
       )}
 
-      {shop.extras.length > 0 && (
+      {openExtras.length > 0 && (
         <section>
           <h3 className="section-label">Extras</h3>
           <ul className="checklist">
-            {[...shop.extras]
-              .sort((a, b) => Number(a.checked) - Number(b.checked))
-              .map((e) => (
-                <li key={e.id} className={e.checked ? 'done' : ''}>
-                  <button className="check-row" onClick={() => toggleExtra(e)}>
-                    <CheckCircle on={e.checked} />
-                    <span className="check-name">{e.text}</span>
-                  </button>
-                  <button className="icon-btn ghost" onClick={() => removeExtra(e.id)} aria-label={`Remove ${e.text}`}>
-                    <X size={16} />
-                  </button>
-                </li>
-              ))}
+            {openExtras.map((e) => (
+              <ExtraRow key={e.id} item={e} onToggle={toggleExtra} onRemove={removeExtra} />
+            ))}
           </ul>
         </section>
       )}
 
-      {groupByAisle(main).map(([aisle, items]) => (
+      {groupByAisle(openMain).map(([aisle, items]) => (
         <section key={aisle}>
           <h3 className="section-label">
             {aisle}
-            <span className="count">{items.filter((i) => !shop.checked[i.key]).length || ''}</span>
+            <span className="count">{items.length}</span>
           </h3>
           <ItemList items={items} checked={shop.checked} onToggle={toggle} />
         </section>
       ))}
+
+      {total > 0 && done === total && (
+        <div className="all-done">
+          <Check size={22} />
+          <span>Everything's in the trolley</span>
+        </div>
+      )}
+
+      {done > 0 && (
+        <details className="completed">
+          <summary>
+            <span>Completed</span>
+            <span className="count">{done}</span>
+            <ChevronDown size={18} className="completed-chevron" />
+          </summary>
+          <ul className="checklist">
+            {doneExtras.map((e) => (
+              <ExtraRow key={e.id} item={e} onToggle={toggleExtra} onRemove={removeExtra} />
+            ))}
+          </ul>
+          <ItemList items={doneMain} checked={shop.checked} onToggle={toggle} />
+        </details>
+      )}
 
       {staples.length > 0 && (
         <details className="staples">
@@ -190,6 +208,28 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
         </div>
       )}
     </main>
+  );
+}
+
+function ExtraRow({
+  item,
+  onToggle,
+  onRemove,
+}: {
+  item: ExtraItem;
+  onToggle: (item: ExtraItem) => void;
+  onRemove: (id: string) => void;
+}) {
+  return (
+    <li className={item.checked ? 'done' : ''}>
+      <button className="check-row" onClick={() => onToggle(item)}>
+        <CheckCircle on={item.checked} />
+        <span className="check-name">{item.text}</span>
+      </button>
+      <button className="icon-btn ghost" onClick={() => onRemove(item.id)} aria-label={`Remove ${item.text}`}>
+        <X size={16} />
+      </button>
+    </li>
   );
 }
 

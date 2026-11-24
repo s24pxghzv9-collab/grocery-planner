@@ -1,7 +1,7 @@
-import { ChevronLeft, ChevronRight, Copy, Trash2 } from 'lucide-react';
-import { addDays, dayName, rangeLabel, shortDate, weekDays, weekLabel, DAY_NAMES } from '../lib/dates';
+import { ChevronLeft, ChevronRight, Copy, Plus, Trash2 } from 'lucide-react';
+import { addDays, dayName, dayNum, dayShort, rangeLabel, shortDate, weekDays, weekLabel, DAY_NAMES } from '../lib/dates';
 import { describePlan } from '../lib/plan';
-import { Marker } from '../components/Marker';
+import { Marker, catClass } from '../components/Marker';
 import type { Ctx } from '../App';
 
 export function Plan({ ctx }: { ctx: Ctx }) {
@@ -37,18 +37,27 @@ export function Plan({ ctx }: { ctx: Ctx }) {
         </button>
         <div className="week-nav-label">
           <h1 className="title">{weekLabel(planWeek, currentWeek)}</h1>
-          <p className="muted small">{rangeLabel(planWeek)}</p>
+          <p className="muted small">
+            {rangeLabel(planWeek)} · {planned} of 7 planned
+          </p>
         </div>
         <button className="icon-btn" onClick={() => setPlanWeek(addDays(planWeek, 7))} aria-label="Next week">
           <ChevronRight size={22} />
         </button>
       </header>
 
-      <div className="plan-progress">
-        <div className="bar">
-          <div style={{ width: `${(planned / 7) * 100}%` }} />
-        </div>
-        <span className="small muted">{planned} of 7 planned</span>
+      <div className="week-strip" role="group" aria-label="Days this week">
+        {days.map((d) => {
+          const p = describePlan(state.plans[d]);
+          const cls = [d === today && 'is-today', d < today && 'is-past', p && 'is-planned'].filter(Boolean).join(' ');
+          return (
+            <button key={d} className={`week-strip-day ${cls}`} onClick={() => openPicker(d)} aria-label={`${dayName(d)} ${shortDate(d)}${p ? `: ${p.title}` : ''}`}>
+              <span className="week-strip-name">{dayShort(d)}</span>
+              <span className="week-strip-num">{dayNum(d)}</span>
+              <span className={`week-strip-dot ${catClass(p?.category)} ${p?.icon ? 'is-note' : ''}`} />
+            </button>
+          );
+        })}
       </div>
 
       <ol className="menu menu-lg">
@@ -65,7 +74,7 @@ export function Plan({ ctx }: { ctx: Ctx }) {
                   <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
                   {p?.recipe && <span className="menu-sub">{p.recipe.category}{p.recipe.minutes ? ` · ${p.recipe.minutes} min` : ''}</span>}
                 </span>
-                <Marker plan={p} />
+                {p ? <Marker plan={p} /> : <Plus size={20} className="add-icon" />}
               </button>
             </li>
           );

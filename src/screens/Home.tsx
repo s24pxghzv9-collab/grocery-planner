@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronRight, ShoppingBasket } from 'lucide-react';
+import { ArrowRight, ChevronRight, Plus, ShoppingBasket } from 'lucide-react';
 import { useState, type ReactNode } from 'react';
 import { addDays, dayName, dayNum, dayShort, fromISO, rangeLabel, shortDate, weekDays, weekStart } from '../lib/dates';
 import { describePlan, recipeMeta } from '../lib/plan';
@@ -83,7 +83,7 @@ export function Home({ ctx }: { ctx: Ctx }) {
                     <span className="menu-day-num">{dayNum(d)}</span>
                   </span>
                   <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
-                  {isToday ? <span className="today-tag">Today</span> : <Marker plan={p} />}
+                  {isToday ? <span className="today-tag">Today</span> : p ? <Marker plan={p} /> : <Plus size={18} className="add-icon" />}
                 </button>
               </MenuItem>
             );

@@ -1,7 +1,8 @@
-import { Clock, Users } from 'lucide-react';
+import { Clock, ExternalLink, Users } from 'lucide-react';
 import { RECIPES_BY_ID } from '../data/recipes';
 import { formatQty } from '../lib/shopping';
 import { catClass } from './Marker';
+import { RecipeThumb } from './RecipeThumb';
 import { Sheet } from './Sheet';
 
 export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; onClose: () => void }) {
@@ -20,6 +21,8 @@ export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; o
       }
       title={recipe.name}
     >
+      {recipe.image && <RecipeThumb recipe={recipe} size="hero" />}
+
       <div className="recipe-facts">
         {recipe.minutes && (
           <span>
@@ -60,6 +63,19 @@ export function RecipeDetail({ recipeId, onClose }: { recipeId: string | null; o
         </section>
       )}
       {recipe.notes && <p className="muted">{recipe.notes}</p>}
+
+      {recipe.source && (
+        <p className="recipe-source">
+          {recipe.source.url ? (
+            <a href={recipe.source.url} target="_blank" rel="noreferrer">
+              View the original on {recipe.source.name} <ExternalLink size={14} />
+            </a>
+          ) : (
+            <>From {recipe.source.name}</>
+          )}
+          {recipe.author && <span className="muted"> · by {recipe.author}</span>}
+        </p>
+      )}
     </Sheet>
   );
 }

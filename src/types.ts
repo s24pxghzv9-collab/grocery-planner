@@ -43,6 +43,11 @@ export interface Recipe {
   ingredients: Ingredient[];
   method?: string[];
   notes?: string;
+  /** Photo URL. Recipes without one show a coloured tile with the first letter. */
+  image?: string;
+  /** Where the recipe came from, e.g. { name: 'RecipeTin Eats', url: 'https://…' }. */
+  source?: { name: string; url?: string };
+  author?: string;
 }
 
 /** What's on for a given night: a recipe, or a free-text note like "Out" or "Liz's party". */

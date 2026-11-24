@@ -1,0 +1,410 @@
+[
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:tnI_0SgsyXjLlWht",
+  "id": "chicken-ruby",
+  "name": "Chicken Ruby",
+  "category": "Chicken",
+  "tags": ["Curry", "Indian"],
+  "minutes": 45,
+  "serves": 4,
+  "author": "R Dozo",
+  "photo": "https://cdn.deglaze.app/photos/YVBEEN7HWTerltmuMXFcj9ESPDW2/sjL3pEdtjSDdzBEu/w288",
+  "notes": "Dishoom-style butter chicken. Needs one quantity of makhani sauce (not included here). Marinate the chicken 6-24 hours.",
+  "raw": [
+   { "items": ["700g skinless, boneless chicken thighs", "20g unsalted butter, melted", "1 quantity makhani sauce", "50ml double cream"] },
+   { "section": "For the Marinade", "items": ["10g fresh root ginger, chopped", "20g garlic (5–6 cloves), chopped", "5g fine sea salt", "1 tsp deggi mirch chilli powder", "1½ tsp ground cumin", "½ tsp garam masala", "2 tsp lime juice", "2 tsp vegetable oil", "75g full-fat Greek yoghurt"] },
+   { "section": "To Garnish", "items": ["Ginger matchsticks", "Coriander leaves, chopped", "1 tbsp pomegranate seeds"] }
+  ],
+  "ingredients": [
+   { "name": "chicken thigh fillets", "qty": 700, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "butter", "qty": 20, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "makhani sauce", "qty": 1, "unit": "jar", "aisle": "Spices & Sauces" },
+   { "name": "thickened cream", "qty": 50, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "ginger", "qty": 1, "unit": "tbsp", "aisle": "Produce" },
+   { "name": "garlic", "qty": 6, "unit": "clove", "aisle": "Produce" },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chilli powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "ground cumin", "qty": 1.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "garam masala", "qty": 0.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "lime", "qty": 1, "aisle": "Produce" },
+   { "name": "vegetable oil", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
+   { "name": "greek yoghurt", "qty": 75, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "pomegranate", "qty": 1, "aisle": "Produce" },
+   { "name": "rice", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "For the marinade, blitz the ingredients together in a blender to a smooth paste. Transfer to a bowl.",
+   "Cut the chicken into 4cm chunks. Add to the marinade and turn to coat. Cover and leave to marinate in the fridge for 6–24 hours.",
+   "Heat the grill to medium-high. Place the marinated chicken on a rack in the grill pan, brush with the melted butter and grill for 8–10 minutes, until cooked through and nicely charred.",
+   "Warm a large saucepan over a medium-low heat. Add the makhani sauce, cream and grilled chicken and simmer very gently for 10 minutes.",
+   "Serve the curry garnished with ginger matchsticks, chopped coriander and pomegranate seeds, with a bowl of steamed rice on the side."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:b_hyLTvIssroR98e",
+  "id": "chicken-stir-fry",
+  "name": "Chicken Stir-Fry",
+  "category": "Chicken",
+  "tags": ["Stir fry", "Quick"],
+  "minutes": 30,
+  "serves": 4,
+  "source": { "name": "Food Network", "url": "https://www.foodnetwork.com/recipes/tyler-florence/chicken-stir-fry-recipe-1906578" },
+  "author": "Tyler Florence",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9mb29kLmZuci5zbmRpbWcuY29tL2NvbnRlbnQvZGFtL2ltYWdlcy9mb29kL2Z1bGxzZXQvMjAxNC80LzI4LzAvRk8xQTA2X0NoaWNrZW4tU3Rpci1GcnlfczR4My5qcGcucmVuZC5oZ3R2Y29tLjEyODAuMTI4MC5zdWZmaXgvMTQwMjg1OTcxODMzMC5qcGVn/w288?h=omPxlhZhWg1jlbEnCCKPEZa3IsCP_TLEr9nZ0NHbdnk",
+  "raw": [
+   { "items": ["2 tablespoons dark sesame oil, divided", "2 garlic cloves, finely minced", "2 pounds chicken breasts, skinless and boneless", "1 head broccoli, stems removed", "1 dozen mushrooms, sliced", "3 carrots, peeled and julienned", "1/4 pound green beans, diced", "1 head bok choy, chopped", "2 to 3 tablespoons teriyaki sauce"] }
+  ],
+  "ingredients": [
+   { "name": "sesame oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "chicken breast fillets", "qty": 900, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "broccoli", "qty": 1, "unit": "head", "aisle": "Produce" },
+   { "name": "mushrooms", "qty": 250, "unit": "g", "aisle": "Produce" },
+   { "name": "carrot", "qty": 3, "aisle": "Produce" },
+   { "name": "green beans", "qty": 120, "unit": "g", "aisle": "Produce" },
+   { "name": "bok choy", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "teriyaki sauce", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "rice", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Heat 1 tablespoon oil in a saute pan over medium heat. Add garlic and stir. Place the chicken in the pan and brown 4 minutes on each side. Remove from pan, slice into strips, set aside.",
+   "Heat remaining tablespoon of oil in a wok over high heat. Add the vegetables and teriyaki sauce. Stir-fry quickly until the vegetables begin to soften. Add the chicken strips, combine well and continue to cook for 2 to 3 minutes. Serve immediately."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:8vx7pVWRbi45DORb",
+  "id": "marry-me-chicken",
+  "name": "Marry Me Chicken",
+  "category": "Chicken",
+  "tags": ["Creamy", "One pan"],
+  "minutes": 60,
+  "serves": 4,
+  "source": { "name": "NYT Cooking", "url": "https://cooking.nytimes.com/recipes/1024503-marry-me-chicken" },
+  "author": "Naz Deravian",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9zdGF0aWMwMS5ueXQuY29tL2ltYWdlcy8yMDIzLzA5LzI4L211bHRpbWVkaWEvMjhNYXJyeS1NZVJleC12bGpnLzI4TWFycnktTWVSZXgtdmxqZy1zcXVhcmU2NDAuanBn/w288?h=1kS3Rke54_ohXP6blB0sxRv-244-GCMax9guU6vp7Tg",
+  "notes": "The original method is behind the NYT paywall; these steps are a guide. Good with crusty bread, pasta, rice or a green salad.",
+  "raw": [
+   { "items": ["3 large boneless, skinless chicken breasts, or 6 chicken cutlets (about 2¼ pounds total), patted dry", "Kosher salt (such as Diamond Crystal) and black pepper", "¼ cup all-purpose flour", "3 tablespoons extra-virgin olive oil, plus more as needed", "3 tablespoons unsalted butter", "3 garlic cloves, chopped", "1 tablespoon tomato paste", "½ teaspoon dried oregano", "Red-pepper flakes, to taste", "1 cup low-sodium chicken stock", "½ to ¾ cup heavy cream", "½ cup (1½ ounces) grated Parmesan", "⅓ cup sliced sun-dried tomatoes, packed in oil", "Fresh basil, for serving"] }
+  ],
+  "ingredients": [
+   { "name": "chicken breast fillets", "qty": 3, "aisle": "Meat & Seafood" },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "plain flour", "qty": 0.25, "unit": "cup", "aisle": "Pantry", "staple": true },
+   { "name": "olive oil", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "butter", "qty": 45, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
+   { "name": "tomato paste", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "dried oregano", "qty": 0.5, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chilli flakes", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chicken stock", "qty": 250, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "thickened cream", "qty": 180, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "parmesan", "qty": 45, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "sun-dried tomatoes", "qty": 1, "unit": "jar", "aisle": "Pantry" },
+   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" }
+  ],
+  "method": [
+   "Halve the chicken breasts horizontally into cutlets, season with salt and pepper, and dust with flour.",
+   "Brown the chicken in olive oil and a little of the butter over medium-high heat, 3-4 minutes a side. Set aside.",
+   "Lower the heat, add the remaining butter, garlic, tomato paste, oregano and chilli flakes and cook for a minute.",
+   "Add the stock, scraping up the browned bits, then the cream, parmesan and sun-dried tomatoes. Simmer until slightly thickened.",
+   "Return the chicken and any juices to the pan and simmer for a few minutes until cooked through. Scatter with basil to serve."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:rrUnNrFfWs0v_JCc",
+  "id": "chicken-tikka-wraps",
+  "name": "Chicken Tikka Wraps",
+  "category": "Chicken",
+  "tags": ["Wraps", "Air fryer"],
+  "minutes": 50,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DP0g5jpkeIT/" },
+  "author": "Isabella Raso",
+  "notes": "Marinate the chicken for at least 30 minutes (up to 4 hours).",
+  "raw": [
+   { "section": "For the Chicken Tikka", "items": ["500g chicken thigh, boneless & skinless, cut into strips or bite-size pieces", "100g low-fat Greek yogurt", "1/2 tsp salt", "1 tsp cumin powder", "1 tsp chilli powder", "1 tsp paprika", "1 tsp dried coriander leaves (or fresh if preferred)", "15g (1 tbsp) tomato paste", "Juice of ½ lemon", "A drop of red food colouring (optional)"] },
+   { "section": "For the Mint Yogurt Sauce", "items": ["200g low-fat Greek yogurt", "10g fresh mint leaves", "2 garlic cloves, minced", "1 tsp cumin powder", "1/2 tsp salt", "Juice of ½ lemon"] },
+   { "section": "To Serve", "items": ["Mission Souvlaki Wraps OR Simpson's Pantry Low Carb Wraps", "Spinach or rocket (arugula)"] }
+  ],
+  "ingredients": [
+   { "name": "chicken thigh fillets", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "greek yoghurt", "qty": 300, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "ground cumin", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chilli powder", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "paprika", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "dried coriander", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "tomato paste", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "lemon", "qty": 1, "aisle": "Produce" },
+   { "name": "mint", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "souvlaki wraps", "qty": 4, "aisle": "Bakery" },
+   { "name": "baby spinach", "qty": 60, "unit": "g", "aisle": "Produce" }
+  ],
+  "method": [
+   "Mix all chicken tikka ingredients in a bowl. Add chicken, coat well, and marinate for at least 30 mins (or up to 4 hrs).",
+   "Air fry at 180°C for 15 minutes, flipping halfway through.",
+   "Mix all sauce ingredients in a bowl until smooth. Chill until ready to use.",
+   "Warm each wrap in a dry pan for 30–60 seconds per side.",
+   "Spread yogurt sauce on each wrap, add chicken and greens, fold, and serve."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:Q-ccsAZr0gFVoq5w",
+  "id": "tuscan-chicken",
+  "name": "Tuscan Chicken",
+  "category": "Chicken",
+  "tags": ["Creamy", "One pan"],
+  "minutes": 40,
+  "serves": 4,
+  "source": { "name": "Mob", "url": "https://www.mob.co.uk/recipes/tuscan-chicken-recipe" },
+  "author": "Adam Bush",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9maWxlcy5tb2ItY2RuLmNvLnVrL3JlY2lwZXMvMjAyNC8wNi9UdXNjYW4tQ2hpY2tlbi1SZWNpcGUuanBn/w288?h=NFx2qbX8rsnvv623CCHARD7vhYNpTFuakPcezPH4WmM",
+  "notes": "The original method wasn't saved; these steps are a guide. Serve with mash or crusty bread.",
+  "raw": [
+   { "items": ["1 Onion", "4 Garlic Cloves", "4 Skin-On Chicken Breasts", "2 Tsp Italian Seasoning", "75g Sun-Dried Tomatoes", "150ml White Wine", "250ml Chicken Stock", "150ml Double Cream", "100g Baby Spinach", "75g Parmesan", "Extra Virgin Olive Oil", "Mash or Crusty Bread, to serve"] }
+  ],
+  "ingredients": [
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
+   { "name": "chicken breast fillets", "qty": 4, "aisle": "Meat & Seafood" },
+   { "name": "mixed herbs", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "sun-dried tomatoes", "qty": 75, "unit": "g", "aisle": "Pantry" },
+   { "name": "dry white wine", "qty": 150, "unit": "ml", "aisle": "Other" },
+   { "name": "chicken stock", "qty": 250, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "thickened cream", "qty": 150, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "baby spinach", "qty": 100, "unit": "g", "aisle": "Produce" },
+   { "name": "parmesan", "qty": 75, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true },
+   { "name": "potatoes", "qty": 1, "unit": "kg", "aisle": "Produce" }
+  ],
+  "method": [
+   "Season the chicken with salt, pepper and half the Italian seasoning. Brown skin-side down in olive oil over medium-high heat until crisp, then flip and brown the other side. Set aside.",
+   "Soften the sliced onion in the same pan, then add the garlic, sun-dried tomatoes and remaining seasoning for a minute.",
+   "Add the white wine and let it bubble down by half, then add the stock and cream.",
+   "Return the chicken to the pan, skin-side up, and simmer for 15-20 minutes until cooked through.",
+   "Stir the spinach and parmesan into the sauce until wilted. Serve with mash or crusty bread."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:EdYBwFX-qnAIevvD",
+  "id": "peanutty-chicken-salad",
+  "name": "Peanutty Chicken Salad",
+  "category": "Chicken",
+  "tags": ["Salad", "Quick"],
+  "minutes": 20,
+  "serves": 1,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DMYAjTsIJCI/" },
+  "author": "Emma Petersen",
+  "raw": [
+   { "section": "For the dressing", "items": ["1 tbsp soy sauce", "1 tsp garlic + ginger paste", "1 tsp sriracha", "15g peanut butter", "juice of 1/2 large lime, or 1 small"] },
+   { "section": "For the salad", "items": ["1 small carrot, julienned", "approx. 10cm cucumber, cored and finely sliced", "handful of mint leaves", "handful of coriander leaves", "75g frozen edamame, thawed", "1/2 red chilli, sliced", "1 cooked chicken breast, shredded", "approx. 8g toasted peanuts, roughly chopped", "1 tsp sesame seeds"] }
+  ],
+  "ingredients": [
+   { "name": "soy sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
+   { "name": "ginger", "qty": 1, "unit": "tsp", "aisle": "Produce" },
+   { "name": "sriracha", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "peanut butter", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "lime", "qty": 1, "aisle": "Produce" },
+   { "name": "carrot", "qty": 1, "aisle": "Produce" },
+   { "name": "cucumber", "qty": 0.5, "aisle": "Produce" },
+   { "name": "mint", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "edamame", "qty": 75, "unit": "g", "aisle": "Frozen" },
+   { "name": "red chilli", "qty": 0.5, "aisle": "Produce" },
+   { "name": "chicken breast fillets", "qty": 1, "aisle": "Meat & Seafood" },
+   { "name": "roasted peanuts", "qty": 1, "unit": "tbsp", "aisle": "Pantry" },
+   { "name": "sesame seeds", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true }
+  ],
+  "method": [
+   "Butterfly the raw chicken breast and pop it in the air fryer for 10 mins before shredding (pan-frying would work too).",
+   "Prep the salad bits and make the dressing in the meantime.",
+   "Toss everything together and top with the peanuts and sesame seeds."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:8lE5VYq_XtqG9i9F",
+  "id": "chicken-curry-laksa",
+  "name": "Chicken Curry Laksa",
+  "category": "Chicken",
+  "tags": ["Noodles", "Soup", "Curry"],
+  "minutes": 75,
+  "serves": 4,
+  "source": { "name": "Bon Appetit", "url": "https://www.bonappetit.com/recipe/chicken-curry-laksa" },
+  "author": "Andy Baraghani",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly9hc3NldHMuYm9uYXBwZXRpdC5jb20vcGhvdG9zLzU4ODBlNGE5MTI4YzdkOTg1MDg4NjhhMS80OjMvd180NDQzLGhfMzMzMixjX2xpbWl0L2NoaWNrZW4tY3VycnktbGFrc2EuanBn/w288?h=TN0NozZCRjMItRxJ-8Y096xavdEzHDQpvSIHBh7aBCI",
+  "notes": "The original method wasn't saved; these steps are a guide. A good jar of laksa paste works as a shortcut for the homemade paste.",
+  "raw": [
+   { "section": "Laksa Paste", "items": ["3 dried red chiles, such as guajillo, Anaheim, or New Mexico, stemmed, halved, seeded", "1 2-inch piece ginger, peeled, thinly sliced", "4 garlic cloves, unpeeled", "4 red Thai chiles, chopped", "3 medium shallots, chopped", "3 lemongrass stalks, tough outer layers removed, finely grated", "¼ cup vegetable oil", "4 teaspoons Thai shrimp paste", "1 tablespoon ground coriander", "2 teaspoons curry powder", "1 teaspoon ground cumin"] },
+   { "section": "Soup", "items": ["¼ cup vegetable oil", "2 14-ounce cans coconut milk, divided", "3 cups homemade chicken stock or low-sodium chicken broth", "12 tofu puffs (optional)", "1½ pounds boneless, skinless chicken thighs", "8 ounces wide rice vermicelli", "2 teaspoons palm sugar or light brown sugar", "Kosher salt", "4 large soft-boiled eggs, halved", "2 medium Persian cucumbers, cut into matchsticks", "Bean sprouts, mint leaves, lime wedges, and sambal oelek (for serving)"] }
+  ],
+  "ingredients": [
+   { "name": "dried red chillies", "qty": 3, "aisle": "Spices & Sauces" },
+   { "name": "ginger", "qty": 1, "unit": "knob", "aisle": "Produce" },
+   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
+   { "name": "red chilli", "qty": 4, "aisle": "Produce" },
+   { "name": "shallots", "qty": 3, "aisle": "Produce" },
+   { "name": "lemongrass", "qty": 3, "unit": "stalk", "aisle": "Produce" },
+   { "name": "vegetable oil", "qty": 0.5, "unit": "cup", "aisle": "Pantry", "staple": true },
+   { "name": "shrimp paste", "qty": 4, "unit": "tsp", "aisle": "Spices & Sauces" },
+   { "name": "ground coriander", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "curry powder", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "ground cumin", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "coconut milk", "qty": 2, "unit": "tin", "aisle": "Pantry" },
+   { "name": "chicken stock", "qty": 750, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "tofu puffs", "qty": 12, "aisle": "Other" },
+   { "name": "chicken thigh fillets", "qty": 700, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "rice vermicelli", "qty": 225, "unit": "g", "aisle": "Pantry" },
+   { "name": "brown sugar", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "eggs", "qty": 4, "aisle": "Dairy & Eggs" },
+   { "name": "cucumber", "qty": 2, "aisle": "Produce" },
+   { "name": "bean sprouts", "qty": 100, "unit": "g", "aisle": "Produce" },
+   { "name": "mint", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "lime", "qty": 2, "aisle": "Produce" },
+   { "name": "sambal oelek", "aisle": "Spices & Sauces" }
+  ],
+  "method": [
+   "Soak the dried chillies in hot water for 10 minutes, then blend with the ginger, peeled garlic, fresh chillies, shallots, lemongrass, oil, shrimp paste and spices to a smooth paste.",
+   "Fry the paste in the oil over medium heat, stirring, for 5-8 minutes until fragrant and darkened. Add the thick cream from the top of one can of coconut milk and fry for a few minutes more.",
+   "Add the remaining coconut milk, stock, sugar and chicken thighs. Simmer gently for 15-20 minutes until the chicken is cooked; remove and shred or slice it. Add the tofu puffs and season with salt.",
+   "Cook the noodles according to the packet and divide between bowls.",
+   "Ladle the soup over the noodles, top with the chicken, halved eggs, cucumber, bean sprouts and mint, and serve with lime wedges and sambal oelek."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:HxVNRe-Om41nsklI",
+  "id": "thai-red-curry-chicken",
+  "name": "Thai Red Curry with Chicken",
+  "category": "Chicken",
+  "tags": ["Curry", "Thai"],
+  "minutes": 25,
+  "serves": 4,
+  "source": { "name": "RecipeTin Eats", "url": "https://www.recipetineats.com/thai-red-curry-with-chicken/" },
+  "author": "Nagi",
+  "photo": "https://cdn.deglaze.app/photos/w/aHR0cHM6Ly93d3cucmVjaXBldGluZWF0cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTgvMDIvVGhhaS1SZWQtQ3VycnktQ2hpY2tlbi0xLmpwZw/w288?h=SohcH1Y8I-GdwrnTk7pdH3rChBjcknuqy9yQZ1SaZds",
+  "raw": [
+   { "section": "Red Curry Paste – choose ONE:", "items": ["5 – 6 tbsp Thai Red Curry Paste (store bought, Maesri best) (Note 1)", "1 quantity homemade Thai Red Curry Paste"] },
+   { "section": "Extras – only for jar curry paste (Note 2)", "items": ["2 large garlic cloves, minced", "2 tsp fresh ginger, finely grated", "1 tbsp lemongrass paste, or finely chopped fresh (Note 3)"] },
+   { "section": "Thai Red Curry", "items": ["3 tbsp vegetable oil (or canola or peanut)", "1 cup (250 ml) chicken broth/stock, low sodium", "400 ml / 14 oz coconut milk (full fat!)", "6 kaffir lime leaves (Note 4)", "1 tbsp sugar (white, brown or palm)", "2 tsp fish sauce, plus more to taste", "350g / 12 oz chicken thighs (boneless and skinless), cut into 0.75 / 1/3″ thick slices (Note 5)", "150g / 5 oz pumpkin or butternut squash, cut into 1.5cm / 3/5\" cubes (~1 heaped cup)", "120g / 4oz green beans, trimmed and cut into 5cm/2″ pieces", "12 Thai basil leaves (Note 6)"] },
+   { "section": "Garnishes (optional) & serving:", "items": ["Fresh red chilli slices (small chilli – spicy, large = less spicy)", "Fresh coriander / cilantro leaves", "Steamed jasmine rice"] }
+  ],
+  "ingredients": [
+   { "name": "red curry paste", "qty": 6, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "ginger", "qty": 2, "unit": "tsp", "aisle": "Produce" },
+   { "name": "lemongrass", "qty": 1, "unit": "stalk", "aisle": "Produce" },
+   { "name": "vegetable oil", "qty": 3, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "chicken stock", "qty": 250, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
+   { "name": "kaffir lime leaves", "qty": 6, "aisle": "Produce" },
+   { "name": "sugar", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "fish sauce", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chicken thigh fillets", "qty": 350, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "butternut pumpkin", "qty": 150, "unit": "g", "aisle": "Produce" },
+   { "name": "green beans", "qty": 120, "unit": "g", "aisle": "Produce" },
+   { "name": "thai basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "red chilli", "qty": 1, "aisle": "Produce" },
+   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "rice", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Heat oil in a large heavy based skillet over medium high heat.",
+   "Add curry paste and Extras (if using jar paste) and cook for about 2 minutes so it \"dries out\".",
+   "Add chicken broth and stir to dissolve paste. Simmer rapidly for 3 minutes or until liquid reduces by half.",
+   "Add coconut milk, lime leaves, sugar and fish sauce. Stir, then add chicken.",
+   "Spread chicken out, bring to simmer, then turn heat down to medium. Simmer for about 8- 10 minutes or until Sauce reduces, the chicken is cooked and the sauce is almost at the thickness you want.",
+   "Do a taste test. Add more fish sauce (or even shrimp paste) to add more saltiness, sugar for sweetness.",
+   "Add pumpkin and beans, stir. Cook for 3 minutes or until pumpkin is just cooked through and Sauce is thickened.",
+   "Remove from heat. Stir through a handful of Thai basil leaves.",
+   "Serve over jasmine rice, garnished with fresh red chilli slices and fresh coriander/cilantro leaves, if desired."
+  ]
+ },
+ {
+  "deglazeId": "YVBEEN7HWTerltmuMXFcj9ESPDW2:p8nqV4QftCuGonE2",
+  "id": "soy-crumbed-chicken-garlic-rice",
+  "name": "Soy Crumbed Chicken with Garlic Rice & Veggies",
+  "category": "Chicken",
+  "tags": ["Rice", "Crumbed"],
+  "minutes": 35,
+  "serves": 2,
+  "source": { "name": "HelloFresh" },
+  "author": "R Dozo",
+  "photo": "https://cdn.deglaze.app/photos/YVBEEN7HWTerltmuMXFcj9ESPDW2/rH2nLRi5C3pJ86Oc/w288",
+  "notes": "From a meal-kit card, so it has no quantities; amounts are a guide for 2.",
+  "raw": [
+   { "items": ["Garlic", "Jasmine Rice", "Carrot", "Green Beans", "Chicken Breast", "Panko Breadcrumbs", "Olive Oil*", "Butter*", "Soy Sauce*", "BBQ Sauce*", "Sweet Chilli Sauce*", "Vinegar (White Wine or Rice Wine)*", "Plain Flour*", "Egg*"] }
+  ],
+  "ingredients": [
+   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
+   { "name": "rice", "qty": 0.75, "unit": "cup", "aisle": "Pantry", "staple": true },
+   { "name": "carrot", "qty": 1, "aisle": "Produce" },
+   { "name": "green beans", "qty": 150, "unit": "g", "aisle": "Produce" },
+   { "name": "chicken breast fillets", "qty": 2, "aisle": "Meat & Seafood" },
+   { "name": "panko breadcrumbs", "qty": 1, "unit": "cup", "aisle": "Pantry" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true },
+   { "name": "butter", "qty": 20, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "soy sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "bbq sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "sweet chilli sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "rice vinegar", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "plain flour", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" }
+  ],
+  "method": [
+   "Make garlic rice: finely chop or crush garlic. In a medium saucepan, melt the butter with a dash of olive oil over medium heat. Cook 1/2 the garlic until fragrant, 1-2 mins. Add jasmine rice, the water and a generous pinch of salt and bring to the boil. Reduce heat to low and cover. Cook for 10 mins, then remove from heat and keep covered until rice is tender and water absorbed, 10 mins.",
+   "Cook veggies: slice carrot into thin sticks and trim green beans. In a large frying pan, heat a drizzle of olive oil over high heat. Cook carrot and green beans until slightly softened, 4-5 mins. Add remaining garlic and 1/2 the soy sauce and cook until fragrant, 30 seconds. Transfer to a plate and cover to keep warm.",
+   "Combine the BBQ sauce, sweet chilli sauce and vinegar in a small bowl.",
+   "Cook chicken: pound chicken between baking paper until about 1cm thick. Set up three bowls: flour with salt and pepper; egg whisked with the remaining soy sauce; panko breadcrumbs. Dip chicken into flour, then egg, then breadcrumbs.",
+   "Heat enough olive oil to coat the base of the frying pan over medium-high heat and fry chicken until cooked through, 3-4 mins each side. Drain on paper towel.",
+   "Slice chicken. Divide garlic rice and veggies between bowls, top with the chicken and spoon the BBQ sauce mixture over to serve."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Fi0ceUXopM1Qf8yI",
+  "id": "chicken-katsu-smashed-tacos",
+  "name": "Chicken Katsu Smashed Tacos",
+  "category": "Chicken",
+  "tags": ["Tacos", "Quick"],
+  "minutes": 30,
+  "serves": 3,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DPsxl3dkYxQ/" },
+  "author": "Sophie Fisher",
+  "raw": [
+   { "items": ["6 tortillas", "1 egg, lightly beaten", "1 cup panko breadcrumbs", "1 spring onion, finely chopped", "Tonkatsu sauce, to drizzle", "Olive oil, for frying", "Sesame seeds, to sprinkle"] },
+   { "section": "Chicken Filling", "items": ["500g chicken mince", "2 tbsp curry powder", "1 tbsp soy sauce", "1 tbsp sriracha (optional)", "1 tsp ginger", "1 tsp garlic"] },
+   { "section": "Cabbage Slaw", "items": ["1/2 Chinese cabbage, finely chopped", "2 tbsp kewpie mayo", "2 tbsp rice wine vinegar", "1 tbsp honey", "1 tbsp soy sauce"] }
+  ],
+  "ingredients": [
+   { "name": "small flour tortillas", "qty": 6, "aisle": "Bakery" },
+   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
+   { "name": "panko breadcrumbs", "qty": 1, "unit": "cup", "aisle": "Pantry" },
+   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "tonkatsu sauce", "aisle": "Spices & Sauces" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true },
+   { "name": "sesame seeds", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chicken mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "curry powder", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "soy sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "sriracha", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "ginger", "qty": 1, "unit": "tsp", "aisle": "Produce" },
+   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
+   { "name": "wombok", "qty": 0.5, "aisle": "Produce" },
+   { "name": "kewpie mayonnaise", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "rice vinegar", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "honey", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Mix together ingredients for chicken filling until well combined.",
+   "Spread an even, thin layer on each tortilla, leaving a 1cm border around edges.",
+   "Brush with egg then sprinkle with panko breadcrumbs, dusting off excess.",
+   "Generously drizzle oil into frypan and place over medium heat.",
+   "Once hot, place taco, chicken-side down into pan. Cook for 3-4 mins or until golden and flip. Cook for another 2-3 mins.",
+   "For the slaw, place all ingredients in a bowl and toss well.",
+   "Assemble tacos by topping with slaw, spring onion, tonkatsu sauce and sesame seeds."
+  ]
+ }
+]

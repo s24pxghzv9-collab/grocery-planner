@@ -27,6 +27,25 @@ export function findCredentials(env: Record<string, string | undefined>): { url:
 }
 
 /**
+ * HGETALL with automaticDeserialization: false comes back as a flat array
+ * ["field1", "value1", "field2", "value2"]. With it on, it's an object (or null).
+ * Accept both, so the store reads correctly either way.
+ */
+export function toHash(result: unknown): Record<string, string> {
+  if (Array.isArray(result)) {
+    const out: Record<string, string> = {};
+    for (let i = 0; i + 1 < result.length; i += 2) out[String(result[i])] = String(result[i + 1]);
+    return out;
+  }
+  if (result && typeof result === 'object') {
+    return Object.fromEntries(
+      Object.entries(result).map(([k, v]) => [k, typeof v === 'string' ? v : JSON.stringify(v)]),
+    );
+  }
+  return {};
+}
+
+/**
  * Upstash Redis store, or null when no database is connected. The app then keeps
  * working on each phone only.
  */
@@ -42,8 +61,8 @@ export function upstashStore(): Store | null {
     async readAll(keys) {
       const p = redis.pipeline();
       for (const k of keys) p.hgetall(k);
-      const results = (await p.exec()) as (Record<string, string> | null)[];
-      return results.map((r) => r ?? {});
+      const results = (await p.exec()) as unknown[];
+      return results.map(toHash);
     },
     async write(writes) {
       const tx = redis.multi(); // atomic: a batch of edits lands together

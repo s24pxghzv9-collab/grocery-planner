@@ -7,7 +7,8 @@
  */
 import type { AppState, DayPlan, ExtraItem, Op } from '../../src/types';
 
-const PREFIX = 'dp:';
+// Distinct prefix so this can safely share a Redis database with other apps.
+const PREFIX = 'dinner-planner:';
 export const KEYS = {
   plans: `${PREFIX}plans`, // date -> DayPlan json
   checked: `${PREFIX}checked`, // `${week}|${itemKey}` -> '1'

@@ -1,0 +1,372 @@
+{
+ "_about": "Index of Alice's Deglaze library (household library), built during the one-off export in Nov 2026. 'course' is Deglaze's system tag.",
+ "recipes": [
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:moZYjEE0-wMxqH1v",
+   "title": "Prawn Stir Fry (Shrimp)",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:1HHM6vT0iS-FZCXD",
+   "title": "Fish en Papillote (Fish in a Bag)",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:_wMbQYM74nr75xsb",
+   "title": "Zucchini carbonara pasta recipe",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:8R3y7b9z48oH9bGH",
+   "title": "Hailey Bieber Chicken Meatballs",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:T1IWa_rEhROTkl8K",
+   "title": "Creamy Butter Bean & Roasted Veg Agnolotti",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:EBpTRMP5m5t6DlXP",
+   "title": "Chili Crisp Beef Bowls With Coconut Broth",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:bJ5gwtqThNE8kNhG",
+   "title": "Beef and Vegetable Rice Bowl",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:VeHqnA-Iufp_i2Ea",
+   "title": "Spicy Coconut Beef Broth Bowls",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:ffbbjN_NrHKGZwMC",
+   "title": "Coconut Chilli Ramen with Crispy Pork",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:_pwH8U0hr9IW809p",
+   "title": "Hot Honey Crispy Chicken Bowls",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:FvBAi_2kAn4m6RU8",
+   "title": "Chicken & Brothy Rice",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:oqDiB9pxDiVBgPPC",
+   "title": "Bocconcini Stuffed Meatballs",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:29o9zjRAyGQPbVuw",
+   "title": "Hot Honey Crispy Chicken Bowls",
+   "course": "main",
+   "note": "possible duplicate"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:y1-rFBrP7JDJZlVZ",
+   "title": "Easy Beef Pie",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:iUkfjBBNyvcEn1vb",
+   "title": "Chopped Chicken Salad",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Rs59gbpURzBmF_dp",
+   "title": "Gochujang Coconut & Lime Brothy Rice",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:qHOgv-d4abU4RBs9",
+   "title": "Chicken Filo Pie",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:74w1dUtbNon7kFd_",
+   "title": "Thai Chicken Cashew",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:faQhSr1CF8gPek4y",
+   "title": "Baked Pipe Rigate with Spicy Vodka Sauce",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:6pKxGJKWRkZuMCS5",
+   "title": "Crispy Chicken Caesar Sandwiches",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:K4yDodFegMjLOrkF",
+   "title": "Tuscan Chicken Orzo",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:IvnT3vBeBg56sjzr",
+   "title": "Pasta with Pumpkin Brown Butter Sauce",
+   "course": "main",
+   "note": "in Reece's library, not Alice's"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:7ax4Sb3o1LEGck26",
+   "title": "Vodka Orzo",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:jHPWt7KeVPhVqV86",
+   "title": "Airfryer Teriyaki Glazed Beef Meatballs",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:0u5jElJnUNgBNlF7",
+   "title": "One-Pan Italian Sausage Tuscan Pasta",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:JpaLA1Va_N3p8rhF",
+   "title": "High Protein McChicken Smash Tacos",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:IfRkCVgeiomclClh",
+   "title": "Slowcooker Creamy Pesto Chicken",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:ofLl055cl1I-G45l",
+   "title": "Chilli Cheese Loaded Mash",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:AhAI0hyDtt6n3ajL",
+   "title": "Chicken Meatballs With Orzo",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:XmGo0D-ScuJl1jjL",
+   "title": "Vodka Sauce Potato Bake",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:3huvOak3XLjiaDPq",
+   "title": "Chicken Teriyaki",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:tnI_0SgsyXjLlWht",
+   "title": "Chicken Ruby",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:b_hyLTvIssroR98e",
+   "title": "Chicken Stir-Fry",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:8vx7pVWRbi45DORb",
+   "title": "Marry Me Chicken",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:rrUnNrFfWs0v_JCc",
+   "title": "Chicken Tikka Wraps",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:Q-ccsAZr0gFVoq5w",
+   "title": "Tuscan Chicken Recipe",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:EdYBwFX-qnAIevvD",
+   "title": "Peanutty Chicken Salad",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:8lE5VYq_XtqG9i9F",
+   "title": "Chicken Curry Laksa",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:HxVNRe-Om41nsklI",
+   "title": "Thai Red Curry with Chicken",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:p8nqV4QftCuGonE2",
+   "title": "Soy Crumbed Chicken with Garlic Rice & Mixed Veggies",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Fi0ceUXopM1Qf8yI",
+   "title": "Chicken Katsu Smashed Tacos",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:79BQTgbXqxYKW0d_",
+   "title": "Panko-Coated Chicken Schnitzel",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:RMhHNrYJdBFcggsz",
+   "title": "Hainanese Inspired Chicken Rice And Broth",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:IGICCJHZXF1GVJSk",
+   "title": "Massaman Curry",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:wrM4jF_WLmWEvuJE",
+   "title": "Thai Green Curry",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:DDplaz3c-hYqDWce",
+   "title": "Chicken and Sweetcorn Soup",
+   "course": "side/soup"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:SyrLpDVOP1w-roDJ",
+   "title": "Freezer-Friendly Chicken Marinades",
+   "course": "other"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:Z3oFhW1fkgXerCK7",
+   "title": "Pork Mince Stir Fry",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:s8Wu3RsbSPUdw59t",
+   "title": "Tomahawk Steak",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:mgMfrPIDX7J0nCBA",
+   "title": "Easy Sausage and Pea Orzo Risotto",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Nq6G6XpTOnj4AksZ",
+   "title": "Steak Au Poivre & Frites",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:2uJF5V03RSuPwTPu",
+   "title": "Ribeye Steak",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:e3YjFWptkRDyn2wJ",
+   "title": "Pasta Alla Zozzona",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:v3z2ouki6HzmZWuL",
+   "title": "Beef Wellington With Chestnut Stuffing & Roasted Cranberries",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:OTR4KR4TT8j2JxU2",
+   "title": "Orecchiette With Sausage and Broccoli Rabe",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:m2QXjd-ToeW9KfjR",
+   "title": "Peking-Style Beef",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:f6fXV_5cjO8z52aF",
+   "title": "Oven-Baked Doner Kebab",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:ZyA3FN00SIE25j7p",
+   "title": "Slow-Roasted Crispy Pork Belly",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:NGxbLLrEg5VHsP_S",
+   "title": "Pork and Scallion Dumplings With Crispy Skirt",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:ogukYJMzn9ob7w5y",
+   "title": "Easy Taco Bowls",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:hN5pcnwrtxoHRu2Z",
+   "title": "Smash Burger Tacos",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:5RtWDx0FkmcYITjN",
+   "title": "Turkey Burgers",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:UEt7pmugUgkJUV0w",
+   "title": "Crispy Taco Bell-Style Nachos",
+   "course": "side"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:53HEiCEP-R6gMsku",
+   "title": "Restaurant Quality Massaman Curry",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:XkdDSDuQo3lxRH7S",
+   "title": "Pasta Alla Vodka",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Rz1tmLja5gWRc4t1",
+   "title": "Red Curry Snapper Boat",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:publv1KJf-RjRiHm",
+   "title": "Miso Peanut Ramen Bowls",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:hDfSNI9XUUh5ktTv",
+   "title": "Gozney pizza (TikTok, untitled)",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:X5NzMtN2qsyL0y_7",
+   "title": "Beautiful courgette carbonara",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:9n4vbYIUavCMXeS_",
+   "title": "Mushroom Risotto With Peas",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:bwEPN49tteyj-H9r",
+   "title": "Breaded plaice with sauce vierge",
+   "course": "main"
+  },
+  {
+   "id": "YVBEEN7HWTerltmuMXFcj9ESPDW2:Yh5HMds1oKJzmEKV",
+   "title": "Spaghetti Carbonara",
+   "course": "main"
+  },
+  {
+   "id": "NrFq7AG09mgjjBuA7VdCcPYMqug1:v-cZ8D52glsZol8N",
+   "title": "Healthy Rice Paper Dumpling Rolls",
+   "course": "side"
+  }
+ ]
+}

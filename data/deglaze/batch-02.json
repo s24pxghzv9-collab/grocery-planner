@@ -1,0 +1,396 @@
+[
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:FvBAi_2kAn4m6RU8",
+  "id": "chicken-brothy-rice",
+  "name": "Chicken & Brothy Rice",
+  "category": "Chicken",
+  "tags": ["Bowl", "Rice", "Air fryer"],
+  "minutes": 35,
+  "serves": 2,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DZer-d-SFnP/" },
+  "author": "Miranda Brady",
+  "raw": [
+   { "items": ["300g chicken breast or thigh", "500ml Campbells Real Chicken Bone Broth", "1/2 cup rice, uncooked", "Asian greens & chilli oil, to serve"] },
+   { "section": "Marinate", "items": ["2 tbsp miso paste, red or white", "3 tbsp soy sauce", "2 tbsp honey", "1 tbsp garlic & ginger, minced", "1/2 tbsp sesame oil"] }
+  ],
+  "ingredients": [
+   { "name": "chicken thigh fillets", "qty": 300, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "chicken stock", "qty": 500, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "rice", "qty": 0.5, "unit": "cup", "aisle": "Pantry", "staple": true },
+   { "name": "bok choy", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "chilli oil", "aisle": "Spices & Sauces" },
+   { "name": "miso paste", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces" },
+   { "name": "soy sauce", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "honey", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "ginger", "qty": 1, "unit": "tsp", "aisle": "Produce" },
+   { "name": "sesame oil", "qty": 0.5, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "sesame seeds", "aisle": "Spices & Sauces", "staple": true }
+  ],
+  "method": [
+   "Mix the marinade together in a bowl. Add half to the chicken and mix to coat.",
+   "Air-fry at 180C for 20 mins, flipping halfway (or pan fry for 5-7 mins each side) until cooked through then slice.",
+   "Cook the rice per packet instructions.",
+   "Add remaining marinade to a saucepan with the chicken bone broth. Mix well and bring to the boil.",
+   "Add the Asian vegetables and simmer for a few minutes until softened.",
+   "Divide the cooked rice, greens, broth and chicken between 2 bowls. Garnish with green onion, chilli oil and sesame seeds to serve."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:oqDiB9pxDiVBgPPC",
+  "id": "bocconcini-stuffed-meatballs",
+  "name": "Bocconcini Stuffed Meatballs",
+  "category": "Beef",
+  "tags": ["Meatballs", "Oven"],
+  "minutes": 40,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DZRfPpJPcOW/" },
+  "author": "Mary Hoffmann",
+  "raw": [
+   { "section": "Meatballs", "items": ["La Casa Del Formaggio Cherry Bocconcini", "500g Beef Mince", "1 cup Panko Crumbs", "1 Egg", "2 cloves of Garlic, minced", "1/4 cup Parmesan", "1 Tbsp Basil, chopped fine", "Salt & Pepper"] },
+   { "section": "Sauce", "items": ["2 Tbsp Olive Oil", "1 small Onion, diced", "3 cloves of Garlic, sliced thin", "2 cans Crushed Tomatoes", "Dried Oregano", "Salt & Pepper"] }
+  ],
+  "ingredients": [
+   { "name": "cherry bocconcini", "qty": 1, "unit": "tub", "aisle": "Dairy & Eggs" },
+   { "name": "beef mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "panko breadcrumbs", "qty": 1, "unit": "cup", "aisle": "Pantry" },
+   { "name": "eggs", "qty": 1, "aisle": "Dairy & Eggs" },
+   { "name": "garlic", "qty": 5, "unit": "clove", "aisle": "Produce" },
+   { "name": "parmesan", "qty": 25, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "basil", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "olive oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "crushed tomatoes", "qty": 2, "unit": "tin", "aisle": "Pantry" },
+   { "name": "dried oregano", "aisle": "Spices & Sauces", "staple": true }
+  ],
+  "method": [
+   "Preheat oven to 200c.",
+   "Combine all meatball ingredients except bocconcini in a bowl.",
+   "Divide mixture into 12 portions. Flatten each portion, place a bocconcini ball in the centre and seal the meat around it forming a meatball.",
+   "Place into an oiled baking dish and bake for 20 minutes until golden and brown.",
+   "While the meatballs are cooking, heat oil in a pan on medium heat and cook onions for 5 minutes until softened. Add garlic and cook for a further minute.",
+   "Stir in tomatoes, oregano, salt + pepper and simmer for 10 minutes. Serve and enjoy."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:y1-rFBrP7JDJZlVZ",
+  "id": "easy-beef-pie",
+  "name": "Easy Beef Pie",
+  "category": "Beef",
+  "tags": ["Oven", "Comfort"],
+  "minutes": 75,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DYiwIhFgNwe/" },
+  "author": "Nicole Maguire",
+  "notes": "The original has no quantities; amounts are a guide for 4.",
+  "raw": [
+   { "items": ["1 onion, chopped", "1 carrot, grated", "1 zucchini, grated", "1 stalk celery, chopped", "1 clove garlic, grated", "Olive oil", "Salt", "Fresh thyme leaves", "Oregano", "Tomato paste", "Flour", "Red wine vinegar", "Beef stock", "Worcestershire sauce", "Black pepper", "Ground beef", "Potatoes, thinly sliced", "Butter, melted"] }
+  ],
+  "ingredients": [
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "carrot", "qty": 1, "aisle": "Produce" },
+   { "name": "zucchini", "qty": 1, "aisle": "Produce" },
+   { "name": "celery", "qty": 1, "unit": "stalk", "aisle": "Produce" },
+   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "thyme", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "dried oregano", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "tomato paste", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "plain flour", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "red wine vinegar", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "beef stock", "qty": 250, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "worcestershire sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "beef mince", "qty": 500, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "potatoes", "qty": 600, "unit": "g", "aisle": "Produce" },
+   { "name": "butter", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" }
+  ],
+  "method": [
+   "Preheat your oven.",
+   "Chop the onion and celery. Grate the carrot, zucchini, and garlic.",
+   "Heat olive oil in a wide, deep pan. Add onion, carrot, zucchini, celery, and garlic. Sprinkle salt and cook until soft.",
+   "Add fresh thyme, oregano, and tomato paste. Stir well.",
+   "Add flour and mix to thicken.",
+   "Pour in red wine vinegar, beef stock, and Worcestershire sauce.",
+   "Add ground beef, salt, and black pepper. Cook until beef is browned and mixture thickens.",
+   "Peel and slice potatoes very thinly. Use a mandoline for even slices if possible.",
+   "Layer the potato slices over the beef mixture in a concentric circle.",
+   "Drizzle melted butter over the potatoes.",
+   "Cover the pan with aluminum foil and place in the oven to bake until the potatoes are golden and crispy.",
+   "Garnish with fresh thyme leaves before serving."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:iUkfjBBNyvcEn1vb",
+  "id": "chopped-chicken-salad",
+  "name": "Chopped Chicken Salad",
+  "category": "Chicken",
+  "tags": ["Salad", "Quick", "No cook"],
+  "minutes": 15,
+  "serves": 2,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DYhBiVtx0e7/" },
+  "author": "Jem Lester",
+  "raw": [
+   { "section": "Salad", "items": ["1-2 cups each chopped iceberg & wombok", "A good handful of green beans, chopped (or celery for crunch)", "2-3 spring onions, diced", "1/2 bunch coriander, chopped", "1 cup shredded roast chicken", "2 tbsp sesame seeds"] },
+   { "section": "Dressing", "items": ["3 tbsp light soy sauce", "3 tbsp rice wine vinegar", "2 tbsp sesame oil", "1 tbsp avocado oil", "Juice of 1/2 lemon", "1.5 tsp white sugar"] }
+  ],
+  "ingredients": [
+   { "name": "iceberg lettuce", "qty": 0.5, "aisle": "Produce" },
+   { "name": "wombok", "qty": 0.25, "aisle": "Produce" },
+   { "name": "green beans", "qty": 100, "unit": "g", "aisle": "Produce" },
+   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "coriander", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "roast chicken", "qty": 1, "aisle": "Meat & Seafood" },
+   { "name": "sesame seeds", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "soy sauce", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "rice vinegar", "qty": 3, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "sesame oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "vegetable oil", "qty": 1, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "lemon", "qty": 1, "aisle": "Produce" },
+   { "name": "sugar", "qty": 1.5, "unit": "tsp", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Make the dressing: whisk the soy sauce, rice wine vinegar, sesame oil, avocado oil, lemon juice and sugar.",
+   "Add the chopped iceberg, wombok and green beans to a large bowl.",
+   "Add chopped spring onions and coriander to the bowl.",
+   "Add the shredded roast chicken to the bowl.",
+   "Pour dressing over the ingredients in the bowl and toss with tongs.",
+   "Sprinkle sesame seeds over the mixed salad."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:Rs59gbpURzBmF_dp",
+  "id": "gochujang-coconut-lime-brothy-rice",
+  "name": "Gochujang Coconut & Lime Brothy Rice",
+  "category": "Chicken",
+  "tags": ["Bowl", "Rice", "Korean"],
+  "minutes": 35,
+  "serves": 2,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DYEZbVdJ9ZM/" },
+  "author": "Siân Ruffell",
+  "raw": [
+   { "section": "Chicken", "items": ["2 chicken thighs", "1 tbsp soy sauce", "1/2 tsp honey", "1/2 tsp sesame oil", "1 grated garlic clove", "1 tsp grated ginger", "black pepper"] },
+   { "section": "Broth", "items": ["1/2 cup bone broth or chicken stock", "1/2 cup light coconut milk", "1-2 tsp gochujang (depending on heat preference)", "1 garlic clove, crushed", "1 tsp grated ginger", "1/2 lime juice", "1 tsp soy sauce", "1 tsp rice wine vinegar"] },
+   { "section": "Optional", "items": ["Bok choy", "Kimchi"] },
+   { "section": "Rice", "items": ["1/2-1 cup jasmine rice", "1 tsp grated ginger"] }
+  ],
+  "ingredients": [
+   { "name": "chicken thigh fillets", "qty": 2, "aisle": "Meat & Seafood" },
+   { "name": "soy sauce", "qty": 4, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "honey", "qty": 0.5, "unit": "tsp", "aisle": "Pantry", "staple": true },
+   { "name": "sesame oil", "qty": 0.5, "unit": "tsp", "aisle": "Pantry", "staple": true },
+   { "name": "garlic", "qty": 2, "unit": "clove", "aisle": "Produce" },
+   { "name": "ginger", "qty": 3, "unit": "tsp", "aisle": "Produce" },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "chicken stock", "qty": 125, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "coconut milk", "qty": 1, "unit": "tin", "aisle": "Pantry" },
+   { "name": "gochujang", "qty": 2, "unit": "tsp", "aisle": "Spices & Sauces" },
+   { "name": "lime", "qty": 1, "aisle": "Produce" },
+   { "name": "rice vinegar", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "bok choy", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "kimchi", "aisle": "Other" },
+   { "name": "rice", "qty": 1, "unit": "cup", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Put rice on to cook and marinate your chicken, leave for at least 15 minutes to marinate whilst you cook rice.",
+   "In a separate pan, make your broth. In a pan on medium heat with neutral oil, add garlic and ginger and cook until fragrant. Then add gochujang. Cook for a few minutes until it deepens.",
+   "Stir through bone broth and coconut milk, soy sauce, rice wine vinegar. Leave to simmer gently whilst you cook your chicken.",
+   "Sear chicken in pan or cook in air fryer at 180°C for 10 minutes until cooked through.",
+   "Squeeze lime juice through broth before serving.",
+   "Plate your rice, pour over broth and top with chicken and choice of veggies."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:qHOgv-d4abU4RBs9",
+  "id": "chicken-filo-pie",
+  "name": "Chicken Filo Pie",
+  "category": "Chicken",
+  "tags": ["Oven", "Comfort"],
+  "minutes": 50,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DX_VH7XtRji/" },
+  "author": "@keetasdishdiaries",
+  "raw": [
+   { "items": ["1 large leek, sliced", "1 cup carrot, chopped (2 small carrots)", "3 garlic cloves, minced", "50g butter (plus extra for brushing filo pastry)", "1 tsp dried thyme", "1/3 cup flour", "1/2 cup grated pecorino", "1/2 tsp black pepper", "1 tsp salt", "1 cup frozen peas", "2–3 cups chicken stock (adjust for desired thickness)", "1 whole store-bought roast chicken, shredded (skin removed)", "Filo pastry sheets"] }
+  ],
+  "ingredients": [
+   { "name": "leek", "qty": 1, "aisle": "Produce" },
+   { "name": "carrot", "qty": 2, "aisle": "Produce" },
+   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
+   { "name": "butter", "qty": 80, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "dried thyme", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "plain flour", "qty": 0.33, "unit": "cup", "aisle": "Pantry", "staple": true },
+   { "name": "pecorino", "qty": 50, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "frozen peas", "qty": 1, "unit": "cup", "aisle": "Frozen" },
+   { "name": "chicken stock", "qty": 625, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "roast chicken", "qty": 1, "aisle": "Meat & Seafood" },
+   { "name": "filo pastry", "qty": 1, "unit": "pack", "aisle": "Frozen" }
+  ],
+  "method": [
+   "Melt the butter in a large pot over medium heat. Add the sliced leek and sauté for 4 minutes, then add the carrots and sauté for a further 5 minutes.",
+   "Stir in the garlic, and thyme for another 2-3 minutes.",
+   "Sprinkle in the flour and stir continuously for 1–2 minutes.",
+   "Gradually pour in the chicken stock while stirring to avoid lumps. Add the pecorino, black pepper, salt, frozen peas, and shredded roast chicken. Mix well and allow everything to heat through for 3-4 minutes.",
+   "Transfer the mixture to an ovenproof dish. Layer scrunched filo pastry sheets on top, brushing with melted butter to create a golden, crispy finish.",
+   "Bake at 180°C (350°F) for 20 minutes or until the filo pastry is golden and crisp.",
+   "Let it cool slightly before serving. Enjoy!"
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:74w1dUtbNon7kFd_",
+  "id": "thai-chicken-cashew",
+  "name": "Thai Chicken Cashew",
+  "category": "Chicken",
+  "tags": ["Stir fry", "Quick", "Thai"],
+  "minutes": 20,
+  "serves": 3,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DXqu4EFjoSO/" },
+  "author": "@keetasdishdiaries",
+  "raw": [
+   { "items": ["2 tbsp vegetable oil", "½ cup raw cashews, unsalted", "4 garlic cloves, finely minced", "1 onion, cut into wedges", "400g chicken thighs, skinless and boneless, sliced into 1cm thin strips", "1 red capsicum, cut into 2.5cm squares", "4 spring onions, cut into 2.5cm length, white and green parts separated", "1 red chilli, finely sliced on the diagonal"] },
+   { "section": "Sauce", "items": ["2 tbsp oyster sauce", "1 tbsp dark soy sauce", "1 ½ tbsp fish sauce", "2 tsp honey", "100ml water"] },
+   { "section": "To Serve", "items": ["Red chilli, finely sliced (garnish)", "Spring onion, finely sliced (green part only, garnish)", "Jasmine rice"] }
+  ],
+  "ingredients": [
+   { "name": "vegetable oil", "qty": 2, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "raw cashews", "qty": 0.5, "unit": "cup", "aisle": "Pantry" },
+   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "chicken thigh fillets", "qty": 400, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "red capsicum", "qty": 1, "aisle": "Produce" },
+   { "name": "spring onion", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "red chilli", "qty": 2, "aisle": "Produce" },
+   { "name": "oyster sauce", "qty": 2, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "dark soy sauce", "qty": 1, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "fish sauce", "qty": 1.5, "unit": "tbsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "honey", "qty": 2, "unit": "tsp", "aisle": "Pantry", "staple": true },
+   { "name": "rice", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Make the Sauce: Mix all the sauce ingredients in a small bowl.",
+   "Cook Aromatic: Heat vegetable oil over high heat in a wok or large pan. Add garlic and onion, stir-fry for 1 minute.",
+   "Add Chicken: Add the sliced chicken. Cook for about 1–2 minutes until the outside changes from pink to white.",
+   "Add Vegetables: Stir in the white parts of the spring onions, red capsicum, cashews, and the sliced chili. Stir fry until the chicken is cooked, around 2 minutes.",
+   "Add Sauce: Pour in the sauce. Cook for 2 minutes, stirring, until it reduces to a syrupy consistency and coats the chicken.",
+   "Finish with Spring Onions: Add the green parts of the spring onions. Toss for 30 seconds.",
+   "Serve: Transfer to a serving dish. Serve with jasmine rice and garnish with extra spring onion and red chilli if desired."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:faQhSr1CF8gPek4y",
+  "id": "baked-pipe-rigate-vodka",
+  "name": "Baked Pipe Rigate with Spicy Vodka Sauce",
+  "category": "Vegetarian",
+  "tags": ["Pasta", "Oven"],
+  "minutes": 35,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DW5w_wbDE9u/" },
+  "author": "Broadsheet Melbourne",
+  "notes": "The original has no quantities; amounts are a guide for 4.",
+  "raw": [
+   { "items": ["Butter", "Sliced onions", "Garlic", "Tomato paste", "Chili flakes", "Vodka", "Cream", "Cooked pipe rigate pasta", "Fresh Reggiano cheese, grated", "Olive oil"] }
+  ],
+  "ingredients": [
+   { "name": "butter", "qty": 40, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "brown onion", "qty": 1, "aisle": "Produce" },
+   { "name": "garlic", "qty": 3, "unit": "clove", "aisle": "Produce" },
+   { "name": "tomato paste", "qty": 4, "unit": "tbsp", "aisle": "Pantry", "staple": true },
+   { "name": "chilli flakes", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "vodka", "qty": 60, "unit": "ml", "aisle": "Other" },
+   { "name": "thickened cream", "qty": 300, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "pipe rigate pasta", "qty": 500, "unit": "g", "aisle": "Pantry" },
+   { "name": "parmesan", "qty": 80, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "olive oil", "aisle": "Pantry", "staple": true }
+  ],
+  "method": [
+   "Melt butter in a large pot.",
+   "Add sliced onions and sauté in melted butter.",
+   "Stir in garlic and tomato paste.",
+   "Sprinkle in chili flakes for heat.",
+   "Pour in vodka and let it cook off for a minute.",
+   "Add cream and stir into the sauce until it's a vibrant orange color.",
+   "Mix the cooked pipe rigate pasta into the sauce.",
+   "Tip the pasta into a baking dish and top with freshly grated parmesan.",
+   "Bake in a hot oven (about 220°C) for 8-10 minutes until golden.",
+   "Finish with a drizzle of olive oil before serving."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:6pKxGJKWRkZuMCS5",
+  "id": "crispy-chicken-caesar-sandwiches",
+  "name": "Crispy Chicken Caesar Sandwiches",
+  "category": "Chicken",
+  "tags": ["Sandwich"],
+  "minutes": 40,
+  "serves": 4,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DWFQDTCFE6-/" },
+  "author": "Nicole Maguire",
+  "raw": [
+   { "section": "Garlic Bread Baguette", "items": ["4 small rolls (mini sub, baguette, sourdough or pane di casa)", "80 g (2¾ oz) unsalted butter, at room temperature", "½ tsp freshly minced garlic", "1 tbsp finely chopped flat-leaf (Italian) parsley", "½ tsp salt", "½ cup (50 g) freshly grated parmesan (or shaved if you prefer)"] },
+   { "section": "Caesar Filling", "items": ["1 cup (250 g) whole-egg mayonnaise", "½ tsp freshly minced garlic", "2 anchovy fillets, finely chopped (optional)", "1 tbsp freshly squeezed lemon juice", "1 tsp Dijon mustard", "1 tsp Worcestershire sauce", "½ tsp salt", "¼ tsp freshly cracked black pepper", "1 whole cos (romaine) lettuce or 2 baby cos lettuces, shredded", "4 Freezer-Friendly Chicken Schnitzels, cooked", "½ cup (50 g) freshly grated parmesan, to serve"] }
+  ],
+  "ingredients": [
+   { "name": "bread rolls", "qty": 4, "aisle": "Bakery" },
+   { "name": "butter", "qty": 80, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "garlic", "qty": 1, "unit": "clove", "aisle": "Produce" },
+   { "name": "flat-leaf parsley", "qty": 1, "unit": "bunch", "aisle": "Produce" },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "parmesan", "qty": 100, "unit": "g", "aisle": "Dairy & Eggs" },
+   { "name": "whole-egg mayonnaise", "qty": 250, "unit": "g", "aisle": "Spices & Sauces" },
+   { "name": "anchovy fillets", "qty": 2, "aisle": "Pantry" },
+   { "name": "lemon", "qty": 1, "aisle": "Produce" },
+   { "name": "dijon mustard", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "worcestershire sauce", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "cos lettuce", "qty": 1, "aisle": "Produce" },
+   { "name": "chicken schnitzels", "qty": 4, "aisle": "Meat & Seafood" }
+  ],
+  "method": [
+   "Preheat oven and toast prepared bread rolls with herb butter and parmesan cheese.",
+   "Mix mayonnaise with minced garlic, minced anchovies, lemon juice, Dijon mustard, Worcestershire sauce, salt, and black pepper to make the Caesar dressing.",
+   "Toss shredded cos lettuce with the Caesar dressing to coat evenly.",
+   "Cook chicken schnitzels until golden brown and crispy.",
+   "Assemble the sandwich by placing a chicken schnitzel on toasted garlic bread, topping with Caesar salad and more grated parmesan.",
+   "Place the top half of the toasted garlic bread onto the sandwich and serve."
+  ]
+ },
+ {
+  "deglazeId": "NrFq7AG09mgjjBuA7VdCcPYMqug1:K4yDodFegMjLOrkF",
+  "id": "tuscan-chicken-orzo",
+  "name": "Tuscan Chicken Orzo (Slow Cooker)",
+  "category": "Chicken",
+  "tags": ["Slow cooker", "Pasta"],
+  "minutes": 300,
+  "serves": 6,
+  "source": { "name": "Instagram", "url": "https://www.instagram.com/reel/DSaevQmjy1Q/" },
+  "author": "Valerie | Everyday Mom Finds",
+  "raw": [
+   { "items": ["2 lbs chicken breasts or thighs", "1 jar sun-dried tomatoes (use the oil too)", "4 cloves garlic, minced", "2 cups chicken broth", "1 tsp Italian seasoning", "Salt + pepper", "1 cup dry orzo", "1 cup milk or half-and-half", "3 big handfuls spinach", "½–¾ cup freshly grated parmesan"] }
+  ],
+  "ingredients": [
+   { "name": "chicken thigh fillets", "qty": 900, "unit": "g", "aisle": "Meat & Seafood" },
+   { "name": "sun-dried tomatoes", "qty": 1, "unit": "jar", "aisle": "Pantry" },
+   { "name": "garlic", "qty": 4, "unit": "clove", "aisle": "Produce" },
+   { "name": "chicken stock", "qty": 500, "unit": "ml", "aisle": "Pantry", "staple": true },
+   { "name": "mixed herbs", "qty": 1, "unit": "tsp", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "salt", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "black pepper", "aisle": "Spices & Sauces", "staple": true },
+   { "name": "orzo", "qty": 1, "unit": "cup", "aisle": "Pantry" },
+   { "name": "milk", "qty": 250, "unit": "ml", "aisle": "Dairy & Eggs" },
+   { "name": "baby spinach", "qty": 120, "unit": "g", "aisle": "Produce" },
+   { "name": "parmesan", "qty": 60, "unit": "g", "aisle": "Dairy & Eggs" }
+  ],
+  "method": [
+   "Add chicken, sun-dried tomatoes (with oil), garlic, broth, Italian seasoning, salt & pepper to the crockpot.",
+   "Cook on low for 4–5 hours, then shred the chicken.",
+   "Stir in orzo + milk. Cook 20–30 minutes until the orzo is tender.",
+   "Fold in spinach and parmesan until creamy and silky."
+  ]
+ }
+]

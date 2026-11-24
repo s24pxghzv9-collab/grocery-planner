@@ -1,0 +1,577 @@
+{
+ "anchovy fillets": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "asparagus": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "baby spinach": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 2
+ },
+ "basil": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 2
+ },
+ "beef mince": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 4
+ },
+ "beef stock": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 3
+ },
+ "beef, thinly sliced": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "black bean sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 1
+ },
+ "black pepper": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 8
+ },
+ "bok choy": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 2
+ },
+ "bread rolls": {
+  "aisle": "Bakery",
+  "staple": false,
+  "uses": 1
+ },
+ "breadcrumbs": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "broccolini": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "brown onion": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 10
+ },
+ "brown sugar": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 1
+ },
+ "butter": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 5
+ },
+ "butter beans": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "carrot": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 4
+ },
+ "celery": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "cherry bocconcini": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "chicken mince": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "chicken schnitzels": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "chicken stock": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 6
+ },
+ "chicken tenderloins": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "chicken thigh fillets": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 4
+ },
+ "chilli crisp": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 2
+ },
+ "chilli flakes": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "chilli oil": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 2
+ },
+ "chilli powder": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "chinese cooking wine": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "coconut milk": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 4
+ },
+ "coriander": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "cornflour": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 2
+ },
+ "cos lettuce": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "cottage cheese": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "crushed tomatoes": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "cucumber": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 5
+ },
+ "dark soy sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "dijon mustard": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "dill": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "dried oregano": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "dried thyme": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "dry white wine": {
+  "aisle": "Other",
+  "staple": false,
+  "uses": 1
+ },
+ "edamame": {
+  "aisle": "Frozen",
+  "staple": false,
+  "uses": 2
+ },
+ "eggs": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 4
+ },
+ "filo pastry": {
+  "aisle": "Frozen",
+  "staple": false,
+  "uses": 1
+ },
+ "fish sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "flat-leaf parsley": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "frozen peas": {
+  "aisle": "Frozen",
+  "staple": false,
+  "uses": 1
+ },
+ "garlic": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 19
+ },
+ "garlic powder": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "ginger": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 5
+ },
+ "gochujang": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 3
+ },
+ "green beans": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "ground ginger": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "hoisin sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 1
+ },
+ "honey": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 5
+ },
+ "iceberg lettuce": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "kimchi": {
+  "aisle": "Other",
+  "staple": false,
+  "uses": 2
+ },
+ "kipfler potatoes": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "leek": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 2
+ },
+ "lemon": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 4
+ },
+ "lemongrass": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "lime": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 3
+ },
+ "milk": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "miso paste": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 2
+ },
+ "mixed herbs": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 3
+ },
+ "olive oil": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 8
+ },
+ "onion powder": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "orzo": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "oyster sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "panko breadcrumbs": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "parmesan": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 7
+ },
+ "passata": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 2
+ },
+ "peanut butter": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 1
+ },
+ "pecorino": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "pipe rigate pasta": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "plain flour": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 2
+ },
+ "pork mince": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "potatoes": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "ramen noodles": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "raw cashews": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "raw prawns, peeled": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "red cabbage": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "red capsicum": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 4
+ },
+ "red chilli": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 2
+ },
+ "red curry paste": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 1
+ },
+ "red onion": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "red wine vinegar": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "rice": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 8
+ },
+ "rice vinegar": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 4
+ },
+ "roast chicken": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 2
+ },
+ "salt": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 8
+ },
+ "sesame oil": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 5
+ },
+ "sesame seeds": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 4
+ },
+ "snapper fillets": {
+  "aisle": "Meat & Seafood",
+  "staple": false,
+  "uses": 1
+ },
+ "snow peas": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "soy sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 9
+ },
+ "spaghetti": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "spinach & ricotta agnolotti": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "spring onion": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 5
+ },
+ "sriracha": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "sugar": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 2
+ },
+ "sun-dried tomatoes": {
+  "aisle": "Pantry",
+  "staple": false,
+  "uses": 1
+ },
+ "thickened cream": {
+  "aisle": "Dairy & Eggs",
+  "staple": false,
+  "uses": 1
+ },
+ "thyme": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "tomato paste": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 2
+ },
+ "vegetable oil": {
+  "aisle": "Pantry",
+  "staple": true,
+  "uses": 4
+ },
+ "vodka": {
+  "aisle": "Other",
+  "staple": false,
+  "uses": 1
+ },
+ "white pepper": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "white vinegar": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 1
+ },
+ "whole-egg mayonnaise": {
+  "aisle": "Spices & Sauces",
+  "staple": false,
+  "uses": 1
+ },
+ "wombok": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 1
+ },
+ "worcestershire sauce": {
+  "aisle": "Spices & Sauces",
+  "staple": true,
+  "uses": 2
+ },
+ "zucchini": {
+  "aisle": "Produce",
+  "staple": false,
+  "uses": 4
+ }
+}

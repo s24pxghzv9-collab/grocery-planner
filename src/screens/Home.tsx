@@ -1,15 +1,21 @@
 import { ArrowRight, ChevronRight, ShoppingBasket } from 'lucide-react';
-import { addDays, dayName, dayNum, dayShort, fromISO, rangeLabel, shortDate, weekDays } from '../lib/dates';
+import { useState, type ReactNode } from 'react';
+import { addDays, dayName, dayNum, dayShort, fromISO, rangeLabel, shortDate, weekDays, weekStart } from '../lib/dates';
 import { describePlan, recipeMeta } from '../lib/plan';
 import { Marker } from '../components/Marker';
 import { SyncBadge } from '../components/SyncBadge';
 import type { Ctx } from '../App';
 
+const HISTORY_START_DAYS = 14;
+const HISTORY_STEP_DAYS = 28;
+
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export function Home({ ctx }: { ctx: Ctx }) {
   const { state, today, currentWeek, openPicker, openRecipe, goPlan, goList, listSummary } = ctx;
-  const days = weekDays(currentWeek);
+  // Rolling: today first, then the next six days (runs into next week when needed).
+  const upcoming = Array.from({ length: 7 }, (_, i) => addDays(today, i));
+  const [historyDays, setHistoryDays] = useState(HISTORY_START_DAYS);
   const tonight = describePlan(state.plans[today]);
   const nextWeek = addDays(currentWeek, 7);
   const nextDays = weekDays(nextWeek);
@@ -60,27 +66,26 @@ export function Home({ ctx }: { ctx: Ctx }) {
 
       <section>
         <div className="section-head">
-          <h2 className="section-label">This week</h2>
+          <h2 className="section-label">Coming up</h2>
           <button className="link" onClick={() => goPlan(currentWeek)}>
             Edit
           </button>
         </div>
         <ol className="menu">
-          {days.map((d) => {
+          {upcoming.map((d, i) => {
             const p = describePlan(state.plans[d]);
             const isToday = d === today;
-            const isPast = d < today;
             return (
-              <li key={d} className={`${isToday ? 'is-today' : ''} ${isPast ? 'is-past' : ''}`}>
+              <MenuItem key={d} divider={i > 0 && d === nextWeek ? 'Next week' : undefined} className={isToday ? 'is-today' : ''}>
                 <button className="menu-row" onClick={() => openPicker(d)}>
                   <span className="menu-day">
                     <span className="menu-day-name">{dayShort(d)}</span>
                     <span className="menu-day-num">{dayNum(d)}</span>
                   </span>
-                  <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : isPast ? '—' : 'Add dinner'}</span>
-                  {isToday ? <span className="today-tag">Today</span> : isPast && !p ? <span /> : <Marker plan={p} />}
+                  <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
+                  {isToday ? <span className="today-tag">Today</span> : <Marker plan={p} />}
                 </button>
-              </li>
+              </MenuItem>
             );
           })}
         </ol>
@@ -115,6 +120,95 @@ export function Home({ ctx }: { ctx: Ctx }) {
         </span>
         <ChevronRight size={20} className="muted" />
       </button>
+
+      <History
+        ctx={ctx}
+        days={historyDays}
+        onMore={() => setHistoryDays((n) => n + HISTORY_STEP_DAYS)}
+      />
     </main>
+  );
+}
+
+function MenuItem({ divider, className, children }: { divider?: string; className?: string; children: ReactNode }) {
+  return (
+    <>
+      {divider && (
+        <li className="menu-divider" aria-hidden>
+          {divider}
+        </li>
+      )}
+      <li className={className}>{children}</li>
+    </>
+  );
+}
+
+/** Past dinners, most recent first, grouped by week. Scroll down to go back in time. */
+function History({ ctx, days, onMore }: { ctx: Ctx; days: number; onMore: () => void }) {
+  const { state, today, openRecipe } = ctx;
+  const pastDates = Object.keys(state.plans)
+    .filter((d) => d < today)
+    .sort()
+    .reverse();
+  if (pastDates.length === 0) return null;
+
+  const cutoff = addDays(today, -days);
+  const shown = pastDates.filter((d) => d >= cutoff);
+  const hasMore = pastDates.some((d) => d < cutoff);
+
+  const groups: { week: string; dates: string[] }[] = [];
+  for (const d of shown) {
+    const w = weekStart(d, state.settings.weekStartsOn);
+    const last = groups[groups.length - 1];
+    if (last?.week === w) last.dates.push(d);
+    else groups.push({ week: w, dates: [d] });
+  }
+
+  return (
+    <section className="history" aria-label="Earlier dinners">
+      <div className="section-head">
+        <h2 className="section-label">Earlier</h2>
+      </div>
+      {groups.length === 0 && <p className="muted small">Nothing in the last {days} days.</p>}
+      {groups.map(({ week, dates }) => (
+        <div key={week} className="history-week">
+          <p className="history-week-label">Week of {shortDate(week)}</p>
+          <ol className="menu">
+            {dates.map((d) => {
+              const p = describePlan(state.plans[d]);
+              const recipe = p?.recipe;
+              const row = (
+                <>
+                  <span className="menu-day">
+                    <span className="menu-day-name">{dayShort(d)}</span>
+                    <span className="menu-day-num">{dayNum(d)}</span>
+                  </span>
+                  <span className="menu-dish">{p?.title}</span>
+                  <Marker plan={p} />
+                </>
+              );
+              return (
+                <li key={d}>
+                  {recipe ? (
+                    <button className="menu-row" onClick={() => openRecipe(recipe.id)}>
+                      {row}
+                    </button>
+                  ) : (
+                    <div className="menu-row">{row}</div>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      ))}
+      {hasMore && (
+        <div className="quiet-actions">
+          <button className="link" onClick={onMore}>
+            Show earlier
+          </button>
+        </div>
+      )}
+    </section>
   );
 }

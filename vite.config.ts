@@ -1,6 +1,7 @@
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { handle, memoryStore } from './api/_lib/household';
+import { GET as importGet } from './api/import';
 
 /**
  * In local development there's no Vercel, so serve /api/household from memory.
@@ -11,6 +12,12 @@ function devApi(): Plugin {
   return {
     name: 'dev-api',
     configureServer(server) {
+      server.middlewares.use('/api/import', async (req, res) => {
+        const response = await importGet(new Request(`http://localhost${req.originalUrl}`));
+        res.statusCode = response.status;
+        res.setHeader('content-type', 'application/json');
+        res.end(await response.text());
+      });
       server.middlewares.use('/api/household', async (req, res) => {
         const chunks: Buffer[] = [];
         for await (const c of req) chunks.push(c as Buffer);

@@ -2,6 +2,7 @@ import { ArrowRight, ChevronRight, ShoppingBasket } from 'lucide-react';
 import { addDays, dayName, dayNum, dayShort, fromISO, rangeLabel, shortDate, weekDays } from '../lib/dates';
 import { describePlan, recipeMeta } from '../lib/plan';
 import { Marker } from '../components/Marker';
+import { SyncBadge } from '../components/SyncBadge';
 import type { Ctx } from '../App';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -18,7 +19,10 @@ export function Home({ ctx }: { ctx: Ctx }) {
   return (
     <main className="screen home">
       <header className="masthead">
-        <p className="kicker">Week of {shortDate(currentWeek)}</p>
+        <div className="masthead-top">
+          <p className="kicker">Week of {shortDate(currentWeek)}</p>
+          <SyncBadge status={ctx.syncStatus} />
+        </div>
         <h1 className="display">{dayName(today)}</h1>
         <p className="masthead-date">
           {t.getDate()} {MONTHS[t.getMonth()]}

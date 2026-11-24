@@ -52,6 +52,8 @@ export interface ExtraItem {
   id: string;
   text: string;
   checked: boolean;
+  /** When it was added (ms), for stable ordering across devices. */
+  at?: number;
 }
 
 export interface WeekShopping {
@@ -72,3 +74,16 @@ export interface AppState {
     weekStartsOn: number; // 0 = Sunday
   };
 }
+
+/**
+ * A single change to the shared state. Every edit in the app is expressed as ops so
+ * they can be applied instantly on this phone, queued while offline, and merged on
+ * the server without one person's edit overwriting another's.
+ */
+export type Op =
+  | { t: 'plan'; date: string; plan: DayPlan | null }
+  | { t: 'check'; week: string; key: string; on: boolean }
+  | { t: 'extra'; week: string; item: ExtraItem }
+  | { t: 'extraDel'; week: string; id: string }
+  | { t: 'settings'; settings: AppState['settings'] }
+  | { t: 'history'; list: string[] };

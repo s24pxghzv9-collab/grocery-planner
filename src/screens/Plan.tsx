@@ -5,7 +5,7 @@ import { Marker } from '../components/Marker';
 import type { Ctx } from '../App';
 
 export function Plan({ ctx }: { ctx: Ctx }) {
-  const { state, update, today, currentWeek, planWeek, setPlanWeek, openPicker, toast } = ctx;
+  const { state, dispatch, today, currentWeek, planWeek, setPlanWeek, openPicker, toast } = ctx;
   const days = weekDays(planWeek);
   const planned = days.filter((d) => state.plans[d]).length;
   const prevDays = weekDays(addDays(planWeek, -7));
@@ -13,24 +13,18 @@ export function Plan({ ctx }: { ctx: Ctx }) {
 
   const fillFromLastWeek = () => {
     const filled = days.filter((d, i) => !state.plans[d] && state.plans[prevDays[i]]).length;
-    update((s) => {
-      const plans = { ...s.plans };
-      days.forEach((d, i) => {
-        const prev = s.plans[prevDays[i]];
-        if (!plans[d] && prev) plans[d] = prev;
-      });
-      return { ...s, plans };
-    });
+    dispatch(
+      days.flatMap((d, i) => {
+        const prev = state.plans[prevDays[i]];
+        return !state.plans[d] && prev ? [{ t: 'plan' as const, date: d, plan: prev }] : [];
+      }),
+    );
     toast(filled ? `Copied ${filled} dinner${filled === 1 ? '' : 's'} from last week` : 'Nothing to copy');
   };
 
   const clearWeek = () => {
     if (!confirm(`Clear all dinners for ${rangeLabel(planWeek)}?`)) return;
-    update((s) => {
-      const plans = { ...s.plans };
-      days.forEach((d) => delete plans[d]);
-      return { ...s, plans };
-    });
+    dispatch(days.filter((d) => state.plans[d]).map((d) => ({ t: 'plan' as const, date: d, plan: null })));
   };
 
   const firstEmpty = days.find((d) => !state.plans[d] && d >= today) ?? days.find((d) => !state.plans[d]);
@@ -103,7 +97,7 @@ export function Plan({ ctx }: { ctx: Ctx }) {
           value={state.settings.weekStartsOn}
           onChange={(e) => {
             const weekStartsOn = Number(e.target.value);
-            update((s) => ({ ...s, settings: { ...s.settings, weekStartsOn } }));
+            dispatch({ t: 'settings', settings: { ...state.settings, weekStartsOn } });
           }}
         >
           {DAY_NAMES.map((n, i) => (

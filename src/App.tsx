@@ -5,7 +5,7 @@ import { RecipePicker } from './components/RecipePicker';
 import { RECIPES_BY_ID } from './data/recipes';
 import { addDays, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
 import { buildShoppingList, type ShoppingItem } from './lib/shopping';
-import { useAppState, weekShopping, type Update } from './lib/store';
+import { useHouseholdState, weekShopping, type Dispatch, type SyncStatus } from './lib/store';
 import { Home } from './screens/Home';
 import { Plan } from './screens/Plan';
 import { Recipes } from './screens/Recipes';
@@ -23,7 +23,8 @@ const TABS: { id: Tab; label: string; icon: LucideIcon }[] = [
 /** Shared state and actions passed to each screen. */
 export interface Ctx {
   state: AppState;
-  update: Update;
+  dispatch: Dispatch;
+  syncStatus: SyncStatus;
   today: string;
   currentWeek: string;
   planWeek: string;
@@ -60,7 +61,7 @@ function useToday(): string {
 }
 
 export default function App() {
-  const [state, update] = useAppState();
+  const { state, dispatch, status: syncStatus } = useHouseholdState();
   const today = useToday();
   const currentWeek = weekStart(today, state.settings.weekStartsOn);
   const nextWeek = addDays(currentWeek, 7);
@@ -115,12 +116,7 @@ export default function App() {
   const pickerWeek = pickerDay ? weekDays(weekStart(pickerDay, state.settings.weekStartsOn)) : [];
 
   const onPick = (day: string, plan: DayPlan | null) => {
-    update((s) => {
-      const plans = { ...s.plans };
-      if (plan) plans[day] = plan;
-      else delete plans[day];
-      return { ...s, plans };
-    });
+    dispatch({ t: 'plan', date: day, plan });
     if (!plan) return;
     // Move straight on to the next empty day so a whole week takes about 7 taps.
     const next = pickerWeek.find((d) => d > day && !state.plans[d]);
@@ -130,7 +126,8 @@ export default function App() {
 
   const ctx: Ctx = {
     state,
-    update,
+    dispatch,
+    syncStatus,
     today,
     currentWeek,
     planWeek,

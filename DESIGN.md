@@ -89,7 +89,10 @@ The look is a printed kitchen menu or cookbook rather than an app template.
 ## Technical approach
 
 - **Vite + React + TypeScript**, a static site deployed on **Vercel**. No server and no logins for v1.
-- **Data is saved in the browser** (localStorage) on Alice's phone.
+- **Shared household via one link**: a Vercel Function plus Upstash Redis. Edits are small
+  operations stored one field per item, so simultaneous edits merge. Each phone keeps a local
+  copy and a queue of unsent edits, so it works offline and syncs when back online. A service
+  worker lets the app open with no signal. No logins: anyone with the link can view and edit.
 - **Recipes live in `src/data/recipes.ts`**. Adding a recipe means editing that file. The current ones are
   placeholders based on Alice's notes, to be replaced with the real recipes.
 - PWA manifest and icons so it can be added to the home screen.
@@ -97,7 +100,6 @@ The look is a printed kitchen menu or cookbook rather than an app template.
 
 ## Later (parked, not in v1)
 
-- **Sync between phones** (Reece and Alice see the same plan and list), which needs a small backend (e.g. Supabase or Vercel KV)
 - Add, edit and import recipes inside the app (paste a URL or a photo)
 - Scale servings per meal (e.g. double for guests)
 - Lunches and breakfasts, not just dinner

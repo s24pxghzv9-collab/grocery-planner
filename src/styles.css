@@ -1156,6 +1156,50 @@ ol {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
+/* ---------- Sync status ---------- */
+
+.masthead-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.sync-badge i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+.sync-synced i {
+  background: var(--c-vegetarian);
+}
+.sync-saving i,
+.sync-connecting i {
+  background: var(--c-chicken);
+  animation: pulse 1s ease-in-out infinite;
+}
+.sync-offline {
+  color: var(--accent);
+}
+.page-head .sync-badge {
+  order: -1;
+  margin-bottom: 2px;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
 /* ---------- Motion ---------- */
 
 @keyframes slide-up {

@@ -28,5 +28,26 @@ npm run build    # production build into dist/
 Hosted on Vercel as a static Vite site (no settings needed). Every push to the
 production branch redeploys automatically.
 
-Data is stored in the browser on each device (localStorage), so plans don't sync
-between phones yet.
+## Sharing between phones
+
+Everyone with the link shares one household plan and shopping list. There are no logins.
+Edits show instantly on your own phone, are saved there if you have no signal, and
+sync to the other phone within a few seconds.
+
+Sync needs a small free database, set up once in Vercel:
+
+1. Open the project in Vercel, go to the **Storage** tab, and click **Create Database**.
+2. Choose **Upstash for Redis** (from the Marketplace). The free plan is plenty.
+3. Connect it to this project with all environments ticked, and accept the defaults.
+4. Go to **Deployments**, then **Redeploy** the latest one so it picks up the new settings.
+
+Until that's done, the app still works but saves on each phone separately. The app shows
+"This phone only" at the top of Home when it isn't syncing. Anything planned before sync
+was switched on is uploaded automatically the first time the app connects.
+
+How it works: `api/household.ts` is a Vercel Function. Each edit is sent as a small operation
+(e.g. "plan Tuesday", "tick potatoes"), stored one field per item in Redis, so two people
+editing at once don't overwrite each other. See `src/lib/store.ts` and `api/_lib/household.ts`.
+
+In local development (`npm run dev`) the API runs in memory. `SYNC=off npm run dev`
+simulates a deployment with no database.

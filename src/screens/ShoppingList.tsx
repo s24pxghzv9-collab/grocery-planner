@@ -4,10 +4,11 @@ import { addDays, rangeLabel, weekLabel } from '../lib/dates';
 import { formatQty, groupByAisle, type ShoppingItem } from '../lib/shopping';
 import { newId, weekShopping } from '../lib/store';
 import type { Ctx } from '../App';
-import type { WeekShopping } from '../types';
+import { SyncBadge } from '../components/SyncBadge';
+import type { ExtraItem } from '../types';
 
 export function ShoppingList({ ctx }: { ctx: Ctx }) {
-  const { state, update, currentWeek, listWeek, setListWeek, listItems, toast } = ctx;
+  const { state, dispatch, currentWeek, listWeek, setListWeek, listItems, toast } = ctx;
   const shop = weekShopping(state, listWeek);
   const [newItem, setNewItem] = useState('');
 
@@ -16,27 +17,30 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
   const done = main.filter((i) => shop.checked[i.key]).length + shop.extras.filter((e) => e.checked).length;
   const total = main.length + shop.extras.length;
 
-  const setShop = (fn: (w: WeekShopping) => WeekShopping) =>
-    update((s) => ({ ...s, shopping: { ...s.shopping, [listWeek]: fn(weekShopping(s, listWeek)) } }));
-
-  const toggle = (key: string) => setShop((w) => ({ ...w, checked: { ...w.checked, [key]: !w.checked[key] } }));
+  const toggle = (key: string) => dispatch({ t: 'check', week: listWeek, key, on: !shop.checked[key] });
 
   const addExtra = (text: string) => {
     const t = text.trim();
     if (!t) return;
-    setShop((w) => ({ ...w, extras: [...w.extras, { id: newId(), text: t, checked: false }] }));
-    update((s) => ({
-      ...s,
-      extrasHistory: [t, ...s.extrasHistory.filter((h) => h.toLowerCase() !== t.toLowerCase())].slice(0, 30),
-    }));
+    dispatch([
+      { t: 'extra', week: listWeek, item: { id: newId(), text: t, checked: false, at: Date.now() } },
+      {
+        t: 'history',
+        list: [t, ...state.extrasHistory.filter((h) => h.toLowerCase() !== t.toLowerCase())].slice(0, 30),
+      },
+    ]);
     setNewItem('');
   };
 
-  const toggleExtra = (id: string) =>
-    setShop((w) => ({ ...w, extras: w.extras.map((e) => (e.id === id ? { ...e, checked: !e.checked } : e)) }));
-  const removeExtra = (id: string) => setShop((w) => ({ ...w, extras: w.extras.filter((e) => e.id !== id) }));
+  const toggleExtra = (item: ExtraItem) =>
+    dispatch({ t: 'extra', week: listWeek, item: { ...item, checked: !item.checked } });
+  const removeExtra = (id: string) => dispatch({ t: 'extraDel', week: listWeek, id });
 
-  const resetTicks = () => setShop((w) => ({ checked: {}, extras: w.extras.map((e) => ({ ...e, checked: false })) }));
+  const resetTicks = () =>
+    dispatch([
+      ...Object.keys(shop.checked).map((key) => ({ t: 'check' as const, week: listWeek, key, on: false })),
+      ...shop.extras.filter((e) => e.checked).map((e) => ({ t: 'extra' as const, week: listWeek, item: { ...e, checked: false } })),
+    ]);
 
   const suggestions = state.extrasHistory
     .filter((h) => !shop.extras.some((e) => e.text.toLowerCase() === h.toLowerCase()))
@@ -70,6 +74,7 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
       <header className="page-head">
         <div>
           <h1 className="title-lg">Shopping</h1>
+          <SyncBadge status={ctx.syncStatus} />
           <p className="muted small">
             {total === 0 ? 'Nothing on the list yet' : done === total ? 'All done' : `${done} of ${total} in the trolley`}
           </p>
@@ -129,7 +134,7 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
               .sort((a, b) => Number(a.checked) - Number(b.checked))
               .map((e) => (
                 <li key={e.id} className={e.checked ? 'done' : ''}>
-                  <button className="check-row" onClick={() => toggleExtra(e.id)}>
+                  <button className="check-row" onClick={() => toggleExtra(e)}>
                     <CheckCircle on={e.checked} />
                     <span className="check-name">{e.text}</span>
                   </button>

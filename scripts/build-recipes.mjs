@@ -78,9 +78,12 @@ for (const f of files) {
 
 recipes.sort((a, b) => a.name.localeCompare(b.name));
 writeFileSync(join(root, 'src/data/imported-recipes.json'), JSON.stringify(recipes, null, 1) + '\n');
+const dictJson = Object.fromEntries([...dict].sort(([a], [b]) => a.localeCompare(b)));
+writeFileSync(join(dir, 'ingredient-dictionary.json'), JSON.stringify(dictJson, null, 1) + '\n');
+// Compact copy for the in-app recipe reader: name -> [aisle, staple].
 writeFileSync(
-  join(dir, 'ingredient-dictionary.json'),
-  JSON.stringify(Object.fromEntries([...dict].sort(([a], [b]) => a.localeCompare(b))), null, 1) + '\n',
+  join(root, 'src/data/ingredient-dictionary.json'),
+  JSON.stringify(Object.fromEntries(Object.entries(dictJson).map(([n, v]) => [n, [v.aisle, v.staple ? 1 : 0]]))) + '\n',
 );
 console.log(`${recipes.length} recipes, ${dict.size} distinct ingredients from ${files.length} batch file(s)`);
 if (problems.length) {

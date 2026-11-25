@@ -13,8 +13,8 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 export function Home({ ctx }: { ctx: Ctx }) {
   const { state, today, currentWeek, openPicker, openRecipe, goPlan, goList, listSummary } = ctx;
-  // Rolling: today first, then the next six days (runs into next week when needed).
-  const upcoming = Array.from({ length: 7 }, (_, i) => addDays(today, i));
+  // Today first, then the rest of this week. Next week has its own section below.
+  const upcoming = weekDays(currentWeek).filter((d) => d >= today);
   const [historyDays, setHistoryDays] = useState(HISTORY_START_DAYS);
   const tonight = describePlan(state.plans[today]);
   const nextWeek = addDays(currentWeek, 7);
@@ -72,11 +72,11 @@ export function Home({ ctx }: { ctx: Ctx }) {
           </button>
         </div>
         <ol className="menu">
-          {upcoming.map((d, i) => {
+          {upcoming.map((d) => {
             const p = describePlan(state.plans[d]);
             const isToday = d === today;
             return (
-              <MenuItem key={d} divider={i > 0 && d === nextWeek ? 'Next week' : undefined} className={isToday ? 'is-today' : ''}>
+              <MenuItem key={d} className={isToday ? 'is-today' : ''}>
                 <button className="menu-row" onClick={() => openPicker(d)}>
                   <span className="menu-day">
                     <span className="menu-day-name">{dayShort(d)}</span>

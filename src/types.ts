@@ -68,6 +68,8 @@ export interface ExtraItem {
 export interface WeekShopping {
   /** Ticked-off generated items, keyed by ingredient key. */
   checked: Record<string, boolean>;
+  /** Items Alice already has this week, so they're off the list (not bought). */
+  have?: Record<string, boolean>;
   extras: ExtraItem[];
 }
 
@@ -77,6 +79,8 @@ export interface AppState {
   plans: Record<string, DayPlan>;
   /** Keyed by the ISO date the week starts on. */
   shopping: Record<string, WeekShopping>;
+  /** Ingredients the household always has (e.g. garden thyme): treated as cupboard staples. */
+  alwaysHave: Record<string, boolean>;
   /** Recipes added or edited in the app, keyed by id. Merged over the built-in ones. */
   recipes: Record<string, Recipe>;
   /** Previously used extras, most recent first. Used for quick-add chips. */
@@ -98,4 +102,6 @@ export type Op =
   | { t: 'extraDel'; week: string; id: string }
   | { t: 'settings'; settings: AppState['settings'] }
   | { t: 'history'; list: string[] }
-  | { t: 'recipe'; recipe: Recipe };
+  | { t: 'recipe'; recipe: Recipe }
+  | { t: 'have'; week: string; key: string; on: boolean }
+  | { t: 'alwaysHave'; name: string; on: boolean };

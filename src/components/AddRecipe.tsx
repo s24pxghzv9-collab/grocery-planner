@@ -69,6 +69,23 @@ export function AddRecipe({ initialUrl, onDraft, onClose }: Props) {
     }
   };
 
+  /** One tap: if a link has been copied, import it straight away; otherwise show the link box. */
+  const pasteAndImport = async () => {
+    try {
+      const clip = (await navigator.clipboard.readText()).trim();
+      const link = clip.match(/https?:\/\/\S+/)?.[0];
+      if (link) {
+        setUrl(link);
+        setMode('link');
+        await importLink(link);
+        return;
+      }
+    } catch {
+      // No clipboard access: fall back to the link box.
+    }
+    setMode('link');
+  };
+
   const pasteFromClipboard = async (into: 'url' | 'text') => {
     try {
       const clip = await navigator.clipboard.readText();
@@ -99,11 +116,11 @@ export function AddRecipe({ initialUrl, onDraft, onClose }: Props) {
           {mode === 'choose' && (
             <ul className="add-options">
               <li>
-                <button className="add-option" onClick={() => setMode('link')}>
+                <button className="add-option" onClick={pasteAndImport}>
                   <Link2 size={22} strokeWidth={1.6} />
                   <span>
                     <strong>Paste a link</strong>
-                    <span className="muted small">Recipe websites, Instagram, TikTok</span>
+                    <span className="muted small">Copy the link in Instagram, TikTok or a recipe site first</span>
                   </span>
                 </button>
               </li>

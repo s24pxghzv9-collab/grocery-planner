@@ -1677,3 +1677,60 @@ ol {
   padding: 0;
   font-size: 15px;
 }
+
+/* ---------- Already have ---------- */
+
+.have-btn {
+  margin-right: -6px;
+}
+.chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--sunk);
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.have-list li {
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.check-row.static {
+  grid-template-columns: 1fr;
+  cursor: default;
+}
+.have-list .check-name {
+  color: var(--ink-2);
+}
+.have-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding-left: 2px;
+}
+.have-hint {
+  padding: 10px 2px 4px;
+}
+.toast.has-action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-right: 10px;
+  white-space: normal;
+  width: max-content;
+  max-width: calc(100% - 32px);
+}
+.toast-action {
+  font-weight: 700;
+  color: var(--paper);
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--paper) 18%, transparent);
+  flex-shrink: 0;
+}

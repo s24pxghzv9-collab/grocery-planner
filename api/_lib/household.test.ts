@@ -25,6 +25,8 @@ const sample: Op[] = [
   { t: 'extra', week: W, item: { id: 'a2', text: 'Coffee beans', checked: true, at: 2 } },
   { t: 'history', list: ['Coffee beans', 'Zip lock'] },
   { t: 'settings', settings: { weekStartsOn: 1 } },
+  { t: 'have', week: W, key: 'thyme|bunch', on: true },
+  { t: 'alwaysHave', name: 'thyme', on: true },
 ];
 
 describe('household sync API', () => {

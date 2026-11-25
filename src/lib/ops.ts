@@ -36,6 +36,19 @@ export function applyOp(state: AppState, op: Op): AppState {
       return { ...state, settings: op.settings };
     case 'history':
       return { ...state, extrasHistory: op.list };
+    case 'have':
+      return withWeek(state, op.week, (w) => {
+        const have = { ...(w.have ?? {}) };
+        if (op.on) have[op.key] = true;
+        else delete have[op.key];
+        return { ...w, have };
+      });
+    case 'alwaysHave': {
+      const alwaysHave = { ...state.alwaysHave };
+      if (op.on) alwaysHave[op.name] = true;
+      else delete alwaysHave[op.name];
+      return { ...state, alwaysHave };
+    }
     case 'recipe':
       return { ...state, recipes: { ...state.recipes, [op.recipe.id]: op.recipe } };
   }
@@ -52,10 +65,12 @@ export function stateToOps(state: AppState): Op[] {
   for (const [w, shop] of Object.entries(state.shopping)) {
     for (const [key, on] of Object.entries(shop.checked)) if (on) ops.push({ t: 'check', week: w, key, on: true });
     for (const item of shop.extras) ops.push({ t: 'extra', week: w, item });
+    for (const [key, on] of Object.entries(shop.have ?? {})) if (on) ops.push({ t: 'have', week: w, key, on: true });
   }
   ops.push({ t: 'settings', settings: state.settings });
   if (state.extrasHistory.length) ops.push({ t: 'history', list: state.extrasHistory });
   for (const recipe of Object.values(state.recipes ?? {})) ops.push({ t: 'recipe', recipe });
+  for (const name of Object.keys(state.alwaysHave ?? {})) ops.push({ t: 'alwaysHave', name, on: true });
   return ops;
 }
 

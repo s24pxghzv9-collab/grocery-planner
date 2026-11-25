@@ -23,6 +23,11 @@ const TABS: { id: Tab; label: string; icon: LucideIcon }[] = [
   { id: 'recipes', label: 'Recipes', icon: BookOpen },
 ];
 
+export interface ToastAction {
+  label: string;
+  run: () => void;
+}
+
 /** Shared state and actions passed to each screen. */
 export interface Ctx {
   state: AppState;
@@ -41,7 +46,7 @@ export interface Ctx {
   openAdd: () => void;
   goPlan: (week: string) => void;
   goList: () => void;
-  toast: (msg: string) => void;
+  toast: (msg: string, action?: ToastAction) => void;
 }
 
 function readTab(): Tab {
@@ -91,7 +96,7 @@ export default function App() {
   // Add recipe: null = closed, '' = open with no link, otherwise a link to import.
   const [adding, setAdding] = useState<string | null>(readAddLink);
   const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string } | null>(null);
-  const [toastMsg, setToastMsg] = useState<string | null>(null);
+  const [toastMsg, setToastMsg] = useState<{ text: string; action?: ToastAction } | null>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
   // If the week start setting changes, snap the selected weeks to the new boundaries.
@@ -115,21 +120,25 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  const toast = useCallback((msg: string) => {
-    setToastMsg(msg);
+  const toast = useCallback((text: string, action?: ToastAction) => {
+    setToastMsg({ text, action });
     clearTimeout(toastTimer.current);
-    toastTimer.current = window.setTimeout(() => setToastMsg(null), 2500);
+    toastTimer.current = window.setTimeout(() => setToastMsg(null), action ? 4500 : 2500);
   }, []);
 
   const listItems = useMemo(
-    () => buildShoppingList(weekDays(listWeek), state.plans, RECIPES_BY_ID),
-    [listWeek, state.plans, state.recipes],
+    () =>
+      buildShoppingList(weekDays(listWeek), state.plans, RECIPES_BY_ID).map((i) =>
+        // Things the household always has (garden thyme…) go in "Check the cupboard".
+        state.alwaysHave[i.name] ? { ...i, staple: true } : i,
+      ),
+    [listWeek, state.plans, state.recipes, state.alwaysHave],
   );
   const listShop = weekShopping(state, listWeek);
   const listSummary = {
     label: weekLabel(listWeek, currentWeek),
     remaining:
-      listItems.filter((i) => !i.staple && !listShop.checked[i.key]).length +
+      listItems.filter((i) => !i.staple && !listShop.checked[i.key] && !listShop.have?.[i.key]).length +
       listShop.extras.filter((e) => !e.checked).length,
   };
 
@@ -241,7 +250,22 @@ export default function App() {
           onDelete={editor.draft.id ? () => deleteRecipe(editor.draft.id!) : undefined}
         />
       )}
-      {toastMsg && <div className="toast">{toastMsg}</div>}
+      {toastMsg && (
+        <div className={`toast ${toastMsg.action ? 'has-action' : ''}`} role="status">
+          <span>{toastMsg.text}</span>
+          {toastMsg.action && (
+            <button
+              className="toast-action"
+              onClick={() => {
+                toastMsg.action!.run();
+                setToastMsg(null);
+              }}
+            >
+              {toastMsg.action.label}
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }

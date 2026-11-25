@@ -15,6 +15,8 @@ export const KEYS = {
   extras: `${PREFIX}extras`, // id -> { week, ...ExtraItem } json
   meta: `${PREFIX}meta`, // 'settings' | 'history' -> json
   recipes: `${PREFIX}recipes`, // id -> Recipe json (added or edited in the app)
+  have: `${PREFIX}have`, // `${week}|${itemKey}` -> '1' (already have it this week)
+  alwaysHave: `${PREFIX}always-have`, // ingredient name -> '1'
 } as const;
 
 export interface Write {
@@ -96,7 +98,9 @@ export function validateOps(input: unknown): Op[] | null {
         !!op.settings &&
         typeof (op.settings as { weekStartsOn?: unknown }).weekStartsOn === 'number') ||
       (op.t === 'history' && Array.isArray(op.list) && op.list.length <= 50 && op.list.every((s) => isStr(s))) ||
-      (op.t === 'recipe' && validRecipe(op.recipe));
+      (op.t === 'recipe' && validRecipe(op.recipe)) ||
+      (op.t === 'have' && isDate(op.week) && isStr(op.key, 300) && typeof op.on === 'boolean') ||
+      (op.t === 'alwaysHave' && isStr(op.name, 120) && typeof op.on === 'boolean');
     if (!ok) return null;
   }
   return input as Op[];
@@ -123,6 +127,12 @@ export function opsToWrites(ops: Op[]): Write[] {
         return { key: KEYS.meta, set: { history: JSON.stringify(op.list) } };
       case 'recipe':
         return { key: KEYS.recipes, set: { [op.recipe.id]: JSON.stringify(op.recipe) } };
+      case 'have': {
+        const field = `${op.week}|${op.key}`;
+        return op.on ? { key: KEYS.have, set: { [field]: '1' } } : { key: KEYS.have, del: [field] };
+      }
+      case 'alwaysHave':
+        return op.on ? { key: KEYS.alwaysHave, set: { [op.name]: '1' } } : { key: KEYS.alwaysHave, del: [op.name] };
     }
   });
 }
@@ -138,7 +148,7 @@ function parse<T>(s: string | undefined, fallback: T): T {
   }
 }
 
-export function hashesToState([plans, checked, extras, meta, recipes]: Record<string, string>[]): {
+export function hashesToState([plans, checked, extras, meta, recipes, have, alwaysHave]: Record<string, string>[]): {
   state: AppState;
   empty: boolean;
 } {
@@ -147,6 +157,7 @@ export function hashesToState([plans, checked, extras, meta, recipes]: Record<st
     plans: {},
     shopping: {},
     recipes: {},
+    alwaysHave: Object.fromEntries(Object.keys(alwaysHave ?? {}).map((n) => [n, true])),
     extrasHistory: parse(meta?.history, [] as string[]),
     settings: parse(meta?.settings, { weekStartsOn: 0 }),
   };
@@ -166,13 +177,20 @@ export function hashesToState([plans, checked, extras, meta, recipes]: Record<st
     const { week, ...item } = e;
     weekOf(week).extras.push(item);
   }
+  for (const field of Object.keys(have ?? {})) {
+    const i = field.indexOf('|');
+    if (i > 0) {
+      const w = weekOf(field.slice(0, i));
+      (w.have ??= {})[field.slice(i + 1)] = true;
+    }
+  }
   for (const json of Object.values(recipes ?? {})) {
     const r = parse<Recipe | null>(json, null);
     if (r?.id) state.recipes[r.id] = r;
   }
   for (const w of Object.values(state.shopping)) w.extras.sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
 
-  const empty = [plans, checked, extras, meta, recipes].every((h) => !h || Object.keys(h).length === 0);
+  const empty = [plans, checked, extras, meta, recipes, have, alwaysHave].every((h) => !h || Object.keys(h).length === 0);
   return { state, empty };
 }
 
@@ -186,7 +204,7 @@ const json = (body: unknown, status = 200) =>
 
 export async function handle(request: Request, store: Store | null): Promise<Response> {
   if (!store) return json({ error: 'not-configured' }, 503);
-  const order = [KEYS.plans, KEYS.checked, KEYS.extras, KEYS.meta, KEYS.recipes];
+  const order = [KEYS.plans, KEYS.checked, KEYS.extras, KEYS.meta, KEYS.recipes, KEYS.have, KEYS.alwaysHave];
 
   if (request.method === 'GET') {
     return json(hashesToState(await store.readAll(order)));

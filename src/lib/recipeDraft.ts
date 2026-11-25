@@ -33,6 +33,8 @@ export interface EditorDraft {
   source?: { name: string; url?: string };
   author?: string;
   tags: string[];
+  /** When the recipe was first added in the app; kept when it's edited. */
+  addedAt?: number;
 }
 
 let n = 0;
@@ -56,6 +58,7 @@ export function draftFromRecipe(r: Recipe): EditorDraft {
     source: r.source,
     author: r.author,
     tags: r.tags,
+    addedAt: r.addedAt,
   };
 }
 
@@ -150,6 +153,7 @@ export function recipeFromDraft(d: EditorDraft, parseAmount: (s: string) => { qt
     ...(d.image ? { image: d.image } : {}),
     ...(d.source?.name ? { source: d.source } : {}),
     ...(d.author ? { author: d.author } : {}),
-    addedAt: Date.now(),
+    // New recipes get today's date; edits keep the original (built-ins have none).
+    ...(d.id ? (d.addedAt ? { addedAt: d.addedAt } : {}) : { addedAt: Date.now() }),
   };
 }

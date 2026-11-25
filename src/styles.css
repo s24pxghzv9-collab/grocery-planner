@@ -1127,6 +1127,7 @@ ol {
 
 .list-toolbar {
   display: flex;
+  gap: 4px;
   justify-content: space-between;
   align-items: center;
   margin: -8px -10px -10px 2px;
@@ -1733,4 +1734,20 @@ ol {
   border-radius: 10px;
   background: color-mix(in srgb, var(--paper) 18%, transparent);
   flex-shrink: 0;
+}
+
+.list-toolbar > .muted { flex: 1; }
+.sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
 }

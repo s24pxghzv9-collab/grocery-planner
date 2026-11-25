@@ -1,4 +1,4 @@
-import { LayoutGrid, List, Plus, Search } from 'lucide-react';
+import { ArrowDownUp, LayoutGrid, List, Plus, Search } from 'lucide-react';
 import { useState } from 'react';
 import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { catClass } from '../components/Marker';
@@ -8,11 +8,24 @@ import { formatMinutes } from '../lib/plan';
 import type { Category, Recipe } from '../types';
 
 const VIEW_KEY = 'dinner-planner:recipes-view';
+const SORT_KEY = 'dinner-planner:recipes-sort';
+type Sort = 'az' | 'recent';
+
+/** Newest first. Recipes with no date (the original Deglaze ones) follow, A–Z. */
+function byRecent(a: Recipe, b: Recipe) {
+  return (b.addedAt ?? 0) - (a.addedAt ?? 0) || a.name.localeCompare(b.name);
+}
 
 export function Recipes({ ctx }: { ctx: Ctx }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<Category | null>(null);
   const [view, setView] = useState<'list' | 'grid'>(() => (localStorage.getItem(VIEW_KEY) === 'grid' ? 'grid' : 'list'));
+  const [sort, setSort] = useState<Sort>(() => (localStorage.getItem(SORT_KEY) === 'recent' ? 'recent' : 'az'));
+  const toggleSort = () => {
+    const next = sort === 'az' ? 'recent' : 'az';
+    setSort(next);
+    localStorage.setItem(SORT_KEY, next);
+  };
   const q = query.trim().toLowerCase();
   const list = RECIPES.filter(
     (r) =>
@@ -21,7 +34,7 @@ export function Recipes({ ctx }: { ctx: Ctx }) {
         r.name.toLowerCase().includes(q) ||
         r.source?.name.toLowerCase().includes(q) ||
         r.ingredients.some((i) => i.name.toLowerCase().includes(q))),
-  ).sort((a, b) => a.name.localeCompare(b.name));
+  ).sort(sort === 'recent' ? byRecent : (a, b) => a.name.localeCompare(b.name));
 
   const toggleView = () => {
     const next = view === 'list' ? 'grid' : 'list';
@@ -70,6 +83,10 @@ export function Recipes({ ctx }: { ctx: Ctx }) {
         <span className="muted">
           {list.length} recipe{list.length === 1 ? '' : 's'}
         </span>
+        <button className="sort-btn" onClick={toggleSort} aria-label={`Sorted ${sort === 'az' ? 'A to Z' : 'by recently added'}. Tap to change.`}>
+          <ArrowDownUp size={15} />
+          {sort === 'az' ? 'A–Z' : 'Recently added'}
+        </button>
         <button className="icon-btn" onClick={toggleView} aria-label={view === 'list' ? 'Show as grid' : 'Show as list'}>
           {view === 'list' ? <LayoutGrid size={20} /> : <List size={20} />}
         </button>

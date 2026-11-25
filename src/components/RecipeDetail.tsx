@@ -30,6 +30,11 @@ export function RecipeDetail({
         </>
       }
       title={recipe.name}
+      footer={
+        <button className="btn btn-quiet btn-block" onClick={() => onEdit(recipe)}>
+          <Pencil size={16} /> Edit name, ingredients or method
+        </button>
+      }
     >
       {recipe.image && <RecipeThumb recipe={recipe} size="hero" />}
 
@@ -45,13 +50,15 @@ export function RecipeDetail({
           </span>
         )}
         <span className="muted">{recipe.ingredients.length} ingredients</span>
-        <button className="link edit-link" onClick={() => onEdit(recipe)}>
-          <Pencil size={14} /> Edit
-        </button>
       </div>
 
       <section>
-        <h3 className="section-label">Ingredients</h3>
+        <div className="section-head">
+          <h3 className="section-label">Ingredients</h3>
+          <button className="link" onClick={() => onEdit(recipe)}>
+            Edit
+          </button>
+        </div>
         <ul className="ingredients">
           {recipe.ingredients.map((i) => (
             <li key={i.name} className={i.staple ? 'staple' : ''}>

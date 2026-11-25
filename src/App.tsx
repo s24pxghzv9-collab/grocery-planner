@@ -3,7 +3,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AddRecipe } from './components/AddRecipe';
 import { RecipeDetail } from './components/RecipeDetail';
 import { RecipeEditor } from './components/RecipeEditor';
-import { draftFromRecipe, draftFromText, emptyIngredient, type EditorDraft } from './lib/recipeDraft';
+import { draftFromRecipe, draftFromText, recipeFromDraft, type EditorDraft } from './lib/recipeDraft';
+import { parseAmount } from './lib/recipeReader';
 import { RecipePicker } from './components/RecipePicker';
 import { RECIPES_BY_ID, isBuiltIn, setHouseholdRecipes } from './data/recipes';
 import { addDays, dayName, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
@@ -96,7 +97,7 @@ export default function App() {
   // Add recipe: null = closed, '' = open with no link, otherwise a link to import.
   const [adding, setAdding] = useState<string | null>(readAddLink);
   // planDay: a new dinner typed in the picker, to put on that day once it's saved.
-  const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string; planDay?: string } | null>(null);
+  const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string; planDay?: string; stay?: boolean } | null>(null);
   const [toastMsg, setToastMsg] = useState<{ text: string; action?: ToastAction } | null>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
@@ -146,9 +147,9 @@ export default function App() {
   // The picker works within the week of the day being edited.
   const pickerWeek = pickerDay ? weekDays(weekStart(pickerDay, state.settings.weekStartsOn)) : [];
 
-  const onPick = (day: string, plan: DayPlan | null) => {
+  const onPick = (day: string, plan: DayPlan | null, opts: { stay?: boolean } = {}) => {
     dispatch({ t: 'plan', date: day, plan });
-    if (!plan) return;
+    if (!plan || opts.stay) return;
     // Move straight on to the next empty day so a whole week takes about 7 taps.
     const next = pickerWeek.find((d) => d > day && !state.plans[d]);
     setPickerDay(next ?? null);
@@ -173,6 +174,10 @@ export default function App() {
     }
     dispatch({ t: 'recipe', recipe });
     setEditor(null);
+    if (editor?.stay) {
+      toast(`${recipe.name} saved`);
+      return;
+    }
     setTab('recipes');
     setRecipeId(recipe.id);
     toast('Saved to your recipes');
@@ -232,12 +237,16 @@ export default function App() {
         weekDays={pickerWeek}
         onPick={onPick}
         onNewRecipe={(day, name) => {
-          setPickerDay(null);
-          const guess = draftFromText(name);
-          setEditor({
-            draft: { ...guess, name, ingredients: [emptyIngredient(), emptyIngredient(), emptyIngredient()] },
-            heading: `New dinner · ${dayName(day)}`,
-            planDay: day,
+          // Planned straight away with no ingredients; they can be added later (or never).
+          const recipe = recipeFromDraft({ ...draftFromText(name), name, ingredients: [] }, parseAmount);
+          dispatch({ t: 'recipe', recipe });
+          onPick(day, { kind: 'recipe', recipeId: recipe.id });
+          toast(`${recipe.name} added`, {
+            label: 'Add ingredients',
+            run: () => {
+              setPickerDay(null);
+              setEditor({ draft: draftFromRecipe(recipe), heading: 'Add ingredients', stay: true });
+            },
           });
         }}
         onClose={() => setPickerDay(null)}

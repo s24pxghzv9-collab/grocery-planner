@@ -51,7 +51,9 @@ export function draftFromRecipe(r: Recipe): EditorDraft {
     category: r.category,
     minutes: r.minutes ? String(r.minutes) : '',
     serves: r.serves ? String(r.serves) : '',
-    ingredients: r.ingredients.map((i) => ({ key: key(), amount: formatQty(i), name: i.name, aisle: i.aisle, staple: !!i.staple })),
+    ingredients: r.ingredients.length
+      ? r.ingredients.map((i) => ({ key: key(), amount: formatQty(i), name: i.name, aisle: i.aisle, staple: !!i.staple }))
+      : [emptyIngredient(), emptyIngredient(), emptyIngredient()],
     method: (r.method ?? []).join('\n'),
     notes: r.notes ?? '',
     image: r.image,

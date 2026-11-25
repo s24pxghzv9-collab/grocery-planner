@@ -59,6 +59,14 @@ export function RecipeDetail({
             Edit
           </button>
         </div>
+        {recipe.ingredients.length === 0 && (
+          <p className="muted">
+            No ingredients yet, so nothing goes on the shopping list.{' '}
+            <button className="link inline" onClick={() => onEdit(recipe)}>
+              Add some
+            </button>
+          </p>
+        )}
         <ul className="ingredients">
           {recipe.ingredients.map((i) => (
             <li key={i.name} className={i.staple ? 'staple' : ''}>

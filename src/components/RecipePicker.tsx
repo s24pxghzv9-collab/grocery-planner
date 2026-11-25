@@ -1,8 +1,8 @@
 import { Check, Plus, Search, X } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { addDays, dayName, shortDate } from '../lib/dates';
-import { NOTE_ICON, QUICK_NOTES, recipeMeta } from '../lib/plan';
+import { NOTE_ICON, QUICK_NOTES, recipeMeta, splitNote } from '../lib/plan';
 import type { Category, DayPlan } from '../types';
 import { catClass } from './Marker';
 import { Sheet } from './Sheet';
@@ -11,7 +11,7 @@ interface Props {
   day: string | null;
   plans: Record<string, DayPlan>;
   weekDays: string[];
-  onPick: (day: string, plan: DayPlan | null) => void;
+  onPick: (day: string, plan: DayPlan | null, opts?: { stay?: boolean }) => void;
   /** A dinner that isn't in the recipes yet: make it, with this name, for this day. */
   onNewRecipe: (day: string, name: string) => void;
   onClose: () => void;
@@ -21,6 +21,10 @@ export function RecipePicker({ day, plans, weekDays, onPick, onNewRecipe, onClos
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<Category | null>(null);
   const [customNote, setCustomNote] = useState<string | null>(null);
+  // After tapping Out / Takeaway / Leftovers: an optional "what are you doing?" box.
+  const [detailFor, setDetailFor] = useState<string | null>(null);
+  const [detail, setDetail] = useState('');
+  useEffect(() => setDetailFor(null), [day]);
 
   // Recipes already used this week, or in the 7 days before it, to help avoid repeats.
   const recentUse = useMemo(() => {
@@ -57,11 +61,26 @@ export function RecipePicker({ day, plans, weekDays, onPick, onNewRecipe, onClos
   const pick = (plan: DayPlan | null) => {
     setQuery('');
     setCustomNote(null);
+    setDetailFor(null);
     onPick(day, plan);
   };
 
-  const isNote = (text: string) => current?.kind === 'note' && current.text.toLowerCase() === text.toLowerCase();
-  const isCustomNote = current?.kind === 'note' && !QUICK_NOTES.some((q) => isNote(q.text));
+  const currentNote = current?.kind === 'note' ? splitNote(current.text) : null;
+  const isNote = (text: string) => currentNote?.quick?.text === text;
+  const isCustomNote = current?.kind === 'note' && !currentNote?.quick;
+
+  const pickQuick = (text: string) => {
+    setCustomNote(null);
+    setDetail(isNote(text) ? currentNote!.detail : '');
+    setDetailFor(text);
+    // Saved straight away; the detail is optional.
+    if (!isNote(text)) onPick(day, { kind: 'note', text }, { stay: true });
+  };
+  const DETAIL_HINTS: Record<string, string> = {
+    Out: "Where? e.g. Liz's party",
+    Takeaway: 'What? e.g. Thai',
+    Leftovers: 'Of what? e.g. the lasagne',
+  };
 
   return (
     <Sheet
@@ -88,19 +107,44 @@ export function RecipePicker({ day, plans, weekDays, onPick, onNewRecipe, onClos
     >
       <div className="quick-notes">
         {QUICK_NOTES.map(({ text, icon: Icon }) => (
-          <button key={text} className={`quick-note ${isNote(text) ? 'on' : ''}`} onClick={() => pick({ kind: 'note', text })}>
+          <button key={text} className={`quick-note ${isNote(text) ? 'on' : ''}`} onClick={() => pickQuick(text)}>
             <Icon size={20} strokeWidth={1.75} />
             <span>{text}</span>
           </button>
         ))}
         <button
           className={`quick-note ${isCustomNote ? 'on' : ''}`}
-          onClick={() => setCustomNote(current?.kind === 'note' && isCustomNote ? current.text : '')}
+          onClick={() => {
+            setDetailFor(null);
+            setCustomNote(current?.kind === 'note' && isCustomNote ? current.text : '');
+          }}
         >
           <NOTE_ICON size={20} strokeWidth={1.75} />
           <span>{isCustomNote && current?.kind === 'note' ? current.text : 'Note'}</span>
         </button>
       </div>
+
+      {detailFor && (
+        <form
+          className="inline-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            pick({ kind: 'note', text: detail.trim() ? `${detailFor}: ${detail.trim()}` : detailFor });
+          }}
+        >
+          <input
+            autoFocus
+            className="input"
+            placeholder={DETAIL_HINTS[detailFor] ?? 'Add a detail'}
+            value={detail}
+            onChange={(e) => setDetail(e.target.value)}
+            aria-label={`${detailFor}: what are you doing? (optional)`}
+          />
+          <button className="btn btn-primary" type="submit">
+            {detail.trim() ? 'Save' : 'Next'}
+          </button>
+        </form>
+      )}
 
       {customNote !== null && (
         <form

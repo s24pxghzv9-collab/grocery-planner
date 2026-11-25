@@ -19,6 +19,15 @@ export interface PlanDisplay {
   icon?: LucideIcon;
 }
 
+/** Quick notes can carry a detail: "Out: Liz's party" shows as "Liz's party" with the Out icon. */
+export function splitNote(text: string): { quick?: (typeof QUICK_NOTES)[number]; detail: string } {
+  const m = text.match(/^([^:]+):\s*(.*)$/);
+  const head = (m ? m[1] : text).trim().toLowerCase();
+  const quick = QUICK_NOTES.find((q) => q.text.toLowerCase() === head);
+  if (!quick) return { detail: text };
+  return { quick, detail: m ? m[2].trim() : '' };
+}
+
 export function describePlan(plan: DayPlan | undefined): PlanDisplay | null {
   if (!plan) return null;
   if (plan.kind === 'recipe') {
@@ -26,8 +35,8 @@ export function describePlan(plan: DayPlan | undefined): PlanDisplay | null {
     if (!recipe) return { title: 'Recipe no longer exists', icon: NotebookPen };
     return { title: recipe.name, recipe, category: recipe.category };
   }
-  const quick = QUICK_NOTES.find((q) => q.text.toLowerCase() === plan.text.toLowerCase());
-  return { title: plan.text, icon: quick?.icon ?? NOTE_ICON };
+  const { quick, detail } = splitNote(plan.text);
+  return { title: detail || plan.text, icon: quick?.icon ?? NOTE_ICON };
 }
 
 /** 25 -> "25 min", 90 -> "1½ hr", 75 -> "1 hr 15 min", 390 -> "6½ hr". */

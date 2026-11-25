@@ -34,7 +34,6 @@ export function RecipeEditor({ draft: initial, heading, onSave, onDelete, onClos
 
   const save = () => {
     if (!d.name.trim()) return setError('Give the recipe a name.');
-    if (!d.ingredients.some((i) => i.name.trim())) return setError('Add at least one ingredient.');
     onSave(recipeFromDraft(d, parseAmount));
   };
 

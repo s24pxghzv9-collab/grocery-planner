@@ -12,11 +12,11 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
   const shop = weekShopping(state, listWeek);
   const [newItem, setNewItem] = useState('');
 
-  const main = listItems.filter((i) => !i.staple);
-  const staples = listItems.filter((i) => i.staple);
   const have = shop.have ?? {};
-  // Items Alice already has drop off the list into a folded "Already have" section.
-  const haveItems = main.filter((i) => have[i.key]);
+  const main = listItems.filter((i) => !i.staple);
+  // Items Alice already has (shopping or cupboard) drop into a folded "Already have" section.
+  const haveItems = listItems.filter((i) => have[i.key]);
+  const staples = listItems.filter((i) => i.staple && !have[i.key]);
   const needed = main.filter((i) => !have[i.key]);
   // Ticked items move out of the aisles into a folded "Completed" section.
   const openMain = needed.filter((i) => !shop.checked[i.key]);
@@ -213,9 +213,17 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
                   </span>
                 </div>
                 <div className="have-actions">
-                  <button className="chip-btn" onClick={() => alwaysHave(i, true)}>
-                    Always have
-                  </button>
+                  {state.alwaysHave[i.name] ? (
+                    <button className="chip-btn" onClick={() => alwaysHave(i, false)}>
+                      Stop always having
+                    </button>
+                  ) : (
+                    !i.staple && (
+                      <button className="chip-btn" onClick={() => alwaysHave(i, true)}>
+                        Always have
+                      </button>
+                    )
+                  )}
                   <button className="chip-btn" onClick={() => putBack(i)}>
                     <Undo2 size={14} /> Put back
                   </button>
@@ -242,8 +250,8 @@ export function ShoppingList({ ctx }: { ctx: Ctx }) {
             items={staples}
             checked={shop.checked}
             onToggle={toggle}
+            onHave={alreadyHave}
             alwaysHave={state.alwaysHave}
-            onStopAlways={(i) => alwaysHave(i, false)}
           />
         </details>
       )}
@@ -305,16 +313,14 @@ function ItemList({
   onToggle,
   onHave,
   alwaysHave,
-  onStopAlways,
 }: {
   items: ShoppingItem[];
   checked: Record<string, boolean>;
   onToggle: (key: string) => void;
   /** Shows a ✕ for "already have it". */
   onHave?: (item: ShoppingItem) => void;
+  /** Labels items the household always has. */
   alwaysHave?: Record<string, boolean>;
-  /** For items the household always has: put them back on future lists. */
-  onStopAlways?: (item: ShoppingItem) => void;
 }) {
   const sorted = [...items].sort((a, b) => Number(!!checked[a.key]) - Number(!!checked[b.key]));
   return (
@@ -325,18 +331,16 @@ function ItemList({
             <CheckCircle on={!!checked[i.key]} />
             <span className="check-text">
               <span className="check-name">{i.name}</span>
-              <span className="check-for">{i.forMeals.join(', ')}</span>
+              <span className="check-for">
+                {alwaysHave?.[i.name] && <span className="always-tag">Always have · </span>}
+                {i.forMeals.join(', ')}
+              </span>
             </span>
             <span className="check-qty">{formatQty(i)}</span>
           </button>
           {onHave && !checked[i.key] && (
             <button className="icon-btn ghost have-btn" onClick={() => onHave(i)} aria-label={`Already have ${i.name}`}>
               <X size={16} />
-            </button>
-          )}
-          {onStopAlways && alwaysHave?.[i.name] && (
-            <button className="chip-btn" onClick={() => onStopAlways(i)} aria-label={`Put ${i.name} back on shopping lists`}>
-              Always have ✓
             </button>
           )}
         </li>

@@ -1751,3 +1751,5 @@ ol {
   color: var(--ink);
   cursor: pointer;
 }
+
+.always-tag { color: var(--ink-2); font-weight: 500; }

@@ -1,4 +1,5 @@
-import { ChevronLeft, ChevronRight, Copy, Plus, Trash2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Copy, GripVertical, Plus, Trash2, X } from 'lucide-react';
+import { useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { addDays, dayName, dayNum, dayShort, rangeLabel, shortDate, weekDays, weekLabel, DAY_NAMES } from '../lib/dates';
 import { describePlan, formatMinutes } from '../lib/plan';
 import { Marker, catClass } from '../components/Marker';
@@ -25,6 +26,62 @@ export function Plan({ ctx }: { ctx: Ctx }) {
   const clearWeek = () => {
     if (!confirm(`Clear all dinners for ${rangeLabel(planWeek)}?`)) return;
     dispatch(days.filter((d) => state.plans[d]).map((d) => ({ t: 'plan' as const, date: d, plan: null })));
+  };
+
+  const removeDinner = (d: string) => {
+    const was = state.plans[d];
+    if (!was) return;
+    dispatch({ t: 'plan', date: d, plan: null });
+    toast(`${dayName(d)} cleared`, { label: 'Undo', run: () => dispatch({ t: 'plan', date: d, plan: was }) });
+  };
+
+  /*
+   * Drag a dinner by its handle onto another day. The two days swap, so nothing else in
+   * the week moves (a note like "Liz's party" stays on its date).
+   */
+  const list = useRef<HTMLOListElement>(null);
+  const dragStart = useRef<{ y: number; rects: DOMRect[] } | null>(null);
+  const [drag, setDrag] = useState<{ from: number; dy: number; over: number } | null>(null);
+
+  const onGripDown = (e: ReactPointerEvent<HTMLButtonElement>, from: number) => {
+    if (!list.current) return;
+    e.preventDefault();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    dragStart.current = { y: e.clientY, rects: [...list.current.children].map((li) => li.getBoundingClientRect()) };
+    setDrag({ from, dy: 0, over: from });
+  };
+  const onGripMove = (e: ReactPointerEvent<HTMLButtonElement>) => {
+    const start = dragStart.current;
+    if (!start || !drag) return;
+    const dy = e.clientY - start.y;
+    const r = start.rects[drag.from];
+    const centre = r.top + r.height / 2 + dy;
+    let over = start.rects.findIndex((x) => centre >= x.top && centre < x.bottom);
+    if (over < 0) over = centre < start.rects[0].top ? 0 : start.rects.length - 1;
+    setDrag({ ...drag, dy, over });
+  };
+  const onGripUp = () => {
+    const d = drag;
+    dragStart.current = null;
+    setDrag(null);
+    if (!d || d.over === d.from) return;
+    const a = days[d.from];
+    const b = days[d.over];
+    const planA = state.plans[a] ?? null;
+    const planB = state.plans[b] ?? null;
+    dispatch([
+      { t: 'plan', date: b, plan: planA },
+      { t: 'plan', date: a, plan: planB },
+    ]);
+    const title = describePlan(planA ?? undefined)?.title ?? 'Dinner';
+    toast(`${title} moved to ${dayName(b)}`, {
+      label: 'Undo',
+      run: () =>
+        dispatch([
+          { t: 'plan', date: a, plan: planA },
+          { t: 'plan', date: b, plan: planB },
+        ]),
+    });
   };
 
   const firstEmpty = days.find((d) => !state.plans[d] && d >= today) ?? days.find((d) => !state.plans[d]);
@@ -60,22 +117,42 @@ export function Plan({ ctx }: { ctx: Ctx }) {
         })}
       </div>
 
-      <ol className="menu menu-lg">
-        {days.map((d) => {
+      <ol className={`menu menu-lg plan-list ${drag ? 'is-dragging' : ''}`} ref={list}>
+        {days.map((d, i) => {
           const p = describePlan(state.plans[d]);
+          const dragging = drag?.from === i;
+          const target = drag && drag.over === i && drag.from !== i;
+          const cls = [d === today && 'is-today', d < today && 'is-past', dragging && 'dragging', target && 'drop-target'].filter(Boolean).join(' ');
           return (
-            <li key={d} className={`${d === today ? 'is-today' : ''} ${d < today ? 'is-past' : ''}`}>
+            <li key={d} className={cls}>
               <button className="menu-row" onClick={() => openPicker(d)}>
                 <span className="menu-day wide">
                   <span className="menu-day-name">{dayName(d)}</span>
                   <span className="menu-day-sub">{d === today ? 'Today' : shortDate(d)}</span>
                 </span>
-                <span className="menu-dish-wrap">
+                <span className="menu-dish-wrap" style={dragging ? { transform: `translateY(${drag!.dy}px)` } : undefined}>
                   <span className={`menu-dish ${p ? '' : 'is-empty'}`}>{p ? p.title : 'Add dinner'}</span>
                   {p?.recipe && <span className="menu-sub">{p.recipe.category}{p.recipe.minutes ? ` · ${formatMinutes(p.recipe.minutes)}` : ''}</span>}
                 </span>
                 {p ? <Marker plan={p} /> : <Plus size={20} className="add-icon" />}
               </button>
+              {p && (
+                <span className="plan-row-tools">
+                  <button className="icon-btn ghost" onClick={() => removeDinner(d)} aria-label={`Remove ${dayName(d)}'s dinner`}>
+                    <X size={17} />
+                  </button>
+                  <button
+                    className="icon-btn ghost grip"
+                    aria-label={`Drag ${p.title} to another day`}
+                    onPointerDown={(e) => onGripDown(e, i)}
+                    onPointerMove={onGripMove}
+                    onPointerUp={onGripUp}
+                    onPointerCancel={onGripUp}
+                  >
+                    <GripVertical size={18} />
+                  </button>
+                </span>
+              )}
             </li>
           );
         })}

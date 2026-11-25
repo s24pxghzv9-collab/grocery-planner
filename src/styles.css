@@ -1753,3 +1753,55 @@ ol {
 }
 
 .always-tag { color: var(--ink-2); font-weight: 500; }
+
+/* Plan: remove and drag-to-swap */
+.plan-list > li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.plan-list .menu-row {
+  flex: 1;
+  min-width: 0;
+}
+.plan-row-tools {
+  display: flex;
+  align-items: center;
+  margin-right: -10px;
+}
+.plan-row-tools .icon-btn {
+  color: var(--muted);
+}
+.grip {
+  touch-action: none;
+  cursor: grab;
+}
+.plan-list.is-dragging {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.plan-list li.dragging .menu-dish-wrap {
+  position: relative;
+  z-index: 2;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 6px 10px;
+  margin: -6px -10px;
+  box-shadow: 0 8px 24px rgba(31, 28, 24, 0.18);
+}
+.plan-list li.drop-target {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.plan-list li.drop-target .menu-dish {
+  opacity: 0.5;
+}
+.new-recipe-row {
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  color: var(--ink);
+}
+.new-recipe-row > svg {
+  flex-shrink: 0;
+  margin-left: 4px;
+  color: var(--accent);
+}

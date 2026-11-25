@@ -154,6 +154,9 @@ const TAIL_WORDS = /\s+(leaves|sprigs|pieces|chunks|strips|bits|fillets?|wedges?
 const PREP_WORDS =
   /\b(fresh(ly)?|large|small|medium|chopped|finely|roughly|thinly|thickly|diced|minced|sliced|grated|crushed|peeled|trimmed|halved|quartered|shredded|cubed|julienned|softened|melted|room temperature|at room temperature|to serve|for serving|for garnish|to garnish|to taste|optional|plus extra|plus more|divided|separated|packed|heaped|level|good quality|store-bought|homemade|about|approx\.?|approximately|roughly|lightly beaten|beaten|cooked|uncooked|raw|boneless|skinless|skin-on|unsalted|salted|full-fat|full fat|low-fat|low fat|lean|extra lean|extra-lean|organic|dry-roasted|dry roasted|toasted|crispy|fried|whole)\b/gi;
 
+/** First words that make a different product: "sweet potato" isn't potatoes, "oat milk" isn't milk. */
+const DIFFERENT_PRODUCT = /^(sweet|almond|oat|soy|rice|coconut|cream|sour|ice|garlic|peanut|brown|wild|whipped|clotted|cottage|goats?'?s?)\s/;
+
 function singular(w: string): string {
   if (/ies$/.test(w)) return w.replace(/ies$/, 'y');
   if (/(ches|shes|oes|sses)$/.test(w)) return w.replace(/es$/, '');
@@ -176,6 +179,7 @@ function lookup(name: string): string | null {
   if (DICT[n + 's']) return n + 's';
   // A known name at the end, where the main noun goes in English: "light soy sauce" -> "soy sauce",
   // but not "potato gnocchi" -> "potatoes". Trailing words like "leaves" are ignored.
+  if (DIFFERENT_PRODUCT.test(n)) return null;
   const tail = n.replace(TAIL_WORDS, '');
   for (const candidate of [tail, singularPhrase(tail)]) {
     for (const known of DICT_NAMES) {

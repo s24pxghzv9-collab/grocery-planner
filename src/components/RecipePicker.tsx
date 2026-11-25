@@ -1,4 +1,4 @@
-import { Check, Search, X } from 'lucide-react';
+import { Check, Plus, Search, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { RECIPES, USED_CATEGORIES } from '../data/recipes';
 import { addDays, dayName, shortDate } from '../lib/dates';
@@ -12,10 +12,12 @@ interface Props {
   plans: Record<string, DayPlan>;
   weekDays: string[];
   onPick: (day: string, plan: DayPlan | null) => void;
+  /** A dinner that isn't in the recipes yet: make it, with this name, for this day. */
+  onNewRecipe: (day: string, name: string) => void;
   onClose: () => void;
 }
 
-export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
+export function RecipePicker({ day, plans, weekDays, onPick, onNewRecipe, onClose }: Props) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<Category | null>(null);
   const [customNote, setCustomNote] = useState<string | null>(null);
@@ -126,7 +128,7 @@ export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
         <input
           className="input"
           type="search"
-          placeholder="Search recipes or ingredients"
+          placeholder="Search, or type a new dinner"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -169,7 +171,26 @@ export function RecipePicker({ day, plans, weekDays, onPick, onClose }: Props) {
             </li>
           );
         })}
-        {filtered.length === 0 && <li className="empty">No recipes match.</li>}
+        {query.trim() ? (
+          <li>
+            <button
+              className="recipe-row new-recipe-row"
+              onClick={() => {
+                const name = query.trim();
+                setQuery('');
+                onNewRecipe(day, name.charAt(0).toUpperCase() + name.slice(1));
+              }}
+            >
+              <Plus size={20} />
+              <span className="recipe-row-text">
+                <span className="recipe-row-name">Add “{query.trim()}”</span>
+                <span className="recipe-row-meta">New recipe: you add the ingredients</span>
+              </span>
+            </button>
+          </li>
+        ) : (
+          filtered.length === 0 && <li className="empty">No recipes match.</li>
+        )}
       </ul>
     </Sheet>
   );

@@ -3,10 +3,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AddRecipe } from './components/AddRecipe';
 import { RecipeDetail } from './components/RecipeDetail';
 import { RecipeEditor } from './components/RecipeEditor';
-import { draftFromRecipe, type EditorDraft } from './lib/recipeDraft';
+import { draftFromRecipe, draftFromText, emptyIngredient, type EditorDraft } from './lib/recipeDraft';
 import { RecipePicker } from './components/RecipePicker';
 import { RECIPES_BY_ID, isBuiltIn, setHouseholdRecipes } from './data/recipes';
-import { addDays, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
+import { addDays, dayName, todayISO, weekDays, weekLabel, weekStart } from './lib/dates';
 import { buildShoppingList, type ShoppingItem } from './lib/shopping';
 import { useHouseholdState, weekShopping, type Dispatch, type SyncStatus } from './lib/store';
 import { Home } from './screens/Home';
@@ -95,7 +95,8 @@ export default function App() {
   const [recipeId, setRecipeId] = useState<string | null>(null);
   // Add recipe: null = closed, '' = open with no link, otherwise a link to import.
   const [adding, setAdding] = useState<string | null>(readAddLink);
-  const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string } | null>(null);
+  // planDay: a new dinner typed in the picker, to put on that day once it's saved.
+  const [editor, setEditor] = useState<{ draft: EditorDraft; heading: string; planDay?: string } | null>(null);
   const [toastMsg, setToastMsg] = useState<{ text: string; action?: ToastAction } | null>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
@@ -160,6 +161,16 @@ export default function App() {
   };
 
   const saveRecipe = (recipe: Recipe) => {
+    const planDay = editor?.planDay;
+    if (planDay) {
+      dispatch([
+        { t: 'recipe', recipe },
+        { t: 'plan', date: planDay, plan: { kind: 'recipe', recipeId: recipe.id } },
+      ]);
+      setEditor(null);
+      toast(`${recipe.name} is on for ${dayName(planDay)}`);
+      return;
+    }
     dispatch({ t: 'recipe', recipe });
     setEditor(null);
     setTab('recipes');
@@ -220,6 +231,15 @@ export default function App() {
         plans={state.plans}
         weekDays={pickerWeek}
         onPick={onPick}
+        onNewRecipe={(day, name) => {
+          setPickerDay(null);
+          const guess = draftFromText(name);
+          setEditor({
+            draft: { ...guess, name, ingredients: [emptyIngredient(), emptyIngredient(), emptyIngredient()] },
+            heading: `New dinner · ${dayName(day)}`,
+            planDay: day,
+          });
+        }}
         onClose={() => setPickerDay(null)}
       />
       <RecipeDetail
